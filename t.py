@@ -14,18 +14,19 @@ def parse_set(s):
 
 def get_cards(sport, set, var, quants_by_num, whole=True):
 	fns = [fn for fn in ll.ls(f'scp_csvs') if fn.endswith(f'{set}.csv') and ll.bn(fn).startswith(f'{sport}_')]
+	if len(fns) == 0:
+		ll.err(f"no csv file found for [grey70]{sport}[/grey70] set [grey70]{set}[/grey70]")
 	assert(len(fns)==1)
 	fn = fns[0]
 
 	cards = []
-	got = __builtins__.set()
+	got = []
 
 	for row in ll.csv('scp_csvs/' + fn):
 
 		num = (rpn:=row['product-name']).split('#')[-1]
 
 		if num in quants_by_num:
-			got.add(num)
 
 			# Check the variant
 			row_var = ll.regf('\[(.*)\]')(rpn) or ''
@@ -34,13 +35,19 @@ def get_cards(sport, set, var, quants_by_num, whole=True):
 
 			# Add the quantity
 			for _ in range(quants_by_num[num]):
+				got.append(num)
 				cards.append(row if whole else row['product-name'])
 
 	missed = 0
 	for num in quants_by_num.keys():
-		if num not in got:
-			print(f'[bold red]missed:[/bold red] {set} #{num}')
-			missed += 1
+		for copy in range(quants_by_num[num]):
+			if num not in got:
+				if var:
+					ll.err(f'[bold red]missed:[/bold red] {set} #{num} [{var}]')
+				else:
+					ll.err(f'[bold red]missed:[/bold red] {set} #{num}')
+				missed += 1
+			got.remove(num)
 	if missed > 0:
 		quit(1)
 
@@ -69,7 +76,7 @@ def agg_quants_by_num_by_set(fn):
 	return quants_by_num_by_set
 
 
-def process(fn):
+def process(fn, console=True):
 	fn_dir = ll.dn(fn)
 	fn = ll.bn(fn)
 	tfn = ll.ospj(fn_dir, fn)
@@ -96,21 +103,54 @@ def process(fn):
 					price = float(card_row['loose-price'][1:] or 0)
 
 					# Console output
-					if price >= 4.00:
-						print(f'[yellow3]{price:.02f}[/yellow3]\t{card_row["product-name"]} {set}')
-					elif price >= 1:
-						print(f'[grey50]{price:.02f}[/grey50]\t{card_row["product-name"]} {set}')
-					elif price == 0:
-						print(f'[grey50]-[/grey50]\t{card_row["product-name"]} {set}')
+					name = card_row['product-name'].split('#')[0].split(' [')[0].strip()
+					num = card_row['product-name'].split('#')[1].split(' [')[0].strip()
+					if '[' in card_row['product-name']:
+						var = card_row['product-name'].split('[')[-1].split(']')[0].strip()
 					else:
-						print(f'[grey30]{price:.02f}[/grey30]\t{card_row["product-name"]} {set}')
+						var = ''
+					unvar_set = set.split(' [')[0].strip()
+					year = unvar_set.split(' ')[0].strip()
+					unyear_set = ' '.join(unvar_set.split(' ')[1:]).strip()
+					'''
+					if console:
+						if price >= 4.00:
+							print(f'[yellow3]{price:.02f}[/yellow3]\t{name} {set}')
+						elif price >= 1:
+							print(f'[grey50]{price:.02f}[/grey50]\t{name} {set}')
+						elif price == 0:
+							print(f'[grey50]-[/grey50]\t{name} {set}')
+						else:
+							print(f'[grey30]{price:.02f}[/grey30]\t{name} {set}')
+					'''
 
 					# File output
-					card_f.write(f'{card_row["product-name"]} {set}\n')
-					price_f.write(f'{price:.02f}\t{card_row["product-name"]} {set}\n')
+					card_tup = (sport, year, unyear_set, name, num, var, price)
+					yield card_tup
 
-					# Tick the progress bar
-					yield
+					if var:
+						card_f.write(f'{name} #{num} [{var}] {unvar_set}\n')
+						price_f.write(f'{price:.02f}\t{name} #{num} [{var}] {unvar_set}\n')
+					else:
+						card_f.write(f'{name} #{num} {unvar_set}\n')
+						price_f.write(f'{price:.02f}\t{name} #{num} {unvar_set}\n')
+					gotten += 1
+
+
+def print_card(sport, year, set, name, num, var, price):
+	if var:
+		card_str = f'{name} #{num} [{var}] {year} {set}'
+	else:
+		card_str = f'{name} #{num} {year} {set}'
+
+	if price >= 4.00:
+		print(f'[yellow3]{price:.02f}[/yellow3]\t{card_str}')
+	elif price >= 1:
+		print(f'[grey50]{price:.02f}[/grey50]\t{card_str}')
+	elif price == 0:
+		print(f'[grey50]-[/grey50]\t{card_str}')
+	else:
+		print(f'[grey30]{price:.02f}[/grey30]\t{card_str}')
 
 
 def main():
@@ -150,75 +190,31 @@ def main():
 	total = 0
 	for fn in fns:
 		for line in ll.lines(fn, stream=True):
-			if not is_set_name(line):
+			if line.strip() and not is_set_name(line):
 				total += 1
 
 	def _track_it():
 		for fn in fns:
-			for _ in process(fn):
-				yield
+			for price in process(fn):
+				yield price
 	
-	list(ll.track(_track_it(), total=total))
-	# list(_track_it())
+	got = 0
+	good_got = 0
+	value = 0
+	good_value = 0
+	thresh = 4.00
+	for (sport, year, set, name, num, var, price) in ll.track(_track_it(), total=total):
+		print_card(sport, year, set, name, num, var, price)
+
+		got += 1
+		value += price
+		if price >= 4:
+			good_got += 1
+			good_value += price
+
+	print(f'\n{got} / {total}\n')
+	print(f'${value:.02f}\n\t(${good_value:.02f} for {good_got} cards > ${thresh:.0f})\n')
 
 
 if __name__ == '__main__':
 	main()
-
-'''
-	ll.import_from(ll.here('scp.py'), 'price')
-
-
-	def safe_price(*a, **kw):
-		try:
-			return price(*a, **kw)
-		except Exception as e:
-			return 0.0
-
-
-	def get_card(sport, s, v, n, whole=True):
-		fns = [fn for fn in ll.ls(f'scp_csvs') if fn.endswith(f'{s}.csv') and ll.bn(fn).startswith(f'{sport}_')]
-		assert(len(fns)==1)
-		for row in ll.csv('scp_csvs/' + fns[0]):
-			if (rpn:=row['product-name']).endswith(f'#{n}'):
-				row_var = ll.regf('\[(.*)\]')(rpn) or ''
-				if v != row_var:
-					continue
-				return row if whole else row['product-name']
-
-	set2cards = ll.dd()
-	cur_set, cur_fset, var = '', '', ''
-
-
-	def main():
-		with open(f'cards_{fn}', 'w+') as card_f:
-			with open(f'prices_{fn}', 'w+') as price_f:
-				gotten = 0
-				for line in ll.track(ll.lines(fn)):
-
-					if len(line) > 10 and not line.isnumeric():
-						# It's a set
-						cur_set = line
-						cur_fset, var = parse_set(cur_set)
-						cur_set = line.split(' [')[0]
-
-					else:
-						if not cur_set:
-							ll.err(f"file {fn} needs to at least start with a set name")
-
-						card = get_card(sport, cur_fset, var, line)
-						# card_price = safe_price(card['id'])
-						card_price = float(card['loose-price'][1:] or 0)
-
-						if card_price >= 3.50:
-							print(f'[green]{card_price:.02f}[/green]\t{card["product-name"]} {cur_set}')
-						elif card_price == 0:
-							print(f'{card_price:.02f}\t{card["product-name"]} {cur_set}')
-						else:
-							print(f'[grey30]{card_price:.02f}[/grey30]\t{card["product-name"]} {cur_set}')
-
-						card_f.write(f'{card["product-name"]} {cur_set}\n')
-						price_f.write(f'{card_price:.02f}\t{card["product-name"]} {cur_set}\n')
-
-						gotten += 1
-'''
