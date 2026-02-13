@@ -86,37 +86,31 @@ def process(fn):
 		with open(f'prices_{fn}', 'w+') as price_f:
 			gotten = 0
 
-			# Iterator that writes the cards
-			def _track_it():
-				for set, quants_by_num in quants_by_num_by_set.items():
-					# Get card info
-					cur_fset, var = parse_set(set)
-					# card_row = get_card(sport, cur_fset, var, num)
-					card_rows = get_cards(sport, cur_fset, var, quants_by_num)
+			for set, quants_by_num in quants_by_num_by_set.items():
+				# Get card info
+				cur_fset, var = parse_set(set)
+				# card_row = get_card(sport, cur_fset, var, num)
+				card_rows = get_cards(sport, cur_fset, var, quants_by_num)
 
-					for card_row in card_rows:
-						price = float(card_row['loose-price'][1:] or 0)
+				for card_row in card_rows:
+					price = float(card_row['loose-price'][1:] or 0)
 
-						# Console output
-						if price >= 4.00:
-							print(f'[yellow3]{price:.02f}[/yellow3]\t{card_row["product-name"]} {set}')
-						elif price >= 1:
-							print(f'[grey50]{price:.02f}[/grey50]\t{card_row["product-name"]} {set}')
-						elif price == 0:
-							print(f'[grey50]-[/grey50]\t{card_row["product-name"]} {set}')
-						else:
-							print(f'[grey30]{price:.02f}[/grey30]\t{card_row["product-name"]} {set}')
+					# Console output
+					if price >= 4.00:
+						print(f'[yellow3]{price:.02f}[/yellow3]\t{card_row["product-name"]} {set}')
+					elif price >= 1:
+						print(f'[grey50]{price:.02f}[/grey50]\t{card_row["product-name"]} {set}')
+					elif price == 0:
+						print(f'[grey50]-[/grey50]\t{card_row["product-name"]} {set}')
+					else:
+						print(f'[grey30]{price:.02f}[/grey30]\t{card_row["product-name"]} {set}')
 
-						# File output
-						card_f.write(f'{card_row["product-name"]} {set}\n')
-						price_f.write(f'{price:.02f}\t{card_row["product-name"]} {set}\n')
+					# File output
+					card_f.write(f'{card_row["product-name"]} {set}\n')
+					price_f.write(f'{price:.02f}\t{card_row["product-name"]} {set}\n')
 
-						# Tick the progress bar
-						yield
-
-			# Dummy tracker for the iterator
-			# list(ll.track(_track_it(), total=sum([len(nums) for nums in quants_by_num_by_set.values()])))
-			list(_track_it())
+					# Tick the progress bar
+					yield
 
 
 def main():
@@ -159,8 +153,13 @@ def main():
 			if not is_set_name(line):
 				total += 1
 
-	for fn in ll.track(fns, total=total):
-		process(fn)
+	def _track_it():
+		for fn in fns:
+			for _ in process(fn):
+				yield
+	
+	list(ll.track(_track_it(), total=total))
+	# list(_track_it())
 
 
 if __name__ == '__main__':
