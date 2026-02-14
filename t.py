@@ -1,11 +1,14 @@
 import ll
+import os
 import sys
 
 
 def parse_set(s):
 	grade = ''
-	if len(graspl:=s.split('*')) == 2:
-		s, grade = s.split('*')
+	if len(graspl:=s.split('#')) == 2:
+		s, grade = s.split('#')
+		s = s.strip()
+		grade = grade.strip()
 
 	var = ''
 	if '[' in s:
@@ -17,18 +20,26 @@ def parse_set(s):
 
 
 def get_cards(sport, set, var, quants_by_num, whole=True):
-	fns = [fn for fn in ll.ls(f'scp_csvs') if fn.endswith(f'{set.split("*")[0]}.csv') and ll.bn(fn).startswith(f'{sport}_')]
+	fns = [fn for fn in ll.ls(f'scp_csvs') if fn.endswith(f'{set.split("#")[0]}.csv') and ll.bn(fn).startswith(f'{sport}_')]
 	if len(fns) == 0:
 		ll.err(f"no csv file found for [grey70]{sport}[/grey70] set [grey70]{set}[/grey70]")
+	if len(fns) > 1:
+		print(f"[bold light_coral]error:[/bold light_coral] too many csv files found for [grey70]{sport}[/grey70] set [grey70]{set}[/grey70]:")
+		for fn in fns:
+			print(f"\t{fn}")
+		os._exit(1)
+
 	assert(len(fns)==1)
 	fn = fns[0]
 
 	cards = []
 	got = []
+	num2player = {}
+	warned = ll.dd(bool)
 
 	for row in ll.csv('scp_csvs/' + fn):
 
-		num = (rpn:=row['product-name']).split('#')[-1]
+		num = (rpn:=row['product-name']).split('#')[-1].strip()
 
 		if num in quants_by_num:
 
@@ -37,10 +48,25 @@ def get_cards(sport, set, var, quants_by_num, whole=True):
 			if var != row_var:
 				continue
 
+			# Sadly, we have to do this because
+			# of PJ-LMY being a DUPLICATE NUMBER
+			# IN THE SAME FKN-SET
+			# TODO: don't rely on getting lucky
+			# with the one you want appearing first
+			pname = row['product-name'].split('#')[0].split('[')[0].strip()
+			if num in num2player and num2player[num] != pname and var == row_var:
+				if not warned[num]:
+					print(f"\n\n\t[bold orange3]warning:[/bold orange3] number [grey70]{num}[/grey70] was already used for [grey70]{num2player[num]}[/grey70], so can't use it for [grey70]{pname}[/grey70]\n\n")
+				warned[num] = True
+				continue
+
 			# Add the quantity
 			for _ in range(quants_by_num[num]):
 				got.append(num)
 				cards.append(row if whole else row['product-name'])
+
+			# Lock the player into the number :(
+			num2player[num] = pname
 
 	missed = 0
 	for num in quants_by_num.keys():
@@ -59,7 +85,15 @@ def get_cards(sport, set, var, quants_by_num, whole=True):
 
 
 def is_set_name(line):
-	return len(line) > 10 and not line.isnumeric()
+	# It's just a number
+	if line.isnumeric():
+		return False
+
+	# Too short to be a set name
+	if len(line) < 10:
+		return False
+
+	return True
 
 
 def agg_quants_by_num_by_set(fn):
@@ -67,6 +101,9 @@ def agg_quants_by_num_by_set(fn):
 	cur_set = ''
 	cur_var = ''
 	for line in ll.lines(fn):
+		if line.strip().startswith('#'):
+			line = line.strip()[1:].strip()
+
 		if is_set_name(line):
 			# It's a set
 			cur_set = line
@@ -80,10 +117,6 @@ def agg_quants_by_num_by_set(fn):
 	return quants_by_num_by_set
 
 
-def is_psa_10(grade):
-	return grade.strip() == 'PSA 10'
-
-
 def process(fn, console=True):
 	fn_dir = ll.dn(fn)
 	fn = ll.bn(fn)
@@ -95,16 +128,16 @@ def process(fn, console=True):
 	sport = spl[1]
 
 	quants_by_num_by_set = agg_quants_by_num_by_set(tfn)
-	# TODO: this will clobber if duplicate filenames
-	# exist in different dirs in the input
 	with open(f'cards_{fn}', 'w+') as card_f:
 		with open(f'prices_{fn}', 'w+') as price_f:
 			gotten = 0
 
 			for set, quants_by_num in quants_by_num_by_set.items():
 				grade = ''
-				if len(graspl:=set.split('*')) == 2:
-					set, grade = set.split('*')
+				if len(graspl:=set.split('#')) == 2:
+					set, grade = set.split('#')
+					set = set.strip()
+					grade = grade.strip()
 
 				# Get card info
 				cur_fset, var, _ = parse_set(set)
@@ -112,8 +145,16 @@ def process(fn, console=True):
 				card_rows = get_cards(sport, cur_fset, var, quants_by_num)
 
 				for card_row in card_rows:
-					price_key = 'manual-only-price' if is_psa_10(grade) else 'loose-price'
-					price = float(card_row[price_key][1:] or 0)
+					match grade.strip().lower().replace(' ', '_'):
+						case 'psa_10':
+							price_key = 'manual-only-price'
+						case 'damaged':
+							price_key = "damaged (this key won't be in the dict)"
+						case _:
+							price_key = 'loose-price'
+
+					price = card_row.get(price_key)
+					price = float(price[1:]) if price else 0.0
 
 					# Console output
 					name = card_row['product-name'].split('#')[0].split(' [')[0].strip()
@@ -211,6 +252,7 @@ def main():
 	good_got = 0
 	value = 0
 	good_value = 0
+	unknown_got = 0
 	thresh = 4.00
 	for (sport, year, set, name, num, var, price, grade) in ll.track(_track_it(), total=total):
 		print_card(sport, year, set, name, num, var, price, grade)
@@ -220,9 +262,12 @@ def main():
 		if price >= 4:
 			good_got += 1
 			good_value += price
+		elif price == 0:
+			unknown_got += 1
 
 	print(f'\n{got} / {total}\n')
 	print(f'${value:.02f}\n\t(${good_value:.02f} for {good_got} cards > ${thresh:.0f})\n')
+	print(f'\t[grey70]([/grey70]{unknown_got}[grey70] cards w/ no mkt. data)[/grey70]\n')
 
 
 if __name__ == '__main__':
