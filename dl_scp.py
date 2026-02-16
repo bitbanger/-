@@ -16,10 +16,6 @@ sport = args.sport
 year = args.year
 brand = args.brand
 set_words = [x.strip().lower() for x in args.words]
-# sport = 'basketball'
-# year = 2025
-# brand = 'panini'
-# set_words = ['donruss', 'wnba']
 
 
 base_url = 'https://www.sportscardspro.com'
