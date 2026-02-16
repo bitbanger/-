@@ -121,14 +121,19 @@ def process(fn, console=True):
 	fn = ll.bn(fn)
 	tfn = ll.ospj(fn_dir, fn)
 
+	outp_dir = 'outp'
+	os.makedirs(outp_dir, exist_ok=True)
+	cards_fn = ll.ospj(outp_dir, f'cards_{fn}')
+	price_fn = ll.ospj(outp_dir, f'price_{fn}')
+
 	if len(spl:=fn.split('.')) != 2:
 		ll.err(f"file [grey70]{fn_dir}/{fn}[/grey70] needs to end with a sport as its extension")
 
 	sport = spl[1]
 
 	quants_by_num_by_set = agg_quants_by_num_by_set(tfn)
-	with open(f'cards_{fn}', 'w+') as card_f:
-		with open(f'prices_{fn}', 'w+') as price_f:
+	with open(cards_fn, 'w+') as card_f:
+		with open(price_fn, 'w+') as price_f:
 			gotten = 0
 
 			for set, quants_by_num in quants_by_num_by_set.items():
