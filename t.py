@@ -42,7 +42,6 @@ def get_cards(sport, set, var, quants_by_num, whole=True):
 		num = (rpn:=row['product-name']).split('#')[-1].strip()
 
 		if num in quants_by_num:
-
 			# Check the variant
 			row_var = ll.regf('\[(.*)\]')(rpn) or ''
 			if var != row_var:
@@ -254,8 +253,10 @@ def main():
 	good_value = 0
 	unknown_got = 0
 	thresh = 4.00
+	cards = []
 	for (sport, year, set, name, num, var, price, grade) in ll.track(_track_it(), total=total):
-		print_card(sport, year, set, name, num, var, price, grade)
+		cards.append((sport, year, set, name, num, var, price, grade))
+		print_card(*cards[-1])
 
 		got += 1
 		value += price

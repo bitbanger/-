@@ -4,10 +4,24 @@ import re as _re
 
 from rich import print
 
-sport = 'football'
-year = 2023
-brand = 'panini'
-set_words = ['prizm']
+from argparse import ArgumentParser
+ap = ArgumentParser()
+ap.add_argument('--sport')
+ap.add_argument('--year')
+ap.add_argument('--brand', default='panini')
+ap.add_argument('words', nargs='+')
+args = ap.parse_args()
+
+sport = args.sport
+year = args.year
+brand = args.brand
+set_words = [x.strip().lower() for x in args.words]
+# sport = 'basketball'
+# year = 2025
+# brand = 'panini'
+# set_words = ['donruss', 'wnba']
+
+
 base_url = 'https://www.sportscardspro.com'
 url = base_url + f'/brand/{sport}-cards/{brand}'
 outp_dir = 'scp_csvs'
