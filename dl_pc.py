@@ -9,12 +9,35 @@ from argparse import ArgumentParser
 
 
 def dl_url(uid, token):
-	return f'https://www.sportscardspro.com/price-guide/download-custom?t={token}&console-uids={uid}'
+	return f'https://www.pricecharting.com/price-guide/download-custom?t={token}&console-uids={uid}'
 
 
 def get_sets(sport, year, brand, set_words):
-	base_url = 'https://www.sportscardspro.com'
-	url = base_url + f'/brand/{sport}-cards/{brand}'
+	first_url = f'https://www.pricecharting.com/consoles-autocomplete/{sport}-cards'
+	sets = []
+	for row in ll.json(first_url):
+		if row is None:
+			continue
+		label, cid = row['label'], row['value']
+		_year = ll.regf('(\d\d\d\d)')(label)
+		if _year is None:
+			continue
+		if int(_year) != int(year):
+			continue
+		rest = label[label.index(year)+4:].strip()
+		if not rest.startswith(brand):
+			continue
+		rest = rest[rest.index(brand)+len(brand):].strip()
+		if not all(w.lower() in rest.lower() for w in set_words):
+			continue
+		print(rest)
+		# urls.append(f"https://www.pricecharting.com/console/{label.replace(' ', '-')}")
+		sets.append(label)
+	# url = base_url + f'/brand/{sport}-cards/{brand}'
+
+	return sets
+
+	urls = []
 
 	sets = []
 	while not sets:
@@ -29,15 +52,16 @@ def get_sets(sport, year, brand, set_words):
 
 
 def download_sets(sport, sets, token):
-	base_url = 'https://www.sportscardspro.com'
+	base_url = 'https://www.pricecharting.com'
 
 	# for x in ll.track(ll.soup(url).find_all('a', href=_re.compile(f'\/console\/{sport}-cards-{year}-{brand}')), total=total):
 	for x in sets:
-		sub_url = base_url + x.attrs['href']
+		# sub_url = base_url + x.attrs['href']
+		sub_url = base_url + f"/console/{x.replace(' ', '-')}"
 
 		re = _re.compile('console_uid = "(.*)"')
 
-		set_name = x.text
+		set_name = x
 
 		set_code = ''
 		for _ in range(15):
@@ -45,11 +69,13 @@ def download_sets(sport, sets, token):
 				subsoup = ll.soup(sub_url)
 				uid = ll.regf('console_uid = "(.*)"')(subsoup(string=re)[0])
 
+				'''
 				scs = subsoup(string=_re.compile('Set Code.*'))
 				try:
 					set_code = scs[0].split(': ')[-1]
 				except IndexError:
 					pass
+				'''
 
 				break
 			except IndexError:
@@ -77,7 +103,7 @@ def download_sets(sport, sets, token):
 def verify_sets(sport, dl_sets):
 	print(f'{len(dl_sets)} sets to download ([bold yellow3]{sport}[/bold yellow3]):')
 	for x in dl_sets:
-		print(f'\t{x.text}')
+		print(f'\t{x}')
 	print('')
 	return ll.yn(f'Download the above {len(dl_sets)} [bold yellow3]{sport}[/bold yellow3] sets?')
 
