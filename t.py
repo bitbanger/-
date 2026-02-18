@@ -2,6 +2,8 @@ import ll
 import os
 import sys
 
+from argparse import ArgumentParser
+
 
 def parse_set(s):
 	grade = ''
@@ -19,7 +21,7 @@ def parse_set(s):
 	return fset, var, grade
 
 
-def get_cards(sport, set, var, quants_by_num, whole=True):
+def get_cards(sport, set, var, quants_by_num, whole=True, warn=True):
 	fns = [fn for fn in ll.ls(f'scp_csvs') if fn.endswith(f'{set.split("#")[0]}.csv') and ll.bn(fn).startswith(f'{sport}_')]
 	if len(fns) == 0:
 		ll.err(f"no csv file found for [grey70]{sport}[/grey70] set [grey70]{set}[/grey70]")
@@ -35,7 +37,7 @@ def get_cards(sport, set, var, quants_by_num, whole=True):
 	cards = []
 	got = []
 	num2player = {}
-	warned = ll.dd(bool)
+	warned = ll.dd(lambda: bool)
 
 	for row in ll.csv('scp_csvs/' + fn):
 
@@ -54,7 +56,7 @@ def get_cards(sport, set, var, quants_by_num, whole=True):
 			# with the one you want appearing first
 			pname = row['product-name'].split('#')[0].split('[')[0].strip()
 			if num in num2player and num2player[num] != pname and var == row_var:
-				if not warned[num]:
+				if warn and not warned[num]:
 					print(f"\n\n\t[bold orange3]warning:[/bold orange3] number [grey70]{num}[/grey70] was already used for [grey70]{num2player[num]}[/grey70], so can't use it for [grey70]{pname}[/grey70]\n\n")
 				warned[num] = True
 				continue
@@ -116,7 +118,7 @@ def agg_quants_by_num_by_set(fn):
 	return quants_by_num_by_set
 
 
-def process(fn, console=True):
+def process(fn, console=True, warn=True):
 	fn_dir = ll.dn(fn)
 	fn = ll.bn(fn)
 	tfn = ll.ospj(fn_dir, fn)
@@ -146,7 +148,7 @@ def process(fn, console=True):
 				# Get card info
 				cur_fset, var, _ = parse_set(set)
 				# card_row = get_card(sport, cur_fset, var, num)
-				card_rows = get_cards(sport, cur_fset, var, quants_by_num)
+				card_rows = get_cards(sport, cur_fset, var, quants_by_num, warn=warn)
 
 				for card_row in card_rows:
 					match grade.strip().lower().replace(' ', '_'):
@@ -209,10 +211,14 @@ def print_card(sport, year, set, name, num, var, price, grade):
 
 def main():
 
-	if len(sys.argv) <= 1:
-		ll.err(f'usage: t.py [grey70]input[/grey70]')
+	ap = ArgumentParser()
+	ap.add_argument('input', nargs='+')
+	ap.add_argument('-q', '--quiet-warnings', action='store_true')
+	ap.add_argument('-p', '--price-threshold', type=float, default=0.0)
+	ap.add_argument('-s', '--sort-by-price', action='store_true')
+	args = ap.parse_args()
 
-	fns = ll.dedupe(sys.argv[1:])
+	fns = ll.dedupe(args.input)
 
 	if (fakes:=[fn for fn in fns if not ll.fexists(fn)]):
 		lump = '\n\t' + '\n\t'.join(fakes)
@@ -249,7 +255,7 @@ def main():
 
 	def _track_it():
 		for fn in fns:
-			for card in process(fn):
+			for card in process(fn, warn=(not args.quiet_warnings)):
 				yield card
 	
 	got = 0
@@ -257,11 +263,13 @@ def main():
 	value = 0
 	good_value = 0
 	unknown_got = 0
-	thresh = 4.00
 	cards = []
-	for (sport, year, set, name, num, var, price, grade) in ll.track(_track_it(), total=total):
-		cards.append((sport, year, set, name, num, var, price, grade))
-		print_card(*cards[-1])
+	for card in ll.track(_track_it(), total=total):
+		sport, year, set, name, num, var, price, grade = card
+		cards.append(card)
+		if price >= args.price_threshold:
+			if not args.sort_by_price:
+				print_card(*cards[-1])
 
 		got += 1
 		value += price
@@ -271,8 +279,13 @@ def main():
 		elif price == 0:
 			unknown_got += 1
 
+	if args.sort_by_price:
+		cards = sorted(cards, key=ll.nth(6))
+		for card in cards:
+			print_card(*card)
+
 	print(f'\n{got} / {total}\n')
-	print(f'${value:.02f}\n\t(${good_value:.02f} for {good_got} cards > ${thresh:.0f})\n')
+	print(f'${value:.02f}\n\t(${good_value:.02f} for {good_got} cards > ${args.price_threshold:.0f})\n')
 	print(f'\t[grey70]([/grey70]{unknown_got}[grey70] cards w/ no mkt. data)[/grey70]\n')
 
 
