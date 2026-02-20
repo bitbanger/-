@@ -63,6 +63,7 @@ def download_sets(sport, sets, token):
 
 		set_name = x
 
+		# TODO: set code?
 		set_code = ''
 		for _ in range(15):
 			try:

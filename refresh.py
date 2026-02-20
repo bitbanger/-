@@ -1,7 +1,7 @@
 import ll
 
 ll.import_from(ll.here('dl_scp.py'), 'get_sets')
-ll.import_from(ll.here('dl_scp.py'), 'download_sets_interactive')
+ll.import_from(ll.here('dl_scp.py'), 'download_sets')
 ll.import_from(ll.here('dl_scp.py'), 'verify_sets')
 # ll.import_from(ll.here('dl_scp.py'), 'coordinate')
 
@@ -64,7 +64,7 @@ def main():
 		# if not verify_sets(sport, gss):
 			# os._exit(1)
 		outp_dir = 'new_scp_csvs'
-		download_sets_interactive(sport, gss, ll.env('SCP_API_TOKEN'), outp_dir)
+		download_sets(sport, gss, ll.env('SCP_API_TOKEN'), outp_dir)
 
 			# if set_code:
 				# csv_name = f'{set_code}_{csv_name}'
