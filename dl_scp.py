@@ -13,106 +13,76 @@ def dl_url(uid, token):
 
 
 def get_sets(sport, year, brand, set_words):
-	base_url = 'https://www.sportscardspro.com'
-	url = base_url + f'/brand/{sport}-cards/{brand}'
-
 	sets = []
-	while not sets:
-		sp = ll.soup(url)
-		sets.extend([x for x in sp.find_all('a', href=_re.compile(f'\/console\/{sport}-cards-{year}-{brand}')) if not x.text.startswith("'")])
+	for row in ll.csv('scp-sets.csv'):
+		label, cid = row['label'], row['value']
 
-	sets = sets[::-1]
-	sets = [x for x in sets if all(w.lower() in x.text.lower() for w in set_words)]
-	sets = sorted(sets, key=lambda x: len(x.text))
+		if ll.regf('(\d\d\d\d)')(label) != str(year):
+			continue
+		rest = label[label.index(str(year))+4:].strip()
+		if not rest.startswith(brand):
+			continue
+		rest = rest[rest.index(brand)+len(brand):].strip()
+		if not all(w.lower() in rest.lower() for w in set_words):
+			continue
+
+		sets.append((label, cid))
 
 	return sets
 
+def ready_set_downloads(sport, sets, token, sleep=3):
+	base_url = 'https://www.pricecharting.com'
 
-def download_sets(sport, sets, token):
-	base_url = 'https://www.sportscardspro.com'
+	for set_name, cid in sets:
+		url = dl_url(cid, token)
 
-	# for x in ll.track(ll.soup(url).find_all('a', href=_re.compile(f'\/console\/{sport}-cards-{year}-{brand}')), total=total):
-	for x in sets:
-		sub_url = base_url + x.attrs['href']
-
-		re = _re.compile('console_uid = "(.*)"')
-
-		set_name = x.text
-
-		set_code = ''
-		for _ in range(15):
-			try:
-				subsoup = ll.soup(sub_url)
-				uid = ll.regf('console_uid = "(.*)"')(subsoup(string=re)[0])
-
-				scs = subsoup(string=_re.compile('Set Code.*'))
-				try:
-					set_code = scs[0].split(': ')[-1]
-				except IndexError:
-					pass
-
-				break
-			except IndexError:
-				ll.sleep(3)
-				continue
-
-		while not uid:
-			ll.sleep(3)
-			subsoup = ll.soup(sub_url)
-			uid = ll.regf('console_uid = "(.*)"')(subsoup(string=re)[0])
-
-		csv_url = dl_url(uid, token)
+		# TODO: put set code back in?
 		csv_name = ll.alphanums(set_name, also=' ').replace(' ', '_').lower() + '.csv'
-		if set_code:
-			csv_name = f'{set_code}_{csv_name}'
 		csv_name = f'{sport}_{csv_name}'
 
-		yield csv_name, csv_url#, ll.http(csv_url)
-		# print(f'{csv_name}\n\t{csv_url}\n')
+		yield csv_name, url
+		if sleep is not None:
+			ll.sleep(sleep)
 
-		time.sleep(3)
+	return
 
-		# ll.write(ll.http(csv_url), '
 
 def verify_sets(sport, dl_sets):
 	print(f'{len(dl_sets)} sets to download ([bold yellow3]{sport}[/bold yellow3]):')
 	for x in dl_sets:
-		print(f'\t{x.text}')
+		print(f'\t{x[0]}')
 	print('')
 	return ll.yn(f'Download the above {len(dl_sets)} [bold yellow3]{sport}[/bold yellow3] sets?')
 
-def download_sets_interactive(sport, dl_sets, token, outp_dir):
+
+def download_sets(sport, dl_sets, token, outp_dir):
 	os.makedirs(outp_dir, exist_ok=True)
 
-	it = download_sets(sport, dl_sets, token)
+	it = ready_set_downloads(sport, dl_sets, token)
 	it = ll.track(it, total=len(dl_sets), title='Downloading:')
 	for csv_name, csv_url in it:
-		with open(os.path.join(outp_dir, csv_name), 'w+') as f:
-			csv = 'DOCTYPE'
-			while 'DOCTYPE' in csv:
-				# print('.', end='')
-				csv = ll.http(csv_url)
-			f.write(csv)
+		ll.sel_dl(csv_url, dst_dir=outp_dir, dst_name=csv_name, clobber=True)
+
 
 def coordinate(sport, year, brand, set_words, token, force, outp_dir):
 	# Get the set names to download
 	dl_sets = get_sets(sport, year, brand, set_words)
-	if not force and not verify_sets(sport, dl_sets):
+	if (not force) and (not verify_sets(sport, dl_sets)):
 		return
 
 	# Download them
-	download_sets_interactive(sport, dl_sets, token, outp_dir)
+	download_sets(sport, dl_sets, token, outp_dir)
 
 
 def main():
 	ap = ArgumentParser()
 
-	ap.add_argument('--sport')
-	ap.add_argument('--year')
-	ap.add_argument('--brand', default='panini')
-	ap.add_argument('--force', action='store_true')
+	ap.add_argument('-s', '--sport', type=str, required=True)
+	ap.add_argument('-y', '--year', type=int, required=True)
+	ap.add_argument('-b', '--brand', type=str, default='panini')
+	ap.add_argument('-f', '--force', action='store_true')
 
-	ap.add_argument('words', nargs='*')
+	ap.add_argument('words', type=str, nargs='*')
 
 	args = ap.parse_args()
 

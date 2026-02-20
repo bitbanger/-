@@ -16,7 +16,12 @@ def parse_set(s):
 	if '[' in s:
 		var = ll.regf('\[(.*)\]')(s)
 
-	fset = s.split('[')[0].strip().replace('&', '').replace(' ', '_').lower()
+	# fset = s.split('[')[0].strip().replace('&', '').replace(' ', '_').lower()
+	fset = s.split('[')[0].strip()
+	fset = fset.replace('&', '') # special case for rookies & stars
+	fset = ''.join([c for c in fset if c.lower() in 'abcdefghijklmnopqrstuvwxyz0123456789 '])
+	fset = fset.replace(' ', '_')
+	fset = fset.lower()
 	
 	return fset, var, grade
 
