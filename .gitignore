@@ -7,3 +7,10 @@ cache/
 scp_csvs/
 _junk/
 outp/
+scp-sets.csv
+scp-sets.json
+*.curl
+*.html
+backup*
+new_scp_csvs/
+.*.swp
