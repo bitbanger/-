@@ -11,10 +11,21 @@ from argparse import ArgumentParser
 def dl_url(uid, token):
 	return f'https://www.sportscardspro.com/price-guide/download-custom?t={token}&console-uids={uid}'
 
+def set_list(sport):
+	if ll.fexists(fn:=f'scp-sets-{sport}.csv'):
+		return ll.csv(fn)
+
+	json = ll.json(ll.soup(ll.sel(f'https://www.sportscardspro.com/consoles-autocomplete/{sport}-cards')).find_all('pre')[0].text)
+	with open(fn, 'w+') as f:
+		f.write(ll.csv(('label', 'value')) + '\n')
+		for row in json:
+			f.write(ll.csv((row['label'], row['value'])) + '\n')
+
+	return json # it's the same as the parsed CSV, so...
 
 def get_sets(sport, year, brand, set_words):
 	sets = []
-	for row in ll.csv('scp-sets.csv'):
+	for row in set_list(sport):
 		label, cid = row['label'], row['value']
 
 		if ll.regf('(\d\d\d\d)')(label) != str(year):

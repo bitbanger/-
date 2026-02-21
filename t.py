@@ -123,7 +123,7 @@ def agg_quants_by_num_by_set(fn):
 	return quants_by_num_by_set
 
 
-def process(fn, console=True, warn=True):
+def process(fn, console=True, warn=True, force_price_key=None):
 	fn_dir = ll.dn(fn)
 	fn = ll.bn(fn)
 	tfn = ll.ospj(fn_dir, fn)
@@ -156,16 +156,22 @@ def process(fn, console=True, warn=True):
 				card_rows = get_cards(sport, cur_fset, var, quants_by_num, warn=warn)
 
 				for card_row in card_rows:
-					match grade.strip().lower().replace(' ', '_'):
-						case 'psa_10':
-							price_key = 'manual-only-price'
-						case 'damaged':
-							price_key = "damaged (this key won't be in the dict)"
-						case _:
-							price_key = 'loose-price'
+					if force_price_key:
+						price_key = force_price_key
+					else:
+						match grade.strip().lower().replace(' ', '_'):
+							case 'psa_10':
+								price_key = 'manual-only-price'
+							case 'damaged':
+								price_key = "damaged (this key won't be in the dict)"
+							case _:
+								price_key = 'loose-price'
 
 					price = card_row.get(price_key)
 					price = float(price[1:]) if price else 0.0
+
+					if force_price_key == 'manual-only-price':
+						price = max(0, price-32)
 
 					# Console output
 					name = card_row['product-name'].split('#')[0].split(' [')[0].strip()
@@ -195,7 +201,7 @@ def process(fn, console=True, warn=True):
 					gotten += 1
 
 
-def print_card(sport, year, set, name, num, var, price, grade):
+def print_card(sport, year, set, name, num, var, price, grade, price_threshold):
 	if var:
 		card_str = f'{name} #{num} [{var}] {year} {set}'
 	else:
@@ -204,7 +210,7 @@ def print_card(sport, year, set, name, num, var, price, grade):
 	if grade:
 		card_str += f' ({grade})'
 
-	if price >= 4.00:
+	if price >= price_threshold:
 		print(f'[yellow3]{price:.02f}[/yellow3]\t{card_str}')
 	elif price >= 1:
 		print(f'[grey50]{price:.02f}[/grey50]\t{card_str}')
@@ -214,13 +220,44 @@ def print_card(sport, year, set, name, num, var, price, grade):
 		print(f'[grey30]{price:.02f}[/grey30]\t{card_str}')
 
 
+def card_row(sport, year, set, name, num, var, price, grade):
+	# TODO: better brand ID
+	if 'topps' in set.lower():
+		brand = 'Topps'
+	elif 'bowman chrome' in set.lower():
+		brand = 'Bowman Chrome'
+	elif 'panini' in set.lower():
+		brand = 'Panini'
+	elif 'leaf' in set.lower():
+		brand = 'Leaf'
+	else:
+		raise Exception(f"unknown brand for set {set}")
+
+	set = set[:set.lower().index(brand.lower())].strip() + set[set.lower().index(brand.lower())+len(brand)+len(' '):].strip()
+
+	return ll.csv((sport, year, brand, set, name, num, var, price, grade))
+
+
+def card_csv(cards):
+	yield ll.csv(('sport', 'year', 'brand', 'set', 'name', 'number', 'parallel', 'price', 'condition'))
+
+	for (sport, year, set, name, num, var, price, grade) in cards:
+
+		# set = set[:set.lower().index(brand.lower())].strip() + set[set.lower().index(brand.lower())+len(brand)+len(' '):].strip()
+
+		yield card_row(sport, year, set, name, num, var, price, grade)
+
+
 def main():
 
-	ap = ArgumentParser()
+	ap = ArgumentParser(add_help=False)
 	ap.add_argument('input', nargs='+')
 	ap.add_argument('-q', '--quiet-warnings', action='store_true')
-	ap.add_argument('-p', '--price-threshold', type=float, default=0.0)
+	ap.add_argument('-p', '--price-threshold', type=float, default=4.00)
+	ap.add_argument('-h', '--hide-cheap', action='store_true')
 	ap.add_argument('-s', '--sort-by-price', action='store_true')
+	ap.add_argument('-t', '--track-progress', action='store_true')
+	ap.add_argument('-g', '--grade-10', action='store_true')
 	args = ap.parse_args()
 
 	fns = ll.dedupe(args.input)
@@ -260,7 +297,7 @@ def main():
 
 	def _track_it():
 		for fn in fns:
-			for card in process(fn, warn=(not args.quiet_warnings)):
+			for card in process(fn, warn=(not args.quiet_warnings), force_price_key=('manual-only-price' if args.grade_10 else None)):
 				yield card
 	
 	got = 0
@@ -269,16 +306,23 @@ def main():
 	good_value = 0
 	unknown_got = 0
 	cards = []
-	for card in ll.track(_track_it(), total=total):
+
+	_it = _track_it()
+	if args.track_progress:
+		_it = ll.track(_it, total=total)
+	
+	print(ll.csv(('sport', 'year', 'brand', 'set', 'name', 'number', 'parallel', 'price', 'condition')))
+	for card in _it:
 		sport, year, set, name, num, var, price, grade = card
+		# print(card_row(*card))
 		cards.append(card)
-		if price >= args.price_threshold:
+		if (not args.hide_cheap) or (price >= args.price_threshold):
 			if not args.sort_by_price:
-				print_card(*cards[-1])
+				print_card(*cards[-1], price_threshold=args.price_threshold)
 
 		got += 1
 		value += price
-		if price >= 4:
+		if price >= args.price_threshold:
 			good_got += 1
 			good_value += price
 		elif price == 0:
@@ -287,7 +331,14 @@ def main():
 	if args.sort_by_price:
 		cards = sorted(cards, key=ll.nth(6))
 		for card in cards:
-			print_card(*card)
+			_,_,_,_,_,_,price,_ = card
+			if (not args.hide_cheap) or (price >= args.price_threshold):
+				print_card(*card, price_threshold=args.price_threshold if args.hide_cheap else 0.00)
+
+	with open('col.csv', 'w+') as f:
+		for crow in card_csv(cards):
+			f.write(crow + '\n')
+
 
 	print(f'\n{got} / {total}\n')
 	print(f'${value:.02f}\n\t(${good_value:.02f} for {good_got} cards > ${args.price_threshold:.0f})\n')
