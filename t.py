@@ -46,7 +46,12 @@ def get_cards(sport, set, var, quants_by_num, whole=True, warn=True):
 
 	for row in ll.csv('scp_csvs/' + fn):
 
-		num = (rpn:=row['product-name']).split('#')[-1].strip()
+		try:
+			num = (rpn:=row['product-name']).split('#')[-1].strip()
+		except:
+			print(fn)
+			print(row)
+			quit()
 
 		if num in quants_by_num:
 			# Check the variant
@@ -63,7 +68,7 @@ def get_cards(sport, set, var, quants_by_num, whole=True, warn=True):
 			if num in num2player and num2player[num] != pname and var == row_var:
 				if warn and not warned[num]:
 					print(f"\n\n\t[bold orange3]warning:[/bold orange3] number [grey70]{num}[/grey70] was already used for [grey70]{num2player[num]}[/grey70], so can't use it for [grey70]{pname}[/grey70]\n\n")
-				warned[num] = True
+					warned[num] = True
 				continue
 
 			# Add the quantity
