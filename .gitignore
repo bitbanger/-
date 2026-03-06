@@ -14,3 +14,4 @@ scp-sets.json
 backup*
 new_scp_csvs/
 .*.swp
+*/.lls

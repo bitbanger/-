@@ -3,7 +3,7 @@ import ll
 
 def main():
 	counts = ll.dd(int)
-	for row in ll.csv('collection.csv'):
+	for row in ll.csv('col.csv'):
 		card = ll.render_csv(row, no_headers=True).strip()
 		counts[card] += 1
 

@@ -316,7 +316,7 @@ def main():
 	if args.track_progress:
 		_it = ll.track(_it, total=total)
 	
-	print(ll.csv(('sport', 'year', 'brand', 'set', 'name', 'number', 'parallel', 'price', 'condition')))
+	# print(ll.csv(('sport', 'year', 'brand', 'set', 'name', 'number', 'parallel', 'price', 'condition')))
 	for card in _it:
 		sport, year, set, name, num, var, price, grade = card
 		# print(card_row(*card))
@@ -339,6 +339,13 @@ def main():
 			_,_,_,_,_,_,price,_ = card
 			if (not args.hide_cheap) or (price >= args.price_threshold):
 				print_card(*card, price_threshold=args.price_threshold if args.hide_cheap else 0.00)
+
+
+	# ll.rule()
+	# sc = sorted(cards, key=lambda c: (c[2], c[5], c[4]))
+	# for c in sc:
+		# print_card(*c, price_threshold=args.price_threshold if args.hide_cheap else 0.00)
+
 
 	with open('col.csv', 'w+') as f:
 		for crow in card_csv(cards):
