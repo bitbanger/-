@@ -4,6 +4,10 @@ from quick.colors import colors
 from quick.txt import rgb
 
 
+def last_word(s):
+	return s.strip().split()[-1]
+
+
 def main():
 	# checklist_csv = 'donruss_checklist.csv'
 	checklist_csv = 'score_checklist.csv'
@@ -27,8 +31,10 @@ def main():
 
 	by_team = ll.dd(set)
 	for row in ll.csv(checklist_csv):
+		if row['ATHLETE'] == 'Marcus Allen':
+			print(row)
 		checklist_set = str(row['YEAR']) + ' Panini ' + str(row['PROGRAM'])
-		by_team[row['TEAM']].add(row['CARD NUMBER'])
+		by_team[last_word(row['TEAM'])].add(row['CARD NUMBER'])
 
 	num2team = {}
 	for team, nums in by_team.items():

@@ -45,7 +45,6 @@ def get_cards(sport, set, var, quants_by_num, whole=True, warn=True):
 	warned = ll.dd(lambda: bool)
 
 	for row in ll.csv('scp_csvs/' + fn):
-
 		try:
 			num = (rpn:=row['product-name']).split('#')[-1].strip()
 		except:

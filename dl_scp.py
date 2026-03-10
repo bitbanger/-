@@ -72,7 +72,14 @@ def download_sets(sport, dl_sets, token, outp_dir):
 	it = ready_set_downloads(sport, dl_sets, token)
 	it = ll.track(it, total=len(dl_sets), title='Downloading:')
 	for csv_name, csv_url in it:
-		ll.sel_dl(csv_url, dst_dir=outp_dir, dst_name=csv_name, clobber=True)
+		ll.sel_dl(
+			csv_url,
+			dst_dir=outp_dir,
+			dst_name=csv_name,
+			clobber=True,
+			headless=True,
+			cookies='.COOKIE',
+		)
 
 
 def coordinate(sport, year, brand, set_words, token, force, outp_dir):
