@@ -19,6 +19,8 @@ def main():
 
 	checklist_csv = 'rookies_stars_checklist.csv'
 	def too_valuable(var):
+		if var:
+			return True
 		if var == 'Purple':
 			return True
 		if 'Signature' in var:

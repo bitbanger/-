@@ -1,5 +1,6 @@
 import ll
 import os
+import re
 import sys
 
 from argparse import ArgumentParser
@@ -116,6 +117,10 @@ def agg_quants_by_num_by_set(fn):
 
 		if is_set_name(line):
 			# It's a set
+			# if (ms:=re.findall('(.*) ([0-9][0-9][0-9][0-9]) Topps (.*)', line)):
+				# line = (m:=ms[0])[
+				# print(ms)
+				# quit()
 			cur_set = line
 		else:
 			# It's a card
@@ -148,16 +153,29 @@ def process(fn, console=True, warn=True, force_price_key=None):
 			gotten = 0
 
 			for set, quants_by_num in quants_by_num_by_set.items():
-				grade = ''
-				if len(graspl:=set.split('#')) == 2:
-					set, grade = set.split('#')
-					set = set.strip()
-					grade = grade.strip()
+				orig_set = set[::]
 
-				# Get card info
-				cur_fset, var, _ = parse_set(set)
+				def _procset(set):
+					grade = ''
+					if len(graspl:=set.split('#')) == 2:
+						set, grade = set.split('#')
+						set = set.strip()
+						grade = grade.strip()
+
+					# Get card info
+					cur_fset, var, _ = parse_set(set)
+					
+					return set, grade, cur_fset, var
+
+				set, grade, cur_fset, var = _procset(set)
 				# card_row = get_card(sport, cur_fset, var, num)
 				card_rows = get_cards(sport, cur_fset, var, quants_by_num, warn=warn)
+
+				# Correct weird Topps formatting before rendering output, but
+				# after looking up the set file
+				if (ms:=re.findall('(.*) ([0-9][0-9][0-9][0-9]) Topps (.*)', orig_set)):
+					_, year, stn = ms[0]
+					set, grade, cur_fset, var = _procset(f'{year} Topps {stn}')
 
 				for card_row in card_rows:
 					if force_price_key:
@@ -176,6 +194,7 @@ def process(fn, console=True, warn=True, force_price_key=None):
 
 					if force_price_key == 'manual-only-price':
 						price = max(0, price-32)
+
 
 					# Console output
 					name = card_row['product-name'].split('#')[0].split(' [')[0].strip()
@@ -260,7 +279,7 @@ def main():
 	ap.add_argument('-p', '--price-threshold', type=float, default=4.00)
 	ap.add_argument('-h', '--hide-cheap', action='store_true')
 	ap.add_argument('-s', '--sort-by-price', action='store_true')
-	ap.add_argument('-t', '--track-progress', action='store_true')
+	ap.add_argument('-n', '--no-progress', action='store_true')
 	ap.add_argument('-g', '--grade-10', action='store_true')
 	args = ap.parse_args()
 
@@ -312,7 +331,7 @@ def main():
 	cards = []
 
 	_it = _track_it()
-	if args.track_progress:
+	if not args.no_progress:
 		_it = ll.track(_it, total=total)
 	
 	# print(ll.csv(('sport', 'year', 'brand', 'set', 'name', 'number', 'parallel', 'price', 'condition')))
