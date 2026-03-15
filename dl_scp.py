@@ -92,14 +92,17 @@ def download_sets(sport, dl_sets, token, outp_dir):
 		_dl(csv_url, outp_dir, csv_name)
 
 
-def coordinate(sport, year, brand, set_words, token, force, outp_dir):
+def coordinate(sport, year, brand, set_words, token, force, args):
 	# Get the set names to download
 	dl_sets = get_sets(sport, year, brand, set_words)
+	if args.minimal:
+		dl_sets = [min(dl_sets, key=lambda t: len(t[0]))]
+
 	if (not force) and (not verify_sets(sport, dl_sets)):
 		return
 
 	# Download them
-	download_sets(sport, dl_sets, token, outp_dir)
+	download_sets(sport, dl_sets, token, args.output_dir)
 
 
 def main():
@@ -109,7 +112,8 @@ def main():
 	ap.add_argument('-y', '--year', type=int, required=True)
 	ap.add_argument('-b', '--brand', type=str, default='panini')
 	ap.add_argument('-f', '--force', action='store_true')
-	ap.add_argument('-o', '--output-dir', default='scp_csvs')
+	ap.add_argument('-o', '--output-dir', default='new_scp_csvs')
+	ap.add_argument('-m', '--minimal', action='store_true')
 
 	ap.add_argument('words', type=str, nargs='*')
 
@@ -125,7 +129,7 @@ def main():
 
 	# Do it!
 	# def coordinate(sport, year, brand, set_words, token, force, outp_dir):
-	coordinate(sport, year, brand, set_words, token, force, args.output_dir)
+	coordinate(sport, year, brand, set_words, token, force, args)
 
 
 if __name__ == '__main__':
