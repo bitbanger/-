@@ -8,12 +8,17 @@ from rich import print
 from argparse import ArgumentParser
 
 
+STALE = ll.days(7)
+
+
 def dl_url(uid, token):
 	return f'https://www.sportscardspro.com/price-guide/download-custom?t={token}&console-uids={uid}'
 
+@ll.cache(stale=STALE)
 def set_list(sport):
-	if ll.fexists(fn:=f'scp-sets-{sport}.csv'):
-		return ll.csv(fn)
+	# if ll.fexists(fn:=f'sets/scp-sets-{sport}.csv'):
+		# return ll.csv(fn)
+	fn = f'sets/scp-sets-{sport}.csv'
 
 	json = ll.json(ll.soup(ll.sel(f'https://www.sportscardspro.com/consoles-autocomplete/{sport}-cards')).find_all('pre')[0].text)
 	with open(fn, 'w+') as f:
@@ -23,6 +28,7 @@ def set_list(sport):
 
 	return json # it's the same as the parsed CSV, so...
 
+@ll.cache(stale=STALE)
 def get_sets(sport, year, brand, set_words):
 	sets = []
 	for row in set_list(sport):
@@ -41,7 +47,7 @@ def get_sets(sport, year, brand, set_words):
 
 	return sets
 
-def ready_set_downloads(sport, sets, token, sleep=3):
+def ready_set_downloads(sport, sets, token):
 	base_url = 'https://www.pricecharting.com'
 
 	for set_name, cid in sets:
@@ -52,8 +58,6 @@ def ready_set_downloads(sport, sets, token, sleep=3):
 		csv_name = f'{sport}_{csv_name}'
 
 		yield csv_name, url
-		if sleep is not None:
-			ll.sleep(sleep)
 
 	return
 
@@ -70,16 +74,22 @@ def download_sets(sport, dl_sets, token, outp_dir):
 	os.makedirs(outp_dir, exist_ok=True)
 
 	it = ready_set_downloads(sport, dl_sets, token)
-	it = ll.track(it, total=len(dl_sets), title='Downloading:')
+
+	it = ll.track(it, total=len(dl_sets), title=f'Downloading [blue]{sport}[/blue]:')
 	for csv_name, csv_url in it:
-		ll.sel_dl(
-			csv_url,
-			dst_dir=outp_dir,
-			dst_name=csv_name,
-			clobber=True,
-			headless=True,
-			cookies='.COOKIE',
-		)
+		@ll.cache(stale=STALE)
+		def _dl(url, odir, cname):
+			ll.sleep(3)
+			ll.sel_dl(
+				csv_url,
+				dst_dir=outp_dir,
+				dst_name=csv_name,
+				clobber=True,
+				headless=True,
+				cookies='.COOKIE',
+			)
+
+		_dl(csv_url, outp_dir, csv_name)
 
 
 def coordinate(sport, year, brand, set_words, token, force, outp_dir):
@@ -99,6 +109,7 @@ def main():
 	ap.add_argument('-y', '--year', type=int, required=True)
 	ap.add_argument('-b', '--brand', type=str, default='panini')
 	ap.add_argument('-f', '--force', action='store_true')
+	ap.add_argument('-o', '--output-dir', default='scp_csvs')
 
 	ap.add_argument('words', type=str, nargs='*')
 
@@ -110,13 +121,11 @@ def main():
 	set_words = [x.strip().lower() for x in args.words]
 	force = args.force
 
-	outp_dir = 'scp_csvs'
-
 	token = ll.env('SCP_API_TOKEN')
 
 	# Do it!
 	# def coordinate(sport, year, brand, set_words, token, force, outp_dir):
-	coordinate(sport, year, brand, set_words, token, force, outp_dir)
+	coordinate(sport, year, brand, set_words, token, force, args.output_dir)
 
 
 if __name__ == '__main__':

@@ -1,4 +1,5 @@
 import ll
+import os
 
 ll.import_from(ll.here('dl_scp.py'), 'get_sets')
 ll.import_from(ll.here('dl_scp.py'), 'download_sets')
@@ -7,8 +8,21 @@ ll.import_from(ll.here('dl_scp.py'), 'verify_sets')
 
 
 def main():
-	set_names = []
+	set_names = set()
+	for fn in ll.ls('remake', abs=True):
+		sport = fn.split('.')[-1]
+		for line in ll.lines(fn):
+			if ' ' in line:
+				line = sport + ' ' + line.split('#')[0].split('[')[0].strip()
+				line = line.lower()
+				line = line.replace('& ', '')
+				line = line.replace('!', '')
+				if line not in set_names:
+					set_names.add(line)
+	set_names = sorted(list(set_names))
 
+	'''
+	set_names = []
 	for fn in ll.ls('scp_csvs', abs=True):
 		if not fn.endswith('.csv'):
 			continue
@@ -18,7 +32,9 @@ def main():
 
 		set_name = bn[:-len('.csv')].replace('__', '_').replace('_', ' ')
 		set_names.append(set_name)
+	'''
 
+	'''
 	prefixes = set()
 	longers = set()
 	for i, sn1 in enumerate(set_names):
@@ -31,9 +47,15 @@ def main():
 
 	prefixes = prefixes-longers
 
+	files_to_get = prefixes#+longers
+	files_to_get = prefixes.union(longers)
+	'''
+	files_to_get = set_names
+
 	# sets_to_dl = []
 	sets_to_dl = ll.dd(list)
-	for p in ll.track(prefixes, title='Getting set names: '):
+	missed = []
+	for p in ll.track(files_to_get, title='Getting set names: '):
 		sport = p.strip().split(' ')[0]
 		p = ' '.join(p.strip().split(' ')[1:])
 
@@ -42,14 +64,27 @@ def main():
 		brand = spl[0]
 		words = spl[1:]
 
-		sets_to_dl[sport].extend(get_sets(sport, year, brand, words))
+		_sets = get_sets(sport, year, brand, words)
+		# sets_to_dl[sport].extend()
+		if len(_sets) > 0:
+			sets_to_dl[sport].append(min(_sets, key=lambda t: len(t[0])))
+		else:
+			missed.append(p)
+	'''
+	for sport, sets in sorted(sets_to_dl.items(), key=ll.nth(0)):
+		print(sport)
+		for _set in sorted(sets, key=ll.nth(0)):
+			print(f'\t{_set[0]}')
+	'''
+
 
 	# Check which sets we couldn't find, so can't update
+	'''
 	total = set()
 	fns = set([('_'.join([x for x in fn.split('_') if x==x.lower()])) for fn in ll.ls('scp_csvs')])
 	for sport, gss in sets_to_dl.items():
 		for gs in gss:
-			set_name = gs.text
+			set_name = gs[0]
 			csv_name = ll.alphanums(set_name, also=' ').replace(' ', '_').lower() + '.csv'
 			csv_name = f'{sport}_{csv_name}'
 			total.add(csv_name)
@@ -58,12 +93,25 @@ def main():
 		for missing in (fns-total):
 			print(f'\t{missing}')
 	print('')
+	'''
+	if len(missed) > 0:
+		print(f"\n[bold orange3]warning:[/bold orange3] couldn't find {len(missed)} / {len(set_names)} sets:")
+		for m in sorted(missed):
+			print(f'\t{m}')
+	print('')
+
+	stdl_ct = sum(len(v) for v in sets_to_dl.values())
+	if not ll.yn(f"Download {stdl_ct} sets?"):
+		quit()
+
+	# def download_sets(sport, dl_sets, token, outp_dir):
 
 	# Download the updates!
 	for sport, gss in sets_to_dl.items():
 		# if not verify_sets(sport, gss):
 			# os._exit(1)
 		outp_dir = 'new_scp_csvs'
+		os.makedirs(outp_dir, exist_ok=True)
 		download_sets(sport, gss, ll.env('SCP_API_TOKEN'), outp_dir)
 
 			# if set_code:

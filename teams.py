@@ -9,15 +9,15 @@ def last_word(s):
 
 
 def main():
-	# checklist_csv = 'donruss_checklist.csv'
-	checklist_csv = 'score_checklist.csv'
+	# checklist_csv = 'checklists/donruss_checklist.csv'
+	checklist_csv = 'checklists/score_checklist.csv'
 	def too_valuable(var):
 		if 'Signature' in var:
 			return True
 		return False
-	# checklist_csv = 'donruss_wnba_checklist.csv'
+	# checklist_csv = 'checklists/donruss_wnba_checklist.csv'
 
-	checklist_csv = 'rookies_stars_checklist.csv'
+	checklist_csv = 'checklists/rookies_stars_checklist.csv'
 	def too_valuable(var):
 		if var:
 			return True

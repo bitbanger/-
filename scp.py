@@ -8,9 +8,11 @@ def price(id, graded=False, tries=5):
 	resp = None
 	for _ in range(tries):
 		try:
-			resp = ll.json(ll.url(url))
+			resp = ll.json((raw_resp:=ll.url(url)))
 			break
 		except TypeError:
+			print(raw_resp)
+			print(resp)
 			time.sleep(5)
 
 	if resp is None:
