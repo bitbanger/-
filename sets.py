@@ -1,3 +1,4 @@
+import json
 import ll
 import os
 import sys
@@ -6,7 +7,7 @@ import time
 from ll import print
 
 def main():
-	scp_csv_dir = 'scp_csvs'
+	scp_csv_dir = 'new_scp_csvs'
 	words = [x.strip().lower() for x in sys.argv[1:]]
 
 	seen = set()
@@ -25,6 +26,7 @@ def main():
 		'Prizm WNBA',
 		'Donruss WNBA',
 		'Prizm Draft Picks',
+		'Donruss Optic',
 	]
 	force_repls = {
 		' and ': ' & ',
@@ -99,7 +101,46 @@ def main():
 			if isinstance(v, dict):
 				_s(v, lvl=lvl+1)
 
-	_s(trie.dict())
+	# _s(trie.dict())
+
+	def copy(d, last=''):
+		_um = lambda _k: ll.replaces(_k, {fm.replace(' ', ''): fm for fm in force_merges}).replace('&', 'and')
+		_rc = lambda _k: _um(_k).replace(' Cards', '').replace('&', 'and')
+		_rp = lambda _k: ll.rempre(_rc(_k), last).strip().replace('&', 'and')
+		# TODO: this can't differentiate between true subsets of Topps
+		# (e.g. 2014 Topps 1,000 Yard Club) and other Topps sets (e.g.
+		# 2025 Topps Galaxy Chrome). scp has insert info; use that somehow?
+		if isinstance(d, dict):
+			if any(k.endswith(' Topps') for k in d):
+				# Gotta merge Topps into the subsets and flatten them out
+				# to the parent level
+				nd = {}
+				for k, v in d.items():
+					if not k.endswith(' Topps'):
+						# Normal
+						if (rpk:=_rp(k)):
+							nd[rpk] = copy(v, last=_rc(k))
+					else:
+						# Pull children out & flatten
+						nd[(rpk:=_rp(k))] = []
+						if isinstance(v, dict):
+							for sk, sv in v.items():
+								sk = rpk + ' ' + ll.rempre(_rp(sk), rpk).strip()
+								nd[sk] = copy(sv, last=sk)
+				return nd
+			else:
+				# Don't gotta deal with Topps
+				return {_rp(k): copy(v, last=_rc(k)) for k, v in d.items() if _rp(k)}
+		else:
+			return d
+
+	d = copy(trie.dict())
+	_s(d)
+
+	ll.write('hierarchy_of_sports_sets.json', json.dumps(d, indent=2))
+
+	quit()
+
 
 '''
 	for cn in cns:
