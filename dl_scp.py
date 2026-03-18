@@ -8,7 +8,7 @@ from rich import print
 from argparse import ArgumentParser
 
 
-STALE = ll.days(7)
+STALE = ll.days(1)
 
 
 def dl_url(uid, token):
@@ -69,24 +69,47 @@ def verify_sets(sport, dl_sets):
 	print('')
 	return ll.yn(f'Download the above {len(dl_sets)} [bold yellow3]{sport}[/bold yellow3] sets?')
 
+last_dl = None
+def download_sets(sport, dl_sets, token, outp_dir, courtesy_wait=1):
+	global last_dl
 
-def download_sets(sport, dl_sets, token, outp_dir):
 	os.makedirs(outp_dir, exist_ok=True)
 
 	it = ready_set_downloads(sport, dl_sets, token)
 
-	it = ll.track(it, total=len(dl_sets), title=f'Downloading [blue]{sport}[/blue]:')
+	emojis = {
+		'baseball': '⚾️',
+		'basketball': '🏀',
+		'football': '🏈',
+		'star-wars': '🚀',
+	}
+	if sport in emojis:
+		it = ll.track(it, total=len(dl_sets), title=f'{emojis[sport]}:')
+	else:
+		it = ll.track(it, total=len(dl_sets), title=f'[blue]{sport}[/blue]:')
 	for csv_name, csv_url in it:
 		@ll.cache(stale=STALE)
 		def _dl(url, odir, cname):
-			ll.sleep(3)
+			global last_dl
+
+			if last_dl is None:
+				last_dl = time.time()
+			elif (gap:=((now:=time.time())-last_dl)) <= courtesy_wait:
+				time.sleep(courtesy_wait-gap)
+
+			# ll.sleep(1)
 			ll.sel_dl(
 				csv_url,
+				cookies='.COOKIE',
+
 				dst_dir=outp_dir,
 				dst_name=csv_name,
 				clobber=True,
 				headless=True,
-				cookies='.COOKIE',
+
+				backoff_after=2,
+				wait=3,
+				max_wait=30,
 			)
 
 		_dl(csv_url, outp_dir, csv_name)

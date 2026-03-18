@@ -31,7 +31,7 @@ def parse_set(s):
 
 
 def get_cards(sport, set, var, quants_by_num, whole=True, warn=True):
-	fns = [fn for fn in ll.ls(CSV_DIR) if fn.endswith(f'{set.split("#")[0]}.csv') and ll.bn(fn).startswith(f'{sport}_')]
+	fns = [fn for fn in ll.ls(CSV_DIR, rel=False) if fn.endswith(f'{set.split("#")[0]}.csv') and ll.bn(fn).startswith(f'{sport}_')]
 	if len(fns) == 0:
 		ll.err(f"no csv file found for [grey70]{sport}[/grey70] set [grey70]{set}[/grey70]")
 	if len(fns) > 1:
@@ -211,6 +211,9 @@ def process(fn, console=True, warn=True, force_price_key=None):
 					unyear_set = ' '.join(unvar_set.split(' ')[1:]).strip()
 
 					# File output
+					cid = card_row['id']
+					if cid == 'fake_id':
+						cid = 'fake_id_' + ll.md5(f'{sport} {year} {unyear_set} {name} {num} {var}')
 					card_tup = (card_row['id'], sport, year, unyear_set, name, num, var, price, grade)
 					yield card_tup
 
@@ -286,11 +289,17 @@ def main():
 	ap.add_argument('-g', '--grade-10', action='store_true')
 	args = ap.parse_args()
 
-	fns = ll.dedupe(args.input)
-
-	if (fakes:=[fn for fn in fns if not ll.fexists(fn)]):
+	pre_fns = ll.dedupe(args.input)
+	if (fakes:=[fn for fn in pre_fns if not ll.fexists(fn)]):
 		lump = '\n\t' + '\n\t'.join(fakes)
 		ll.err(f"the following file(s) were not found:[grey70]{lump}[/grey70]")
+
+	fns = []
+	for fn in pre_fns:
+		if ll.isdir(fn):
+			fns.extend(ll.ls(fn, rel=True))
+		else:
+			fns.append(fn)
 
 	bn2dupes = ll.dd()
 	for i, fn1 in enumerate(fns):
