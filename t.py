@@ -48,7 +48,7 @@ def get_cards(sport, set, var, quants_by_num, whole=True, warn=True):
 	num2player = {}
 	warned = ll.dd(lambda: bool)
 
-	for row in ll.csv(CSV_DIR + fn):
+	for row in cached_csv(CSV_DIR + fn):
 		try:
 			num = (rpn:=row['product-name']).split('#')[-1].strip()
 		except:
@@ -135,6 +135,22 @@ def agg_quants_by_num_by_set(fn):
 	return quants_by_num_by_set
 
 
+csv_cache = {}
+def cached_csv(*a, stream=False, **kw):
+	if 'stream' in kw:
+		stream = kw['stream']
+	if stream:
+		kw['stream'] = True
+		return ll.csv(*a, **kw)
+
+	key = ll.md5(' '.join([str(x) for x in a] + [f'({k}: {v})' for k, v in kw.items()]))
+	global csv_cache
+	if key not in csv_cache:
+		csv_cache[key] = ll.csv(*a, **kw)
+
+	return csv_cache[key]
+
+
 def process(fn, console=True, warn=True, force_price_key=None):
 	fn_dir = ll.dn(fn)
 	fn = ll.bn(fn)
@@ -195,6 +211,11 @@ def process(fn, console=True, warn=True, force_price_key=None):
 					price = card_row.get(price_key)
 					price = float(price[1:]) if price else 0.0
 
+					_pr = lambda p: float(p[1:]) if p else 0
+					psa_10 = _pr(card_row.get('manual-only-price'))
+					cgc_10 = _pr(card_row.get('condition-17-price'))
+					psa_9 = _pr(card_row.get('graded-price'))
+
 					if force_price_key == 'manual-only-price':
 						price = max(0, price-32)
 
@@ -214,7 +235,7 @@ def process(fn, console=True, warn=True, force_price_key=None):
 					cid = card_row['id']
 					if cid == 'fake_id':
 						cid = 'fake_id_' + ll.md5(f'{sport} {year} {unyear_set} {name} {num} {var}')
-					card_tup = (card_row['id'], sport, year, unyear_set, name, num, var, price, grade)
+					card_tup = (card_row['id'], sport, year, unyear_set, name, num, var, price, grade, psa_10, cgc_10, psa_9)
 					yield card_tup
 
 					if var:
@@ -230,7 +251,7 @@ def process(fn, console=True, warn=True, force_price_key=None):
 					gotten += 1
 
 
-def print_card(id, sport, year, set, name, num, var, price, grade, price_threshold):
+def print_card(id, sport, year, set, name, num, var, price, grade, psa_10, cgc_10, psa_9, price_threshold):
 	if var:
 		card_str = f'{name} #{num} [{var}] {year} {set}'
 	else:
@@ -249,7 +270,7 @@ def print_card(id, sport, year, set, name, num, var, price, grade, price_thresho
 		print(f'[grey30]{price:.02f}[/grey30]\t{card_str}')
 
 
-def card_row(id, sport, year, set, name, num, var, price, grade):
+def card_row(id, sport, year, set, name, num, var, price, grade, psa10, cgc10, psa9):
 	# TODO: better brand ID
 	if 'topps' in set.lower():
 		brand = 'Topps'
@@ -264,17 +285,17 @@ def card_row(id, sport, year, set, name, num, var, price, grade):
 
 	set = set[:set.lower().index(brand.lower())].strip() + set[set.lower().index(brand.lower())+len(brand)+len(' '):].strip()
 
-	return ll.csv((id, sport, year, brand, set, name, num, var, price, grade))
+	return cached_csv((id, sport, year, brand, set, name, num, var, price, grade, psa10, cgc10, psa9))
 
 
 def card_csv(cards):
-	yield ll.csv(('scp_id', 'sport', 'year', 'brand', 'set', 'name', 'number', 'parallel', 'price', 'condition'))
+	yield cached_csv(('scp_id', 'sport', 'year', 'brand', 'set', 'name', 'number', 'parallel', 'price', 'condition', 'psa_10', 'cgc_10', 'psa_9'))
 
-	for (id, sport, year, set, name, num, var, price, grade) in cards:
+	for (id, sport, year, set, name, num, var, price, grade, psa10, cgc10, psa9) in cards:
 
 		# set = set[:set.lower().index(brand.lower())].strip() + set[set.lower().index(brand.lower())+len(brand)+len(' '):].strip()
 
-		yield card_row(id, sport, year, set, name, num, var, price, grade)
+		yield card_row(id, sport, year, set, name, num, var, price, grade, psa10, cgc10, psa9)
 
 
 def main():
@@ -346,9 +367,9 @@ def main():
 	if not args.no_progress:
 		_it = ll.track(_it, total=total)
 	
-	# print(ll.csv(('sport', 'year', 'brand', 'set', 'name', 'number', 'parallel', 'price', 'condition')))
+	# print(cached_csv(('sport', 'year', 'brand', 'set', 'name', 'number', 'parallel', 'price', 'condition')))
 	for card in _it:
-		id, sport, year, set, name, num, var, price, grade = card
+		id, sport, year, set, name, num, var, price, grade, psa_10, cgc_10, psa_9 = card
 		# print(card_row(*card))
 		cards.append(card)
 		if (not args.hide_cheap) or (price >= args.price_threshold):
@@ -366,7 +387,7 @@ def main():
 	if args.sort_by_price:
 		cards = sorted(cards, key=ll.nth(6))
 		for card in cards:
-			_,_,_,_,_,_,_,price,_ = card
+			_,_,_,_,_,_,_,price,_,_,_,_ = card
 			if (not args.hide_cheap) or (price >= args.price_threshold):
 				print_card(*card, price_threshold=args.price_threshold if args.hide_cheap else 0.00)
 
