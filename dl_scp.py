@@ -145,7 +145,7 @@ def main():
 	sport = args.sport
 	year = args.year
 	brand = args.brand
-	set_words = [x.strip().lower() for x in args.words]
+	set_words = ' '.join([x.strip().lower().replace('-', ' ') for x in args.words]).split()
 	force = args.force
 
 	token = ll.env('SCP_API_TOKEN')

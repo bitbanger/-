@@ -90,16 +90,17 @@ def get_sets(sports=None, years=None, brands=None, programs=None):
 						# yield set_name, set_id
 						# for card in req(activity=activity_id, year=str(year), brand=brand, program=str(program_id), card_set=str(set_id), save=True):
 						sn = f"{activity} {year} {brand} {program} {set_name}"
-						sn = sn.replace('Donruss Donruss', 'Panini Donruss')
-						if 'Donruss' in sn and 'Panini' not in sn:
-							sn = sn.replace('Donruss', 'Panini Donruss')
-						yield (sn, set_id, {
-							'sports': [activity_id],
-							'years': [str(year)],
-							'brands': [brand],
-							'programs': [str(program_id)],
-							'sets': [str(set_id)],
-						})
+						for bn in ('Donruss', 'Score', 'Playoff'):
+							sn = sn.replace(f'{bn} {bn}', f'Panini {bn}')
+							if f'{bn}' in sn and f'Panini' not in sn:
+								sn = sn.replace(f'{bn}', f'Panini {bn}')
+							yield (sn, set_id, {
+								'sports': [activity_id],
+								'years': [str(year)],
+								'brands': [brand],
+								'programs': [str(program_id)],
+								'sets': [str(set_id)],
+							})
 
 def get_cards(set_results):
 	# for set_name, set_id in req(activity=activity_id, year=str(year), brand=brand, program=str(program_id)):
@@ -134,25 +135,63 @@ for fn in ll.ls('new_scp_csvs', rel=True):
 	set = set.replace('Cards ', '')
 	set = set.replace('&', 'and')
 	year = ll.regf('[0-9]'*4)(set)
+	if 'Topps' in set:
+		continue
+	if 'Leaf' in set:
+		continue
 
 	brand = 'Panini'
-	if 'Contenders ' in set:
-		brand = 'Playoff'
-		rest = 'Contenders ' + set.split('Contenders')[-1].strip()
-	else:
-		for br in ('Donruss ', 'Playoff ', 'Score '):
-			if br in set:
-				brand = br.strip()
+	for br in ('Donruss ', 'Playoff ', 'Score '):
+		if br in set:
+			brand = br.strip()
 		rest = set.split(brand)[-1].strip()
 
+	if rest.startswith('Contenders '):
+		rest = 'Playoff ' + rest
+
 	haves.append((year, brand, rest))
-		# print(list(get_sets(sports='Football', years=[2025])))
 
-print(haves)
-quit()
 
-for set_result in get_sets(sports='Football', years=[2025], brands=['Panini'], programs=['Donruss Optic']):
-	print(set_result[0])
+have_programs = []
+have_alls = []
+sethier = ll.json('hierarchy_of_sports_sets.json')
+for sport, l1 in sethier.items():
+	q = [l1]
+	pref = ''
+	while len(q) > 0:
+		if not isinstance(q[0], dict):
+			q = q[1:]
+			continue
+		for x, v in q[0].items():
+			print(x)
+			q.append(v)
+		q = q[1:]
+	for e in l1:
+		if 'Panini' in e:
+			brand = 'Panini'
+			set = e.split('Panini ')[-1]
+			year = e.split(' ')[0]
+			have_programs.append(set)
+			# have_alls.append((year, brand, set))
+
+for set_result in get_sets(sports='Football', years=[2025]):
+	sn = set_result[0]
+	year = sn.split(' ')[1]
+	brand = sn.split(' ')[2]
+	rest = ' '.join(sn.split(' ')[3:])
+
+	pf = max(['']+[pf for pf in have_programs if rest.startswith(pf)], key=len)
+	if not pf:
+		continue
+	program = pf
+	rest = rest.replace(f'{program} ', '')
+	print((year, brand, program, rest))
+	print('\t', end='')
+	print(have_alls[0])
+
+	if (year, brand, rest) in have_programs:
+		print((year, brand, rest))
+	# print(type(set_result[0]))
 	# Football Cards 2015 Panini Contenders Draft Picks Old School Colors
 	# for card in get_cards([set_result]):
 		# print(card)
