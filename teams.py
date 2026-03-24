@@ -32,11 +32,13 @@ def main():
 	checklist_set = None
 
 	by_team = ll.dd(set)
+	num2name = {}
 	for row in ll.csv(checklist_csv):
 		if row['ATHLETE'] == 'Marcus Allen':
 			print(row)
 		checklist_set = str(row['YEAR']) + ' Panini ' + str(row['PROGRAM'])
 		by_team[last_word(row['TEAM'])].add(row['CARD NUMBER'])
+		num2name[row['CARD NUMBER']] = row['ATHLETE']
 
 	num2team = {}
 	for team, nums in by_team.items():
@@ -90,6 +92,13 @@ def main():
 				ll.print(f' [grey70]x[/grey70] [khaki3]{name}[/khaki3]', end='')
 				ll.oldprint(vstr)
 			print('')
+
+	print('Missing:')
+	for num, name in sorted(num2name.items(), key=lambda t: (ll.safe_int(t[0], none=True), ll.safe_int(t[0]))):
+		if num not in have_nums:
+			print(f'\t{name} #{num}')
+
+	print('')
 
 	print(f"Have: {len(sorted(set(have_nums)))} / {max([row['CARD NUMBER'] for row in ll.csv(checklist_csv)])}")
 
