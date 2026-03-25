@@ -256,7 +256,8 @@ def process(fn, console=True, warn=True, force_price_key=None):
 							# so we'll take the prices there
 							card_tup = list(card_tup) # mutable
 							for __i in (7, 9, 10, 11):
-								card_tup[__i] = type(card_tup[__i])(trow[__i+1])
+								if trow[__i+1] != '':
+									card_tup[__i] = type(card_tup[__i])(trow[__i+1])
 							card_tup = tuple(card_tup)
 
 					yield card_tup
