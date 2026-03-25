@@ -1,9 +1,36 @@
 scp_id,sport,year,brand,set,name,number,parallel,price,condition,psa_10,cgc_10,psa_9
 
 # ebay: https://www.ebay.com/itm/168248381428?nordt=true&rt=nc&orig_cvip=true
-# cardladder said $70
+# cardladder said $70 sale
 12073949,football,2025,Panini,Select,Josh Jacobs,466,Zebra Prizm,70.00,,0,0,0
 
 
 # SCP overpriced another base
 12074280,football,2025,Panini,Select,CeeDee Lamb,498,,2.0,,0,0,0
+
+# ebay: https://www.ebay.com/itm/397715434914?nordt=true&rt=nc&orig_cvip=true
+12055749,football,2025,Panini,Select,Cam Ward,26,White Prizm,132.50,,0,0,0
+
+# ebay unsold $175: https://www.ebay.com/itm/397698371962
+# ebay sold $150 (gold /10): https://www.ebay.com/itm/177954468009
+# I'll say $150 for now
+12076367,football,2025,Panini,Select Rookie Signature,Terrance Ferguson,11,Tie-Dye Prizm Die-Cut,150.00,,0,0,0
+
+# ebay (/25 comp for /35): https://www.ebay.com/itm/358298867874?nordt=true&rt=nc&orig_cvip=true
+# cardladder said $30 sale
+# I'll say $20 for now
+12073500,football,2025,Panini,Select,Trey Hendrickson,459,White Prizm,20.00,,0,0,0
+
+# ebay 99 cents: https://www.ebay.com/itm/147211816291?nordt=true&rt=nc&orig_cvip=true
+# ebay $15: https://www.ebay.com/itm/147167573259?nordt=true&rt=nc&orig_cvip=true
+# I'll say $10 for now
+12079181,football,2025,Panini,Select Draft Selections Memorabilia Prizm,Jalen Milroe,23,,10.00,,0,0,0
+
+# ebay/cardladder $10.00: https://www.ebay.com/itm/157738201785?nordt=true&rt=nc&orig_cvip=true
+# ebay/cardladder $9.90: https://www.ebay.com/itm/227238378258?nordt=true&rt=nc&orig_cvip=true
+12077425,football,2025,Panini,Select Signature Memorabilia Prizm,Derek Stingley Jr.,5,,10.00,,0,0,0
+
+# ebay/CL $10: https://www.ebay.com/itm/389699575183?nordt=true&rt=nc&orig_cvip=true
+# others said $3-8
+# $6 for now
+12077713,football,2025,Panini,Select Signature Memorabilia Prizm,Christian Kirk,32,Blue,6.00,,0,0,0
