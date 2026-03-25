@@ -231,11 +231,34 @@ def process(fn, console=True, warn=True, force_price_key=None):
 					year = unvar_set.split(' ')[0].strip()
 					unyear_set = ' '.join(unvar_set.split(' ')[1:]).strip()
 
+					# print(sport)
+					# print(year)
+					# print(unyear_set)
+					# print(name)
+					# print(num)
+					# print(var)
+					# quit()
+
 					# File output
 					cid = card_row['id']
 					if cid == 'fake_id':
 						cid = 'fake_id_' + ll.md5(f'{sport} {year} {unyear_set} {name} {num} {var}')
 					card_tup = (card_row['id'], sport, year, unyear_set, name, num, var, price, grade, psa_10, cgc_10, psa_9)
+
+					# Find any price overrides
+					for trow in ll.csv('overrides_price.csv', dicts=False):
+						# to ID in override csv, which parallels col.csv
+						brand, unbranded_set = split_brand(unyear_set)
+						card_tup2 = card_tup[:3] + (brand, unbranded_set) + card_tup[4:]
+						_id = lambda r: ' '.join(ll.map(str, r[1:8]))
+						if _id(card_tup2) == _id(trow):
+							# We found a match in the overrides file,
+							# so we'll take the prices there
+							card_tup = list(card_tup) # mutable
+							for __i in (7, 9, 10, 11):
+								card_tup[__i] = type(card_tup[__i])(trow[__i+1])
+							card_tup = tuple(card_tup)
+
 					yield card_tup
 
 					if var:
@@ -269,29 +292,37 @@ def print_card(id, sport, year, set, name, num, var, price, grade, psa_10, cgc_1
 	else:
 		print(f'[grey30]{price:.02f}[/grey30]\t{card_str}')
 
+def split_brand(set_name):
+	# TODO: better brand ID
+	if 'topps' in set_name.lower():
+		brand_name = 'Topps'
+	elif 'bowman chrome' in set_name.lower():
+		brand_name = 'Bowman Chrome'
+	elif 'panini' in set_name.lower():
+		brand_name = 'Panini'
+	elif 'leaf' in set_name.lower():
+		brand_name = 'Leaf'
+	else:
+		raise Exception(f"unknown brand_name for set_name {set_name}")
+
+	set_name = set_name[:set_name.lower().index(brand_name.lower())].strip() + set_name[set_name.lower().index(brand_name.lower())+len(brand_name)+len(' '):].strip()
+
+	return brand_name, set_name
+
 
 def card_row(id, sport, year, set, name, num, var, price, grade, psa10, cgc10, psa9):
-	# TODO: better brand ID
-	if 'topps' in set.lower():
-		brand = 'Topps'
-	elif 'bowman chrome' in set.lower():
-		brand = 'Bowman Chrome'
-	elif 'panini' in set.lower():
-		brand = 'Panini'
-	elif 'leaf' in set.lower():
-		brand = 'Leaf'
-	else:
-		raise Exception(f"unknown brand for set {set}")
-
-	set = set[:set.lower().index(brand.lower())].strip() + set[set.lower().index(brand.lower())+len(brand)+len(' '):].strip()
+	brand, set = split_brand(set)
 
 	return cached_csv((id, sport, year, brand, set, name, num, var, price, grade, psa10, cgc10, psa9))
+fcard_row = card_row
 
 
 def card_csv(cards):
-	yield cached_csv(('scp_id', 'sport', 'year', 'brand', 'set', 'name', 'number', 'parallel', 'price', 'condition', 'psa_10', 'cgc_10', 'psa_9'))
+	headers = cached_csv(('scp_id', 'sport', 'year', 'brand', 'set', 'name', 'number', 'parallel', 'price', 'condition', 'psa_10', 'cgc_10', 'psa_9'))
+	yield headers
 
-	for (id, sport, year, set, name, num, var, price, grade, psa10, cgc10, psa9) in cards:
+	for crow in cards:
+		(id, sport, year, set, name, num, var, price, grade, psa10, cgc10, psa9) = crow
 
 		# set = set[:set.lower().index(brand.lower())].strip() + set[set.lower().index(brand.lower())+len(brand)+len(' '):].strip()
 

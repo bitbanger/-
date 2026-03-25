@@ -1,3 +1,4 @@
+import argparse
 import ll
 import os
 
@@ -8,6 +9,16 @@ ll.import_from(ll.here('dl_scp.py'), 'verify_sets')
 
 
 def main():
+
+	ap = argparse.ArgumentParser()
+	ap.add_argument('set', nargs='*')
+	ap.add_argument('-m', '--minimal', action='store_true')
+	args = ap.parse_args()
+
+	args.set = ' '.join(args.set)
+	args.set = args.set.replace('and', '')
+	args.set = args.set.replace('&', '')
+
 	set_names = set()
 	for fn in ll.ls('remake', abs=True):
 		sport = fn.split('.')[-1]
@@ -20,6 +31,17 @@ def main():
 				if line not in set_names:
 					set_names.add(line)
 	set_names = sorted(list(set_names))
+
+	if args.set:
+		matches = {s: ll.words_in(args.set, s) for s in set_names}
+		top = [s for s, sc in matches.items() if sc==max(matches.values())]
+		year = lambda s: int(ll.regf('[0-9]'*4)(s) or '0')
+		top = [x for x in top if year(x)==max([year(s) for s in top])]
+		top = sorted(top)
+		if args.minimal:
+			set_names = [min(sorted(top), key=len)]
+		else:
+			set_names = top
 
 	'''
 	set_names = []
@@ -70,12 +92,12 @@ def main():
 			sets_to_dl[sport].append(min(_sets, key=lambda t: len(t[0])))
 		else:
 			missed.append(p)
-	'''
+
+	print('')
 	for sport, sets in sorted(sets_to_dl.items(), key=ll.nth(0)):
 		print(sport)
 		for _set in sorted(sets, key=ll.nth(0)):
 			print(f'\t{_set[0]}')
-	'''
 
 
 	# Check which sets we couldn't find, so can't update
