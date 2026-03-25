@@ -246,11 +246,16 @@ def process(fn, console=True, warn=True, force_price_key=None):
 					card_tup = (card_row['id'], sport, year, unyear_set, name, num, var, price, grade, psa_10, cgc_10, psa_9)
 
 					# Find any price overrides
-					for trow in ll.csv('overrides_price.csv', dicts=False):
+					with open('/tmp/overrides_price.csv', 'w+') as tmpf:
+						for line in ll.lines('overrides_price.csv'):
+							if not line.startswith('#'):
+								tmpf.write(line+'\n')
+						
+					for trow in ll.csv('/tmp/overrides_price.csv', dicts=False):
 						# to ID in override csv, which parallels col.csv
 						brand, unbranded_set = split_brand(unyear_set)
 						card_tup2 = card_tup[:3] + (brand, unbranded_set) + card_tup[4:]
-						_id = lambda r: ' '.join(ll.map(str, r[1:8]))
+						_id = lambda r: ' '.join(ll.map(str, list(r[1:8])+[r[9]]))
 						if _id(card_tup2) == _id(trow):
 							# We found a match in the overrides file,
 							# so we'll take the prices there
@@ -259,6 +264,8 @@ def process(fn, console=True, warn=True, force_price_key=None):
 								if trow[__i+1] != '':
 									card_tup[__i] = type(card_tup[__i])(trow[__i+1])
 							card_tup = tuple(card_tup)
+
+					os.remove('/tmp/overrides_price.csv')
 
 					yield card_tup
 

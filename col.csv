@@ -6,7 +6,7 @@ scp_id,sport,year,brand,set,name,number,parallel,price,condition,psa_10,cgc_10,p
 12064656,football,2025,Panini,Select,Brian Urlacher,200,,1.99,,0,0,0
 12060314,football,2025,Panini,Select,Brock Purdy,117,,2.75,,43.12,35.0,14.42
 12060748,football,2025,Panini,Select,Cam Ward,126,,2.4,,41.44,33.0,13.86
-12074280,football,2025,Panini,Select,CeeDee Lamb,498,,33.5,,0,0,0
+12074280,football,2025,Panini,Select,CeeDee Lamb,498,,2.0,,0,0,0
 12064693,football,2025,Panini,Select,Chris Chambers,199,,0.01,,0,0,0
 12063746,football,2025,Panini,Select,Curtis Samuel,184,,1.69,,0,0,0
 12069783,football,2025,Panini,Select,Dak Prescott,296,,1.4,,40.49,32.0,13.54
@@ -49,7 +49,7 @@ scp_id,sport,year,brand,set,name,number,parallel,price,condition,psa_10,cgc_10,p
 12062341,football,2025,Panini,Select,Ja'Marr Chase,157,Tri-Color Prizm,10.03,,0,0,0
 12055749,football,2025,Panini,Select,Cam Ward,26,White Prizm,0.0,,0,0,0
 12073500,football,2025,Panini,Select,Trey Hendrickson,459,White Prizm,0.0,,0,0,0
-12073949,football,2025,Panini,Select,Josh Jacobs,466,Zebra Prizm,0.0,,0,0,0
+12073949,football,2025,Panini,Select,Josh Jacobs,466,Zebra Prizm,70.0,,0,0,0
 12077425,football,2025,Panini,Select Signature Memorabilia Prizm,Derek Stingley Jr.,5,,0.0,,0,0,0
 12077713,football,2025,Panini,Select Signature Memorabilia Prizm,Christian Kirk,32,Blue,0.0,,0,0,0
 12079181,football,2025,Panini,Select Draft Selections Memorabilia Prizm,Jalen Milroe,23,,0.0,,0,0,0
