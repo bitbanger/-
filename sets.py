@@ -111,12 +111,21 @@ def main():
 		# (e.g. 2014 Topps 1,000 Yard Club) and other Topps sets (e.g.
 		# 2025 Topps Galaxy Chrome). scp has insert info; use that somehow?
 		if isinstance(d, dict):
-			if any(k.endswith(' Topps') for k in d):
+
+			def _ender(x):
+				for ender in ('Topps', 'Donruss', 'Upper Deck'):
+					if (ms:=re.findall(f'(.*) ([0-9][0-9][0-9][0-9]) {ender} (.*)', x)):
+						return ms[0][-1]
+				# if (spl:=x.split())[-2].isnumeric(): # <year> <ender>
+					# return spl[-1]
+				return ''
+
+			if any(_ender(k) for k in d):
 				# Gotta merge Topps into the subsets and flatten them out
 				# to the parent level
 				nd = {}
 				for k, v in d.items():
-					if not k.endswith(' Topps'):
+					if (ender:=_ender(k)):
 						# Normal
 						if (rpk:=_rp(k)):
 							nd[rpk] = copy(v, last=_rc(k))

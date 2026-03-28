@@ -192,9 +192,10 @@ def process(fn, console=True, warn=True, force_price_key=None):
 
 				# Correct weird Topps formatting before rendering output, but
 				# after looking up the set file
-				if (ms:=re.findall('(.*) ([0-9][0-9][0-9][0-9]) Topps (.*)', orig_set)):
-					_, year, stn = ms[0]
-					set, grade, cur_fset, var = _procset(f'{year} Topps {stn}')
+				for ender in ('Topps', 'Donruss', 'Upper Deck'):
+					if (ms:=re.findall(f'(.*) ([0-9][0-9][0-9][0-9]) {ender} (.*)', orig_set)):
+						_, year, stn = ms[0]
+						set, grade, cur_fset, var = _procset(f'{year} {ender} {stn}')
 
 				for card_row in card_rows:
 					if force_price_key:
@@ -310,6 +311,10 @@ def split_brand(set_name):
 		brand_name = 'Panini'
 	elif 'leaf' in set_name.lower():
 		brand_name = 'Leaf'
+	elif set_name.lower() == 'donruss':
+		brand_name = 'Donruss'
+	elif set_name.lower() == 'upper deck':
+		brand_name = 'Upper Deck'
 	else:
 		raise Exception(f"unknown brand_name for set_name {set_name}")
 
