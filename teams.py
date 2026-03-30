@@ -34,8 +34,8 @@ def main():
 	by_team = ll.dd(set)
 	num2name = {}
 	for row in ll.csv(checklist_csv):
-		if row['ATHLETE'] == 'Marcus Allen':
-			print(row)
+		# if row['ATHLETE'] == 'Marcus Allen':
+			# print(row)
 		checklist_set = str(row['YEAR']) + ' Panini ' + str(row['PROGRAM'])
 		by_team[last_word(row['TEAM'])].add(row['CARD NUMBER'])
 		num2name[row['CARD NUMBER']] = row['ATHLETE']
