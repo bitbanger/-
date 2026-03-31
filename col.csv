@@ -450,48 +450,6 @@ scp_id,sport,year,brand,set,name,number,parallel,price,condition,psa_10,cgc_10,p
 8081305,baseball,2024,Panini,Prizm,Vladimir Guerrero,204,Green,1.4,,0,0,0
 8086862,baseball,2024,Panini,Prizm Prizmatic,Arjun Nimmala,23,,1.31,,34.97,28.0,11.9
 8086689,baseball,2024,Panini,Prizm Prizmatic,Chase Davis,1,,1.44,,35.48,28.0,12.09
-11288189,baseball,2025,Topps,Allen and Ginter,Andruw Jones,190,,1.19,,35.5,28.0,11.9
-11286665,baseball,2025,Topps,Allen and Ginter,Bo Jackson,18,,1.76,,36.85,29.0,12.36
-11287797,baseball,2025,Topps,Allen and Ginter,Brent Rooker,147,,0.67,,33.06,26.0,11.06
-11287862,baseball,2025,Topps,Allen and Ginter,Carlos Beltran,153,,1.37,,36.86,29.0,12.37
-11288471,baseball,2025,Topps,Allen and Ginter,Chef Reactions,211,,1.5,,36.85,29.0,12.36
-11288709,baseball,2025,Topps,Allen and Ginter,DJ Herz,237,,1.29,,35.9,29.0,12.04
-11288855,baseball,2025,Topps,Allen and Ginter,Drew Nix,255,,1.99,,39.12,31.0,13.14
-11287181,baseball,2025,Topps,Allen and Ginter,Jackson Chourio,76,,1.46,,36.48,29.0,12.24
-11287181,baseball,2025,Topps,Allen and Ginter,Jackson Chourio,76,,1.46,,36.48,29.0,12.24
-11287404,baseball,2025,Topps,Allen and Ginter,James Wood,101,,1.69,,35.7,29.0,11.97
-11288814,baseball,2025,Topps,Allen and Ginter,Joe Godino,283,,1.89,,38.63,31.0,12.98
-11287271,baseball,2025,Topps,Allen and Ginter,Ketel Marte,86,,0.55,,32.43,26.0,10.84
-11288002,baseball,2025,Topps,Allen and Ginter,Laura Prepon,169,,1.67,,37.63,30.0,12.63
-11286633,baseball,2025,Topps,Allen and Ginter,Lou Brock,11,,1.34,,35.84,29.0,12.02
-11287218,baseball,2025,Topps,Allen and Ginter,Mookie Betts,80,,0.99,,34.54,28.0,11.56
-11287657,baseball,2025,Topps,Allen and Ginter,Nolan Arenado,130,,1.28,,35.75,29.0,11.99
-11286776,baseball,2025,Topps,Allen and Ginter,Rafael Devers,29,,1.69,,37.71,30.0,12.66
-11288868,baseball,2025,Topps,Allen and Ginter,Richard Kind,293,,1.49,,37.71,30.0,12.66
-11288677,baseball,2025,Topps,Allen and Ginter,River Ryan,226,,1.25,,35.72,29.0,11.97
-11286901,baseball,2025,Topps,Allen and Ginter,Roger Clemens,43,,1.04,,34.76,28.0,11.64
-11287965,baseball,2025,Topps,Allen and Ginter,Salvador Perez,165,,1.29,,35.99,29.0,12.07
-11287965,baseball,2025,Topps,Allen and Ginter,Salvador Perez,165,,1.29,,35.99,29.0,12.07
-11289146,baseball,2025,Topps,Allen and Ginter,Seth Meyers,292,,1.79,,38.17,31.0,12.82
-11287675,baseball,2025,Topps,Allen and Ginter,Shohei Ohtani,132,,1.64,,73.0,58.0,27.5
-11287647,baseball,2025,Topps,Allen and Ginter,Willy Adames,129,,1.69,,37.71,30.0,12.66
-11287448,baseball,2025,Topps,Allen and Ginter,Wyatt Langford,106,,0.99,,34.53,28.0,11.56
-11286817,baseball,2025,Topps,Allen and Ginter,Yordan Alvarez,32,,1.5,,36.85,29.0,12.37
-11291321,baseball,2025,Topps,Allen and Ginter,George Brett,308,SP,1.66,,37.57,30.0,12.62
-11291340,baseball,2025,Topps,Allen and Ginter,Ivan Rodriguez,309,SP,1.18,,35.81,29.0,12.0
-11291569,baseball,2025,Topps,Allen and Ginter,Robin Yount,321,SP,1.48,,37.07,30.0,12.44
-11297488,baseball,2025,Topps,Allen and Ginter Sweet Victory,Albert Pujols,SV-10,,1.25,,34.56,28.0,11.58
-11297490,baseball,2025,Topps,Allen and Ginter Sweet Victory,Derek Jeter,SV-12,,1.57,,37.37,30.0,12.54
-11297496,baseball,2025,Topps,Allen and Ginter Sweet Victory,Miguel Cabrera,SV-18,,1.29,,35.89,29.0,12.03
-11297529,baseball,2025,Topps,Allen and Ginter Wicked Curves,Blake Snell,WC-10,,1.0,,34.58,28.0,11.58
-11297553,baseball,2025,Topps,Allen and Ginter Wicked Curves,Don Drysdale,WC-35,,1.19,,35.49,28.0,11.89
-11297554,baseball,2025,Topps,Allen and Ginter Wicked Curves,Don Sutton,WC-36,,0.99,,34.53,28.0,11.56
-11289271,baseball,2025,Topps,Allen and Ginter,Babe Ruth,28,Mini,1.23,,36.12,29.0,15.5
-11289480,baseball,2025,Topps,Allen and Ginter,Chan Ho Park,12,Mini,1.22,,35.59,28.0,11.93
-11292096,baseball,2025,Topps,Allen and Ginter,Cy Young,348,Mini,1.49,,36.81,29.0,12.35
-11290181,baseball,2025,Topps,Allen and Ginter,Masataka Yoshida,156,Mini,1.69,,37.72,30.0,12.67
-11291115,baseball,2025,Topps,Allen and Ginter,Paul Molitor,175,Mini,1.55,,37.25,30.0,12.5
-11291024,baseball,2025,Topps,Allen and Ginter,Marcelo Mayer,245,Mini Black,2.49,,41.41,33.0,13.93
 10787614,basketball,2025,Panini,Donruss WNBA,A'ja Wilson,82,,1.29,,36.06,29.0,12.12
 10787614,basketball,2025,Panini,Donruss WNBA,A'ja Wilson,82,,1.29,,36.06,29.0,12.12
 10785711,basketball,2025,Panini,Donruss WNBA,Aaliyah Edwards,16,,0.06,,30.27,24.0,10.09
@@ -1201,14 +1159,14 @@ scp_id,sport,year,brand,set,name,number,parallel,price,condition,psa_10,cgc_10,p
 5603668,football,2023,Panini,Score Sack Attack,Quinnen Williams,10,,1.45,,0,0,0
 5602241,football,2023,Panini,Score Celebration,Ahmad 'Sauce' Gardner,23,,1.35,,33.69,27.0,11.73
 5602239,football,2023,Panini,Score Celebration,Andrew Wylie,21,,1.69,,34.11,27.0,7.0
-5602242,football,2023,Panini,Score Celebration,Andy Reid,24,,1.47,,34.04,27.0,11.89
+5602242,football,2023,Panini,Score Celebration,Andy Reid,24,,1.73,,34.01,27.0,11.88
 5602220,football,2023,Panini,Score Celebration,Dalvin Cook,3,,1.12,,0,0,0
-5602240,football,2023,Panini,Score Celebration,Danielle Hunter,22,,1.02,,32.8,26.0,11.31
+5602240,football,2023,Panini,Score Celebration,Danielle Hunter,22,,1.02,,32.78,26.0,11.31
 5602230,football,2023,Panini,Score Celebration,Ja'Marr Chase,12,,1.37,,12.0,10.0,7.0
 5602227,football,2023,Panini,Score Celebration,Jaylen Waddle,9,,1.25,,33.43,27.0,11.6
 5602234,football,2023,Panini,Score Celebration,Josh Allen,16,,1.29,,21.19,17.0,11.69
 5602223,football,2023,Panini,Score Celebration,JuJu Smith Schuster,5,,1.3,,33.28,27.0,11.54
-5602228,football,2023,Panini,Score Celebration,Justin Jefferson,10,,2.28,,35.0,28.0,28.62
+5602228,football,2023,Panini,Score Celebration,Justin Jefferson,10,,2.92,,35.0,28.0,28.62
 5602226,football,2023,Panini,Score Celebration,Justin Simmons,8,,1.44,,0,0,0
 5602236,football,2023,Panini,Score Celebration,Kyler Murray,18,,1.62,,34.1,27.0,11.92
 5602232,football,2023,Panini,Score Celebration,Micah Parsons,14,,1.26,,33.43,27.0,7.0
@@ -1710,137 +1668,6 @@ scp_id,sport,year,brand,set,name,number,parallel,price,condition,psa_10,cgc_10,p
 9802909,basketball,2024,Panini,Select Neon Icon,James Harden,1,,1.0,,0,0,0
 12361150,football,2019,Panini,One,Gardner Minshew II,130,Rookie Autograph Blue,0.0,,0,0,0
 fake_id125,football,2014,Panini,Prestige Rookies Signatures,Cyrus Kouandjio,224,,0.0,,0,0,0
-12059589,football,2025,Panini,Select,A.J. Green,99,,0.0,,0,0,0
-12059457,football,2025,Panini,Select,Abdul Carter,95,,2.12,,40.7,33.0,13.61
-12067875,football,2025,Panini,Select,Aidan Hutchinson,271,,1.49,,37.09,30.0,12.39
-12056033,football,2025,Panini,Select,Alec Pierce,32,,1.79,,37.84,30.0,12.65
-12055250,football,2025,Panini,Select,Alfred Collins,17,,1.31,,37.08,30.0,12.39
-12062531,football,2025,Panini,Select,Antonio Gates,150,,1.59,,0,0,0
-12063628,football,2025,Panini,Select,Arian Smith,177,,1.99,,0,0,0
-12059908,football,2025,Panini,Select,Ashton Jeanty,104,,2.27,,43.03,34.0,14.4
-12054489,football,2025,Panini,Select,Ashton Jeanty,4,,1.79,,40.69,33.0,13.61
-12054489,football,2025,Panini,Select,Ashton Jeanty,4,,1.79,,40.69,33.0,13.61
-12073990,football,2025,Panini,Select,Bradley Chubb,483,,3.99,,0,0,0
-12063385,football,2025,Panini,Select,Breece Hall,175,,1.99,,39.46,32.0,13.2
-12064656,football,2025,Panini,Select,Brian Urlacher,200,,0.0,,0,0,0
-12060314,football,2025,Panini,Select,Brock Purdy,117,,2.75,,43.12,35.0,14.42
-12062232,football,2025,Panini,Select,Bryce Young,145,,0.0,,0,0,0
-12056307,football,2025,Panini,Select,Bucky Irving,38,,1.67,,0,0,0
-12060748,football,2025,Panini,Select,Cam Ward,126,,2.4,,41.44,33.0,13.86
-12055717,football,2025,Panini,Select,Cam Ward,26,,1.38,,38.18,31.0,12.76
-12074280,football,2025,Panini,Select,CeeDee Lamb,498,,2.0,,0.0,0.0,0.0
-12064693,football,2025,Panini,Select,Chris Chambers,199,,0.8,,0,0,0
-12065856,football,2025,Panini,Select,Christian McCaffrey,218,,2.26,,41.84,33.0,14.0
-12063746,football,2025,Panini,Select,Curtis Samuel,184,,1.69,,0,0,0
-12069783,football,2025,Panini,Select,Dak Prescott,296,,1.4,,40.49,32.0,13.54
-12067058,football,2025,Panini,Select,Darnell Mooney,246,,0.0,,0,0,0
-12057181,football,2025,Panini,Select,Demetrius Knight Jr.,58,,1.05,,35.01,28.0,11.69
-12058577,football,2025,Panini,Select,Drake Maye,80,,1.94,,39.22,31.0,13.12
-12058577,football,2025,Panini,Select,Drake Maye,80,,1.94,,39.22,31.0,13.12
-12067077,football,2025,Panini,Select,Dylan Sampson,255,,2.62,,40.69,33.0,13.61
-12071524,football,2025,Panini,Select,Emanuel Wilson,368,,0.0,,0,0,0
-12056193,football,2025,Panini,Select,Emeka Egbuka,37,,1.44,,37.92,30.0,12.67
-12060773,football,2025,Panini,Select,Fred Warner,118,,1.0,,34.75,28.0,11.61
-12064848,football,2025,Panini,Select,Geno Smith,205,,0.0,,0,0,0
-12067988,football,2025,Panini,Select,Harrison Smith,264,,2.12,,40.11,32.0,13.41
-12057829,football,2025,Panini,Select,J.J. McCarthy,63,,1.35,,0,0,0
-12057829,football,2025,Panini,Select,J.J. McCarthy,63,,1.35,,0,0,0
-12062231,football,2025,Panini,Select,Ja'Marr Chase,157,,1.99,,39.46,32.0,13.2
-12064442,football,2025,Panini,Select,Jalen Carter,191,,1.99,,0,0,0
-12060214,football,2025,Panini,Select,Jalen Royals,108,,0.0,,0,0,0
-12064834,football,2025,Panini,Select,Jaxson Dart,193,,2.03,,42.27,34.0,14.15
-12059257,football,2025,Panini,Select,Jaydon Blue,96,,0.0,,0,0,0
-12063992,football,2025,Panini,Select,Jonah Savaiinaea,183,,1.99,,38.32,31.0,12.81
-12065465,football,2025,Panini,Select,Jordan Burch,223,,1.25,,0,0,0
-12063528,football,2025,Panini,Select,Jordan Love,168,,1.69,,38.03,30.0,12.71
-12058730,football,2025,Panini,Select,Josh Allen,86,,1.69,,38.41,31.0,12.84
-12058730,football,2025,Panini,Select,Josh Allen,86,,1.69,,38.41,31.0,12.84
-12057976,football,2025,Panini,Select,Josh Jacobs,67,,1.75,,38.32,31.0,12.81
-12054781,football,2025,Panini,Select,Josh Simmons,8,,1.79,,37.37,30.0,12.49
-12056778,football,2025,Panini,Select,Julio Jones,49,,1.75,,0,0,0
-12062696,football,2025,Panini,Select,Justin Jefferson,163,,1.88,,38.94,31.0,13.02
-12071069,football,2025,Panini,Select,Leonard Fournette,350,,2.5,,0,0,0
-12055510,football,2025,Panini,Select,Marvin Harrison Jr.,22,,1.69,,0,0,0
-12055510,football,2025,Panini,Select,Marvin Harrison Jr.,22,,1.69,,0,0,0
-12062357,football,2025,Panini,Select,Mike Gesicki,159,,0.0,,0,0,0
-12067561,football,2025,Panini,Select,Mike Green,260,,0.0,,0,0,0
-12064516,football,2025,Panini,Select,Miles Sanders,198,,1.37,,36.53,29.0,12.2
-12060690,football,2025,Panini,Select,Mykel Williams,116,,1.75,,38.32,31.0,12.81
-12068374,football,2025,Panini,Select,Ollie Gordon II,281,,2.75,,43.08,34.0,14.42
-12057315,football,2025,Panini,Select,Quinshon Judkins,55,,1.99,,38.54,31.0,12.88
-12061697,football,2025,Panini,Select,Rashid Shaheed,142,,1.99,,40.65,33.0,13.6
-12061480,football,2025,Panini,Select,Riley Leonard,133,,1.5,,37.13,30.0,12.41
-12058346,football,2025,Panini,Select,Rome Odunze,74,,1.79,,0,0,0
-12069046,football,2025,Panini,Select,Russell Wilson,295,,1.84,,38.03,30.0,12.71
-12074368,football,2025,Panini,Select,Sam Darnold,13,,1.31,,36.84,29.0,12.31
-12074368,football,2025,Panini,Select,Sam Darnold,13,,1.31,,36.84,29.0,12.31
-12072094,football,2025,Panini,Select,Saquon Barkley,391,,0.0,,0,0,0
-12058943,football,2025,Panini,Select,Saquon Barkley,90,,1.78,,38.55,31.0,12.89
-12063177,football,2025,Panini,Select,Savion Williams,167,,1.75,,38.32,31.0,12.81
-12056894,football,2025,Panini,Select,Shedeur Sanders,54,,1.61,,37.19,30.0,12.43
-12062508,football,2025,Panini,Select,Tahj Brooks,158,,1.76,,42.54,34.0,14.23
-12055822,football,2025,Panini,Select,Travis Hunter,28,,1.77,,38.42,31.0,12.84
-12055822,football,2025,Panini,Select,Travis Hunter,28,,1.77,,38.42,31.0,12.84
-12056855,football,2025,Panini,Select,Trevor Etienne,45,,1.49,,0,0,0
-12056855,football,2025,Panini,Select,Trevor Etienne,45,,1.49,,0,0,0
-12078678,football,2025,Panini,Select,Trevor Lawrence,229,,2.25,,46.58,37.0,15.6
-12068725,football,2025,Panini,Select,Trey Amos,287,,1.75,,34.75,28.0,11.61
-12059889,football,2025,Panini,Select,Trey Smith,109,,1.14,,34.7,28.0,11.59
-12063745,football,2025,Panini,Select,Ty Johnson,186,,1.28,,37.42,30.0,12.51
-12061963,football,2025,Panini,Select,Tyler Shough,141,,2.14,,44.22,35.0,14.8
-12056419,football,2025,Panini,Select,Tyler Shough,41,,2.0,,40.08,32.0,13.41
-12062536,football,2025,Panini,Select,Will Howard,152,,1.27,,37.13,30.0,12.41
-12061640,football,2025,Panini,Select,Woody Marks,135,,1.34,,0,0,0
-12069735,football,2025,Panini,Select,Xavier Worthy,309,,2.75,,0,0,0
-12063189,football,2025,Panini,Select,Andrew Van Ginkel,164,Green Yellow Prizm Shock,1.99,,0,0,0
-12066155,football,2025,Panini,Select,Ashton Jeanty,204,Green Yellow Prizm Shock,4.0,,49.09,39.0,16.44
-12054507,football,2025,Panini,Select,Ashton Jeanty,4,Green Yellow Prizm Shock,4.33,,49.19,39.0,16.48
-12062298,football,2025,Panini,Select,Bryce Young,145,Green Yellow Prizm Shock,0.0,,0,0,0
-12054617,football,2025,Panini,Select,Jakobi Meyers,5,Green Yellow Prizm Shock,1.69,,0,0,0
-12055519,football,2025,Panini,Select,Marvin Harrison Jr.,22,Green Yellow Prizm Shock,0.0,,0,0,0
-12066070,football,2025,Panini,Select,Travis Hunter,228,Green Yellow Prizm Shock,9.15,,0,0,0
-12056941,football,2025,Panini,Select,Trevor Etienne,45,Green Yellow Prizm Shock,0.0,,0,0,0
-12063609,football,2025,Panini,Select,Will Campbell,179,Green Yellow Prizm Shock,0.99,,34.71,28.0,11.59
-12069346,football,2025,Panini,Select,Jake Ferguson,297,Purple Prizm Shock,3.99,,0,0,0
-12067973,football,2025,Panini,Select,Aidan Hutchinson,271,Silver Prizm,1.85,,37.38,30.0,12.49
-12071877,football,2025,Panini,Select,Austin Ekeler,387,Silver Prizm,0.0,,0,0,0
-12063243,football,2025,Panini,Select,DJ Moore,173,Silver Prizm,2.5,,41.92,34.0,14.02
-12067145,football,2025,Panini,Select,Dylan Sampson,255,Silver Prizm,3.49,,47.13,38.0,15.78
-12054434,football,2025,Panini,Select,KeAndre Lambert-Smith,3,Silver Prizm,0.0,,0,0,0
-12057560,football,2025,Panini,Select,Malaki Starks,61,Silver Prizm,1.5,,37.15,30.0,12.41
-12055469,football,2025,Panini,Select,Puka Nacua,21,Silver Prizm,1.67,,43.41,35.0,14.53
-12057618,football,2025,Panini,Select,Rashod Bateman,62,Silver Prizm,1.99,,0,0,0
-12058424,football,2025,Panini,Select,Stefon Diggs,79,Silver Prizm,1.0,,34.75,28.0,11.61
-12060276,football,2025,Panini,Select,Tariq Woolen,115,Silver Prizm,0.0,,0,0,0
-12056694,football,2025,Panini,Select,Tetairoa McMillan,44,Silver Prizm,3.16,,100.0,80.0,16.83
-12060613,football,2025,Panini,Select,Trey McBride,124,Silver Prizm,2.0,,0,0,0
-12061732,football,2025,Panini,Select,Woody Marks,135,Silver Prizm,1.12,,35.35,28.0,11.8
-12082432,football,2025,Panini,Select Turbocharged,Emeka Egbuka,2,,1.81,,39.36,31.0,13.16
-12081802,football,2025,Panini,Select Certified Rookie,Elijah Arroyo,24,,1.5,,37.15,30.0,12.41
-12081811,football,2025,Panini,Select Certified Rookie,Mason Graham,25,,1.54,,34.72,28.0,11.59
-12081732,football,2025,Panini,Select Certified Rookie,Matthew Golden,18,,1.95,,41.85,33.0,14.0
-12081891,football,2025,Panini,Select Future,Dylan Sampson,4,,1.79,,38.79,31.0,12.97
-12082009,football,2025,Panini,Select Future,Jack Bech,12,,1.83,,0,0,0
-12081984,football,2025,Panini,Select Future,Tyler Warren,9,,1.12,,39.46,32.0,13.2
-12082096,football,2025,Panini,Select Numbers,Myles Garrett,4,,1.46,,39.46,32.0,13.2
-12082151,football,2025,Panini,Select Numbers,Nico Collins,8,,0.99,,0,0,0
-12080057,football,2025,Panini,Select Rookie Swatch Prizm,Jaydon Blue,6,Blue,2.3,,0,0,0
-12076367,football,2025,Panini,Select Rookie Signature,Terrance Ferguson,11,Tie-Dye Prizm Die-Cut,150.0,,0,0,0
-12056369,football,2025,Panini,Select,Bucky Irving,38,Red Prizm,0.0,,0,0,0
-12066572,football,2025,Panini,Select,Anthony Richardson,232,Tri-Color Prizm,0.0,,0,0,0
-12062341,football,2025,Panini,Select,Ja'Marr Chase,157,Tri-Color Prizm,8.07,,77.73,62.0,26.12
-12055749,football,2025,Panini,Select,Cam Ward,26,White Prizm,132.5,,0,0,0
-12073500,football,2025,Panini,Select,Trey Hendrickson,459,White Prizm,20.0,,0,0,0
-12073949,football,2025,Panini,Select,Josh Jacobs,466,Zebra Prizm,70.0,,0,0,0
-12077425,football,2025,Panini,Select Signature Memorabilia Prizm,Derek Stingley Jr.,5,,10.0,,0,0,0
-12077713,football,2025,Panini,Select Signature Memorabilia Prizm,Christian Kirk,32,Blue,6.0,,0,0,0
-12079181,football,2025,Panini,Select Draft Selections Memorabilia Prizm,Jalen Milroe,23,,10.0,,0,0,0
-12081511,football,2025,Panini,Select Score Throwback,Patrick Mahomes II,6,,2.5,,45.45,36.0,15.22
-12080914,football,2025,Panini,Select On Target,Matthew Golden,1,,2.74,,40.7,33.0,13.61
-12081152,football,2025,Panini,Select On Target,A.J. Brown,20,Prizm,2.99,,0,0,0
-12081363,football,2025,Panini,Select Phenomenon,Matthew Golden,9,,2.4,,0,0,0
-12081282,football,2025,Panini,Select Phenomenon,Ashton Jeanty,16,Prizm,3.25,,48.91,39.0,16.39
-12080953,football,2025,Panini,Select Neon Icons,Abdul Carter,19,,1.0,,34.75,28.0,11.61
 11724305,football,2025,Panini,Donruss Optic,A.J. Brown,17,,0.99,,0,0,0
 11726313,football,2025,Panini,Donruss Optic,Aaron Rodgers,75,,1.75,,38.49,31.0,12.89
 11724261,football,2025,Panini,Donruss Optic,Alvin Kamara,9,,0.0,,0,0,0
@@ -4456,3 +4283,424 @@ fake_id123,football,2021,Panini,Chronicles Draft Picks Donruss,Ja'Marr Chase,36,
 12116554,basketball,2025,Panini,Prizm WNBA Top Tier,Skylar Diggins,12,,2.59,,43.76,35.0,14.73
 12128728,basketball,2025,Panini,Prizm WNBA Kaleidoscopic,Dominique Malonga,15,,4.5,,65.0,52.0,0
 11741607,basketball,2025,Panini,Prizm WNBA,Aliyah Boston,75,Red Pulsar,5.57,,55.65,45.0,18.82
+12059589,football,2025,Panini,Select,A.J. Green,99,,0.0,,0,0,0
+12059457,football,2025,Panini,Select,Abdul Carter,95,,2.12,,40.7,33.0,13.61
+12067875,football,2025,Panini,Select,Aidan Hutchinson,271,,1.49,,37.09,30.0,12.39
+12056033,football,2025,Panini,Select,Alec Pierce,32,,1.79,,37.84,30.0,12.65
+12055250,football,2025,Panini,Select,Alfred Collins,17,,1.31,,37.08,30.0,12.39
+12062531,football,2025,Panini,Select,Antonio Gates,150,,1.59,,0,0,0
+12063628,football,2025,Panini,Select,Arian Smith,177,,1.99,,0,0,0
+12059908,football,2025,Panini,Select,Ashton Jeanty,104,,2.27,,43.03,34.0,14.4
+12054489,football,2025,Panini,Select,Ashton Jeanty,4,,1.79,,40.69,33.0,13.61
+12054489,football,2025,Panini,Select,Ashton Jeanty,4,,1.79,,40.69,33.0,13.61
+12073990,football,2025,Panini,Select,Bradley Chubb,483,,3.99,,0,0,0
+12063385,football,2025,Panini,Select,Breece Hall,175,,1.99,,39.46,32.0,13.2
+12064656,football,2025,Panini,Select,Brian Urlacher,200,,0.0,,0,0,0
+12060314,football,2025,Panini,Select,Brock Purdy,117,,2.75,,43.12,35.0,14.42
+12062232,football,2025,Panini,Select,Bryce Young,145,,0.0,,0,0,0
+12056307,football,2025,Panini,Select,Bucky Irving,38,,1.67,,0,0,0
+12058118,football,2025,Panini,Select,Caleb Williams,73,,1.99,,39.27,31.0,13.13
+12060748,football,2025,Panini,Select,Cam Ward,126,,2.4,,41.44,33.0,13.86
+12055717,football,2025,Panini,Select,Cam Ward,26,,1.38,,38.18,31.0,12.76
+12074280,football,2025,Panini,Select,CeeDee Lamb,498,,2.0,,0.0,0.0,0.0
+12059383,football,2025,Panini,Select,CeeDee Lamb,98,,1.1,,36.14,29.0,12.07
+12064693,football,2025,Panini,Select,Chris Chambers,199,,0.8,,0,0,0
+12065856,football,2025,Panini,Select,Christian McCaffrey,218,,2.26,,41.84,33.0,14.0
+12063746,football,2025,Panini,Select,Curtis Samuel,184,,1.69,,0,0,0
+12069783,football,2025,Panini,Select,Dak Prescott,296,,1.4,,40.49,32.0,13.54
+12067058,football,2025,Panini,Select,Darnell Mooney,246,,0.0,,0,0,0
+12060865,football,2025,Panini,Select,Davante Adams,120,,4.99,,0,0,0
+12057181,football,2025,Panini,Select,Demetrius Knight Jr.,58,,1.05,,35.01,28.0,11.69
+12058577,football,2025,Panini,Select,Drake Maye,80,,1.94,,39.22,31.0,13.12
+12058577,football,2025,Panini,Select,Drake Maye,80,,1.94,,39.22,31.0,13.12
+12067077,football,2025,Panini,Select,Dylan Sampson,255,,2.62,,40.69,33.0,13.61
+12071524,football,2025,Panini,Select,Emanuel Wilson,368,,0.0,,0,0,0
+12056193,football,2025,Panini,Select,Emeka Egbuka,37,,1.44,,37.92,30.0,12.67
+12065216,football,2025,Panini,Select,Evan Engram,210,,1.5,,0,0,0
+12060773,football,2025,Panini,Select,Fred Warner,118,,1.0,,34.75,28.0,11.61
+12064848,football,2025,Panini,Select,Geno Smith,205,,0.0,,0,0,0
+12067988,football,2025,Panini,Select,Harrison Smith,264,,2.12,,40.11,32.0,13.41
+12057829,football,2025,Panini,Select,J.J. McCarthy,63,,1.35,,0,0,0
+12057829,football,2025,Panini,Select,J.J. McCarthy,63,,1.35,,0,0,0
+12055980,football,2025,Panini,Select,JT Tuimoloau,31,,1.0,,0,0,0
+12062231,football,2025,Panini,Select,Ja'Marr Chase,157,,1.99,,39.46,32.0,13.2
+12064442,football,2025,Panini,Select,Jalen Carter,191,,1.99,,0,0,0
+12060214,football,2025,Panini,Select,Jalen Royals,108,,0.0,,0,0,0
+12057080,football,2025,Panini,Select,James Pearce Jr.,48,,1.0,,34.75,28.0,11.61
+12064834,football,2025,Panini,Select,Jaxson Dart,193,,2.03,,42.27,34.0,14.15
+12061302,football,2025,Panini,Select,Jayden Higgins,136,,2.06,,0,0,0
+12059257,football,2025,Panini,Select,Jaydon Blue,96,,0.0,,0,0,0
+12059711,football,2025,Panini,Select,Jaylin Lane,89,,1.13,,0,0,0
+12056965,football,2025,Panini,Select,Jerry Jeudy,56,,0.99,,0,0,0
+12063992,football,2025,Panini,Select,Jonah Savaiinaea,183,,1.99,,38.32,31.0,12.81
+12065465,football,2025,Panini,Select,Jordan Burch,223,,1.25,,0,0,0
+12063528,football,2025,Panini,Select,Jordan Love,168,,1.69,,38.03,30.0,12.71
+12058730,football,2025,Panini,Select,Josh Allen,86,,1.69,,38.41,31.0,12.84
+12058730,football,2025,Panini,Select,Josh Allen,86,,1.69,,38.41,31.0,12.84
+12057976,football,2025,Panini,Select,Josh Jacobs,67,,1.75,,38.32,31.0,12.81
+12054781,football,2025,Panini,Select,Josh Simmons,8,,1.79,,37.37,30.0,12.49
+12056778,football,2025,Panini,Select,Julio Jones,49,,1.75,,0,0,0
+12062696,football,2025,Panini,Select,Justin Jefferson,163,,1.88,,38.94,31.0,13.02
+12054728,football,2025,Panini,Select,Kareem Hunt,7,,0.0,,0,0,0
+12063271,football,2025,Panini,Select,Kyle Williams,178,,1.69,,0,0,0
+12071069,football,2025,Panini,Select,Leonard Fournette,350,,2.5,,0,0,0
+12055510,football,2025,Panini,Select,Marvin Harrison Jr.,22,,1.69,,0,0,0
+12055510,football,2025,Panini,Select,Marvin Harrison Jr.,22,,1.69,,0,0,0
+12057714,football,2025,Panini,Select,Matthew Golden,66,,1.67,,39.46,32.0,13.2
+12062357,football,2025,Panini,Select,Mike Gesicki,159,,0.0,,0,0,0
+12067561,football,2025,Panini,Select,Mike Green,260,,0.0,,0,0,0
+12064516,football,2025,Panini,Select,Miles Sanders,198,,1.37,,36.53,29.0,12.2
+12060690,football,2025,Panini,Select,Mykel Williams,116,,1.75,,38.32,31.0,12.81
+12055148,football,2025,Panini,Select,Nick Emmanwori,15,,1.26,,37.14,30.0,12.41
+12068374,football,2025,Panini,Select,Ollie Gordon II,281,,2.75,,43.08,34.0,14.42
+12057315,football,2025,Panini,Select,Quinshon Judkins,55,,1.99,,38.54,31.0,12.88
+12061697,football,2025,Panini,Select,Rashid Shaheed,142,,1.99,,40.65,33.0,13.6
+12061480,football,2025,Panini,Select,Riley Leonard,133,,1.5,,37.13,30.0,12.41
+12058346,football,2025,Panini,Select,Rome Odunze,74,,1.79,,0,0,0
+12069046,football,2025,Panini,Select,Russell Wilson,295,,1.84,,38.03,30.0,12.71
+12074368,football,2025,Panini,Select,Sam Darnold,13,,1.31,,36.84,29.0,12.31
+12074368,football,2025,Panini,Select,Sam Darnold,13,,1.31,,36.84,29.0,12.31
+12072094,football,2025,Panini,Select,Saquon Barkley,391,,0.0,,0,0,0
+12058943,football,2025,Panini,Select,Saquon Barkley,90,,1.78,,38.55,31.0,12.89
+12063177,football,2025,Panini,Select,Savion Williams,167,,1.75,,38.32,31.0,12.81
+12056894,football,2025,Panini,Select,Shedeur Sanders,54,,1.61,,37.19,30.0,12.43
+12062508,football,2025,Panini,Select,Tahj Brooks,158,,1.76,,42.54,34.0,14.23
+12055664,football,2025,Panini,Select,Tony Pollard,25,,0.0,,0,0,0
+12055822,football,2025,Panini,Select,Travis Hunter,28,,1.77,,38.42,31.0,12.84
+12055822,football,2025,Panini,Select,Travis Hunter,28,,1.77,,38.42,31.0,12.84
+12056855,football,2025,Panini,Select,Trevor Etienne,45,,1.49,,0,0,0
+12056855,football,2025,Panini,Select,Trevor Etienne,45,,1.49,,0,0,0
+12078678,football,2025,Panini,Select,Trevor Lawrence,229,,2.25,,46.58,37.0,15.6
+12068725,football,2025,Panini,Select,Trey Amos,287,,1.75,,34.75,28.0,11.61
+12059889,football,2025,Panini,Select,Trey Smith,109,,1.14,,34.7,28.0,11.59
+12063745,football,2025,Panini,Select,Ty Johnson,186,,1.28,,37.42,30.0,12.51
+12062523,football,2025,Panini,Select,Tyler Loop,161,,1.69,,0,0,0
+12061963,football,2025,Panini,Select,Tyler Shough,141,,2.14,,44.22,35.0,14.8
+12056419,football,2025,Panini,Select,Tyler Shough,41,,2.0,,40.08,32.0,13.41
+12058680,football,2025,Panini,Select,Tyreek Hill,83,,1.08,,0,0,0
+12062536,football,2025,Panini,Select,Will Howard,152,,1.27,,37.13,30.0,12.41
+12061640,football,2025,Panini,Select,Woody Marks,135,,1.34,,0,0,0
+12069735,football,2025,Panini,Select,Xavier Worthy,309,,2.75,,0,0,0
+12063189,football,2025,Panini,Select,Andrew Van Ginkel,164,Green Yellow Prizm Shock,1.99,,0,0,0
+12066155,football,2025,Panini,Select,Ashton Jeanty,204,Green Yellow Prizm Shock,4.0,,49.09,39.0,16.44
+12054507,football,2025,Panini,Select,Ashton Jeanty,4,Green Yellow Prizm Shock,4.33,,49.19,39.0,16.48
+12062298,football,2025,Panini,Select,Bryce Young,145,Green Yellow Prizm Shock,0.0,,0,0,0
+12068625,football,2025,Panini,Select,Chop Robinson,283,Green Yellow Prizm Shock,0.0,,0,0,0
+12062185,football,2025,Panini,Select,Harold Fannin Jr.,155,Green Yellow Prizm Shock,2.26,,40.48,32.0,13.54
+12054617,football,2025,Panini,Select,Jakobi Meyers,5,Green Yellow Prizm Shock,1.69,,0,0,0
+12054790,football,2025,Panini,Select,Josh Simmons,8,Green Yellow Prizm Shock,0.0,,0,0,0
+12055519,football,2025,Panini,Select,Marvin Harrison Jr.,22,Green Yellow Prizm Shock,0.0,,0,0,0
+12066070,football,2025,Panini,Select,Travis Hunter,228,Green Yellow Prizm Shock,9.15,,0,0,0
+12056941,football,2025,Panini,Select,Trevor Etienne,45,Green Yellow Prizm Shock,0.0,,0,0,0
+12063609,football,2025,Panini,Select,Will Campbell,179,Green Yellow Prizm Shock,0.99,,34.71,28.0,11.59
+12069346,football,2025,Panini,Select,Jake Ferguson,297,Purple Prizm Shock,3.99,,0,0,0
+12067973,football,2025,Panini,Select,Aidan Hutchinson,271,Silver Prizm,1.85,,37.38,30.0,12.49
+12071877,football,2025,Panini,Select,Austin Ekeler,387,Silver Prizm,0.0,,0,0,0
+12059662,football,2025,Panini,Select,Chuba Hubbard,43,Silver Prizm,0.5,,0,0,0
+12063243,football,2025,Panini,Select,DJ Moore,173,Silver Prizm,2.5,,41.92,34.0,14.02
+12067145,football,2025,Panini,Select,Dylan Sampson,255,Silver Prizm,3.49,,47.13,38.0,15.78
+12054434,football,2025,Panini,Select,KeAndre Lambert-Smith,3,Silver Prizm,0.0,,0,0,0
+12057560,football,2025,Panini,Select,Malaki Starks,61,Silver Prizm,1.5,,37.15,30.0,12.41
+12055469,football,2025,Panini,Select,Puka Nacua,21,Silver Prizm,1.67,,43.41,35.0,14.53
+12057618,football,2025,Panini,Select,Rashod Bateman,62,Silver Prizm,1.99,,0,0,0
+12058424,football,2025,Panini,Select,Stefon Diggs,79,Silver Prizm,1.0,,34.75,28.0,11.61
+12060276,football,2025,Panini,Select,Tariq Woolen,115,Silver Prizm,0.0,,0,0,0
+12056694,football,2025,Panini,Select,Tetairoa McMillan,44,Silver Prizm,3.16,,100.0,80.0,16.83
+12060613,football,2025,Panini,Select,Trey McBride,124,Silver Prizm,2.0,,0,0,0
+12061732,football,2025,Panini,Select,Woody Marks,135,Silver Prizm,1.12,,35.35,28.0,11.8
+12082462,football,2025,Panini,Select Turbocharged,Bijan Robinson,18,,1.71,,38.27,31.0,12.79
+12082432,football,2025,Panini,Select Turbocharged,Emeka Egbuka,2,,1.81,,39.36,31.0,13.16
+12081802,football,2025,Panini,Select Certified Rookie,Elijah Arroyo,24,,1.5,,37.15,30.0,12.41
+12081811,football,2025,Panini,Select Certified Rookie,Mason Graham,25,,1.54,,34.72,28.0,11.59
+12081732,football,2025,Panini,Select Certified Rookie,Matthew Golden,18,,1.95,,41.85,33.0,14.0
+12081891,football,2025,Panini,Select Future,Dylan Sampson,4,,1.79,,38.79,31.0,12.97
+12082009,football,2025,Panini,Select Future,Jack Bech,12,,1.83,,0,0,0
+12082017,football,2025,Panini,Select Future,Omarion Hampton,13,,1.16,,36.98,30.0,12.36
+12081984,football,2025,Panini,Select Future,Tyler Warren,9,,1.12,,39.46,32.0,13.2
+12082096,football,2025,Panini,Select Numbers,Myles Garrett,4,,1.46,,39.46,32.0,13.2
+12082096,football,2025,Panini,Select Numbers,Myles Garrett,4,,1.46,,39.46,32.0,13.2
+12082151,football,2025,Panini,Select Numbers,Nico Collins,8,,0.99,,0,0,0
+12080057,football,2025,Panini,Select Rookie Swatch Prizm,Jaydon Blue,6,Blue,2.3,,0,0,0
+12076367,football,2025,Panini,Select Rookie Signature,Terrance Ferguson,11,Tie-Dye Prizm Die-Cut,150.0,,0,0,0
+12056369,football,2025,Panini,Select,Bucky Irving,38,Red Prizm,0.0,,0,0,0
+12066572,football,2025,Panini,Select,Anthony Richardson,232,Tri-Color Prizm,0.0,,0,0,0
+12062341,football,2025,Panini,Select,Ja'Marr Chase,157,Tri-Color Prizm,8.07,,77.73,62.0,26.12
+12055749,football,2025,Panini,Select,Cam Ward,26,White Prizm,132.5,,0,0,0
+12073500,football,2025,Panini,Select,Trey Hendrickson,459,White Prizm,20.0,,0,0,0
+12073949,football,2025,Panini,Select,Josh Jacobs,466,Zebra Prizm,70.0,,0,0,0
+12077425,football,2025,Panini,Select Signature Memorabilia Prizm,Derek Stingley Jr.,5,,10.0,,0,0,0
+12077713,football,2025,Panini,Select Signature Memorabilia Prizm,Christian Kirk,32,Blue,6.0,,0,0,0
+12079181,football,2025,Panini,Select Draft Selections Memorabilia Prizm,Jalen Milroe,23,,10.0,,0,0,0
+12081511,football,2025,Panini,Select Score Throwback,Patrick Mahomes II,6,,2.5,,45.45,36.0,15.22
+12080914,football,2025,Panini,Select On Target,Matthew Golden,1,,2.74,,40.7,33.0,13.61
+12081152,football,2025,Panini,Select On Target,A.J. Brown,20,Prizm,2.99,,0,0,0
+12081363,football,2025,Panini,Select Phenomenon,Matthew Golden,9,,2.4,,0,0,0
+12081282,football,2025,Panini,Select Phenomenon,Ashton Jeanty,16,Prizm,3.25,,48.91,39.0,16.39
+12080953,football,2025,Panini,Select Neon Icons,Abdul Carter,19,,1.0,,34.75,28.0,11.61
+12056504,football,2025,Panini,Select,Tyler Shough,41,Copper Prizm Shock,12.0,,0,0,0
+11287343,baseball,2025,Topps,Allen and Ginter,Andres Gimenez,94,,0.74,,0,0,0
+11288189,baseball,2025,Topps,Allen and Ginter,Andruw Jones,190,,1.19,,35.5,28.0,11.9
+11286904,baseball,2025,Topps,Allen and Ginter,Austin Riley,47,,1.74,,37.85,30.0,12.71
+11286665,baseball,2025,Topps,Allen and Ginter,Bo Jackson,18,,1.76,,36.85,29.0,12.36
+11287797,baseball,2025,Topps,Allen and Ginter,Brent Rooker,147,,0.67,,33.06,26.0,11.06
+11288418,baseball,2025,Topps,Allen and Ginter,Brian Cranston,209,,1.66,,37.6,30.0,12.62
+11287778,baseball,2025,Topps,Allen and Ginter,Bryce Harper,146,,1.25,,34.7,28.0,11.62
+11287862,baseball,2025,Topps,Allen and Ginter,Carlos Beltran,153,,1.37,,36.86,29.0,12.37
+11287862,baseball,2025,Topps,Allen and Ginter,Carlos Beltran,153,,1.37,,36.86,29.0,12.37
+11288471,baseball,2025,Topps,Allen and Ginter,Chef Reactions,211,,1.5,,36.85,29.0,12.36
+11288709,baseball,2025,Topps,Allen and Ginter,DJ Herz,237,,1.29,,35.9,29.0,12.04
+11287843,baseball,2025,Topps,Allen and Ginter,Dave Winfield,151,,0.99,,34.52,28.0,11.56
+11288855,baseball,2025,Topps,Allen and Ginter,Drew Nix,255,,1.99,,39.12,31.0,13.14
+11288492,baseball,2025,Topps,Allen and Ginter,George Kirby,220,,1.59,,37.29,30.0,12.51
+11286871,baseball,2025,Topps,Allen and Ginter,Greg Maddux,41,,1.49,,36.83,29.0,12.35
+11287181,baseball,2025,Topps,Allen and Ginter,Jackson Chourio,76,,1.46,,36.48,29.0,12.24
+11287181,baseball,2025,Topps,Allen and Ginter,Jackson Chourio,76,,1.46,,36.48,29.0,12.24
+11287404,baseball,2025,Topps,Allen and Ginter,James Wood,101,,1.69,,35.7,29.0,11.97
+11287162,baseball,2025,Topps,Allen and Ginter,Jazz Chisholm Jr.,74,,1.39,,36.5,29.0,12.24
+11288814,baseball,2025,Topps,Allen and Ginter,Joe Godino,283,,1.89,,38.63,31.0,12.98
+11287543,baseball,2025,Topps,Allen and Ginter,Jose Ramirez,117,,1.34,,36.13,29.0,12.11
+11287271,baseball,2025,Topps,Allen and Ginter,Ketel Marte,86,,0.55,,32.43,26.0,10.84
+11288002,baseball,2025,Topps,Allen and Ginter,Laura Prepon,169,,1.67,,37.63,30.0,12.63
+11286633,baseball,2025,Topps,Allen and Ginter,Lou Brock,11,,1.34,,35.84,29.0,12.02
+11287334,baseball,2025,Topps,Allen and Ginter,Max Muncy,93,,1.18,,35.41,28.0,11.86
+11287396,baseball,2025,Topps,Allen and Ginter,Mike Trout,100,,1.25,,35.79,29.0,12.0
+11287218,baseball,2025,Topps,Allen and Ginter,Mookie Betts,80,,0.99,,34.54,28.0,11.56
+11287657,baseball,2025,Topps,Allen and Ginter,Nolan Arenado,130,,1.28,,35.75,29.0,11.99
+11286776,baseball,2025,Topps,Allen and Ginter,Rafael Devers,29,,1.69,,37.71,30.0,12.66
+11288868,baseball,2025,Topps,Allen and Ginter,Richard Kind,293,,1.49,,37.71,30.0,12.66
+11288677,baseball,2025,Topps,Allen and Ginter,River Ryan,226,,1.25,,35.72,29.0,11.97
+11286901,baseball,2025,Topps,Allen and Ginter,Roger Clemens,43,,1.04,,34.76,28.0,11.64
+11286625,baseball,2025,Topps,Allen and Ginter,Ryne Sandberg,15,,1.49,,36.71,29.0,12.32
+11287965,baseball,2025,Topps,Allen and Ginter,Salvador Perez,165,,1.29,,35.99,29.0,12.07
+11287965,baseball,2025,Topps,Allen and Ginter,Salvador Perez,165,,1.29,,35.99,29.0,12.07
+11289146,baseball,2025,Topps,Allen and Ginter,Seth Meyers,292,,1.79,,38.17,31.0,12.82
+11287675,baseball,2025,Topps,Allen and Ginter,Shohei Ohtani,132,,1.64,,73.0,58.0,27.5
+11288153,baseball,2025,Topps,Allen and Ginter,Spencer Steer,186,,0.99,,34.54,28.0,11.56
+11288847,baseball,2025,Topps,Allen and Ginter,Tom Marshall,265,,1.47,,36.72,29.0,12.32
+11286996,baseball,2025,Topps,Allen and Ginter,Ty Cobb,55,,1.7,,36.82,29.0,12.35
+11287647,baseball,2025,Topps,Allen and Ginter,Willy Adames,129,,1.69,,37.71,30.0,12.66
+11287448,baseball,2025,Topps,Allen and Ginter,Wyatt Langford,106,,0.99,,34.53,28.0,11.56
+11286817,baseball,2025,Topps,Allen and Ginter,Yordan Alvarez,32,,1.5,,36.85,29.0,12.37
+11287729,baseball,2025,Topps,Allen and Ginter,Yoshinobu Yamamoto,138,,1.44,,29.0,23.0,12.3
+11291321,baseball,2025,Topps,Allen and Ginter,George Brett,308,SP,1.66,,37.57,30.0,12.62
+11291340,baseball,2025,Topps,Allen and Ginter,Ivan Rodriguez,309,SP,1.18,,35.81,29.0,12.0
+11291401,baseball,2025,Topps,Allen and Ginter,Phil Niekro,312,SP,1.45,,36.61,29.0,12.29
+11291569,baseball,2025,Topps,Allen and Ginter,Robin Yount,321,SP,1.48,,37.07,30.0,12.44
+11291329,baseball,2025,Topps,Allen and Ginter,Rollie Fingers,328,SP,1.99,,39.1,31.0,13.14
+11297488,baseball,2025,Topps,Allen and Ginter Sweet Victory,Albert Pujols,SV-10,,1.25,,34.56,28.0,11.58
+11297490,baseball,2025,Topps,Allen and Ginter Sweet Victory,Derek Jeter,SV-12,,1.57,,37.37,30.0,12.54
+11297478,baseball,2025,Topps,Allen and Ginter Sweet Victory,Freddie Freeman,SV-1,,1.58,,37.21,30.0,12.49
+11297509,baseball,2025,Topps,Allen and Ginter Sweet Victory,Kirk Gibson,SV-31,,1.6,,37.04,30.0,12.43
+11297496,baseball,2025,Topps,Allen and Ginter Sweet Victory,Miguel Cabrera,SV-18,,1.29,,35.89,29.0,12.03
+11297529,baseball,2025,Topps,Allen and Ginter Wicked Curves,Blake Snell,WC-10,,1.0,,34.58,28.0,11.58
+11297553,baseball,2025,Topps,Allen and Ginter Wicked Curves,Don Drysdale,WC-35,,1.19,,35.49,28.0,11.89
+11297554,baseball,2025,Topps,Allen and Ginter Wicked Curves,Don Sutton,WC-36,,0.99,,34.53,28.0,11.56
+11297559,baseball,2025,Topps,Allen and Ginter Wicked Curves,Dwight Gooden,WC-1,,1.31,,35.9,29.0,12.04
+11297521,baseball,2025,Topps,Allen and Ginter Wicked Curves,Nolan Ryan,WC-3,,1.9,,38.68,31.0,13.0
+11289271,baseball,2025,Topps,Allen and Ginter,Babe Ruth,28,Mini,1.23,,36.12,29.0,15.5
+11289480,baseball,2025,Topps,Allen and Ginter,Chan Ho Park,12,Mini,1.22,,35.59,28.0,11.93
+11292096,baseball,2025,Topps,Allen and Ginter,Cy Young,348,Mini,1.49,,36.81,29.0,12.35
+11289855,baseball,2025,Topps,Allen and Ginter,Jace Jung,85,Mini,1.55,,37.08,30.0,12.44
+11290181,baseball,2025,Topps,Allen and Ginter,Masataka Yoshida,156,Mini,1.69,,37.72,30.0,12.67
+11291115,baseball,2025,Topps,Allen and Ginter,Paul Molitor,175,Mini,1.55,,37.25,30.0,12.5
+11289575,baseball,2025,Topps,Allen and Ginter,Ted Williams,48,Mini,1.3,,35.95,29.0,12.05
+11291548,baseball,2025,Topps,Allen and Ginter,Emma Roberts,286,Mini Black,3.36,,45.36,36.0,15.3
+11291024,baseball,2025,Topps,Allen and Ginter,Marcelo Mayer,245,Mini Black,2.49,,41.41,33.0,13.93
+11287174,baseball,2025,Topps,Allen and Ginter,Jackson Jobe,75,Foil,2.49,,41.38,33.0,13.93
+11297635,baseball,2025,Topps,Allen and Ginter 1889 N22,Mike Trout,N222-15,,2.18,,38.84,31.0,13.06
+11877939,baseball,2026,Topps,,Alex Bregman,135,,1.49,,37.04,30.0,12.39
+11881673,baseball,2026,Topps,,American League Leaders Avg,204,,1.21,,36.48,29.0,12.2
+11887697,baseball,2026,Topps,,American League Leaders ERA,327,,1.44,,35.91,29.0,12.0
+11872783,baseball,2026,Topps,,American League Leaders HRs,38,,1.4,,37.7,30.0,12.61
+11889139,baseball,2026,Topps,,Andrew Benintendi,345,,1.0,,34.82,28.0,11.63
+11877467,baseball,2026,Topps,,Andrew McCutchen,131,,1.26,,38.19,31.0,12.77
+11886266,baseball,2026,Topps,,Anthony Seigler,286,,1.3,,37.3,30.0,12.47
+11887381,baseball,2026,Topps,,Anthony Volpe,308,,1.39,,36.57,29.0,12.23
+11882872,baseball,2026,Topps,,Ben Williamson,226,,0.99,,34.68,28.0,11.59
+11871052,baseball,2026,Topps,,Blaze Alexander,6,,1.19,,0,0,0
+11874308,baseball,2026,Topps,,Bob Seymour,70,,1.19,,35.63,29.0,11.91
+11881285,baseball,2026,Topps,,Boston Red Sox,198,,1.39,,36.57,29.0,12.23
+11872958,baseball,2026,Topps,,Bradgley Rodriguez,42,,0.6,,32.93,26.0,10.99
+11886022,baseball,2026,Topps,,Brady Singer,282,,0.99,,34.68,28.0,11.59
+11888713,baseball,2026,Topps,,Brandon Marsh,335,,1.99,,38.1,30.0,12.74
+11873151,baseball,2026,Topps,,Brandon Pfaadt,45,,0.99,,34.69,28.0,11.59
+11882510,baseball,2026,Topps,,Brandon Walter,227,,1.44,,36.81,29.0,12.31
+11879529,baseball,2026,Topps,,Brandyn Garcia,163,,0.9,,34.69,28.0,11.59
+11879861,baseball,2026,Topps,,Brayan Bello,177,,1.0,,34.73,28.0,11.6
+11879109,baseball,2026,Topps,,Brenton Doyle,164,,0.99,,36.24,29.0,12.11
+11876267,baseball,2026,Topps,,Brice Turang,105,,1.29,,36.11,29.0,12.07
+11887055,baseball,2026,Topps,,Bronx Buddies,302,,1.49,,37.05,30.0,12.39
+11881442,baseball,2026,Topps,,Bryce Harper,197,,2.2,,36.8,29.0,12.31
+11888073,baseball,2026,Topps,,Bryce Miller,331,,1.11,,36.58,29.0,12.23
+11884181,baseball,2026,Topps,,Byron Buxton,255,,1.61,,38.93,31.0,13.03
+11872590,baseball,2026,Topps,,C.J. Kayfus,35,,1.38,,37.05,30.0,12.39
+11878992,baseball,2026,Topps,,CJ Abrams,152,,1.22,,35.39,28.0,11.83
+11876722,baseball,2026,Topps,,Cam Schlittler,111,,1.39,,37.04,30.0,12.39
+11884374,baseball,2026,Topps,,Carlos Cortes,249,,1.25,,34.72,28.0,11.6
+11877191,baseball,2026,Topps,,Carson Seymour,112,,1.0,,35.78,29.0,11.96
+11872078,baseball,2026,Topps,,Carson Williams,25,,1.47,,36.96,30.0,12.36
+11871590,baseball,2026,Topps,,Casey Mize,16,,1.51,,37.2,30.0,12.44
+11876203,baseball,2026,Topps,,Ceddanne Rafaela,101,,1.39,,42.53,34.0,14.25
+11875955,baseball,2026,Topps,,Cesar Prieto,95,,1.3,,36.2,29.0,12.1
+11883176,baseball,2026,Topps,,Chad Stevens,232,,1.0,,37.09,30.0,12.4
+11887552,baseball,2026,Topps,,Chase Burns,312,,1.57,,35.91,29.0,12.0
+11879142,baseball,2026,Topps,,Christian Yelich,154,,1.27,,36.77,29.0,12.29
+11885285,baseball,2026,Topps,,Clay Holmes,276,,1.69,,38.96,31.0,13.03
+11871906,baseball,2026,Topps,,Clayton Kershaw,22,,1.66,,37.84,30.0,12.66
+11874465,baseball,2026,Topps,,Coby Mayo,72,,0.96,,34.4,28.0,11.49
+11877293,baseball,2026,Topps,,Cole Young,129,,1.86,,37.14,30.0,12.42
+11875776,baseball,2026,Topps,,Corey Seager,96,,1.39,,36.81,29.0,12.31
+11876222,baseball,2026,Topps,,Dalton Rushing,103,,1.59,,37.51,30.0,12.55
+11882973,baseball,2026,Topps,,David Bednar,228,,0.99,,35.76,29.0,11.95
+11871751,baseball,2026,Topps,,Dean Kremer,19,,0.99,,34.68,28.0,11.59
+11885048,baseball,2026,Topps,,Detroit Tigers,262,,1.35,,39.35,31.0,13.17
+11889585,baseball,2026,Topps,,Devin Williams,239,,0.99,,36.01,29.0,12.04
+11884235,baseball,2026,Topps,,Didier Fuentes,243,,1.25,,36.33,29.0,12.15
+11879386,baseball,2026,Topps,,Dominic Canzone,156,,0.99,,34.69,28.0,11.59
+11881105,baseball,2026,Topps,,Eric Lauer,175,,0.99,,34.68,28.0,11.59
+11877004,baseball,2026,Topps,,Evan Carter,110,,0.99,,34.68,28.0,11.59
+11878448,baseball,2026,Topps,,Ezequiel Tovar,136,,1.31,,36.35,29.0,12.15
+11888275,baseball,2026,Topps,,Fernando Tatis Jr.,333,,1.49,,37.05,30.0,12.39
+11877785,baseball,2026,Topps,,Francisco Lindor,123,,1.68,,37.94,30.0,12.69
+11873568,baseball,2026,Topps,,Garrett Crochet,53,,1.09,,35.34,28.0,11.81
+11882002,baseball,2026,Topps,,Gavin Sheets,216,,0.99,,0,0,0
+11884281,baseball,2026,Topps,,Geraldo Perdomo,257,,1.08,,36.67,29.0,12.26
+11889036,baseball,2026,Topps,,Giancarlo Stanton,341,,1.75,,36.81,29.0,12.31
+11880644,baseball,2026,Topps,,Grant Holmes,182,,1.19,,36.01,29.0,12.04
+11885203,baseball,2026,Topps,,Hunter Goodman,274,,0.99,,36.57,29.0,12.23
+11879562,baseball,2026,Topps,,Ian Seymour,165,,1.39,,36.58,29.0,12.23
+11878778,baseball,2026,Topps,,J.T. Ginn,153,,0.99,,0,0,0
+11871267,baseball,2026,Topps,,Jacob Misiorowski,10,,1.75,,36.57,29.0,12.23
+11876085,baseball,2026,Topps,,Jacob deGrom,99,,1.25,,35.92,29.0,12.0
+11875330,baseball,2026,Topps,,Jeffrey Springs,87,,0.99,,34.68,28.0,11.59
+11873715,baseball,2026,Topps,,Joe Ryan,54,,1.24,,35.87,29.0,11.99
+11874945,baseball,2026,Topps,,Jonah Heim,78,,1.49,,0,0,0
+11885543,baseball,2026,Topps,,Jose Altuve,278,,1.32,,36.26,29.0,12.12
+11885195,baseball,2026,Topps,,Jose Berrios,272,,0.99,,34.68,28.0,11.59
+11887835,baseball,2026,Topps,,Jose Soriano,319,,0.0,,0,0,0
+11876377,baseball,2026,Topps,,Juan Burgos,102,,0.99,,35.44,28.0,11.84
+11888178,baseball,2026,Topps,,Junior Caminero,328,,1.18,,36.14,29.0,12.08
+11875187,baseball,2026,Topps,,Kody Clemens,85,,1.32,,36.57,29.0,12.23
+11889075,baseball,2026,Topps,,Kumar Rocker,336,,1.1,,35.21,28.0,11.76
+11871876,baseball,2026,Topps,,Kyle Backhus,21,,1.18,,33.02,26.0,11.03
+11876491,baseball,2026,Topps,,Kyle Freeland,106,,0.58,,0,0,0
+11888665,baseball,2026,Topps,,Kyle Karros,334,,1.0,,34.73,28.0,11.6
+11887286,baseball,2026,Topps,,Kyle Manzardo,309,,0.62,,33.83,27.0,11.3
+11874750,baseball,2026,Topps,,Logan Webb,69,,1.39,,36.57,29.0,12.23
+11884654,baseball,2026,Topps,,Los Angeles Dodgers,256,,1.5,,37.04,30.0,12.39
+11884346,baseball,2026,Topps,,Luis Morales,259,,1.49,,37.05,30.0,12.39
+11870848,baseball,2026,Topps,,Luke Keaschall,3,,1.39,,36.57,29.0,12.23
+11871484,baseball,2026,Topps,,MacKenzie Gore,14,,0.0,,0,0,0
+11874288,baseball,2026,Topps,,Masataka Yoshida,65,,1.39,,36.58,29.0,12.23
+11880011,baseball,2026,Topps,,Mason Miller,179,,1.02,,35.63,29.0,11.91
+11874989,baseball,2026,Topps,,Matt McLain,81,,1.18,,34.69,28.0,11.59
+11872121,baseball,2026,Topps,,Matt Shaw,27,,1.27,,36.01,29.0,12.04
+11887879,baseball,2026,Topps,,Michael Harris II,310,,1.1,,36.34,29.0,12.15
+11880472,baseball,2026,Topps,,Michael Wacha,190,,1.42,,35.45,28.0,11.84
+11887864,baseball,2026,Topps,,Miguel Vargas,329,,0.99,,34.68,28.0,11.59
+11872011,baseball,2026,Topps,,Nathan Church,24,,0.79,,35.67,29.0,11.92
+11881516,baseball,2026,Topps,,National League Leaders ERA,203,,1.57,,37.43,30.0,12.52
+11875277,baseball,2026,Topps,,National League Leaders HRs,84,,1.59,,37.04,30.0,12.39
+11877206,baseball,2026,Topps,,New-Age Athletics,122,,0.83,,33.93,27.0,11.33
+11871642,baseball,2026,Topps,,Nick Castellanos,17,,1.88,,38.11,30.0,12.74
+11871215,baseball,2026,Topps,,Nick Pivetta,9,,0.99,,34.69,28.0,11.59
+11881838,baseball,2026,Topps,,Nolan McLean,214,,1.54,,37.9,30.0,12.68
+11883710,baseball,2026,Topps,,Oneil Cruz,246,,1.74,,38.46,31.0,12.87
+11880925,baseball,2026,Topps,,Otto Lopez,194,,1.14,,42.78,34.0,14.33
+11871105,baseball,2026,Topps,,Patrick Bailey,7,,1.49,,34.68,28.0,11.59
+11871539,baseball,2026,Topps,,Payton Tolle,15,,1.67,,37.61,30.0,12.58
+11885704,baseball,2026,Topps,,Pedro Pages,280,,1.44,,36.81,29.0,12.31
+11881217,baseball,2026,Topps,,Pete Crow-Armstrong,196,,1.5,,36.81,29.0,12.31
+11888252,baseball,2026,Topps,,Pierson Ohl,321,,0.99,,36.39,29.0,12.16
+11876157,baseball,2026,Topps,,Roki Sasaki,66,,1.3,,34.68,28.0,11.59
+11886117,baseball,2026,Topps,,Romy Gonzalez,294,,1.44,,36.82,29.0,12.31
+11885842,baseball,2026,Topps,,Ronny Henriquez,290,,1.13,,35.53,28.0,11.87
+11877056,baseball,2026,Topps,,Royce Lewis,115,,1.49,,37.04,30.0,12.39
+11883949,baseball,2026,Topps,,Ryan McMahon,248,,1.2,,35.29,28.0,11.79
+11887213,baseball,2026,Topps,,Ryan Pepiot,313,,1.74,,38.25,31.0,12.79
+11871696,baseball,2026,Topps,,Ryan Ritter,18,,1.55,,37.43,30.0,12.52
+11876561,baseball,2026,Topps,,Samuel Basallo,104,,1.65,,36.62,29.0,12.24
+11878225,baseball,2026,Topps,,Sean Burke,137,,1.07,,0,0,0
+11873048,baseball,2026,Topps,,Shane Smith,44,,1.49,,37.04,30.0,12.39
+11880444,baseball,2026,Topps,,Shota Imanaga,178,,1.19,,36.24,29.0,12.12
+11872805,baseball,2026,Topps,,Sonny Gray,40,,0.99,,41.78,33.0,13.99
+11887070,baseball,2026,Topps,,Spencer Schwellenbach,306,,1.07,,35.15,28.0,11.75
+11886764,baseball,2026,Topps,,Tarik Skubal,300,,1.93,,37.19,30.0,12.44
+11884658,baseball,2026,Topps,,Texas Rangers,258,,0.99,,34.97,28.0,11.68
+11880323,baseball,2026,Topps,,Tomoyuki Sugano,185,,1.2,,35.63,29.0,11.91
+11878732,baseball,2026,Topps,,Travis Adams,149,,0.94,,33.73,27.0,11.27
+11878601,baseball,2026,Topps,,Trevor Megill,141,,1.31,,38.65,31.0,12.93
+11880175,baseball,2026,Topps,,Tyler Stephenson,174,,0.99,,34.69,28.0,11.59
+11882885,baseball,2026,Topps,,Vinnie Pasquantino,223,,0.99,,34.68,28.0,11.59
+11873623,baseball,2026,Topps,,Warming Bernabel,55,,0.54,,32.98,26.0,11.01
+11884605,baseball,2026,Topps,,Washington Nationals,266,,1.34,,36.35,29.0,12.15
+11880678,baseball,2026,Topps,,William Contreras,192,,1.19,,36.57,29.0,12.23
+11884971,baseball,2026,Topps,,Willy Adames,267,,0.99,,34.69,28.0,11.59
+11876617,baseball,2026,Topps,,Yanquiel Fernandez,116,,1.27,,36.0,29.0,12.03
+11875413,baseball,2026,Topps,,Yoshinobu Yamamoto,90,,1.39,,37.09,30.0,12.4
+11875770,baseball,2026,Topps,,Yu Darvish,94,,1.19,,34.68,28.0,11.59
+11880254,baseball,2026,Topps,,Yusei Kikuchi,173,,1.19,,34.73,28.0,11.6
+11871958,baseball,2026,Topps,,Zach McKinstry,23,,1.39,,36.58,29.0,12.23
+11884651,baseball,2026,Topps,,Zack Wheeler,261,,1.22,,37.56,30.0,12.56
+11900263,baseball,2026,Topps,Titans of the Game,Elly De La Cruz,TOG-5,,1.25,,34.73,28.0,11.6
+11900253,baseball,2026,Topps,Titans of the Game,Jac Caglianone,TOG-12,,1.44,,35.91,29.0,12.0
+11900213,baseball,2026,Topps,Titans of the Game,Juan Soto,TOG-11,,0.99,,34.68,28.0,11.59
+11900231,baseball,2026,Topps,Titans of the Game,Julio Rodriguez,TOG-20,,0.99,,34.68,28.0,11.59
+11900303,baseball,2026,Topps,Titans of the Game,Paul Skenes,TOG-14,,1.29,,36.01,29.0,12.04
+11900350,baseball,2026,Topps,Titans of the Game,Roman Anthony,TOG-9,,2.25,,50.08,40.0,16.81
+12383960,baseball,2026,Topps,Celebration Mascot,Baxter Arizona Diamondbacks,M-1,,0.0,,0,0,0
+12383968,baseball,2026,Topps,Celebration Mascot,Bernie Brewer Milwaukee Brewers,M-5,,2.63,,0,0,0
+12383994,baseball,2026,Topps,Celebration Mascot,Dinger Colorado Rockies,M-4,,0.0,,0,0,0
+12384118,baseball,2026,Topps,Celebration Mascot,Mascot Milwaukee Brewers,M-27,,0.0,,0,0,0
+12384009,baseball,2026,Topps,Celebration Mascot,Mr. Met New York Mets,M-11,,1.43,,0,0,0
+12384111,baseball,2026,Topps,Celebration Mascot,Slider Cleveland Guardians,M-25,,0.0,,0,0,0
+12384154,baseball,2026,Topps,Celebration Mascot,Swinging Friar San Diego Padres,M-29,,1.25,,0,0,0
+12383948,baseball,2026,Topps,Celebration Mascot,Wally the Green Monster Boston Red Sox,M-2,,0.0,,0,0,0
+11897998,baseball,2026,Topps,1991,Elly De La Cruz,T91-22,,1.27,,36.62,29.0,12.24
+11898397,baseball,2026,Topps,1991,Gunnar Henderson,T91-49,,1.72,,36.2,29.0,12.1
+11899438,baseball,2026,Topps,1991,Kyle Teel,T91-91,,1.21,,36.0,29.0,12.03
+11883712,baseball,2026,Topps,,Addison Barger,241,Holo,2.13,,37.24,30.0,12.45
+11870949,baseball,2026,Topps,,Jonah Tong,4,Holo,3.53,,48.86,39.0,16.39
+11896844,baseball,2026,Topps,Profiles,Gunnar Henderson,TP-4,,1.5,,38.37,31.0,12.84
+11896769,baseball,2026,Topps,Profiles,Shohei Ohtani,TP-1,,2.25,,36.29,29.0,12.13
+11897220,baseball,2026,Topps,First Pitch,Kevin Negandhi,FP-4,,1.4,,36.61,29.0,12.24
+11897003,baseball,2026,Topps,All-Topps Team,Paul Skenes,ATT-10,,2.12,,40.26,32.0,13.48
+12384298,baseball,2026,Topps,Celebration Perennial All-Stars,Aaron Judge,PAS-14,,1.99,,0,0,0
+12384184,baseball,2026,Topps,Celebration Perennial All-Stars,Bobby Witt Jr.,PAS-18,,3.99,,0,0,0
+12384198,baseball,2026,Topps,Celebration Perennial All-Stars,Clayton Kershaw,PAS-6,,0.0,,0,0,0
+12384289,baseball,2026,Topps,Celebration Perennial All-Stars,Fernando Tatis Jr.,PAS-13,,0.99,,0,0,0
+12384171,baseball,2026,Topps,Celebration Perennial All-Stars,Kyle Tucker,PAS-3,,0.0,,0,0,0
+12384259,baseball,2026,Topps,Celebration Perennial All-Stars,Mookie Betts,PAS-11,,1.5,,0,0,0
+12384197,baseball,2026,Topps,Celebration Perennial All-Stars,Pete Alonso,PAS-19,,0.0,,0,0,0
+11899791,baseball,2026,Topps,Stars Of MLB,Aaron Judge,SMLB-1,,1.37,,36.48,29.0,12.2
+11900019,baseball,2026,Topps,Stars Of MLB,Byron Buxton,SMLB-22,,0.99,,34.68,28.0,11.59
+11899943,baseball,2026,Topps,Stars Of MLB,Christian Yelich,SMLB-20,,0.89,,35.06,28.0,11.71
+11899906,baseball,2026,Topps,Stars Of MLB,Elly De La Cruz,SMLB-12,,0.99,,34.82,28.0,11.63
+11899879,baseball,2026,Topps,Stars Of MLB,Jacob Misiorowski,SMLB-26,,1.27,,36.71,29.0,12.27
+11899890,baseball,2026,Topps,Stars Of MLB,Julio Rodriguez,SMLB-4,,0.83,,33.92,27.0,11.33
+11900021,baseball,2026,Topps,Stars Of MLB,Mookie Betts,SMLB-16,,1.0,,34.73,28.0,11.6
+11900119,baseball,2026,Topps,Stars Of MLB,Roman Anthony,SMLB-25,,1.8,,39.45,32.0,13.2
+12382621,baseball,2026,Topps,Celebration,Sean Manaea,332,Opening Day,0.0,,0,0,0
+12381824,baseball,2026,Topps,Celebration,Bobby Witt Jr.,205,Confetti,4.99,,0,0,0
+12382056,baseball,2026,Topps,Celebration,Geraldo Perdomo,257,Confetti,0.0,,0,0,0
+12382745,baseball,2026,Topps,Celebration,Hunter Brown,264,Confetti,0.0,,0,0,0
+12381827,baseball,2026,Topps,Celebration,Jacob Young,210,Confetti,0.0,,0,0,0
+12381201,baseball,2026,Topps,Celebration,Mookie Betts,41,Confetti,2.99,,0,0,0
+12381247,baseball,2026,Topps,Celebration,Ronald Acuna Jr.,50,Confetti,1.89,,0,0,0
+12382288,baseball,2026,Topps,Celebration,Team Card,304,Confetti,0.0,,0,0,0
+12381371,baseball,2026,Topps,Celebration,Team Card,89,Confetti,0.0,,0,0,0
+12381317,baseball,2026,Topps,Celebration,Jesus Luzardo,63,Pink Confetti,0.0,,0,0,0
+12382139,baseball,2026,Topps,Celebration,Mason Barnett,273,Pink Confetti,0.0,,0,0,0
+12383839,baseball,2026,Topps,Celebration Gameday Drip,Andrew McCutchen,GD-19,,1.25,,0,0,0
+12383886,baseball,2026,Topps,Celebration Gameday Drip,Francisco Lindor,GD-10,,1.99,,0,0,0
+12383918,baseball,2026,Topps,Celebration Gameday Drip,Gunnar Henderson,GD-13,,0.99,,0,0,0
+12383876,baseball,2026,Topps,Celebration Gameday Drip,Jazz Chisholm Jr.,GD-9,,1.5,,0,0,0
+12383817,baseball,2026,Topps,Celebration Gameday Drip,Matt Chapman,GD-17,,2.5,,0,0,0
+12383807,baseball,2026,Topps,Celebration Gameday Drip,Mookie Betts,GD-16,,2.75,,0,0,0
+12383698,baseball,2026,Topps,Celebration 8-Bit Ballers,Alex Freeland,8B-21,,0.0,,0,0,0
+12383713,baseball,2026,Topps,Celebration 8-Bit Ballers,Bubba Chandler,8B-22,,1.5,,0,0,0
+12383782,baseball,2026,Topps,Celebration 8-Bit Ballers,Cal Ripken Jr.,8B-15,,1.25,,0,0,0
+12383641,baseball,2026,Topps,Celebration 8-Bit Ballers,Chase Burns,8B-3,,0.0,,0,0,0
+12383739,baseball,2026,Topps,Celebration 8-Bit Ballers,Elly De La Cruz,8B-24,,2.7,,0,0,0
+12383665,baseball,2026,Topps,Celebration 8-Bit Ballers,Jacob Misiorowski,8B-5,,2.55,,0,0,0
+12383652,baseball,2026,Topps,Celebration 8-Bit Ballers,Rickey Henderson,8B-17,,1.99,,0,0,0

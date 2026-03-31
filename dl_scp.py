@@ -14,7 +14,7 @@ STALE = ll.days(1)
 def dl_url(uid, token):
 	return f'https://www.sportscardspro.com/price-guide/download-custom?t={token}&console-uids={uid}'
 
-@ll.cache(stale=STALE)
+# @ll.cache(stale=STALE)
 def set_list(sport):
 	# if ll.fexists(fn:=f'sets/scp-sets-{sport}.csv'):
 		# return ll.csv(fn)
