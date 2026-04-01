@@ -1194,48 +1194,6 @@ scp_id,sport,year,brand,set,name,number,parallel,price,condition,psa_10,cgc_10,p
 5599023,football,2023,Panini,Score,Kyler Murray,152,Stars,1.12,,0,0,0
 12230203,football,2020,Panini,XR,Josh Allen,98,Blue,0.0,,0,0,0
 12230209,football,2023,Panini,Luminance Year One Signatures,Jaren Hall,Y1JHA,Red,0.0,,0,0,0
-8111612,football,2024,Panini,Prizm,Alvin Kamara,204,,1.13,,34.77,28.0,8.11
-8108458,football,2024,Panini,Prizm,Bo Jackson,154,,1.5,,27.49,22.0,12.37
-8118267,football,2024,Panini,Prizm,Braden Fiske,310,,0.72,,32.69,26.0,11.03
-8103771,football,2024,Panini,Prizm,Brandon Aubrey,79,,1.35,,35.14,28.0,11.97
-8118518,football,2024,Panini,Prizm,Brian Thomas Jr.,314,,1.5,,29.99,15.5,10.0
-8117694,football,2024,Panini,Prizm,Caleb Williams,301,,5.24,,161.55,129.0,25.0
-8109406,football,2024,Panini,Prizm,Cooper Kupp,169,,1.04,,33.76,27.0,6.0
-8101073,football,2024,Panini,Prizm,Cornelius Bennett,36,,1.59,,0,0,0
-8101831,football,2024,Panini,Prizm,DJ Moore,48,,1.47,,35.56,28.0,12.13
-8110226,football,2024,Panini,Prizm,Dan Marino,182,,1.74,,36.0,29.0,7.0
-8099195,football,2024,Panini,Prizm,Dennis Gardeck,6,,1.47,,35.47,28.0,12.09
-8102832,football,2024,Panini,Prizm,Deshaun Watson,64,,0.99,,33.76,27.0,11.44
-8119545,football,2024,Panini,Prizm,Devin Culp,326,,0.99,,33.74,27.0,11.44
-8119557,football,2024,Panini,Prizm,Devontez Walker,328,,0.3,,31.1,25.0,10.42
-8104467,football,2024,Panini,Prizm,Ed McCaffrey,90,,1.21,,33.75,27.0,11.44
-8107523,football,2024,Panini,Prizm,Isiah Pacheco,139,,1.51,,35.74,29.0,12.2
-8119850,football,2024,Panini,Prizm,Ja'Tavion Sanders,343,,0.8,,18.0,14.0,11.16
-8127123,football,2024,Panini,Prizm,Jessie Armstead,220,,0.99,,34.51,28.0,11.73
-8105842,football,2024,Panini,Prizm,Joe Mixon,112,,1.31,,34.96,28.0,11.9
-8120669,football,2024,Panini,Prizm,Jonah Elliss,356,,1.27,,34.84,28.0,11.86
-8111109,football,2024,Panini,Prizm,JuJu Smith-Schuster,196,,0.2,,0,0,0
-8121250,football,2024,Panini,Prizm,Maason Smith,368,,1.18,,34.47,28.0,11.71
-8121689,football,2024,Panini,Prizm,Malik Washington,371,,0.97,,33.67,27.0,11.41
-8100198,football,2024,Panini,Prizm,Mark Andrews,22,,1.36,,0,0,0
-8100888,football,2024,Panini,Prizm,Matt Milano,33,,0.99,,33.74,27.0,11.44
-8110859,football,2024,Panini,Prizm,Randy Moss,192,,1.5,,35.67,29.0,12.18
-8128152,football,2024,Panini,Prizm,Rome Odunze,385,,1.15,,30.49,9.88,8.74
-8117625,football,2024,Panini,Prizm,Torry Holt,300,,1.38,,35.23,28.0,12.01
-8115240,football,2024,Panini,Prizm,Tyler Lockett,262,,0.55,,32.09,26.0,10.8
-8114990,football,2024,Panini,Prizm,Vernon Davis,258,,1.27,,34.82,28.0,11.85
-8116184,football,2024,Panini,Prizm,Will Levis,277,,0.96,,33.76,27.0,11.44
-8128075,football,2024,Panini,Prizm Hype,Khalil Mack,10,,0.99,,30.0,24.0,11.44
-8120881,football,2024,Panini,Prizm,Kamari Lassiter,360,Silver,1.13,,34.66,28.0,11.79
-8111507,football,2024,Panini,Prizm,Richard Seymour,202,Silver,1.51,,14.99,12.0,12.16
-8101347,football,2024,Panini,Prizm,Tommy Tremble,40,Silver,1.29,,34.9,28.0,11.88
-8111309,football,2024,Panini,Prizm,Adam Vinatieri,199,Neon Green Pulsar,1.06,,34.03,27.0,11.54
-8117768,football,2024,Panini,Prizm,Adisa Isaac,302,Neon Green Pulsar,0.99,,33.76,27.0,11.44
-8122314,football,2024,Panini,Prizm,Javon Baker,344,Neon Green Pulsar,1.1,,34.25,27.0,11.63
-8112563,football,2024,Panini,Prizm,Lawrence Taylor,219,Neon Green Pulsar,1.65,,35.45,28.0,12.09
-8103278,football,2024,Panini,Prizm,Michael Dean Perry,71,Neon Green Pulsar,0.72,,32.74,26.0,11.05
-8128618,football,2024,Panini,Prizm Prizmatic,Drake Maye,2,,5.0,,132.5,106.0,37.99
-8126919,football,2024,Panini,Prizm Premier Jersey,Ladd McConkey,PJ-LMY,Neon Green Pulsar,2.38,,90.0,72.0,12.5
 9513980,football,2024,Panini,Select,Aaron Jones,102,,1.5,,36.19,29.0,12.26
 9510502,football,2024,Panini,Select,Aaron Rodgers,40,,1.25,,35.17,28.0,11.88
 9510502,football,2024,Panini,Select,Aaron Rodgers,40,,1.25,,35.17,28.0,11.88
@@ -4704,3 +4662,49 @@ fake_id123,football,2021,Panini,Chronicles Draft Picks Donruss,Ja'Marr Chase,36,
 12383739,baseball,2026,Topps,Celebration 8-Bit Ballers,Elly De La Cruz,8B-24,,2.7,,0,0,0
 12383665,baseball,2026,Topps,Celebration 8-Bit Ballers,Jacob Misiorowski,8B-5,,2.55,,0,0,0
 12383652,baseball,2026,Topps,Celebration 8-Bit Ballers,Rickey Henderson,8B-17,,1.99,,0,0,0
+fake_id126,basketball,2017,Rittenhouse,WNBA,Alyssa Thomas,18,,44.99,PSA 9,0,0,44.99
+8128717,football,2024,Panini,Prizm Prizmatic,Bo Nix,11,Green,56.96,PSA 10,56.96,15.38,21.85
+8120050,football,2024,Panini,Prizm,Jayden Daniels,347,Silver,160.5,PSA 9,843.13,675.0,160.5
+8125279,football,2024,Panini,Prizm Autograph,Blake Corum,308,Silver,38.04,PSA 9,76.57,61.0,38.04
+8111612,football,2024,Panini,Prizm,Alvin Kamara,204,,1.13,,34.77,28.0,8.11
+8108458,football,2024,Panini,Prizm,Bo Jackson,154,,1.5,,27.49,22.0,12.37
+8118267,football,2024,Panini,Prizm,Braden Fiske,310,,0.72,,32.69,26.0,11.03
+8103771,football,2024,Panini,Prizm,Brandon Aubrey,79,,1.35,,35.14,28.0,11.97
+8118518,football,2024,Panini,Prizm,Brian Thomas Jr.,314,,1.5,,29.99,15.5,10.0
+8117694,football,2024,Panini,Prizm,Caleb Williams,301,,5.24,,161.55,129.0,25.0
+8109406,football,2024,Panini,Prizm,Cooper Kupp,169,,1.04,,33.76,27.0,6.0
+8101073,football,2024,Panini,Prizm,Cornelius Bennett,36,,1.59,,0,0,0
+8101831,football,2024,Panini,Prizm,DJ Moore,48,,1.47,,35.56,28.0,12.13
+8110226,football,2024,Panini,Prizm,Dan Marino,182,,1.74,,36.0,29.0,7.0
+8099195,football,2024,Panini,Prizm,Dennis Gardeck,6,,1.47,,35.47,28.0,12.09
+8102832,football,2024,Panini,Prizm,Deshaun Watson,64,,0.99,,33.76,27.0,11.44
+8119545,football,2024,Panini,Prizm,Devin Culp,326,,0.99,,33.74,27.0,11.44
+8119557,football,2024,Panini,Prizm,Devontez Walker,328,,0.3,,31.1,25.0,10.42
+8104467,football,2024,Panini,Prizm,Ed McCaffrey,90,,1.21,,33.75,27.0,11.44
+8107523,football,2024,Panini,Prizm,Isiah Pacheco,139,,1.51,,35.74,29.0,12.2
+8119850,football,2024,Panini,Prizm,Ja'Tavion Sanders,343,,0.8,,18.0,14.0,11.16
+8127123,football,2024,Panini,Prizm,Jessie Armstead,220,,0.99,,34.51,28.0,11.73
+8105842,football,2024,Panini,Prizm,Joe Mixon,112,,1.31,,34.96,28.0,11.9
+8120669,football,2024,Panini,Prizm,Jonah Elliss,356,,1.27,,34.84,28.0,11.86
+8111109,football,2024,Panini,Prizm,JuJu Smith-Schuster,196,,0.2,,0,0,0
+8121250,football,2024,Panini,Prizm,Maason Smith,368,,1.18,,34.47,28.0,11.71
+8121689,football,2024,Panini,Prizm,Malik Washington,371,,0.97,,33.67,27.0,11.41
+8100198,football,2024,Panini,Prizm,Mark Andrews,22,,1.36,,0,0,0
+8100888,football,2024,Panini,Prizm,Matt Milano,33,,0.99,,33.74,27.0,11.44
+8110859,football,2024,Panini,Prizm,Randy Moss,192,,1.5,,35.67,29.0,12.18
+8128152,football,2024,Panini,Prizm,Rome Odunze,385,,1.15,,30.49,9.88,8.74
+8117625,football,2024,Panini,Prizm,Torry Holt,300,,1.38,,35.23,28.0,12.01
+8115240,football,2024,Panini,Prizm,Tyler Lockett,262,,0.55,,32.09,26.0,10.8
+8114990,football,2024,Panini,Prizm,Vernon Davis,258,,1.27,,34.82,28.0,11.85
+8116184,football,2024,Panini,Prizm,Will Levis,277,,0.96,,33.76,27.0,11.44
+8128075,football,2024,Panini,Prizm Hype,Khalil Mack,10,,0.99,,30.0,24.0,11.44
+8120881,football,2024,Panini,Prizm,Kamari Lassiter,360,Silver,1.13,,34.66,28.0,11.79
+8111507,football,2024,Panini,Prizm,Richard Seymour,202,Silver,1.51,,14.99,12.0,12.16
+8101347,football,2024,Panini,Prizm,Tommy Tremble,40,Silver,1.29,,34.9,28.0,11.88
+8111309,football,2024,Panini,Prizm,Adam Vinatieri,199,Neon Green Pulsar,1.06,,34.03,27.0,11.54
+8117768,football,2024,Panini,Prizm,Adisa Isaac,302,Neon Green Pulsar,0.99,,33.76,27.0,11.44
+8122314,football,2024,Panini,Prizm,Javon Baker,344,Neon Green Pulsar,1.1,,34.25,27.0,11.63
+8112563,football,2024,Panini,Prizm,Lawrence Taylor,219,Neon Green Pulsar,1.65,,35.45,28.0,12.09
+8103278,football,2024,Panini,Prizm,Michael Dean Perry,71,Neon Green Pulsar,0.72,,32.74,26.0,11.05
+8128618,football,2024,Panini,Prizm Prizmatic,Drake Maye,2,,5.0,,132.5,106.0,37.99
+8126919,football,2024,Panini,Prizm Premier Jersey,Ladd McConkey,PJ-LMY,Neon Green Pulsar,2.38,,90.0,72.0,12.5

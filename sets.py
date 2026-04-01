@@ -8,20 +8,23 @@ import time
 from ll import print
 
 def main():
-	scp_csv_dir = 'new_scp_csvs'
+	scp_csv_dirs = ('new_scp_csvs', 'fake_scp_csvs')
 	words = [x.strip().lower() for x in sys.argv[1:]]
 
 	seen = set()
 	base = None
 	trie = ll.lldd(dict)
+	taken = 0
 	limit = None
 	cns = set()
-	for i, fn in enumerate(ll.track(sorted(ll.ls(ll.here(scp_csv_dir), pat='.*\\.csv', abs=True)))):
-		if (limit is not None) and (i >= limit-1):
-			break
+	for scp_csv_dir in scp_csv_dirs:
+		for i, fn in enumerate(ll.track(sorted(ll.ls(ll.here(scp_csv_dir), pat='.*\\.csv', abs=True)))):
+			if (limit is not None) and (taken > limit-1):
+				break
+			taken += 1
 
-		for row in ll.csv(fn):
-			cns.add(row['console-name'])
+			for row in ll.csv(fn):
+				cns.add(row['console-name'])
 
 	force_merges = [
 		'Prizm WNBA',

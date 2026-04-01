@@ -6,7 +6,7 @@ import sys
 from argparse import ArgumentParser
 
 
-CSV_DIR = 'new_scp_csvs/'
+CSV_DIRS = ('new_scp_csvs/', 'fake_scp_csvs/')
 
 
 def parse_set(s):
@@ -31,7 +31,9 @@ def parse_set(s):
 
 
 def get_cards(sport, set, var, quants_by_num, whole=True, warn=True):
-	fns = [fn for fn in ll.ls(CSV_DIR, rel=False) if fn.endswith(f'{set.split("#")[0]}.csv') and ll.bn(fn).startswith(f'{sport}_')]
+	fns = []
+	for CSV_DIR in CSV_DIRS:
+		fns.extend([fn for fn in ll.ls(CSV_DIR, abs=True) if fn.endswith(f'{set.split("#")[0]}.csv') and ll.bn(fn).startswith(f'{sport}_')])
 	if len(fns) == 0:
 		ll.err(f"no csv file found for [grey70]{sport}[/grey70] set [grey70]{set}[/grey70]")
 	if len(fns) > 1:
@@ -48,7 +50,8 @@ def get_cards(sport, set, var, quants_by_num, whole=True, warn=True):
 	num2player = {}
 	warned = ll.dd(lambda: bool)
 
-	for row in cached_csv(CSV_DIR + fn):
+	# for row in cached_csv(CSV_DIR + fn):
+	for row in cached_csv(fn):
 		try:
 			num = (rpn:=row['product-name']).split('#')[-1].strip()
 		except:
@@ -180,6 +183,7 @@ def process(fn, console=True, warn=True, force_price_key=None):
 						set, grade = set.split('#')
 						set = set.strip()
 						grade = grade.strip()
+						force_price_key = ''
 
 					# Get card info
 					cur_fset, var, _ = parse_set(set)
@@ -204,6 +208,8 @@ def process(fn, console=True, warn=True, force_price_key=None):
 						match grade.strip().lower().replace(' ', '_'):
 							case 'psa_10':
 								price_key = 'manual-only-price'
+							case 'psa_9':
+								price_key = 'graded-price'
 							case 'damaged':
 								price_key = "damaged (this key won't be in the dict)"
 							case _:
@@ -311,6 +317,8 @@ def split_brand(set_name):
 		brand_name = 'Panini'
 	elif 'leaf' in set_name.lower():
 		brand_name = 'Leaf'
+	elif 'rittenhouse' in set_name.lower():
+		brand_name = 'Rittenhouse'
 	elif set_name.lower() == 'donruss':
 		brand_name = 'Donruss'
 	elif set_name.lower() == 'upper deck':
