@@ -7,6 +7,22 @@ import time
 
 from ll import print
 
+
+@ll.cache()
+def ccns(scp_csv_dirs):
+	cns = set()
+	for scp_csv_dir in scp_csv_dirs:
+		for i, fn in enumerate(ll.track(sorted(ll.ls(ll.here(scp_csv_dir), pat='.*\\.csv', abs=True)))):
+			'''
+			if (limit is not None) and (taken > limit-1):
+				break
+			taken += 1
+			'''
+
+			for row in ll.csv(fn):
+				cns.add(row['console-name'])
+	return cns
+
 def main():
 	scp_csv_dirs = ('new_scp_csvs', 'fake_scp_csvs')
 	words = [x.strip().lower() for x in sys.argv[1:]]
@@ -16,15 +32,7 @@ def main():
 	trie = ll.lldd(dict)
 	taken = 0
 	limit = None
-	cns = set()
-	for scp_csv_dir in scp_csv_dirs:
-		for i, fn in enumerate(ll.track(sorted(ll.ls(ll.here(scp_csv_dir), pat='.*\\.csv', abs=True)))):
-			if (limit is not None) and (taken > limit-1):
-				break
-			taken += 1
-
-			for row in ll.csv(fn):
-				cns.add(row['console-name'])
+	cns = ccns(scp_csv_dirs)
 
 	force_merges = [
 		'Prizm WNBA',
@@ -92,13 +100,19 @@ def main():
 
 	def _s(d, lvl=0):
 		for k, v in sorted(d.items(), key=ll.nth(0)):
-			dk = k.split(' Cards ')[-1]
-			for sport in sorted(sports, key=len, reverse=True):
-				if dk.startswith(sport+' '):
-					dk = dk[len(sport)+1:]
-					break
-			for fm in force_merges:
-				dk = dk.replace(fm.replace(' ', ''), fm)
+			def _mkd(x):
+				print(x)
+
+				dx = x.split(' Cards ')[-1]
+				for sport in sorted(sports, key=len, reverse=True):
+					if dx.lower().startswith(sport.lower()+' '):
+						dx = dx[len(sport)+1:]
+						break
+				for fm in force_merges:
+					dx = dx.replace(fm.replace(' ', ''), fm)
+				return dx
+
+			dk = _mkd(k)
 			if k in sports and len(v)==0:
 				continue
 			print('\t'*lvl + dk)
@@ -147,8 +161,20 @@ def main():
 		else:
 			return d
 
+
 	d = copy(trie.dict())
 	_s(d)
+	def _rec(_d):
+		if isinstance(_d, list):
+			return _d
+		elif isinstance(_d, str):
+			for sp in sports:
+				if _d.lower().startswith(sp.lower()+' '):
+					return _d[len(sp)+1:]
+			return _d
+		else:
+			return {_rec(k): _rec(v) for k, v in _d.items()}
+	d = _rec(d)
 
 	ll.write('hierarchy_of_sports_sets.json', json.dumps(d, indent=2))
 

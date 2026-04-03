@@ -3313,30 +3313,6 @@ fake_id126,basketball,2017,Rittenhouse,WNBA,Alyssa Thomas,18,,44.99,PSA 9,0,0,44
 8103278,football,2024,Panini,Prizm,Michael Dean Perry,71,Neon Green Pulsar,0.72,,32.74,26.0,11.05
 8128618,football,2024,Panini,Prizm Prizmatic,Drake Maye,2,,5.0,,132.5,106.0,37.99
 8126919,football,2024,Panini,Prizm Premier Jersey,Ladd McConkey,PJ-LMY,Neon Green Pulsar,2.38,,90.0,72.0,12.5
-fake_id129,football,2022,Leaf,Draft Autographs Hobby,Jaden Rashada,BA-JR1,,0.0,,0,0,0
-fake_id131,football,2022,Leaf,Draft Autographs Hobby,Bryce Young,1,,0.0,,0,0,0
-fake_id131,football,2022,Leaf,Draft Autographs Hobby,Bryce Young,1,,0.0,,0,0,0
-fake_id132,football,2022,Leaf,Draft Autographs Hobby,C.J. Stroud,2,,0.0,,0,0,0
-fake_id132,football,2022,Leaf,Draft Autographs Hobby,C.J. Stroud,2,,0.0,,0,0,0
-fake_id133,football,2022,Leaf,Draft Autographs Hobby,Aidan Hutchinson,3,,0.0,,0,0,0
-fake_id133,football,2022,Leaf,Draft Autographs Hobby,Aidan Hutchinson,3,,0.0,,0,0,0
-fake_id134,football,2022,Leaf,Draft Autographs Hobby,Desmond Ridder,4,,0.0,,0,0,0
-fake_id134,football,2022,Leaf,Draft Autographs Hobby,Desmond Ridder,4,,0.0,,0,0,0
-fake_id135,football,2022,Leaf,Draft Autographs Hobby,Drake London,5,,0.0,,0,0,0
-fake_id135,football,2022,Leaf,Draft Autographs Hobby,Drake London,5,,0.0,,0,0,0
-fake_id136,football,2022,Leaf,Draft Autographs Hobby,Garrett Wilson,6,,0.0,,0,0,0
-fake_id136,football,2022,Leaf,Draft Autographs Hobby,Garrett Wilson,6,,0.0,,0,0,0
-fake_id137,football,2022,Leaf,Draft Autographs Hobby,Kenny Pickett,7,,0.0,,0,0,0
-fake_id137,football,2022,Leaf,Draft Autographs Hobby,Kenny Pickett,7,,0.0,,0,0,0
-fake_id138,football,2022,Leaf,Draft Autographs Hobby,Malik Willis,8,,0.0,,0,0,0
-fake_id138,football,2022,Leaf,Draft Autographs Hobby,Malik Willis,8,,0.0,,0,0,0
-fake_id139,football,2022,Leaf,Draft Autographs Hobby,Matt Corral,9,,0.0,,0,0,0
-fake_id139,football,2022,Leaf,Draft Autographs Hobby,Matt Corral,9,,0.0,,0,0,0
-fake_id140,football,2022,Leaf,Draft Autographs Hobby,Sam Howell,10,,0.0,,0,0,0
-fake_id140,football,2022,Leaf,Draft Autographs Hobby,Sam Howell,10,,0.0,,0,0,0
-fake_id127,football,2022,Leaf,Draft Autographs Hobby,Cameron Rising,BA-CR1,Gold,0.0,,0,0,0
-fake_id128,football,2022,Leaf,Draft Autographs Hobby,Theo Wease,BA-TW2,Gold,0.0,,0,0,0
-fake_id130,football,2022,Leaf,Draft Autographs Hobby,Devin Brown,BA-DB1,Gold,0.0,,0,0,0
 12059589,football,2025,Panini,Select,A.J. Green,99,,0.0,,0,0,0
 12059589,football,2025,Panini,Select,A.J. Green,99,,0.0,,0,0,0
 12059457,football,2025,Panini,Select,Abdul Carter,95,,2.12,,40.7,33.0,13.61
@@ -4773,3 +4749,27 @@ fake_id130,football,2022,Leaf,Draft Autographs Hobby,Devin Brown,BA-DB1,Gold,0.0
 11404828,football,2025,Panini,Rookies & Stars Crusade Signature,Jalen Milroe,13,,31.12,,173.96,139.0,59.46
 11625580,football,2025,Panini,Rookies & Stars Rookie Exclusive,Jaxson Dart,10,Purple,0.0,,0,0,0
 11626811,football,2025,Panini,Rookies & Stars Airborne,Justin Herbert,5,Pink,2.5,,0,0,0
+fake_id131,football,2022,Leaf,Draft Hobby,Bryce Young,B-1,,0.0,,0,0,0
+fake_id131,football,2022,Leaf,Draft Hobby,Bryce Young,B-1,,0.0,,0,0,0
+fake_id132,football,2022,Leaf,Draft Hobby,C.J. Stroud,B-2,,0.0,,0,0,0
+fake_id132,football,2022,Leaf,Draft Hobby,C.J. Stroud,B-2,,0.0,,0,0,0
+fake_id133,football,2022,Leaf,Draft Hobby,Aidan Hutchinson,B-3,,0.0,,0,0,0
+fake_id133,football,2022,Leaf,Draft Hobby,Aidan Hutchinson,B-3,,0.0,,0,0,0
+fake_id134,football,2022,Leaf,Draft Hobby,Desmond Ridder,B-4,,0.0,,0,0,0
+fake_id134,football,2022,Leaf,Draft Hobby,Desmond Ridder,B-4,,0.0,,0,0,0
+fake_id135,football,2022,Leaf,Draft Hobby,Drake London,B-5,,0.0,,0,0,0
+fake_id135,football,2022,Leaf,Draft Hobby,Drake London,B-5,,0.0,,0,0,0
+fake_id136,football,2022,Leaf,Draft Hobby,Garrett Wilson,B-6,,0.0,,0,0,0
+fake_id136,football,2022,Leaf,Draft Hobby,Garrett Wilson,B-6,,0.0,,0,0,0
+fake_id137,football,2022,Leaf,Draft Hobby,Kenny Pickett,B-7,,0.0,,0,0,0
+fake_id137,football,2022,Leaf,Draft Hobby,Kenny Pickett,B-7,,0.0,,0,0,0
+fake_id138,football,2022,Leaf,Draft Hobby,Malik Willis,B-8,,0.0,,0,0,0
+fake_id138,football,2022,Leaf,Draft Hobby,Malik Willis,B-8,,0.0,,0,0,0
+fake_id139,football,2022,Leaf,Draft Hobby,Matt Corral,B-9,,0.0,,0,0,0
+fake_id139,football,2022,Leaf,Draft Hobby,Matt Corral,B-9,,0.0,,0,0,0
+fake_id140,football,2022,Leaf,Draft Hobby,Sam Howell,B-10,,0.0,,0,0,0
+fake_id140,football,2022,Leaf,Draft Hobby,Sam Howell,B-10,,0.0,,0,0,0
+fake_id129,football,2022,Leaf,Draft Hobby Autographs,Jaden Rashada,BA-JR1,,0.0,,0,0,0
+fake_id127,football,2022,Leaf,Draft Hobby Autographs,Cameron Rising,BA-CR1,Gold,0.0,,0,0,0
+fake_id128,football,2022,Leaf,Draft Hobby Autographs,Theo Wease,BA-TW2,Gold,0.0,,0,0,0
+fake_id130,football,2022,Leaf,Draft Hobby Autographs,Devin Brown,BA-DB1,Gold,0.0,,0,0,0
