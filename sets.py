@@ -8,7 +8,7 @@ import time
 from ll import print
 
 
-@ll.cache()
+@ll.cache(stale=ll.hours(1))
 def ccns(scp_csv_dirs):
 	cns = set()
 	for scp_csv_dir in scp_csv_dirs:
@@ -37,8 +37,11 @@ def main():
 	force_merges = [
 		'Prizm WNBA',
 		'Donruss WNBA',
+		'Select WNBA',
 		'Prizm Draft Picks',
 		'Donruss Optic',
+		'Monopoly WNBA',
+		'Ginter X',
 	]
 	force_repls = {
 		' and ': ' & ',
@@ -144,16 +147,16 @@ def main():
 				nd = {}
 				for k, v in d.items():
 					if (ender:=_ender(k)):
-						# Normal
-						if (rpk:=_rp(k)):
-							nd[rpk] = copy(v, last=_rc(k))
-					else:
 						# Pull children out & flatten
 						nd[(rpk:=_rp(k))] = []
 						if isinstance(v, dict):
 							for sk, sv in v.items():
 								sk = rpk + ' ' + ll.rempre(_rp(sk), rpk).strip()
 								nd[sk] = copy(sv, last=sk)
+					else:
+						# Normal
+						if (rpk:=_rp(k)):
+							nd[rpk] = copy(v, last=_rc(k))
 				return nd
 			else:
 				# Don't gotta deal with Topps
