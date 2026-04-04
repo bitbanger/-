@@ -42,6 +42,7 @@ def main():
 		'Donruss Optic',
 		'Monopoly WNBA',
 		'Ginter X',
+		'Topps Chrome',
 	]
 	force_repls = {
 		' and ': ' & ',
