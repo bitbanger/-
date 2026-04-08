@@ -18,9 +18,12 @@ def main():
 	# checklist_csv = 'checklists/donruss_wnba_checklist.csv'
 
 	checklist_csv = 'checklists/rookies_stars_checklist.csv'
+
+	checklist_csv = 'checklists/prizm_wnba_checklist.csv'
+
 	def too_valuable(var):
-		if var:
-			return True
+		# if var:
+			# return True
 		if var == 'Purple':
 			return True
 		if 'Signature' in var:
@@ -37,6 +40,7 @@ def main():
 		# if row['ATHLETE'] == 'Marcus Allen':
 			# print(row)
 		checklist_set = str(row['YEAR']) + ' Panini ' + str(row['PROGRAM'])
+		checklist_set = checklist_set.replace('WNBA Prizm', 'Prizm WNBA')
 		by_team[last_word(row['TEAM'])].add(row['CARD NUMBER'])
 		num2name[row['CARD NUMBER']] = row['ATHLETE']
 

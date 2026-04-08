@@ -35,6 +35,8 @@ def main():
 	cns = ccns(scp_csv_dirs)
 
 	force_merges = [
+		'Finger Lakes Gaming',
+		'Kraft Singles',
 		'Prizm WNBA',
 		'Donruss WNBA',
 		'Select WNBA',
@@ -135,7 +137,7 @@ def main():
 		if isinstance(d, dict):
 
 			def _ender(x):
-				for ender in ('Topps', 'Donruss', 'Upper Deck'):
+				for ender in ('Topps', 'Donruss', 'Sage', 'Upper Deck', 'Score', 'Finger Lakes Gaming', 'Kraft Singles', 'Fleer'):
 					if (ms:=re.findall(f'(.*) ([0-9][0-9][0-9][0-9]) {ender} (.*)', x)):
 						return ms[0][-1]
 				# if (spl:=x.split())[-2].isnumeric(): # <year> <ender>
@@ -168,6 +170,7 @@ def main():
 
 	d = copy(trie.dict())
 	_s(d)
+
 	def _rec(_d):
 		if isinstance(_d, list):
 			return _d

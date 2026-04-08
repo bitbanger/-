@@ -196,7 +196,7 @@ def process(fn, console=True, warn=True, force_price_key=None):
 
 				# Correct weird Topps formatting before rendering output, but
 				# after looking up the set file
-				for ender in ('Topps', 'Donruss', 'Upper Deck'):
+				for ender in ('Topps', 'Donruss', 'Upper Deck', 'Finger Lakes Gaming'):
 					if (ms:=re.findall(f'(.*) ([0-9][0-9][0-9][0-9]) {ender} (.*)', orig_set)):
 						_, year, stn = ms[0]
 						set, grade, cur_fset, var = _procset(f'{year} {ender} {stn}')
@@ -260,10 +260,15 @@ def process(fn, console=True, warn=True, force_price_key=None):
 						
 					for trow in ll.csv('/tmp/overrides_price.csv', dicts=False):
 						# to ID in override csv, which parallels col.csv
-						brand, unbranded_set = split_brand(unyear_set)
+						brand, unbranded_set = split_brand(year, unyear_set)
 						card_tup2 = card_tup[:3] + (brand, unbranded_set) + card_tup[4:]
 						_id = lambda r: ' '.join(ll.map(str, list(r[1:8])+[r[9]]))
 						if _id(card_tup2) == _id(trow):
+							# Don't do anything if the override file
+							# specifies a condition and this condition
+							# doesn't match
+							if trow[-4] and trow[-4] != card_tup[-4]:
+								continue
 							# We found a match in the overrides file,
 							# so we'll take the prices there
 							card_tup = list(card_tup) # mutable
@@ -307,23 +312,46 @@ def print_card(id, sport, year, set, name, num, var, price, grade, psa_10, cgc_1
 	else:
 		print(f'[grey30]{price:.02f}[/grey30]\t{card_str}')
 
-def split_brand(set_name):
+def split_brand(year, set_name):
+	year = int(year)
+	sn = set_name.lower()
+
 	# TODO: better brand ID
-	if 'topps' in set_name.lower():
+	if 'topps' in sn:
 		brand_name = 'Topps'
-	elif 'bowman chrome' in set_name.lower():
+	elif 'bowman chrome' in sn:
 		brand_name = 'Bowman Chrome'
-	elif 'panini' in set_name.lower():
-		brand_name = 'Panini'
-	elif 'leaf' in set_name.lower():
+	elif 'panini' in sn:
+		if 'donruss' in sn and year<2009:
+			brand_name = 'Donruss'
+		else:
+			brand_name = 'Panini'
+	elif 'leaf' in sn:
 		brand_name = 'Leaf'
-	elif 'rittenhouse' in set_name.lower():
+	elif 'rittenhouse' in sn:
 		brand_name = 'Rittenhouse'
-	elif set_name.lower() == 'donruss':
+	elif sn == 'donruss':
 		brand_name = 'Donruss'
-	elif set_name.lower() == 'upper deck':
+	elif sn.startswith('donruss '):
+		brand_name = 'Donruss'
+	elif sn.startswith('upper deck'):
 		brand_name = 'Upper Deck'
+	elif sn.startswith('sage'):
+		brand_name = 'Sage'
+	elif sn.startswith('fleer'):
+		brand_name = 'Fleer'
+	elif sn.startswith('hostess'):
+		brand_name = 'Hostess'
+	elif sn.startswith('kraft singles'):
+		brand_name = 'Kraft Singles'
+	elif sn.startswith('score'):
+		brand_name = 'Score'
+	elif sn.startswith('score '):
+		brand_name = 'Score'
+	elif 'finger lakes gaming' in sn:
+		brand_name = 'Finger Lakes Gaming'
 	else:
+		print(sn)
 		raise Exception(f"unknown brand_name for set_name {set_name}")
 
 	set_name = set_name[:set_name.lower().index(brand_name.lower())].strip() + set_name[set_name.lower().index(brand_name.lower())+len(brand_name)+len(' '):].strip()
@@ -332,7 +360,7 @@ def split_brand(set_name):
 
 
 def card_row(id, sport, year, set, name, num, var, price, grade, psa10, cgc10, psa9):
-	brand, set = split_brand(set)
+	brand, set = split_brand(year, set)
 
 	return cached_csv((id, sport, year, brand, set, name, num, var, price, grade, psa10, cgc10, psa9))
 fcard_row = card_row
@@ -355,7 +383,7 @@ def main():
 	ap = ArgumentParser(add_help=False)
 	ap.add_argument('input', nargs='+')
 	ap.add_argument('-q', '--quiet-warnings', action='store_true')
-	ap.add_argument('-p', '--price-threshold', type=float, default=10.00)
+	ap.add_argument('-p', '--price-threshold', type=float, default=8.00)
 	ap.add_argument('-h', '--hide-cheap', action='store_true')
 	ap.add_argument('-s', '--sort-by-price', action='store_true')
 	ap.add_argument('-n', '--no-progress', action='store_true')
@@ -437,7 +465,7 @@ def main():
 			unknown_got += 1
 
 	if args.sort_by_price:
-		cards = sorted(cards, key=ll.nth(6))
+		cards = sorted(cards, key=ll.nth(7))
 		for card in cards:
 			_,_,_,_,_,_,_,price,_,_,_,_ = card
 			if (not args.hide_cheap) or (price >= args.price_threshold):

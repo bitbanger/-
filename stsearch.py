@@ -19,7 +19,7 @@ def main():
 	args.set = args.set.replace('and', '')
 	args.set = args.set.replace('&', '')
 
-	sets = [(fn, next(ll.csv(ll.dbg(fn), stream=True))['console-name'])
+	sets = [(fn, next(ll.csv(fn, stream=True))['console-name'])
 		for fn in ll.ls(args.dir, abs=True) if fn.endswith('.csv')]
 
 	matches = {s: ll.words_in(args.set, s[1]) for s in sets}

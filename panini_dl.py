@@ -23,7 +23,7 @@ HEADERS = {
 # You can pass activity, activity+year, activity+year+brand, and activity+year+brand+program
 # Passing all 4 gets you the card list, but passing fewer gets you the list of IDs for the next
 # field
-@ll.cache()
+@ll.cache(stale=ll.days(1))
 def req(raw=False, **extra_payload):
 	payload = {
 		'activity': '',
@@ -107,7 +107,6 @@ def get_cards(set_results):
 	for set_name, set_id, kwargs in set_results:
 		if sets and set_name not in sets:
 			continue
-		print(set_name)
 		continue
 
 		cards = req(raw=True, card_set=str(set_id), **kwargs)
@@ -163,7 +162,6 @@ for sport, l1 in sethier.items():
 			q = q[1:]
 			continue
 		for x, v in q[0].items():
-			print(x)
 			q.append(v)
 		q = q[1:]
 	for e in l1:
@@ -174,7 +172,7 @@ for sport, l1 in sethier.items():
 			have_programs.append(set)
 			# have_alls.append((year, brand, set))
 
-for set_result in get_sets(sports='Football', years=[2025]):
+for set_result in get_sets(sports='Basketball', years=[2025], programs=['WNBA Prizm']):
 	sn = set_result[0]
 	year = sn.split(' ')[1]
 	brand = sn.split(' ')[2]
@@ -193,8 +191,8 @@ for set_result in get_sets(sports='Football', years=[2025]):
 		print((year, brand, rest))
 	# print(type(set_result[0]))
 	# Football Cards 2015 Panini Contenders Draft Picks Old School Colors
-	# for card in get_cards([set_result]):
-		# print(card)
+	for card in get_cards([set_result]):
+		print(card)
 		# quit()
 quit()
 
