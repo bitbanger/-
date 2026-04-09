@@ -321,6 +321,8 @@ def split_brand(year, set_name):
 		brand_name = 'Topps'
 	elif 'bowman chrome' in sn:
 		brand_name = 'Bowman Chrome'
+	elif 'bowman' in sn:
+		brand_name = 'Bowman'
 	elif 'panini' in sn:
 		if 'donruss' in sn and year<2009:
 			brand_name = 'Donruss'

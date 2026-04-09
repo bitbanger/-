@@ -44,7 +44,6 @@ def main():
 		'Donruss Optic',
 		'Monopoly WNBA',
 		'Ginter X',
-		'Topps Chrome',
 	]
 	force_repls = {
 		' and ': ' & ',
@@ -137,7 +136,7 @@ def main():
 		if isinstance(d, dict):
 
 			def _ender(x):
-				for ender in ('Topps', 'Donruss', 'Sage', 'Upper Deck', 'Score', 'Finger Lakes Gaming', 'Kraft Singles', 'Fleer'):
+				for ender in ('Topps', 'Donruss', 'Sage', 'Bowman', 'Upper Deck', 'Score', 'Finger Lakes Gaming', 'Kraft Singles', 'Fleer'):
 					if (ms:=re.findall(f'(.*) ([0-9][0-9][0-9][0-9]) {ender} (.*)', x)):
 						return ms[0][-1]
 				# if (spl:=x.split())[-2].isnumeric(): # <year> <ender>
