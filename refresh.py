@@ -79,9 +79,13 @@ def main():
 	missed = []
 	for p in ll.track(files_to_get, title='Getting set names: '):
 		sport = p.strip().split(' ')[0]
+		orig_p = p[::]
 		p = ' '.join(p.strip().split(' ')[1:])
 
 		year = ll.regf('([0-9][0-9][0-9][0-9])')(p)
+		if year is None:
+			print(orig_p)
+			quit()
 		spl = [x for x in p[p.index(year):].strip().split(' ')[1:]]
 		brand = spl[0]
 		words = spl[1:]
