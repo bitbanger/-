@@ -20,8 +20,19 @@ def main():
 	args.set = args.set.replace('and', '')
 	args.set = args.set.replace('&', '')
 
-	sets = [(fn, next(ll.csv(fn, stream=True))['console-name'])
-		for fn in ll.ls(args.dir, abs=True) if fn.endswith('.csv')]
+	sets = []
+	for fn in ll.ls(args.dir, abs=True):
+		if not fn.endswith('.csv'):
+			continue
+		if (ln:=len(ll.lines(fn)))<=1:
+			s = 's'*bool(ln)
+			ll.err(f'{fn} is {ln} line{s}!')
+
+		try:
+			sets.append((fn, next(ll.csv(fn, stream=True))['console-name']))
+		except:
+			print(ll.lines(fn))
+			quit()
 
 	matches = {s: ll.words_in(args.set, s[1]) for s in sets}
 	top = [s for s, sc in matches.items() if sc==max(matches.values())]
