@@ -219,9 +219,11 @@ def process(fn, console=True, warn=True, force_price_key=None):
 					price = float(price[1:]) if price else 0.0
 
 					_pr = lambda p: float(p[1:]) if p else 0
-					psa_10 = _pr(card_row.get('manual-only-price'))
-					cgc_10 = _pr(card_row.get('condition-17-price'))
-					psa_9 = _pr(card_row.get('graded-price'))
+					psa_10, cgc_10, psa_9 = 0,0,0
+					if card_row.get('sales-volume') and int(card_row['sales-volume']) > 0:
+						psa_10 = _pr(card_row.get('manual-only-price'))
+						cgc_10 = _pr(card_row.get('condition-17-price'))
+						psa_9 = _pr(card_row.get('graded-price'))
 
 					if force_price_key == 'manual-only-price':
 						price = max(0, price-32)

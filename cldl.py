@@ -90,8 +90,6 @@ def id(x):
 	for sport, sport_id in req():
 		for (year,) in req(sport=sport_id):
 			for brand, _ in req(activity=sport_id, year=str(year)):
-				if brand==x:
-					return x # save ourselves any more trouble, but don't pass this pls
 				for program, _, program_id, _ in req(activity=sport_id, year=str(year), brand=brand):
 					if program==x:
 						return program_id
@@ -182,6 +180,16 @@ def mkfn(p):
 	return fn
 
 
+def download_all():
+	for (s,y,b,p) in ll.track(flat_sets(), title='Downloading: '):
+		os.makedirs((d:=f'panini_checklists/{s}/{y}/{b}'.lower()), exist_ok=True)
+		path = os.path.join(d, mkfn(p))
+		if ll.fexists(path) and len(ll.lines(ll.read(path).strip()))>1:
+			continue
+		with open(path, 'w+') as f:
+			f.write(cards(s,y,b,p,csv=True))
+
+
 def main():
 	ap = ArgumentParser()
 	ap.add_argument('-s', '--sports', nargs='*')
@@ -191,11 +199,7 @@ def main():
 
 	# print(next(get_all(sports='football')))
 
-	for (s,y,b,p) in ll.track(flat_sets(), title='Downloading: '):
-		os.makedirs((d:=f'panini_checklists/{s}/{y}/{b}'.lower()), exist_ok=True)
-		with open(mkfn(p), 'w+') as f:
-			f.write(cards(s,y,b,p,csv=True))
-
+	download_all()
 
 	quit()
 
