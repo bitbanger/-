@@ -19,11 +19,11 @@ def main():
 
 	checklist_csv = 'checklists/rookies_stars_checklist.csv'
 
-	checklist_csv = 'checklists/prizm_wnba_checklist.csv'
+	# checklist_csv = 'checklists/prizm_wnba_checklist.csv'
 
 	def too_valuable(var):
-		# if var:
-			# return True
+		if var:
+			return True
 		if var == 'Purple':
 			return True
 		if 'Signature' in var:

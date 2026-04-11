@@ -36,9 +36,14 @@ def main():
 	for c_fn, c_set in top:
 		print(c_set)
 
+		for row in ll.csv(c_fn, stream=True):
+			num_scheme = row['product-name'].split('#')[-1].split(' ')[0]
+			print(f'\t[grey70](numbers like [steel_blue]{num_scheme}[/steel_blue])[/grey70]')
+			break
+
 		if args.parallels:
 			parallels = set()
-			for row in ll.csv(c_fn):
+			for row in ll.csv(c_fn, stream=True):
 				if (par:=ll.regf('\\[(.*)\\]')(row['product-name'])):
 					parallels.add(par)
 			parallels = sorted(list(parallels))
