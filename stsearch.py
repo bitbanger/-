@@ -32,9 +32,24 @@ def main():
 	if args.minimal:
 		top = [(best_fn, best_set)]
 
+	hier = ll.json(ll.read('hierarchy_of_sports_sets.json'))
 	print('')
-	for c_fn, c_set in top:
-		print(c_set)
+	for i, (c_fn, c_set) in enumerate(top):
+		if i>0:
+			print('')
+
+		spl = c_set.split(' Cards ')
+		sport = spl[0]
+		c_set = spl[1].replace('&', 'and')
+		c_subsets = set()
+
+		for _set in hier[sport]:
+			# if c_set == _set:
+			if c_set.startswith(_set):
+				c_set, c_subset = _set, c_set[len(_set):]
+				break
+
+		print(f'[green]{c_set}[/green][blue]{c_subset}[/blue]')
 
 		for row in ll.csv(c_fn, stream=True):
 			num_scheme = row['product-name'].split('#')[-1].split(' ')[0]

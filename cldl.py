@@ -109,6 +109,7 @@ def sets(sports=None, years=None, brands=None, programs=None):
 
 	for sport, sport_id in req():
 		for (year,) in req(sport=sport_id):
+			print(sport, year)
 			for brand, brand_id in req(activity=sport_id, year=str(year)):
 				for program, nyear, program_id, release_date in req(activity=sport_id, year=str(year), brand=brand):
 					hier[sport][year][brand].append(program)
@@ -180,8 +181,10 @@ def mkfn(p):
 	return fn
 
 
-def download_all():
+def download_all(sports=None, years=None, brands=None, programs=None):
 	for (s,y,b,p) in ll.track(flat_sets(), title='Downloading: '):
+		print(s,y,b,p)
+		continue
 		os.makedirs((d:=f'panini_checklists/{s}/{y}/{b}'.lower()), exist_ok=True)
 		path = os.path.join(d, mkfn(p))
 		if ll.fexists(path) and len(ll.lines(ll.read(path).strip()))>1:
@@ -194,12 +197,15 @@ def main():
 	ap = ArgumentParser()
 	ap.add_argument('-s', '--sports', nargs='*')
 	ap.add_argument('-y', '--years', type=int, nargs='*')
+	ap.add_argument('-b', '--brands', nargs='*')
 	ap.add_argument('-p', '--programs', nargs='*')
 	args = ap.parse_args()
 
 	# print(next(get_all(sports='football')))
 
-	download_all()
+	# download_all(sports=args.sports, years=args.years, programs=args.programs)
+	for s in sets():
+		print(s)
 
 	quit()
 

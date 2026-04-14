@@ -17,7 +17,9 @@ def main():
 		return False
 	# checklist_csv = 'checklists/donruss_wnba_checklist.csv'
 
-	checklist_csv = 'checklists/rookies_stars_checklist.csv'
+	# checklist_csv = 'checklists/rookies_stars_checklist.csv'
+
+	checklist_csv = 'panini_checklists/football/2025/panini/rookies_and_stars.csv'
 
 	# checklist_csv = 'checklists/prizm_wnba_checklist.csv'
 
