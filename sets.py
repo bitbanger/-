@@ -8,20 +8,28 @@ import time
 from ll import print
 
 
-@ll.cache(stale=ll.hours(1))
+# @ll.cache(stale=ll.hours(1))
 def ccns(scp_csv_dirs):
 	cns = set()
+	fn_count = sum(len(ll.ls(scd)) for scd in scp_csv_dirs)
+	pbar = ll.pbar(title='Scanning sets: ', total=fn_count, dummy=True)
 	for scp_csv_dir in scp_csv_dirs:
-		for i, fn in enumerate(ll.track(sorted(ll.ls(ll.here(scp_csv_dir), pat='.*\\.csv', abs=True)))):
+		for i, fn in enumerate(sorted(ll.ls(ll.here(scp_csv_dir), pat='.*\\.csv', abs=True))):
 			'''
 			if (limit is not None) and (taken > limit-1):
 				break
 			taken += 1
 			'''
 
-			for row in ll.csv(fn):
+			for row in ll.csv(fn, stream=True):
 				cns.add(row['console-name'])
+				# I confirmed that, so far, this only has one console name per CSV
+				break
+
+			pbar += 1
+
 	return cns
+
 
 def main():
 	scp_csv_dirs = ('new_scp_csvs', 'fake_scp_csvs')
@@ -106,7 +114,7 @@ def main():
 	def _s(d, lvl=0):
 		for k, v in sorted(d.items(), key=ll.nth(0)):
 			def _mkd(x):
-				print(x)
+				# print(x)
 
 				dx = x.split(' Cards ')[-1]
 				for sport in sorted(sports, key=len, reverse=True):
@@ -120,7 +128,7 @@ def main():
 			dk = _mkd(k)
 			if k in sports and len(v)==0:
 				continue
-			print('\t'*lvl + dk)
+			# print('\t'*lvl + dk)
 			if isinstance(v, dict):
 				_s(v, lvl=lvl+1)
 
