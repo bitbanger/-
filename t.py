@@ -9,7 +9,13 @@ from argparse import ArgumentParser
 CSV_DIRS = ('new_scp_csvs/', 'fake_scp_csvs/')
 
 
-def parse_set(s):
+def maybe_print(args, *a, **kw):
+	if args.quiet:
+		return
+	return print(*a, **kw)
+
+
+def parse_set(args, s):
 	grade = ''
 	if len(graspl:=s.split('#')) == 2:
 		s, grade = s.split('#')
@@ -30,16 +36,16 @@ def parse_set(s):
 	return fset, var, grade
 
 
-def get_cards(sport, set, var, quants_by_num, whole=True, warn=True):
+def get_cards(args, sport, set, var, quants_by_num, whole=True, warn=True):
 	fns = []
 	for CSV_DIR in CSV_DIRS:
 		fns.extend([fn for fn in ll.ls(CSV_DIR, abs=True) if fn.endswith(f'{set.split("#")[0]}.csv') and ll.bn(fn).startswith(f'{sport}_')])
 	if len(fns) == 0:
 		ll.err(f"no csv file found for [grey70]{sport}[/grey70] set [grey70]{set}[/grey70]")
 	if len(fns) > 1:
-		print(f"[bold light_coral]error:[/bold light_coral] too many csv files found for [grey70]{sport}[/grey70] set [grey70]{set}[/grey70]:")
+		maybe_print(args, (f"[bold light_coral]error:[/bold light_coral] too many csv files found for [grey70]{sport}[/grey70] set [grey70]{set}[/grey70]:"))
 		for fn in fns:
-			print(f"\t{fn}")
+			maybe_print(args, (f"\t{fn}"))
 		os._exit(1)
 
 	assert(len(fns)==1)
@@ -50,13 +56,13 @@ def get_cards(sport, set, var, quants_by_num, whole=True, warn=True):
 	num2player = {}
 	warned = ll.dd(lambda: bool)
 
-	# for row in cached_csv(CSV_DIR + fn):
-	for row in cached_csv(fn):
+	# for row in cached_csv(args, CSV_DIR + fn):
+	for row in cached_csv(args, fn):
 		try:
 			num = (rpn:=row['product-name']).split('#')[-1].strip()
 		except:
-			print(fn)
-			print(row)
+			maybe_print(args, (fn))
+			maybe_print(args, (row))
 			quit()
 
 		if num in quants_by_num:
@@ -73,7 +79,7 @@ def get_cards(sport, set, var, quants_by_num, whole=True, warn=True):
 			pname = row['product-name'].split('#')[0].split('[')[0].strip()
 			if num in num2player and num2player[num] != pname and var == row_var:
 				if warn and not warned[num]:
-					print(f"\n\n\t[bold orange3]warning:[/bold orange3] number [grey70]{num}[/grey70] was already used for [grey70]{num2player[num]}[/grey70], so can't use it for [grey70]{pname}[/grey70]\n\n")
+					maybe_print(args, (f"\n\n\t[bold orange3]warning:[/bold orange3] number [grey70]{num}[/grey70] was already used for [grey70]{num2player[num]}[/grey70], so can't use it for [grey70]{pname}[/grey70]\n\n"))
 					warned[num] = True
 				continue
 
@@ -101,7 +107,7 @@ def get_cards(sport, set, var, quants_by_num, whole=True, warn=True):
 	return cards
 
 
-def is_set_name(line):
+def is_set_name(args, line):
 	# It's just a number
 	if line.isnumeric():
 		return False
@@ -113,7 +119,7 @@ def is_set_name(line):
 	return True
 
 
-def agg_quants_by_num_by_set(fn):
+def agg_quants_by_num_by_set(args, fn):
 	quants_by_num_by_set = ll.dd(lambda: ll.dd(int))
 	cur_set = ''
 	cur_var = ''
@@ -121,11 +127,11 @@ def agg_quants_by_num_by_set(fn):
 		if line.strip().startswith('#'):
 			line = line.strip()[1:].strip()
 
-		if is_set_name(line):
+		if is_set_name(args, line):
 			# It's a set
 			# if (ms:=re.findall('(.*) ([0-9][0-9][0-9][0-9]) Topps (.*)', line)):
 				# line = (m:=ms[0])[
-				# print(ms)
+				# maybe_print(args, (ms))
 				# quit()
 			cur_set = line
 		else:
@@ -139,7 +145,7 @@ def agg_quants_by_num_by_set(fn):
 
 
 csv_cache = {}
-def cached_csv(*a, stream=False, **kw):
+def cached_csv(args, *a, stream=False, **kw):
 	if 'stream' in kw:
 		stream = kw['stream']
 	if stream:
@@ -154,7 +160,7 @@ def cached_csv(*a, stream=False, **kw):
 	return csv_cache[key]
 
 
-def process(fn, console=True, warn=True, force_price_key=None):
+def process(args, fn, console=True, warn=True, force_price_key=None):
 	fn_dir = ll.dn(fn)
 	fn = ll.bn(fn)
 	tfn = ll.ospj(fn_dir, fn)
@@ -169,7 +175,7 @@ def process(fn, console=True, warn=True, force_price_key=None):
 
 	sport = spl[1]
 
-	quants_by_num_by_set = agg_quants_by_num_by_set(tfn)
+	quants_by_num_by_set = agg_quants_by_num_by_set(args, tfn)
 	with open(cards_fn, 'w+') as card_f:
 		with open(price_fn, 'w+') as price_f:
 			gotten = 0
@@ -186,13 +192,13 @@ def process(fn, console=True, warn=True, force_price_key=None):
 						force_price_key = ''
 
 					# Get card info
-					cur_fset, var, _ = parse_set(set)
+					cur_fset, var, _ = parse_set(args, set)
 					
 					return set, grade, cur_fset, var
 
 				set, grade, cur_fset, var = _procset(set)
 				# card_row = get_card(sport, cur_fset, var, num)
-				card_rows = get_cards(sport, cur_fset, var, quants_by_num, warn=warn)
+				card_rows = get_cards(args, sport, cur_fset, var, quants_by_num, warn=warn)
 
 				# Correct weird Topps formatting before rendering output, but
 				# after looking up the set file
@@ -240,12 +246,12 @@ def process(fn, console=True, warn=True, force_price_key=None):
 					year = unvar_set.split(' ')[0].strip()
 					unyear_set = ' '.join(unvar_set.split(' ')[1:]).strip()
 
-					# print(sport)
-					# print(year)
-					# print(unyear_set)
-					# print(name)
-					# print(num)
-					# print(var)
+					# maybe_print(args, (sport))
+					# maybe_print(args, (year))
+					# maybe_print(args, (unyear_set))
+					# maybe_print(args, (name))
+					# maybe_print(args, (num))
+					# maybe_print(args, (var))
 					# quit()
 
 					# File output
@@ -262,7 +268,7 @@ def process(fn, console=True, warn=True, force_price_key=None):
 						
 					for trow in ll.csv('/tmp/overrides_price.csv', dicts=False):
 						# to ID in override csv, which parallels col.csv
-						brand, unbranded_set = split_brand(year, unyear_set)
+						brand, unbranded_set = split_brand(args, year, unyear_set)
 						card_tup2 = card_tup[:3] + (brand, unbranded_set) + card_tup[4:]
 						_id = lambda r: ' '.join(ll.map(str, list(r[1:8])+[r[9]]))
 						if _id(card_tup2) == _id(trow):
@@ -296,7 +302,7 @@ def process(fn, console=True, warn=True, force_price_key=None):
 					gotten += 1
 
 
-def print_card(id, sport, year, set, name, num, var, price, grade, psa_10, cgc_10, psa_9, price_threshold):
+def maybe_print_card(args, id, sport, year, set, name, num, var, price, grade, psa_10, cgc_10, psa_9, price_threshold):
 	if var:
 		card_str = f'{name} #{num} [{var}] {year} {set}'
 	else:
@@ -306,15 +312,15 @@ def print_card(id, sport, year, set, name, num, var, price, grade, psa_10, cgc_1
 		card_str += f' ({grade})'
 
 	if price >= price_threshold:
-		print(f'[yellow3]{price:.02f}[/yellow3]\t{card_str}')
+		maybe_print(args, (f'[yellow3]{price:.02f}[/yellow3]\t{card_str}'))
 	elif price >= 1:
-		print(f'[grey50]{price:.02f}[/grey50]\t{card_str}')
+		maybe_print(args, (f'[grey50]{price:.02f}[/grey50]\t{card_str}'))
 	elif price == 0:
-		print(f'[grey50]-[/grey50]\t{card_str}')
+		maybe_print(args, (f'[grey50]-[/grey50]\t{card_str}'))
 	else:
-		print(f'[grey30]{price:.02f}[/grey30]\t{card_str}')
+		maybe_print(args, (f'[grey30]{price:.02f}[/grey30]\t{card_str}'))
 
-def split_brand(year, set_name):
+def split_brand(args, year, set_name):
 	year = int(year)
 	sn = set_name.lower()
 
@@ -355,7 +361,7 @@ def split_brand(year, set_name):
 	elif 'finger lakes gaming' in sn:
 		brand_name = 'Finger Lakes Gaming'
 	else:
-		print(sn)
+		maybe_print(args, (sn))
 		raise Exception(f"unknown brand_name for set_name {set_name}")
 
 	set_name = set_name[:set_name.lower().index(brand_name.lower())].strip() + set_name[set_name.lower().index(brand_name.lower())+len(brand_name)+len(' '):].strip()
@@ -363,15 +369,15 @@ def split_brand(year, set_name):
 	return brand_name, set_name
 
 
-def card_row(id, sport, year, set, name, num, var, price, grade, psa10, cgc10, psa9):
-	brand, set = split_brand(year, set)
+def card_row(args, id, sport, year, set, name, num, var, price, grade, psa10, cgc10, psa9):
+	brand, set = split_brand(args, year, set)
 
-	return cached_csv((id, sport, year, brand, set, name, num, var, price, grade, psa10, cgc10, psa9))
+	return cached_csv(args, (id, sport, year, brand, set, name, num, var, price, grade, psa10, cgc10, psa9))
 fcard_row = card_row
 
 
-def card_csv(cards):
-	headers = cached_csv(('scp_id', 'sport', 'year', 'brand', 'set', 'name', 'number', 'parallel', 'price', 'condition', 'psa_10', 'cgc_10', 'psa_9'))
+def card_csv(args, cards):
+	headers = cached_csv(args, ('scp_id', 'sport', 'year', 'brand', 'set', 'name', 'number', 'parallel', 'price', 'condition', 'psa_10', 'cgc_10', 'psa_9'))
 	yield headers
 
 	for crow in cards:
@@ -379,14 +385,15 @@ def card_csv(cards):
 
 		# set = set[:set.lower().index(brand.lower())].strip() + set[set.lower().index(brand.lower())+len(brand)+len(' '):].strip()
 
-		yield card_row(id, sport, year, set, name, num, var, price, grade, psa10, cgc10, psa9)
+		yield card_row(args, id, sport, year, set, name, num, var, price, grade, psa10, cgc10, psa9)
 
 
 def main():
 
 	ap = ArgumentParser(add_help=False)
 	ap.add_argument('input', nargs='+')
-	ap.add_argument('-q', '--quiet-warnings', action='store_true')
+	ap.add_argument('-w', '--quiet-warnings', action='store_true')
+	ap.add_argument('-q', '--quiet', action='store_true')
 	ap.add_argument('-p', '--price-threshold', type=float, default=8.00)
 	ap.add_argument('-h', '--hide-cheap', action='store_true')
 	ap.add_argument('-s', '--sort-by-price', action='store_true')
@@ -432,12 +439,12 @@ def main():
 	total = 0
 	for fn in fns:
 		for line in ll.lines(fn, stream=True):
-			if line.strip() and not is_set_name(line):
+			if line.strip() and not is_set_name(args, line):
 				total += 1
 
 	def _track_it():
 		for fn in fns:
-			for card in process(fn, warn=(not args.quiet_warnings), force_price_key=('manual-only-price' if args.grade_10 else None)):
+			for card in process(args, fn, warn=(not args.quiet_warnings), force_price_key=('manual-only-price' if args.grade_10 else None)):
 				yield card
 	
 	got = 0
@@ -451,14 +458,14 @@ def main():
 	if not args.no_progress:
 		_it = ll.track(_it, total=total)
 	
-	# print(cached_csv(('sport', 'year', 'brand', 'set', 'name', 'number', 'parallel', 'price', 'condition')))
+	# maybe_print(args, (cached_csv(args, ('sport', 'year', 'brand', 'set', 'name', 'number', 'parallel', 'price', 'condition')))
 	for card in _it:
 		id, sport, year, set, name, num, var, price, grade, psa_10, cgc_10, psa_9 = card
-		# print(card_row(*card))
+		# maybe_print(args, (card_row(args, *card))
 		cards.append(card)
 		if (not args.hide_cheap) or (price >= args.price_threshold):
 			if not args.sort_by_price:
-				print_card(*cards[-1], price_threshold=args.price_threshold)
+				maybe_print_card(args, *cards[-1], price_threshold=args.price_threshold)
 
 		got += 1
 		value += price
@@ -473,23 +480,23 @@ def main():
 		for card in cards:
 			_,_,_,_,_,_,_,price,_,_,_,_ = card
 			if (not args.hide_cheap) or (price >= args.price_threshold):
-				print_card(*card, price_threshold=args.price_threshold if args.hide_cheap else 0.00)
+				maybe_print_card(args, *card, price_threshold=args.price_threshold if args.hide_cheap else 0.00)
 
 
 	# ll.rule()
 	# sc = sorted(cards, key=lambda c: (c[2], c[5], c[4]))
 	# for c in sc:
-		# print_card(*c, price_threshold=args.price_threshold if args.hide_cheap else 0.00)
+		# maybe_print(args, *c, price_threshold=args.price_threshold if args.hide_cheap else 0.00)
 
 
 	with open('col.csv', 'w+') as f:
-		for crow in card_csv(cards):
+		for crow in card_csv(args, cards):
 			f.write(crow + '\n')
 
 
-	print(f'\n{got} / {total}\n')
-	print(f'${value:.02f}\n\t(${good_value:.02f} for {good_got} cards > ${args.price_threshold:.0f})\n')
-	print(f'\t[grey70]([/grey70]{unknown_got}[grey70] cards w/ no mkt. data)[/grey70]\n')
+	maybe_print(args, f'\n{got} / {total}\n')
+	maybe_print(args, f'${value:.02f}\n\t(${good_value:.02f} for {good_got} cards > ${args.price_threshold:.0f})\n')
+	maybe_print(args, f'\t[grey70]([/grey70]{unknown_got}[grey70] cards w/ no mkt. data)[/grey70]\n')
 
 
 if __name__ == '__main__':
