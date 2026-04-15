@@ -456,7 +456,7 @@ def main():
 
 	_it = _track_it()
 	if not args.no_progress:
-		_it = ll.track(_it, total=total)
+		_it = ll.track(_it, total=total, title='t.py: ')
 	
 	# maybe_print(args, (cached_csv(args, ('sport', 'year', 'brand', 'set', 'name', 'number', 'parallel', 'price', 'condition')))
 	for card in _it:

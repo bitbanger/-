@@ -11,17 +11,6 @@
     "2023 Leaf Draft": {
       "Autographs": []
     },
-    "2014 Panini Score": {
-      "Hot Rookie Franchise Fabrics Signatures": []
-    },
-    "2023 Panini Prizm": [],
-    "2024 Panini Prizm": {
-      "Hype": [],
-      "Prizmatic": [],
-      "Autograph": [],
-      "Premier Jersey": []
-    },
-    "2013 Topps Strata": [],
     "2023 Panini Score": {
       "Huddle Up": [],
       "Protential": [],
@@ -31,7 +20,12 @@
       "It's Good Autographs": [],
       "2003 Throwback Rookies": []
     },
+    "2013 Topps Strata": [],
+    "2014 Panini Score": {
+      "Hot Rookie Franchise Fabrics Signatures": []
+    },
     "2025 Panini Prizm": {
+      "Break": [],
       "Black": {
         "Manga": [],
         "Fractal": [],
@@ -49,40 +43,46 @@
         "Prizmatrix Signature": [],
         "Sensational Signatures": []
       },
-      "Break": [],
       "Choice": [],
       "Fractal": [],
       "Emergent": [],
       "No Huddle": [],
-      "Prizmatic": [],
       "Fireworks": [],
+      "Prizmatic": [],
       "Prizmania": [],
+      "Rookie Gear": [],
       "Color Blast": {
         "Dual": []
       },
-      "Rookie Gear": [],
       "Global Reach": [],
-      "Manga Vertical": [],
       "Premier Jersey": [],
-      "Patch Autograph": [],
+      "Manga Vertical": [],
       "Lockdown Silver": [],
+      "Patch Autograph": [],
       "Retro Signature": [],
-      "Flashback Silver": [],
       "Manga Horizontal": [],
+      "Flashback Silver": [],
       "All Purpose Silver": [],
       "Flashback Autograph": [],
       "Dual Patch Autograph": [],
-      "Sensational Signature": [],
       "Significant Signature": [],
+      "Sensational Signature": [],
       "Triple Patch Autograph": [],
       "Rookie Flashback Silver": [],
       "Rookie Patch Autograph Silver": []
     },
+    "2024 Panini Prizm": {
+      "Hype": [],
+      "Prizmatic": [],
+      "Autograph": [],
+      "Premier Jersey": []
+    },
+    "2023 Panini Prizm": [],
     "2025 Panini Select": {
       "Future": [],
       "Numbers": [],
-      "Starcade": [],
       "Pairings": [],
+      "Starcade": [],
       "Alter Ego": [],
       "On Target": [],
       "Signature": {
@@ -96,11 +96,11 @@
       "Turbocharged": [],
       "Solar Eclipse": [],
       "Score Throwback": [],
+      "Certified Rookie": [],
       "Rookie Signature": {
         "Memorabilia Prizm": []
       },
       "Summit Autograph": [],
-      "Certified Rookie": [],
       "Rookie Swatch Prizm": [],
       "Select Signature Prizm": [],
       "Multiverse Jersey Prizm": [],
@@ -118,13 +118,7 @@
       "Epic Performers": [],
       "Touchdown Masters": []
     },
-    "2024 Panini Select": {
-      "Future": [],
-      "Numbers": [],
-      "Turbocharged": [],
-      "Certified Rookie": [],
-      "Draft Selections Memorabilia Prizm": []
-    },
+    "2014 Bowman Chrome": [],
     "2024 Panini Mosaic": {
       "Bang": [],
       "Elevate": [],
@@ -132,31 +126,12 @@
       "Epic Performers": [],
       "Touchdown Masters": []
     },
-    "2014 Bowman Chrome": [],
-    "2025 Panini Phoenix": {
-      "Genies": [],
-      "Paragon": [],
-      "Contours": [],
-      "Archetype": [],
-      "Phoenician": {
-        "Penmanship": []
-      },
-      "Color Blast": [],
-      "Thunderbirds": [],
-      "Regeneration": [],
-      "Pandora Patch": [],
-      "Fuego Signature": [],
-      "Scorched Signature": [],
-      "Resurgent Snow Globe": [],
-      "Rookie Phenom Jersey": {
-        "Autograph": []
-      },
-      "Temple Men Autograph": [],
-      "Rookie Patch Autograph": [],
-      "Franchise Future Material": [],
-      "Dual Rookie Patch Autograph": [],
-      "Mythical Materials Autograph": [],
-      "Ascension Rookie Jersey Autograph": []
+    "2024 Panini Select": {
+      "Future": [],
+      "Numbers": [],
+      "Turbocharged": [],
+      "Certified Rookie": [],
+      "Draft Selections Memorabilia Prizm": []
     },
     "2025 Panini Donruss": {
       "Vortex": [],
@@ -184,69 +159,42 @@
       "Rookie Gridiron Kings": [],
       "Rated Rookie Throwback": []
     },
-    "2025 Panini Absolute": {
-      "Glass": [],
-      "Jumbo": {
-        "Jersey Number": []
+    "2025 Panini Phoenix": {
+      "Genies": [],
+      "Paragon": [],
+      "Contours": [],
+      "Archetype": [],
+      "Phoenician": {
+        "Penmanship": []
       },
-      "Burners": [],
-      "By Storm": [],
-      "Hog Heaven": [],
-      "Iconic Ink": [],
-      "Rookie Wave": [],
-      "Holiday Suit": [],
-      "Rookie Force": [],
-      "Introductions": [],
-      "Draft Diamonds": {
-        "Jersey": []
-      },
-      "Kaboom Vertical": [],
-      "Historical Dual": [],
-      "Canton Absolutes": [],
-      "Rookie Materials": [],
-      "All Pro Souvenirs": {
+      "Color Blast": [],
+      "Regeneration": [],
+      "Thunderbirds": [],
+      "Pandora Patch": [],
+      "Fuego Signature": [],
+      "Scorched Signature": [],
+      "Rookie Phenom Jersey": {
         "Autograph": []
       },
-      "Kaboom Horizontal": [],
-      "Legends Signature": [],
-      "Tools of the Trade": {
-        "Five": [],
-        "Quad": [],
-        "Double Autograph": [],
-        "Triple Autograph": []
-      },
-      "War Room Materials": [],
-      "Heroes Memorabilia": [],
-      "Countdown Calendar": {
-        "Kaboom": [],
-        "By Storm": [],
-        "Holiday Suit": [],
-        "Introductions": [],
-        "Draft Diamonds": []
-      },
-      "Spectrum Signatures": [],
-      "Signature Standouts": [],
-      "Team Tandem Materials": [],
-      "Ground Hoggs Materials": [],
-      "Rookie Premiere Materials": {
-        "Autograph": {
-          "Five": [],
-          "Quad": [],
-          "Jumbo": [],
-          "Shield": []
-        }
-      },
-      "Kaboom Super Bowl Vertical": [],
-      "Kaboom Super Bowl Horizontal": []
+      "Temple Men Autograph": [],
+      "Resurgent Snow Globe": [],
+      "Rookie Patch Autograph": [],
+      "Franchise Future Material": [],
+      "Dual Rookie Patch Autograph": [],
+      "Mythical Materials Autograph": [],
+      "Ascension Rookie Jersey Autograph": []
     },
-    "2015 Panini Prestige": [],
+    "2014 Panini Prestige": {
+      "Rookies Signatures": []
+    },
+    "2008 Bowman Sterling": [],
     "2024 Panini Absolute": {
-      "Glass": [],
       "Jumbo": {
         "Towels": [],
         "Cleats": [],
         "Jersey Number": []
       },
+      "Glass": [],
       "Burners": [],
       "By Storm": [],
       "Rock Out": [],
@@ -258,8 +206,8 @@
       "Draft Diamonds": {
         "Jersey": []
       },
-      "Historical Dual": [],
       "Kaboom Vertical": [],
+      "Historical Dual": [],
       "Canton Absolutes": [],
       "Rookie Materials": [],
       "All Pro Souvenirs": {
@@ -276,9 +224,9 @@
         "Double Auto": []
       },
       "War Room Materials": [],
+      "Heroes Memorabilia": [],
       "Signature Standout": [],
       "Spectrum Signature": [],
-      "Heroes Memorabilia": [],
       "Team Tandem Materials": [],
       "Ground Hoggs Materials": [],
       "Rookie Premiere Materials": {
@@ -286,14 +234,65 @@
       },
       "Rookie Premiere Quad Materials Auto": []
     },
-    "2008 Bowman Sterling": [],
-    "2014 Panini Prestige": {
-      "Rookies Signatures": []
+    "2025 Panini Absolute": {
+      "Jumbo": {
+        "Jersey Number": []
+      },
+      "Glass": [],
+      "Burners": [],
+      "By Storm": [],
+      "Hog Heaven": [],
+      "Iconic Ink": [],
+      "Rookie Wave": [],
+      "Holiday Suit": [],
+      "Rookie Force": [],
+      "Introductions": [],
+      "Draft Diamonds": {
+        "Jersey": []
+      },
+      "Historical Dual": [],
+      "Kaboom Vertical": [],
+      "Canton Absolutes": [],
+      "Rookie Materials": [],
+      "All Pro Souvenirs": {
+        "Autograph": []
+      },
+      "Kaboom Horizontal": [],
+      "Legends Signature": [],
+      "Tools of the Trade": {
+        "Quad": [],
+        "Five": [],
+        "Double Autograph": [],
+        "Triple Autograph": []
+      },
+      "War Room Materials": [],
+      "Countdown Calendar": {
+        "Kaboom": [],
+        "By Storm": [],
+        "Holiday Suit": [],
+        "Introductions": [],
+        "Draft Diamonds": []
+      },
+      "Heroes Memorabilia": [],
+      "Spectrum Signatures": [],
+      "Signature Standouts": [],
+      "Team Tandem Materials": [],
+      "Ground Hoggs Materials": [],
+      "Rookie Premiere Materials": {
+        "Autograph": {
+          "Five": [],
+          "Quad": [],
+          "Jumbo": [],
+          "Shield": []
+        }
+      },
+      "Kaboom Super Bowl Vertical": [],
+      "Kaboom Super Bowl Horizontal": []
     },
     "2024 Panini Prestige": {
       "Heroes": [],
-      "Power House": [],
       "Alma Maters": [],
+      "Power House": [],
       "Time Stamped": [],
       "For the Record": [],
       "Living Legends": [],
@@ -304,6 +303,7 @@
       "Franchise Favorites": []
     },
     "2017 Panini Classics": [],
+    "2015 Panini Prestige": [],
     "2022 Leaf Draft Hobby": {
       "Autograph": []
     },
@@ -318,8 +318,8 @@
     "2024 Panini Donruss Optic": {
       "Hash Marks": [],
       "Light It Up": [],
-      "Best Tuddys": [],
       "Play Action": [],
+      "Best Tuddys": [],
       "Hidden Potential": []
     },
     "2025 Panini Donruss Optic": {
@@ -337,10 +337,10 @@
       "Light It Up": [],
       "Best Tuddys": [],
       "Play Action": [],
-      "Rookie Kings": [],
       "Sunday Kings": [],
-      "Diamond Hands": [],
+      "Rookie Kings": [],
       "Rookie Phenom": [],
+      "Diamond Hands": [],
       "Passing Grade": {
         "Autograph": []
       },
@@ -351,23 +351,20 @@
         "Autograph": []
       },
       "Captain in Charge": [],
+      "Rookie Primary Colors": [],
       "Signature Series Holo": [],
       "Rookie Dual Autograph": [],
-      "Rookie Primary Colors": [],
       "Rookie Patch Autograph": [],
-      "Rookie Triple Autograph": [],
       "Dynamic Patch Autograph": [],
+      "Rookie Triple Autograph": [],
       "Rookie Recruit Autograph": [],
       "Legendary Patch Autograph": []
     },
-    "2017 Sage Hit Premier Draft": [],
-    "2017 Sage Hit Premier Draft Autographs": [],
-    "2017 Sage Hit Premier Draft Peak Performance Platinized": [],
     "2025 Panini Rookies and Stars": {
+      "Royalty": [],
       "Crusade": {
         "Signature": []
       },
-      "Royalty": [],
       "Big Time": [],
       "Airborne": {
         "Signature": []
@@ -377,14 +374,14 @@
         "Signature": []
       },
       "Draft Class": [],
-      "Star Search": [],
       "Rookie Rush": [],
+      "Star Search": [],
+      "Cross Training": [],
+      "Rookie Royalty": [],
       "Touchdown Club": [],
       "Stellar Rookie": {
         "Signature": []
       },
-      "Cross Training": [],
-      "Rookie Royalty": [],
       "Rookie Exclusive": [],
       "Artistry in Motion": [],
       "High Octane Memorabilia": [],
@@ -392,6 +389,9 @@
       "Dress for Success Autograph": [],
       "Freshman Orientation Autograph": []
     },
+    "2017 Sage Hit Premier Draft": [],
+    "2017 Sage Hit Premier Draft Autographs": [],
+    "2017 Sage Hit Premier Draft Peak Performance Platinized": [],
     "2013 Panini Rookies and Stars": [],
     "2025 Panini Prizm Draft Picks": {
       "Hype": [],
@@ -411,8 +411,8 @@
       "Instant Impact": [],
       "Student Orientation": [],
       "Sensational Signatures": [],
-      "Legends Patch Autograph": [],
       "Saturday Star Signature": [],
+      "Legends Patch Autograph": [],
       "Prospects Patch Autograph": [],
       "Jumbo Rookie Patch Autograph": []
     },
@@ -421,18 +421,17 @@
       "Instant Impact": []
     },
     "2013 Topps Prime Primetimers": [],
-    "2025 Bowman Chrome University": [],
-    "2025 Bowman Chrome University Acropolis": [],
     "2024 Panini Totally Certified": {
       "On Target": [],
-      "Portraits": [],
       "Signature": [],
+      "Portraits": [],
       "Intriguing Players": [],
       "New Generation Jersey": [],
       "Franchise Foundations": []
     },
+    "2025 Bowman Chrome University": [],
+    "2025 Bowman Chrome University Acropolis": [],
     "2006 Panini Score Inscriptions": [],
-    "2019 Panini Illusions Rookie Signs": [],
     "2021 Panini Chronicles Draft Picks": {
       "Flux": [],
       "Recon": [],
@@ -440,19 +439,20 @@
         "Rated Rookie Autographs": []
       },
       "Spectra": [],
+      "Playbook": [],
       "Prestige": {
         "Xtra Points Signatures": []
       },
-      "Playbook": [],
       "Illusions": [],
       "Score Retro": []
-    },
-    "2021 Panini Contenders Draft Picks": {
-      "Front Row Seats": []
     },
     "2015 Panini Contenders Draft Picks": {
       "School Colors": [],
       "Old School Colors": []
+    },
+    "2019 Panini Illusions Rookie Signs": [],
+    "2021 Panini Contenders Draft Picks": {
+      "Front Row Seats": []
     },
     "2024 Panini Donruss Signature Marks": [],
     "2006 Panini Score Select Inscriptions": [],
@@ -462,8 +462,8 @@
     "2023 Panini Luminance Year One Signatures": [],
     "2023 Panini Select Jumbo Rookie Swatch Prizm": [],
     "2020 Panini Chronicles Draft Picks XR Rookies": [],
-    "2025 Panini Honors Spectra HOF Signature Prizm": [],
     "2025 Panini Honors Super Bowl Signatures Prizm": [],
+    "2025 Panini Honors Spectra HOF Signature Prizm": [],
     "2025 Panini National Treasures Signature Prizm": [],
     "2023 Panini Select Jumbo Signature Swatch Prizm": [],
     "2023 Panini Select Jumbo Rookie Signature Swatch Prizm": [],
@@ -472,42 +472,9 @@
     "2025 Panini National Treasures Spectra HOF Signature Prizm": []
   },
   "Baseball": {
-    "1987 Topps": [],
-    "1984 Topps": [],
-    "2025 Topps": {
-      "Update": [],
-      "Update 1990": [],
-      "Update Stars of MLB": [],
-      "Update Most Valuable": [],
-      "Allen and Ginter": [],
-      "Allen and Ginter Relic": [],
-      "Allen and Ginter Rip Card": {
-        "2025 Topps Allen and Ginter Rip Card Mini Exclusive": []
-      },
-      "Allen and Ginter 1889 N22": [],
-      "Allen and Ginter Beachin\u2019 It": [],
-      "Allen and Ginter State Birds": [],
-      "Allen and Ginter Cut Signature": {
-        "2025 Topps Allen and Ginter Cut Signature Relic": []
-      },
-      "Allen and Ginter Wicked Curves": [],
-      "Allen and Ginter Sweet Victory": [],
-      "Allen and Ginter Mini DNA Relic": [],
-      "Allen and Ginter Light The Night": [],
-      "Allen and Ginter Double Rip Card": [],
-      "Allen and Ginter Mini Framed Relic": [],
-      "Allen and Ginter Autographed Relic": [],
-      "Allen and Ginter Uniform Countdown": [],
-      "Allen and Ginter Framed Mini Autograph": [],
-      "Allen and Ginter Carte de Visite Autograph": [],
-      "Allen and Ginter 50 Fish From Global Waters": [],
-      "Allen and Ginter 2024 World Series Champions": [],
-      "Allen and Ginter Autographed Lineup Card Relic": [],
-      "All-Topps Team": [],
-      "Allen and Ginter X": [],
-      "Allen and Ginter X Sweet Victory": [],
-      "Allen and Ginter X Wicked Curves": [],
-      "Allen and Ginter X Mini Autograph": []
+    "1992 Fleer": [],
+    "1990 Score": {
+      "Traded": []
     },
     "1992 Score": [],
     "1989 Topps": [],
@@ -522,8 +489,8 @@
       "Celebration": [],
       "Celebration Mascot": [],
       "Celebration Gameday Drip": [],
-      "Celebration 8-Bit Ballers": [],
       "Celebration Mascots Relic": [],
+      "Celebration 8-Bit Ballers": [],
       "Celebration Mascots Autograph": [],
       "Celebration Perennial All-Stars": [],
       "Celebration Mascots Dynasty Autograph Patch": [],
@@ -533,12 +500,42 @@
       "All-Topps Team": [],
       "Titans Of The Game": []
     },
-    "1990 Score": {
-      "Traded": []
-    },
-    "1992 Fleer": [],
-    "1990 Donruss": {
-      "Super Diamond Kings": []
+    "1984 Topps": [],
+    "1987 Topps": [],
+    "2025 Topps": {
+      "Update": [],
+      "Update 1990": [],
+      "Update Stars of MLB": [],
+      "Update Most Valuable": [],
+      "Allen and Ginter": [],
+      "Allen and Ginter Relic": [],
+      "Allen and Ginter 1889 N22": [],
+      "Allen and Ginter Rip Card": {
+        "2025 Topps Allen and Ginter Rip Card Mini Exclusive": []
+      },
+      "Allen and Ginter Beachin\u2019 It": [],
+      "Allen and Ginter State Birds": [],
+      "Allen and Ginter Wicked Curves": [],
+      "Allen and Ginter Cut Signature": {
+        "2025 Topps Allen and Ginter Cut Signature Relic": []
+      },
+      "Allen and Ginter Sweet Victory": [],
+      "Allen and Ginter Mini DNA Relic": [],
+      "Allen and Ginter Light The Night": [],
+      "Allen and Ginter Double Rip Card": [],
+      "Allen and Ginter Mini Framed Relic": [],
+      "Allen and Ginter Uniform Countdown": [],
+      "Allen and Ginter Autographed Relic": [],
+      "Allen and Ginter Framed Mini Autograph": [],
+      "Allen and Ginter Carte de Visite Autograph": [],
+      "Allen and Ginter 50 Fish From Global Waters": [],
+      "Allen and Ginter 2024 World Series Champions": [],
+      "Allen and Ginter Autographed Lineup Card Relic": [],
+      "All-Topps Team": [],
+      "Allen and Ginter X": [],
+      "Allen and Ginter X Sweet Victory": [],
+      "Allen and Ginter X Wicked Curves": [],
+      "Allen and Ginter X Mini Autograph": []
     },
     "1988 Donruss": {
       "MVP": [],
@@ -546,10 +543,13 @@
       "Rookies": [],
       "Baseball's Best": []
     },
-    "1987 Donruss": [],
     "1989 Donruss": {
       "Super Diamond Kings": []
     },
+    "1990 Donruss": {
+      "Super Diamond Kings": []
+    },
+    "1987 Donruss": [],
     "2002 Upper Deck": {
       "Twizzlers": []
     },
@@ -560,10 +560,10 @@
     "2025 Panini Select": {
       "Sparks": [],
       "Numbers": [],
-      "Firestorm": [],
       "Certified": [],
-      "Throwback": [],
+      "Firestorm": [],
       "Signature": [],
+      "Throwback": [],
       "Can\u2019t Miss": [],
       "Phenomenon": [],
       "Color Wheel": [],
@@ -575,8 +575,8 @@
       "Autographed Memorabilia": [],
       "Diamond Action Signatures": []
     },
-    "1993 Fleer Atlantic": [],
     "1994 Fleer Atlantic": [],
+    "1993 Fleer Atlantic": [],
     "1993 Hostess Twinkies": [],
     "2002 Topps Post Cereal": [],
     "2021 Bowman Chrome Prospects": [],
@@ -602,12 +602,12 @@
       "Sky High": [],
       "Neon Icon": [],
       "Hot Stars": [],
-      "Visionary": [],
-      "Lodestars": [],
       "Certified": [],
       "Signature": {
         "Selections": []
       },
+      "Lodestars": [],
+      "Visionary": [],
       "Color Wheel": [],
       "Crown Jewels": [],
       "Solar Eclipse": [],
@@ -635,12 +635,12 @@
       "Groovy": [],
       "Fractal": [],
       "Top Tier": [],
-      "Fearless": [],
       "Pioneers": [],
+      "Fearless": [],
       "Fireworks": [],
       "Signature": [],
-      "Clark Mania": [],
       "Color Blast": [],
+      "Clark Mania": [],
       "Kaleidoscopic": [],
       "Throwback Signature": []
     },
@@ -649,8 +649,8 @@
       "Fractal": [],
       "Top Tier": [],
       "Pioneers": [],
-      "Fearless": [],
       "Abstract": [],
+      "Fearless": [],
       "Fireworks": [],
       "Signature": [],
       "Colorblast": [],
@@ -663,27 +663,27 @@
     },
     "2017 Rittenhouse WNBA": [],
     "2024 Panini Select WNBA": {
-      "Future": [],
       "Sparks": [],
+      "Future": [],
       "En Fuego": [],
       "Snapshot": [],
-      "All-Stars": [],
       "Signature": [],
+      "All-Stars": [],
       "Color Wheel": [],
       "Unstoppable": [],
       "Selective Swatch": [],
       "Black Color Blast": [],
       "Pairings Signature": [],
       "Autographed Memorabilia": [],
-      "Courtside Action Signature": [],
-      "Draft Selections Signature": []
+      "Draft Selections Signature": [],
+      "Courtside Action Signature": []
     },
     "2025 Panini Donruss WNBA": {
       "My House": [],
       "Net Marvels": [],
       "Crunch Time": [],
-      "Jersey Series": [],
       "Tunnel Vision": [],
+      "Jersey Series": [],
       "Next Day Autograph": [],
       "Franchise Features": []
     },
