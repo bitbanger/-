@@ -6368,7 +6368,7 @@ fake_id126,basketball,2017,Rittenhouse,WNBA,Alyssa Thomas,18,,44.99,PSA 9,0,0,0
 12531792,football,2025,Topps,Chrome,Brian Robinson Jr.,296,,0.0,,0,0,0
 12526293,football,2025,Topps,Chrome,Brock Bowers,178,,0.0,,0,0,0
 12526293,football,2025,Topps,Chrome,Brock Bowers,178,,0.0,,0,0,0
-12520707,football,2025,Topps,Chrome,Caleb Williams,52,,0.0,,0,0,0
+12520707,football,2025,Topps,Chrome,Caleb Williams,52,,5.37,,0,0,0
 12528251,football,2025,Topps,Chrome,Cameron Jordan,221,,0.0,,0,0,0
 12521129,football,2025,Topps,Chrome,Cedric Tillman,67,,0.0,,0,0,0
 12523997,football,2025,Topps,Chrome,Charvarius Ward,129,,0.0,,0,0,0
@@ -6394,9 +6394,9 @@ fake_id126,basketball,2017,Rittenhouse,WNBA,Alyssa Thomas,18,,44.99,PSA 9,0,0,0
 12524959,football,2025,Topps,Chrome,Isiah Pacheco,149,,0.0,,0,0,0
 12534830,football,2025,Topps,Chrome,JT Tuimoloau,356,,0.0,,0,0,0
 12520345,football,2025,Topps,Chrome,Ja'Tavion Sanders,45,,0.0,,0,0,0
-12522579,football,2025,Topps,Chrome,Jahmyr Gibbs,101,,0.0,,0,0,0
+12522579,football,2025,Topps,Chrome,Jahmyr Gibbs,101,,1.99,,0,0,0
 12523101,football,2025,Topps,Chrome,Jake Bates,105,,0.0,,0,0,0
-12534699,football,2025,Topps,Chrome,Jalon Walker,354,,0.0,,0,0,0
+12534699,football,2025,Topps,Chrome,Jalon Walker,354,,1.99,,0,0,0
 12525325,football,2025,Topps,Chrome,Joe Alt,157,,0.0,,0,0,0
 12522130,football,2025,Topps,Chrome,Joe Milton III,85,,0.0,,0,0,0
 12520574,football,2025,Topps,Chrome,Joe Thuney,50,,0.0,,0,0,0
@@ -6413,17 +6413,17 @@ fake_id126,basketball,2017,Rittenhouse,WNBA,Alyssa Thomas,18,,44.99,PSA 9,0,0,0
 12530806,football,2025,Topps,Chrome,Riq Woolen,278,,0.0,,0,0,0
 12520528,football,2025,Topps,Chrome,Rome Odunze,49,,0.0,,0,0,0
 12528528,football,2025,Topps,Chrome,Russell Wilson,229,,0.0,,0,0,0
-12534085,football,2025,Topps,Chrome,Savion Williams,340,,0.0,,0,0,0
+12534085,football,2025,Topps,Chrome,Savion Williams,340,,2.99,,0,0,0
 12536079,football,2025,Topps,Chrome,Sebastian Castro,370,,0.0,,0,0,0
 12527629,football,2025,Topps,Chrome,Stefon Diggs,205,,0.0,,0,0,0
 12523285,football,2025,Topps,Chrome,Tim Patrick,96,,0.0,,0,0,0
 12520284,football,2025,Topps,Chrome,Tommy Tremble,44,,0.0,,0,0,0
-12535182,football,2025,Topps,Chrome,Trey Amos,371,,0.0,,0,0,0
+12535182,football,2025,Topps,Chrome,Trey Amos,371,,1.99,,0,0,0
 12525699,football,2025,Topps,Chrome,Tutu Atwell,167,,0.0,,0,0,0
-12536684,football,2025,Topps,Chrome,Tyler Shough,398,,0.0,,0,0,0
+12536684,football,2025,Topps,Chrome,Tyler Shough,398,,7.0,,0,0,0
 12552688,football,2025,Topps,Chrome Urban Legends,Caleb Williams,UL-4,,0.0,,0,0,0
 12550491,football,2025,Topps,Chrome Fortune 15,JaTMarr Chase,F15-2,,0.0,,0,0,0
-12550726,football,2025,Topps,Chrome Fortune 15,Josh Allen,F15-7,,0.0,,0,0,0
+12550726,football,2025,Topps,Chrome Fortune 15,Josh Allen,F15-7,,19.99,,0,0,0
 12552232,football,2025,Topps,Chrome Power Players,Abdul Carter,PP-40,Refractor,9.75,,0,0,0
 12552322,football,2025,Topps,Chrome Power Players,George Kittle,PP-33,Refractor,0.0,,0,0,0
 12552067,football,2025,Topps,Chrome Power Players,Lamar Jackson,PP-1,Refractor,0.0,,0,0,0
@@ -6443,7 +6443,7 @@ fake_id126,basketball,2017,Rittenhouse,WNBA,Alyssa Thomas,18,,44.99,PSA 9,0,0,0
 12527425,football,2025,Topps,Chrome,Aaron Jones Sr.,201,Pulsar Refractor,0.0,,0,0,0
 12521578,football,2025,Topps,Chrome,Andrei Iosivas,60,Pulsar Refractor,0.0,,0,0,0
 12530244,football,2025,Topps,Chrome,Brock Purdy,262,Pulsar Refractor,0.0,,0,0,0
-12523944,football,2025,Topps,Chrome,Cam Robinson,124,Pulsar Refractor,0.0,,0,0,0
+12523944,football,2025,Topps,Chrome,Cam Robinson,124,Pulsar Refractor,0.99,,0,0,0
 12527914,football,2025,Topps,Chrome,Chris Olave,216,Pulsar Refractor,0.0,,0,0,0
 12524447,football,2025,Topps,Chrome,Braden Smith,134,RayWave Refractor,0.0,,0,0,0
 12528917,football,2025,Topps,Chrome,Brian Burns,234,RayWave Refractor,0.0,,0,0,0
@@ -6452,7 +6452,7 @@ fake_id126,basketball,2017,Rittenhouse,WNBA,Alyssa Thomas,18,,44.99,PSA 9,0,0,0
 12527893,football,2025,Topps,Chrome,Garrett Bradbury,212,RayWave Refractor,0.0,,0,0,0
 12519760,football,2025,Topps,Chrome,Khalil Shakir,32,RayWave Refractor,0.0,,0,0,0
 12536457,football,2025,Topps,Chrome,Seth Henigan,399,RayWave Refractor,0.0,,0,0,0
-12533966,football,2025,Topps,Chrome,Tre Harris III,338,RayWave Refractor,0.0,,0,0,0
+12533966,football,2025,Topps,Chrome,Tre Harris III,338,RayWave Refractor,3.99,,0,0,0
 12528092,football,2025,Topps,Chrome,Brandin Cooks,217,Refractor,0.0,,0,0,0
 12523572,football,2025,Topps,Chrome,Christian Kirk,117,Refractor,0.0,,0,0,0
 12521888,football,2025,Topps,Chrome,Dak Prescott,79,Refractor,0.0,,0,0,0
@@ -6464,7 +6464,7 @@ fake_id126,basketball,2017,Rittenhouse,WNBA,Alyssa Thomas,18,,44.99,PSA 9,0,0,0
 12524119,football,2025,Topps,Chrome,Jonathan Taylor,130,Refractor,0.0,,0,0,0
 12535139,football,2025,Topps,Chrome,Kenneth Grant,362,Refractor,0.0,,0,0,0
 12519656,football,2025,Topps,Chrome,Keon Coleman,30,Refractor,0.0,,0,0,0
-12522558,football,2025,Topps,Chrome,Penei Sewell,99,Refractor,0.0,,0,0,0
+12522558,football,2025,Topps,Chrome,Penei Sewell,99,Refractor,1.99,,0,0,0
 12527171,football,2025,Topps,Chrome,Ashtyn Davis,194,Football Leather Green,0.0,,0,0,0
 12519324,football,2025,Topps,Chrome,Rashod Bateman,21,Football Leather Purple,0.0,,0,0,0
 12551597,football,2025,Topps,Chrome Legends of the Gridiron,Tim Brown,LOG-22,,5.0,,0,0,0
