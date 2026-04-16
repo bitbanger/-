@@ -48,6 +48,7 @@ def req(**extra_payload):
 		'from_frontend': '0',
 	}
 	payload.update(extra_payload)
+	payload = {k: str(v) for k, v in payload.items()}
 
 	resp = post(url, headers=headers, payload=payload)
 	return ll.map(ll.vals, ll.json(resp)['data'])
@@ -62,18 +63,17 @@ def req(**extra_payload):
 sets = {}
 
 
-@ll.cache()
 def cards(sport, year, brand, program, csv=False):
 	url, headers = curl2url('chkl.curl'), curl2headers('chkl.curl')
 	data = {
-		'activity': id(sport),
+		'activity': str(sport_id(sport)),
 		'year': str(year),
 		'brand': brand,
-		'program': id(program),
+		'program': str(program_id(sport, year, brand, program)),
 		'card_set': '',
 		'card': '',
-		'replace_wo_inventory': 1,
-		'from_frontend': 0,
+		'replace_wo_inventory': '1',
+		'from_frontend': '0',
 	}
 
 	resp = post(url, headers=headers, payload=data)
@@ -81,21 +81,38 @@ def cards(sport, year, brand, program, csv=False):
 
 
 @ll.memcache
-def id(x):
-	if isinstance(x, int) or x.isnumeric():
-		return x
+def sport_id(x):
 	for sport, sport_id in req():
-		if x==sport:
+		if str(x).lower() == str(sport).lower():
 			return sport_id
-	for sport, sport_id in req():
-		for (year,) in req(sport=sport_id):
-			for brand, _ in req(activity=sport_id, year=str(year)):
-				for program, _, program_id, _ in req(activity=sport_id, year=str(year), brand=brand):
-					if program==x:
-						return program_id
 
 
 @ll.memcache
+def program_id(s,y,b,p):
+	s = str(s).lower()
+	y = str(y).lower()
+	b = str(b).lower()
+	p = str(p).lower()
+
+	for sport, sport_id in req():
+		sport = str(sport).lower()
+		if sport != s:
+			continue
+		for yeartup in req(sport=sport_id):
+			if type(yeartup) in (list, tuple):
+				year = str(yeartup[0])
+			if year != y:
+				continue
+			for brand, brand_id in req(sport=sport_id, year=year):
+				brand = str(brand).lower()
+				if brand != b:
+					continue
+				for program, _, program_id, _ in req(sport=sport_id, year=year, brand=brand):
+					program = str(program).lower()
+					if program == p:
+						return program_id
+
+
 def sets(sports=None, years=None, brands=None, programs=None):
 	def _fix(x):
 		if x is None:
@@ -107,11 +124,11 @@ def sets(sports=None, years=None, brands=None, programs=None):
 
 	hier = ll.dd(lambda: ll.dd(lambda: ll.dd(list)))
 
-	for sport, sport_id in req():
-		for (year,) in req(sport=sport_id):
-			print(sport, year)
+	sport_tups = req()
+	for sport, sport_id in ll.track(sport_tups, title='Indexing sets: '):
+		for (year, _) in req(sport=sport_id):
 			for brand, brand_id in req(activity=sport_id, year=str(year)):
-				for program, nyear, program_id, release_date in req(activity=sport_id, year=str(year), brand=brand):
+				for program, nyear, program_id, release_date in req(activity=sport_id, year=str(year), brand=brand, from_frontend='2'):
 					hier[sport][year][brand].append(program)
 					# print(f'{nyear} {brand} {program} {sport} [grey50]({release_date})[/grey50]')
 
@@ -150,7 +167,9 @@ def get_all(sports=None, years=None, brands=None, programs=None, sets=None):
 		if sports and activity.lower() not in ll.map(ll.lower, sports):
 			continue
 
-		for (year,) in req(activity=activity_id):
+		for yeartup in req(sport=sport_id):
+			if type(yeartup) in (list, tuple):
+				year = yeartup[0]
 			if years and year not in years:
 				continue
 
@@ -181,13 +200,23 @@ def mkfn(p):
 	return fn
 
 
-def download_all(sports=None, years=None, brands=None, programs=None):
+def download_all(sports=None, years=None, brands=None, programs=None, force=False):
+	sports = ll.map(ll.lower, sports) if sports else None
+	years = ll.map(int, years) if years else None
+	brands = ll.map(ll.lower, brands) if brands else None
+	programs = ll.map(ll.lower, programs) if programs else None
 	for (s,y,b,p) in ll.track(flat_sets(), title='Downloading: '):
-		print(s,y,b,p)
-		continue
+		if sports and s.lower() not in sports:
+			continue
+		if years and int(y) not in years:
+			continue
+		if brands and b.lower() not in brands:
+			continue
+		if programs and p.lower() not in programs:
+			continue
 		os.makedirs((d:=f'panini_checklists/{s}/{y}/{b}'.lower()), exist_ok=True)
 		path = os.path.join(d, mkfn(p))
-		if ll.fexists(path) and len(ll.lines(ll.read(path).strip()))>1:
+		if (not force) and (ll.fexists(path) and len(ll.lines(ll.read(path).strip()))>1):
 			continue
 		with open(path, 'w+') as f:
 			f.write(cards(s,y,b,p,csv=True))
@@ -199,13 +228,12 @@ def main():
 	ap.add_argument('-y', '--years', type=int, nargs='*')
 	ap.add_argument('-b', '--brands', nargs='*')
 	ap.add_argument('-p', '--programs', nargs='*')
+	ap.add_argument('-f', '--force', action='store_true')
 	args = ap.parse_args()
 
 	# print(next(get_all(sports='football')))
 
-	# download_all(sports=args.sports, years=args.years, programs=args.programs)
-	for s in sets():
-		print(s)
+	download_all(sports=args.sports, years=args.years, brands=args.brands, programs=args.programs, force=args.force)
 
 	quit()
 
