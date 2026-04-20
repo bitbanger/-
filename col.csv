@@ -353,43 +353,6 @@ scp_id,sport,year,brand,set,name,number,parallel,price,condition,psa_10,cgc_10,p
 8184766,football,2024,Panini,Prizm Draft Picks,Kool-Aid McKinstry,117,Green,1.0,,0,0,0
 8190375,football,2024,Panini,Prizm Draft Picks Instant Impact,Brock Bowers,II-BB,,2.26,,29.0,23.0,17.01
 8190382,football,2024,Panini,Prizm Draft Picks Instant Impact,Marvin Harrison Jr.,II-MHJ,Green,1.44,,35.55,28.0,12.12
-524150,football,2014,Panini,Score,Cyrus Kouandjio,356,,0.99,,0,0,0
-524077,football,2014,Panini,Score,Mario Williams,283,,1.69,,0,0,0
-511386,football,2014,Panini,Prestige,Sammy Watkins,280,,0.0,,0,0,0
-540370,football,2014,Topps,,Cyrus Kouandjio,412,,1.0,,0,0,0
-5205319,football,2014,Bowman Chrome,,Cyrus Kouandjio,176,,1.74,,0,0,0
-12263791,football,2013,Topps,Prime Primetimers,C.J. Spiller,PT-CS,,0.0,damaged,0,0,0
-4779892,football,2013,Topps,Strata,Marquise Goodwin,139,,1.0,,0,0,0
-560243,football,2013,Panini,Rookies & Stars,C.J. Spiller,12,,1.82,,0,0,0
-560244,football,2013,Panini,Rookies & Stars,Fred Jackson,13,,1.49,,0,0,0
-555059,football,2013,Panini,Contenders,C.J. Spiller,12,,0.25,,0,0,0
-555060,football,2013,Panini,Contenders,Mario Williams,13,,1.74,,0,0,0
-555058,football,2013,Panini,Contenders,Steve Johnson,11,,1.69,,0,0,0
-12263793,football,2015,Panini,Contenders Draft Picks School Colors,Amari Cooper,26,,0.0,damaged,0,0,0
-462368,football,2015,Panini,Contenders Draft Picks,Eddie Lacy,39,,1.41,,0,0,0
-474956,football,2015,Panini,Prestige,Percy Harvin,20,,1.5,,0,0,0
-1000467,football,2017,Panini,Classics,ArDarius Stewart,204,,1.0,,0,0,0
-1000536,football,2017,Panini,Classics,O.J. Howard,273,,0.99,,0,0,0
-8149346,football,2024,Panini,Absolute Introductions,Jalen McMillan,I-JMN,,0.39,,34.01,27.0,11.54
-8148881,football,2024,Panini,Absolute Draft Diamonds,Brock Purdy,DD-BPY,,1.77,,37.93,30.0,31.0
-8140098,football,2024,Panini,Absolute,Alex Singleton,32,,1.18,,34.46,28.0,11.71
-8139328,football,2024,Panini,Absolute,Bijan Robinson,5,,1.49,,35.26,28.0,12.02
-8143179,football,2024,Panini,Absolute,Braden Fiske,139,,0.99,,33.75,27.0,11.44
-8144895,football,2024,Panini,Absolute,Brenden Rice,199,,1.11,,34.15,27.0,11.59
-8141391,football,2024,Panini,Absolute,Chris Olave,77,,1.19,,34.43,28.0,11.7
-8140995,football,2024,Panini,Absolute,Cooper Kupp,63,,0.11,,0,0,0
-8144409,football,2024,Panini,Absolute,Erick All,182,,1.22,,34.58,28.0,11.76
-8140185,football,2024,Panini,Absolute,Jared Goff,35,,0.85,,34.04,27.0,7.0
-8139756,football,2024,Panini,Absolute,Joe Burrow,20,,1.4,,35.3,28.0,11.5
-8140879,football,2024,Panini,Absolute,Joey Bosa,59,,0.23,,0,0,0
-8144808,football,2024,Panini,Absolute,Johnny Wilson,196,,0.99,,33.74,27.0,11.44
-8142783,football,2024,Panini,Absolute,Jordan Morgan,125,,0.99,,33.76,27.0,11.44
-8141420,football,2024,Panini,Absolute,Kendre Miller,78,,0.7,,0,0,0
-8141335,football,2024,Panini,Absolute,Kyle Dugger,75,,0.62,,0,0,0
-8143607,football,2024,Panini,Absolute,Marshawn Kneeland,154,,0.82,,33.06,26.0,11.18
-8141736,football,2024,Panini,Absolute,Najee Harris,89,,0.85,,33.23,27.0,11.24
-8139785,football,2024,Panini,Absolute,Sam Hubbard,21,,1.37,,0,0,0
-8140530,football,2024,Panini,Absolute,Travis Etienne Jr.,47,,0.11,,30.42,24.0,10.16
 10787614,basketball,2025,Panini,Donruss WNBA,A'ja Wilson,82,,1.27,,35.73,29.0,12.01
 10787614,basketball,2025,Panini,Donruss WNBA,A'ja Wilson,82,,1.27,,35.73,29.0,12.01
 10785711,basketball,2025,Panini,Donruss WNBA,Aaliyah Edwards,16,,0.06,,30.27,24.0,10.09
@@ -6732,3 +6695,40 @@ scp_id,sport,year,brand,set,name,number,parallel,price,condition,psa_10,cgc_10,p
 5554884,football,2023,Leaf,Draft,C. J. Stroud,43,Gold,1.77,,32.0,26.0,27.0
 5554656,football,2023,Leaf,Draft,Brock Bowers,13,,1.87,,35.11,28.0,12.4
 5554648,football,2023,Leaf,Draft,Troy Aikman,7,,1.49,,33.98,27.0,10.36
+524077,football,2014,Panini,Score,Mario Williams,283,,1.69,,0,0,0
+12644826,football,2014,Panini,Score Hot Rookies,Cyrus Kouandjio,356,,0.0,,0,0,0
+511386,football,2014,Panini,Prestige,Sammy Watkins,280,,0.0,,0,0,0
+540370,football,2014,Topps,,Cyrus Kouandjio,412,,1.0,,0,0,0
+5205319,football,2014,Bowman Chrome,,Cyrus Kouandjio,176,,1.74,,0,0,0
+12263791,football,2013,Topps,Prime Primetimers,C.J. Spiller,PT-CS,,0.0,damaged,0,0,0
+4779892,football,2013,Topps,Strata,Marquise Goodwin,139,,1.0,,0,0,0
+560243,football,2013,Panini,Rookies & Stars,C.J. Spiller,12,,1.82,,0,0,0
+560244,football,2013,Panini,Rookies & Stars,Fred Jackson,13,,1.49,,0,0,0
+555059,football,2013,Panini,Contenders,C.J. Spiller,12,,0.25,,0,0,0
+555060,football,2013,Panini,Contenders,Mario Williams,13,,1.74,,0,0,0
+555058,football,2013,Panini,Contenders,Steve Johnson,11,,1.69,,0,0,0
+12263793,football,2015,Panini,Contenders Draft Picks School Colors,Amari Cooper,26,,0.0,damaged,0,0,0
+462368,football,2015,Panini,Contenders Draft Picks,Eddie Lacy,39,,1.41,,0,0,0
+474956,football,2015,Panini,Prestige,Percy Harvin,20,,1.5,,0,0,0
+1000467,football,2017,Panini,Classics,ArDarius Stewart,204,,1.0,,0,0,0
+1000536,football,2017,Panini,Classics,O.J. Howard,273,,0.99,,0,0,0
+8149346,football,2024,Panini,Absolute Introductions,Jalen McMillan,I-JMN,,0.39,,34.01,27.0,11.54
+8148881,football,2024,Panini,Absolute Draft Diamonds,Brock Purdy,DD-BPY,,1.77,,37.93,30.0,31.0
+8140098,football,2024,Panini,Absolute,Alex Singleton,32,,1.18,,34.46,28.0,11.71
+8139328,football,2024,Panini,Absolute,Bijan Robinson,5,,1.49,,35.26,28.0,12.02
+8143179,football,2024,Panini,Absolute,Braden Fiske,139,,0.99,,33.75,27.0,11.44
+8144895,football,2024,Panini,Absolute,Brenden Rice,199,,1.11,,34.15,27.0,11.59
+8141391,football,2024,Panini,Absolute,Chris Olave,77,,1.19,,34.43,28.0,11.7
+8140995,football,2024,Panini,Absolute,Cooper Kupp,63,,0.11,,0,0,0
+8144409,football,2024,Panini,Absolute,Erick All,182,,1.22,,34.58,28.0,11.76
+8140185,football,2024,Panini,Absolute,Jared Goff,35,,0.85,,34.04,27.0,7.0
+8139756,football,2024,Panini,Absolute,Joe Burrow,20,,1.4,,35.3,28.0,11.5
+8140879,football,2024,Panini,Absolute,Joey Bosa,59,,0.23,,0,0,0
+8144808,football,2024,Panini,Absolute,Johnny Wilson,196,,0.99,,33.74,27.0,11.44
+8142783,football,2024,Panini,Absolute,Jordan Morgan,125,,0.99,,33.76,27.0,11.44
+8141420,football,2024,Panini,Absolute,Kendre Miller,78,,0.7,,0,0,0
+8141335,football,2024,Panini,Absolute,Kyle Dugger,75,,0.62,,0,0,0
+8143607,football,2024,Panini,Absolute,Marshawn Kneeland,154,,0.82,,33.06,26.0,11.18
+8141736,football,2024,Panini,Absolute,Najee Harris,89,,0.85,,33.23,27.0,11.24
+8139785,football,2024,Panini,Absolute,Sam Hubbard,21,,1.37,,0,0,0
+8140530,football,2024,Panini,Absolute,Travis Etienne Jr.,47,,0.11,,30.42,24.0,10.16
