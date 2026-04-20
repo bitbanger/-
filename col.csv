@@ -1522,7 +1522,6 @@ scp_id,sport,year,brand,set,name,number,parallel,price,condition,psa_10,cgc_10,p
 9780504,basketball,2024,Panini,Select,Shai Gilgeous-Alexander,36,Orange Flash Prizm,2.83,,44.0,35.0,18.0
 9802909,basketball,2024,Panini,Select Neon Icon,James Harden,1,,1.0,,0,0,0
 12361150,football,2019,Panini,One,Gardner Minshew II,130,Rookie Autograph Blue,0.0,,0,0,0
-fake_id125,football,2014,Panini,Prestige Rookies Signatures,Cyrus Kouandjio,224,,0.0,,0,0,0
 8479253,basketball,2024,Panini,Prizm WNBA,Alanna Smith,111,,1.55,,35.86,29.0,12.22
 8476501,basketball,2024,Panini,Prizm WNBA,Brionna Jones,27,,0.25,,0,0,0
 8479418,basketball,2024,Panini,Prizm WNBA,DeWanna Bonner,116,,1.14,,34.41,28.0,8.6
@@ -1547,36 +1546,6 @@ fake_id125,football,2014,Panini,Prestige Rookies Signatures,Cyrus Kouandjio,224,
 8476179,basketball,2024,Panini,Prizm WNBA,Sabrina Ionescu,17,Green,2.08,,38.08,30.0,26.99
 8476509,basketball,2024,Panini,Prizm WNBA,Brionna Jones,27,Silver,1.5,,15.0,12.0,12.2
 8481960,basketball,2024,Panini,Prizm WNBA Groovy,Rickea Jackson,14,,1.78,,25.66,21.0,9.99
-10925968,football,2025,Bowman Chrome,University Acropolis,LaNorris Sellers,A-2,,1.5,,36.73,29.0,12.35
-10915834,football,2025,Bowman Chrome,University,Aaron Graves,45,,1.83,,38.19,31.0,12.85
-10915457,football,2025,Bowman Chrome,University,Denzel Boston,34,,1.5,,36.78,29.0,12.36
-10918793,football,2025,Bowman Chrome,University,Traylon Ray,134,,1.99,,38.96,31.0,13.12
-fake_id124,football,2021,Panini,Chronicles Draft Picks Donruss,Azeez Ojulari,50,,0.0,,0,0,0
-fake_id123,football,2021,Panini,Chronicles Draft Picks Donruss,Ja'Marr Chase,36,,0.0,,0,0,0
-6733591,football,2021,Panini,Chronicles Draft Picks Recon,Rashod Bateman,143,,4.25,,0,0,0
-12263796,football,2021,Panini,Chronicles Draft Picks Spectra,Ja'Marr Chase,283,Silver,0.0,,0,0,0
-10497252,football,2021,Panini,Contenders Draft Picks Front Row Seats,Terrace Marshall Jr,13,,0.25,,0,0,0
-2245610,football,2021,Panini,Contenders Draft Picks,Allen Robinson II,37,,0.16,,0,0,0
-2245592,football,2021,Panini,Contenders Draft Picks,Baker Mayfield,19,,1.27,,32.75,26.0,11.74
-2245667,football,2021,Panini,Contenders Draft Picks,Cole Beasley,94,,0.99,,0,0,0
-2245615,football,2021,Panini,Contenders Draft Picks,Darren Waller,42,,0.74,,0,0,0
-2245625,football,2021,Panini,Contenders Draft Picks,Nick Chubb,52,,0.04,,0,0,0
-3095156,football,2021,Panini,Chronicles Draft Picks,Ja'Marr Chase,5,,1.74,,27.74,22.0,7.0
-6243039,football,2021,Panini,Chronicles Draft Picks Score Retro,Devonta Smith,63,,1.95,,0,0,0
-6241780,football,2021,Panini,Chronicles Draft Picks Score Retro,Michael Carter,53,,1.0,,0,0,0
-12263797,football,2021,Panini,Chronicles Draft Picks Illusions,Kenneth Gainwell,121,,0.0,,0,0,0
-6241781,football,2021,Panini,Chronicles Draft Picks Prestige,Nico Collins,99,,1.5,,0,0,0
-12263798,football,2021,Panini,Chronicles Draft Picks Flux,Chuba Hubbard,246,,0.99,,0,0,0
-6148177,football,2021,Panini,Chronicles Draft Picks Playbook,Jamie Newman,347,,0.97,,0,0,0
-6241764,football,2021,Panini,Chronicles Draft Picks Playbook,Ja’Marr Chase,336,,0.99,,0,0,0
-6241765,football,2021,Panini,Chronicles Draft Picks Playbook,Kyle Pitts,349,,0.97,,0,0,0
-6136986,football,2021,Panini,Chronicles Draft Picks Playbook,rondale moore,345,,1.44,,0,0,0
-6136987,football,2021,Panini,Chronicles Draft Picks Playbook,trey lance,334,,1.5,,0,0,0
-5554656,football,2023,Leaf,Draft,Brock Bowers,13,,1.87,,35.11,28.0,12.4
-5554646,football,2023,Leaf,Draft,Bruce Smith,5,,1.31,,33.59,27.0,11.68
-5554684,football,2023,Leaf,Draft,C. J. Stroud,43,,2.12,,13.75,11.0,8.96
-5554720,football,2023,Leaf,Draft,Drake Maye,79,,2.26,,35.65,29.0,12.65
-5554648,football,2023,Leaf,Draft,Troy Aikman,7,,1.49,,33.98,27.0,10.36
 11140845,football,2025,Panini,Phoenix,A.J. Green,100,,0.0,,0,0,0
 11137328,football,2025,Panini,Phoenix,Ahmad Rashad,50,,1.04,,34.7,28.0,11.63
 11150501,football,2025,Panini,Phoenix,Andres Borregales,214,,1.38,,36.22,29.0,12.16
@@ -1788,7 +1757,7 @@ fake_id123,football,2021,Panini,Chronicles Draft Picks Donruss,Ja'Marr Chase,36,
 11155403,football,2025,Panini,Phoenix,RJ Harvey,176,Silver Pandora Autograph,28.0,,165.48,132.0,57.06
 11159283,football,2025,Panini,Phoenix Rookie Phenom Jersey,Colston Loveland,34,Green,0.0,,0,0,0
 11161435,football,2025,Panini,Phoenix Thunderbirds,Trevor Lawrence,23,Bronze Pandora,8.0,,66.2,53.0,22.56
-fake_id126,basketball,2017,Rittenhouse,WNBA,Alyssa Thomas,18,,44.99,PSA 9,0,0,0
+12415642,basketball,2017,Rittenhouse,WNBA,Alyssa Thomas,18,,0.0,PSA 9,0,0,0
 8128717,football,2024,Panini,Prizm Prizmatic,Bo Nix,11,Green,56.96,PSA 10,56.96,15.38,21.85
 8120050,football,2024,Panini,Prizm,Jayden Daniels,347,Silver,160.5,PSA 9,843.13,675.0,160.5
 8125279,football,2024,Panini,Prizm Autograph,Blake Corum,308,Silver,38.04,PSA 9,76.57,61.0,38.04
@@ -6732,3 +6701,34 @@ fake_id126,basketball,2017,Rittenhouse,WNBA,Alyssa Thomas,18,,44.99,PSA 9,0,0,0
 11624486,football,2025,Panini,Prizm Break,Caleb Williams,3,Green,2.97,,41.55,33.0,13.96
 11624070,football,2025,Panini,Prizm Fractal,Lamar Jackson,2,Green,0.0,,0,0,0
 11624719,football,2025,Panini,Prizm Prizmatic,Jayden Higgins,3,Green,1.0,,0,0,0
+12364138,football,2014,Panini,Prestige Signatures Insert,Cyrus Kouandjio,224,Autograph,0.0,,0,0,0
+10925968,football,2025,Bowman Chrome,University Acropolis,LaNorris Sellers,A-2,,1.5,,36.73,29.0,12.35
+10915834,football,2025,Bowman Chrome,University,Aaron Graves,45,,1.83,,38.19,31.0,12.85
+10915457,football,2025,Bowman Chrome,University,Denzel Boston,34,,1.5,,36.78,29.0,12.36
+10918793,football,2025,Bowman Chrome,University,Traylon Ray,134,,1.99,,38.96,31.0,13.12
+12364191,football,2021,Panini,Chronicles Draft Picks Donruss,Azeez Ojylari,50,,0.0,,0,0,0
+12364192,football,2021,Panini,Chronicles Draft Picks Donruss,Ja'Marr Chase,36,,1.0,,0,0,0
+6733591,football,2021,Panini,Chronicles Draft Picks Recon,Rashod Bateman,143,,4.25,,0,0,0
+12263796,football,2021,Panini,Chronicles Draft Picks Spectra,Ja'Marr Chase,283,Silver,0.0,,0,0,0
+10497252,football,2021,Panini,Contenders Draft Picks Front Row Seats,Terrace Marshall Jr,13,,0.25,,0,0,0
+2245610,football,2021,Panini,Contenders Draft Picks,Allen Robinson II,37,,0.16,,0,0,0
+2245592,football,2021,Panini,Contenders Draft Picks,Baker Mayfield,19,,1.27,,32.75,26.0,11.74
+2245667,football,2021,Panini,Contenders Draft Picks,Cole Beasley,94,,0.99,,0,0,0
+2245615,football,2021,Panini,Contenders Draft Picks,Darren Waller,42,,0.74,,0,0,0
+2245625,football,2021,Panini,Contenders Draft Picks,Nick Chubb,52,,0.04,,0,0,0
+3095156,football,2021,Panini,Chronicles Draft Picks,Ja'Marr Chase,5,,1.74,,27.74,22.0,7.0
+6243039,football,2021,Panini,Chronicles Draft Picks Score Retro,Devonta Smith,63,,1.95,,0,0,0
+6241780,football,2021,Panini,Chronicles Draft Picks Score Retro,Michael Carter,53,,1.0,,0,0,0
+12263797,football,2021,Panini,Chronicles Draft Picks Illusions,Kenneth Gainwell,121,,0.0,,0,0,0
+6241781,football,2021,Panini,Chronicles Draft Picks Prestige,Nico Collins,99,,1.5,,0,0,0
+12263798,football,2021,Panini,Chronicles Draft Picks Flux,Chuba Hubbard,246,,0.99,,0,0,0
+6148177,football,2021,Panini,Chronicles Draft Picks Playbook,Jamie Newman,347,,0.97,,0,0,0
+6241764,football,2021,Panini,Chronicles Draft Picks Playbook,Ja’Marr Chase,336,,0.99,,0,0,0
+6241765,football,2021,Panini,Chronicles Draft Picks Playbook,Kyle Pitts,349,,0.97,,0,0,0
+6136986,football,2021,Panini,Chronicles Draft Picks Playbook,rondale moore,345,,1.44,,0,0,0
+6136987,football,2021,Panini,Chronicles Draft Picks Playbook,trey lance,334,,1.5,,0,0,0
+5554820,football,2023,Leaf,Draft,Drake Maye,79,Blue,3.99,,18.25,15.0,15.1
+5554946,football,2023,Leaf,Draft,Bruce Smith,5,Red,1.67,,0,0,0
+5554884,football,2023,Leaf,Draft,C. J. Stroud,43,Gold,1.77,,32.0,26.0,27.0
+5554656,football,2023,Leaf,Draft,Brock Bowers,13,,1.87,,35.11,28.0,12.4
+5554648,football,2023,Leaf,Draft,Troy Aikman,7,,1.49,,33.98,27.0,10.36
