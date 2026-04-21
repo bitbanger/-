@@ -160,6 +160,39 @@ def cached_csv(args, *a, stream=False, **kw):
 	return csv_cache[key]
 
 
+@ll.memcache
+def latest_price_updates():
+	cid2j = {}
+
+	updirs = [x for x in ll.ls('_sprices', rel=True) if ll.isdir(x)]
+	updirs = sorted(updirs, key=lambda _fn: ll.dt(ll.bn(_fn)))
+	for updir in updirs:
+		for jfn in ll.ls(updir, rel=True):
+			cid2j[str(ll.basename(jfn).split('.')[0])] = ll.json(jfn)
+
+	return cid2j
+
+
+@ll.memcache
+def updated_prices(cid, price_key):
+	lpu = latest_price_updates()
+	if str(cid) in lpu:
+		_upr = lpu[str(cid)].get(price_key)
+		_rest = [
+			lpu[str(cid)].get('psa_10'),
+			lpu[str(cid)].get('cgc_10'),
+			lpu[str(cid)].get('grade_9'),
+		]
+		for i in range(len(_rest)):
+			if _rest[i] is not None:
+				_rest[i] /= 100
+
+		if _upr is not None:
+			return (_upr/100,) + tuple(_rest)
+
+	return (None, None, None, None)
+
+
 def process(args, fn, console=True, warn=True, force_price_key=None):
 	fn_dir = ll.dn(fn)
 	fn = ll.bn(fn)
@@ -258,6 +291,17 @@ def process(args, fn, console=True, warn=True, force_price_key=None):
 					cid = card_row['id']
 					if cid == 'fake_id':
 						cid = 'fake_id_' + ll.md5(f'{sport} {year} {unyear_set} {name} {num} {var}')
+					# Find any price updates
+					_upr, _upsa10, _ucgc10, _ugr9 = updated_prices(cid, price_key)
+					if _upr is not None:
+						price = _upr
+					if _upsa10 is not None:
+						psa_10 = _upsa10
+					if _ucgc10 is not None:
+						cgc_10 = _ucgc10
+					if _ugr9 is not None:
+						grade_9 = _ugr9
+
 					card_tup = (card_row['id'], sport, year, unyear_set, name, num, var, price, grade, psa_10, cgc_10, psa_9)
 
 					# Find any price overrides

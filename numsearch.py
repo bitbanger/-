@@ -45,7 +45,7 @@ def main():
 	print('')
 	print(best_set, end='\n\n')
 	for k in row2sc:
-		print(k)
+		print(f'\t{k}')
 	print('')
 
 	pass
