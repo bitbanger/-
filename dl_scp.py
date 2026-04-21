@@ -14,7 +14,7 @@ STALE = ll.days(1)
 def dl_url(uid, token):
 	return f'https://www.sportscardspro.com/price-guide/download-custom?t={token}&console-uids={uid}'
 
-# @ll.cache(stale=STALE)
+@ll.cache(stale=STALE)
 def set_list(sport):
 	# if ll.fexists(fn:=f'sets/scp-sets-{sport}.csv'):
 		# return ll.csv(fn)
@@ -28,8 +28,34 @@ def set_list(sport):
 
 	return json # it's the same as the parsed CSV, so...
 
+
+@ll.memcache
+def set_lists():
+	sport2rows = ll.dd()
+	for sport in ('football', 'basketball', 'baseball', 'star-wars'):
+		sport2rows[sport].extend(set_list(sport))
+	return sport2rows
+
+
+@ll.memcache
+def cid2pids(cid, stream=False):
+	def _it():
+		for sport, rows in set_lists().items():
+			for row in rows:
+				if str(row['value']) == str(cid):
+					csvfn = 'new_scp_csvs/' + setname2csvname(sport, row['label'])
+					for crow in ll.csv(csvfn, stream=True):
+						yield crow['id']
+					return
+
+	return _it() if stream else list(_it())
+
+
 @ll.cache(stale=STALE)
-def get_sets(sport, year, brand, set_words):
+def get_sets(sport, year, brand, set_words, exclude_words=None):
+	if exclude_words is None:
+		exclude_words = []
+
 	sets = []
 	for row in set_list(sport):
 		label, cid = row['label'], row['value']
@@ -42,10 +68,19 @@ def get_sets(sport, year, brand, set_words):
 		rest = rest[rest.index(brand)+len(brand):].strip()
 		if not all(w.lower() in rest.lower() for w in set_words):
 			continue
+		if any(w.lower() in rest.lower() for w in exclude_words):
+			continue
 
 		sets.append((label, cid))
 
 	return sets
+
+
+def setname2csvname(sport, setname):
+	csvname = ll.alphanums(setname, also=' ').replace(' ', '_').lower() + '.csv'
+	csvname = f'{sport}_{csvname}'
+	return csvname
+
 
 def ready_set_downloads(sport, sets, token):
 	base_url = 'https://www.pricecharting.com'
@@ -54,8 +89,7 @@ def ready_set_downloads(sport, sets, token):
 		url = dl_url(cid, token)
 
 		# TODO: put set code back in?
-		csv_name = ll.alphanums(set_name, also=' ').replace(' ', '_').lower() + '.csv'
-		csv_name = f'{sport}_{csv_name}'
+		csv_name = setname2csvname(sport, set_name)
 
 		yield csv_name, url
 
