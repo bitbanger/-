@@ -8,7 +8,7 @@ from rich import print
 from argparse import ArgumentParser
 
 
-STALE = ll.days(1)
+STALE = ll.days(7)
 
 
 def dl_url(uid, token):
@@ -19,6 +19,8 @@ def set_list(sport):
 	# if ll.fexists(fn:=f'sets/scp-sets-{sport}.csv'):
 		# return ll.csv(fn)
 	fn = f'sets/scp-sets-{sport}.csv'
+	if ll.fexists(fn) and ll.age(fn)<STALE:
+		return ll.csv(fn)
 
 	json = ll.json(ll.soup(ll.sel(f'https://www.sportscardspro.com/consoles-autocomplete/{sport}-cards')).find_all('pre')[0].text)
 	with open(fn, 'w+') as f:
