@@ -77,7 +77,8 @@ def parse_card(p):
 def first_page():
 	FIRST_HEADERS['cookie'] = ll.read('.cookie')
 
-	soup = ll.soup('https://www.sportscardspro.com/offers?seller=sz42fm6fpkuh5vrsxu4w3bpnrq&status=collection', headers=FIRST_HEADERS)
+	# soup = ll.soup('https://www.sportscardspro.com/offers?seller=sz42fm6fpkuh5vrsxu4w3bpnrq&status=collection', headers=FIRST_HEADERS)
+	soup = ll.soup(ll.sel('https://www.sportscardspro.com/offers?seller=sz42fm6fpkuh5vrsxu4w3bpnrq&status=collection', headers=FIRST_HEADERS))
 
 	total = int(soup.find_all('td', class_='number')[-1].text)
 
@@ -127,7 +128,7 @@ def main():
 	for card in ll.track(_it(cursor), total=total, title='Scraping: '):
 		cards.append(card)
 
-	outp_f = 'collection.csv'
+	outp_f = 'scraped_collection.csv'
 
 	ll.print(f'Wrote {len(cards)} cards to [green]{outp_f}[/green]')
 
