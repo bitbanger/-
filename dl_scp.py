@@ -136,7 +136,7 @@ def download_sets(sport, dl_sets, token, outp_dir, courtesy_wait=1):
 			# ll.sleep(1)
 			ll.sel_dl(
 				csv_url,
-				cookies='.COOKIE',
+				cookies='.ncookie',
 
 				dst_dir=outp_dir,
 				dst_name=csv_name,
