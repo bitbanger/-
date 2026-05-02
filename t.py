@@ -436,6 +436,7 @@ def main():
 
 	ap = ArgumentParser(add_help=False)
 	ap.add_argument('input', nargs='+')
+	ap.add_argument('-f', '--file-output', default='col.csv')
 	ap.add_argument('-r', '--reformat', action='store_true')
 	ap.add_argument('-w', '--quiet-warnings', action='store_true')
 	ap.add_argument('-q', '--quiet', action='store_true')
@@ -555,7 +556,7 @@ def main():
 		# maybe_print(args, *c, price_threshold=args.price_threshold if args.hide_cheap else 0.00)
 
 
-	with open('col.csv', 'w+') as f:
+	with open(args.file_output, 'w+') as f:
 		for crow in card_csv(args, cards):
 			f.write(crow + '\n')
 
