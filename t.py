@@ -436,6 +436,7 @@ def main():
 
 	ap = ArgumentParser(add_help=False)
 	ap.add_argument('input', nargs='+')
+	ap.add_argument('-r', '--reformat', action='store_true')
 	ap.add_argument('-w', '--quiet-warnings', action='store_true')
 	ap.add_argument('-q', '--quiet', action='store_true')
 	ap.add_argument('-p', '--price-threshold', type=float, default=8.00)
@@ -479,6 +480,27 @@ def main():
 
 		ll.err(f"the following file(s) have the same names & will clobber each other: [grey70]{lump}[/grey70]")
 
+
+	if args.reformat:
+		s2cs = ll.dd()
+		cur_set = None
+		for fn in fns:
+			for line in ll.lines(fn, stream=True):
+				if is_set_name(args, line):
+					cur_set = line
+					continue
+				assert(cur_set is not None)
+				s2cs[cur_set].append(line)
+
+		for i, (s, cs) in enumerate(s2cs.items()):
+			if i>0:
+				print('')
+
+			print(s)
+			for c in cs:
+				print(c)
+
+		quit()
 
 	total = 0
 	for fn in fns:
