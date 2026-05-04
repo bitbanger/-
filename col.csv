@@ -4017,12 +4017,12 @@ scp_id,sport,year,brand,set,name,number,parallel,price,condition,psa_10,cgc_10,p
 12059589,football,2025,Panini,Select,A.J. Green,99,,0.0,,0,0,0
 12059589,football,2025,Panini,Select,A.J. Green,99,,0.0,,0,0,0
 12059589,football,2025,Panini,Select,A.J. Green,99,,0.0,,0,0,0
-12059457,football,2025,Panini,Select,Abdul Carter,95,,0.99,,40.7,33.0,13.61
-12059457,football,2025,Panini,Select,Abdul Carter,95,,0.99,,40.7,33.0,13.61
+12059457,football,2025,Panini,Select,Abdul Carter,95,,1.37,,40.7,33.0,13.61
+12059457,football,2025,Panini,Select,Abdul Carter,95,,1.37,,40.7,33.0,13.61
 12078694,football,2025,Panini,Select,Adam Thielen,245,,0.0,,0,0,0
 12067875,football,2025,Panini,Select,Aidan Hutchinson,271,,1.49,,37.09,30.0,12.39
 12067875,football,2025,Panini,Select,Aidan Hutchinson,271,,1.49,,37.09,30.0,12.39
-12061209,football,2025,Panini,Select,Aireontae Ersery,134,,1.4,,0,0,0
+12061209,football,2025,Panini,Select,Aireontae Ersery,134,,1.5,,0,0,0
 12056033,football,2025,Panini,Select,Alec Pierce,32,,1.65,,37.84,30.0,12.65
 12056033,football,2025,Panini,Select,Alec Pierce,32,,1.65,,37.84,30.0,12.65
 12056033,football,2025,Panini,Select,Alec Pierce,32,,1.65,,37.84,30.0,12.65
@@ -4400,8 +4400,8 @@ scp_id,sport,year,brand,set,name,number,parallel,price,condition,psa_10,cgc_10,p
 12056941,football,2025,Panini,Select,Trevor Etienne,45,Green Yellow Prizm Shock,0.0,,0,0,0
 12063609,football,2025,Panini,Select,Will Campbell,179,Green Yellow Prizm Shock,1.02,,34.71,28.0,11.59
 12069346,football,2025,Panini,Select,Jake Ferguson,297,Purple Prizm Shock,3.99,,0,0,0
-12057073,football,2025,Panini,Select,Aaron Rodgers,51,Silver Prizm,2.75,,37.13,30.0,12.41
-12067973,football,2025,Panini,Select,Aidan Hutchinson,271,Silver Prizm,1.85,,37.38,30.0,12.49
+12057073,football,2025,Panini,Select,Aaron Rodgers,51,Silver Prizm,1.5,,37.13,30.0,12.41
+12067973,football,2025,Panini,Select,Aidan Hutchinson,271,Silver Prizm,1.99,,37.38,30.0,12.49
 12059959,football,2025,Panini,Select,Ashton Jeanty,104,Silver Prizm,5.0,,53.1,42.0,17.81
 12071877,football,2025,Panini,Select,Austin Ekeler,387,Silver Prizm,0.0,,0,0,0
 12064131,football,2025,Panini,Select,Cam Skattebo,195,Silver Prizm,5.5,,57.97,46.0,19.45
@@ -4521,9 +4521,9 @@ scp_id,sport,year,brand,set,name,number,parallel,price,condition,psa_10,cgc_10,p
 12056369,football,2025,Panini,Select,Bucky Irving,38,Red Prizm,2.99,,0,0,0
 12066572,football,2025,Panini,Select,Anthony Richardson,232,Tri-Color Prizm,2.0,,0,0,0
 12062341,football,2025,Panini,Select,Ja'Marr Chase,157,Tri-Color Prizm,7.0,,77.73,62.0,26.12
-12055749,football,2025,Panini,Select,Cam Ward,26,White Prizm,132.5,,0,0,0
+12055749,football,2025,Panini,Select,Cam Ward,26,White Prizm,127.5,,0,0,0
 12073500,football,2025,Panini,Select,Trey Hendrickson,459,White Prizm,20.0,,0,0,0
-12073949,football,2025,Panini,Select,Josh Jacobs,466,Zebra Prizm,70.0,,0,0,0
+12073949,football,2025,Panini,Select,Josh Jacobs,466,Zebra Prizm,98.0,,0,0,0
 12077425,football,2025,Panini,Select Signature Memorabilia Prizm,Derek Stingley Jr.,5,,10.0,,0,0,0
 12077713,football,2025,Panini,Select Signature Memorabilia Prizm,Christian Kirk,32,Blue,6.0,,0,0,0
 12079181,football,2025,Panini,Select Draft Selections Memorabilia Prizm,Jalen Milroe,23,,10.0,,0,0,0
@@ -4602,7 +4602,7 @@ scp_id,sport,year,brand,set,name,number,parallel,price,condition,psa_10,cgc_10,p
 12072732,football,2025,Panini,Select,Donovan Ezeiruaku,397,Disco Prizm,1.0,,0,0,0
 12061150,football,2025,Panini,Select,Jonathan Taylor,132,Disco Prizm,0.0,,0,0,0
 12067539,football,2025,Panini,Select,Andrei Iosivas,257,Blue Disco Prizm,1.25,,0,0,0
-12059513,football,2025,Panini,Select,Abdul Carter,95,Pink Prizm Shock,0.99,,0,0,0
+12059513,football,2025,Panini,Select,Abdul Carter,95,Pink Prizm Shock,1.5,,0,0,0
 12056041,football,2025,Panini,Select,Alec Pierce,32,Pink Prizm Shock,0.99,,0,0,0
 12067345,football,2025,Panini,Select,Andrei Iosivas,257,Pink Prizm Shock,2.0,,0,0,0
 12066462,football,2025,Panini,Select,Anthony Richardson,232,Pink Prizm Shock,0.99,,0,0,0
