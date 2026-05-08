@@ -151,9 +151,9 @@ def download_sets(sport, dl_sets, token, outp_dir, courtesy_wait=1):
 		_dl(csv_url, outp_dir, csv_name)
 
 
-def coordinate(sport, year, brand, set_words, token, force, args):
+def coordinate(sport, year, brand, set_words, token, force, args, exclude_words=None):
 	# Get the set names to download
-	dl_sets = get_sets(sport, year, brand, set_words)
+	dl_sets = get_sets(sport, year, brand, set_words, exclude_words=exclude_words)
 	if args.minimal:
 		dl_sets = [min(dl_sets, key=lambda t: len(t[0]))]
 
@@ -173,6 +173,7 @@ def main():
 	ap.add_argument('-f', '--force', action='store_true')
 	ap.add_argument('-o', '--output-dir', default='new_scp_csvs')
 	ap.add_argument('-m', '--minimal', action='store_true')
+	ap.add_argument('-v', '--exclude', type=str, default=None)
 
 	ap.add_argument('words', type=str, nargs='*')
 
@@ -188,7 +189,7 @@ def main():
 
 	# Do it!
 	# def coordinate(sport, year, brand, set_words, token, force, outp_dir):
-	coordinate(sport, year, brand, set_words, token, force, args)
+	coordinate(sport, year, brand, set_words, token, force, args, exclude_words=([args.exclude] if args.exclude else None))
 
 
 if __name__ == '__main__':
