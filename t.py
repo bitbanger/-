@@ -270,7 +270,7 @@ def process(args, fn, console=True, warn=True, force_price_key=None):
 
 					# Console output
 					name = card_row['product-name'].split('#')[0].split(' [')[0].strip()
-					num = card_row['product-name'].split('#')[1].split(' [')[0].strip()
+					num = card_row['product-name'].split('#')[-1].split(' [')[0].strip()
 					if '[' in card_row['product-name']:
 						var = card_row['product-name'].split('[')[-1].split(']')[0].strip()
 					else:
