@@ -276,54 +276,6 @@ scp_id,sport,year,brand,set,name,number,parallel,price,condition,psa_10,cgc_10,p
 7951681,football,2024,Panini,Mosaic Touchdown Masters,Dan Marino,TM-DMO,,1.33,,35.17,28.0,12.42
 7949797,football,2024,Panini,Mosaic Elevate,CeeDee Lamb,13,Mosaic,1.88,,35.69,29.0,12.2
 7949864,football,2024,Panini,Mosaic Elevate,Courtland Sutton,20,,1.33,,34.98,28.0,11.92
-10773873,football,2025,Panini,Revolution,Aaron Rodgers,45,,1.4,,36.47,29.0,12.27
-10778563,football,2025,Panini,Revolution,Amon-Ra St. Brown,180,,1.43,,36.65,29.0,12.33
-10779124,football,2025,Panini,Revolution,Bucky Irving,196,,1.42,,37.79,30.0,12.73
-10779539,football,2025,Panini,Revolution,Cam Ward,205,,1.4,,66.0,53.0,19.0
-10772308,football,2025,Panini,Revolution,Christian McCaffrey,2,,1.38,,34.43,28.0,11.56
-10779638,football,2025,Panini,Revolution,Colston Loveland,206,,1.68,,35.63,29.0,11.97
-10776711,football,2025,Panini,Revolution,Corey Dillon,124,,0.99,,36.17,29.0,12.16
-10776078,football,2025,Panini,Revolution,Derek Stingley Jr.,110,,0.86,,37.11,30.0,12.49
-10775831,football,2025,Panini,Revolution,Derrick Henry,100,,1.65,,37.31,30.0,12.57
-10780133,football,2025,Panini,Revolution,Dillon Gabriel,222,,1.0,,34.4,28.0,11.54
-10779814,football,2025,Panini,Revolution,Elic Ayomanor,209,,0.92,,34.4,28.0,11.54
-10779777,football,2025,Panini,Revolution,Emeka Egbuka,211,,1.08,,68.0,54.0,9.5
-10773655,football,2025,Panini,Revolution,Garrett Wilson,39,,1.0,,36.07,29.0,12.13
-10777811,football,2025,Panini,Revolution,Geno Smith,152,,1.34,,35.96,29.0,12.09
-10777982,football,2025,Panini,Revolution,George Kittle,161,,1.52,,36.6,29.0,12.32
-10774857,football,2025,Panini,Revolution,Jamal Lewis,71,,1.15,,35.1,28.0,11.79
-10779887,football,2025,Panini,Revolution,James Pearce Jr.,218,,0.94,,34.43,28.0,11.56
-10780752,football,2025,Panini,Revolution,Jaydon Blue,214,,0.0,,0,0,0
-10778312,football,2025,Panini,Revolution,Jerome Ford,169,,1.29,,35.72,29.0,12.01
-10774324,football,2025,Panini,Revolution,Jerry Jeudy,56,,1.65,,36.62,29.0,12.32
-10776291,football,2025,Panini,Revolution,Kareem Hunt,106,,1.0,,36.67,29.0,12.34
-10773619,football,2025,Panini,Revolution,Matthew Stafford,38,,1.5,,35.59,28.0,11.96
-10776528,football,2025,Panini,Revolution,Michael Irvin,117,,1.58,,37.78,30.0,12.73
-10776659,football,2025,Panini,Revolution,Michael Pittman Jr.,121,,1.0,,34.45,28.0,11.56
-10773150,football,2025,Panini,Revolution,Puka Nacua,25,,1.35,,37.48,30.0,12.63
-10780589,football,2025,Panini,Revolution,Quinn Ewers,235,,1.18,,36.03,29.0,12.12
-10780382,football,2025,Panini,Revolution,RJ Harvey,232,,1.0,,35.54,28.0,11.94
-10773257,football,2025,Panini,Revolution,Raghib Rocket Ismail,28,,1.8,,37.99,30.0,12.8
-10772784,football,2025,Panini,Revolution,Richard Sherman,15,,1.38,,36.11,29.0,12.15
-10776445,football,2025,Panini,Revolution,Sam Darnold,116,,1.37,,34.83,28.0,11.7
-10772382,football,2025,Panini,Revolution,Saquon Barkley,4,,1.6,,36.65,29.0,12.33
-10780434,football,2025,Panini,Revolution,Tai Felton,234,,0.99,,35.5,28.0,11.93
-10780669,football,2025,Panini,Revolution,Terrance Ferguson,245,,0.99,,34.16,27.0,11.46
-10781284,football,2025,Panini,Revolution,Tetairoa McMillan,241,,1.63,,44.99,22.0,12.22
-10774978,football,2025,Panini,Revolution,Theo Johnson,63,,1.49,,0,0,0
-10781185,football,2025,Panini,Revolution,Tua Tagovailoa,195,,1.57,,37.19,30.0,12.52
-10776348,football,2025,Panini,Revolution,Derius Davis,115,Red Storm,0.0,,0,0,0
-10779691,football,2025,Panini,Revolution,Elijah Arroyo,210,Red Storm,0.99,,0,0,0
-10779422,football,2025,Panini,Revolution,Emmitt Smith,200,Red Storm,1.77,,0,0,0
-10779868,football,2025,Panini,Revolution,Jalen Royals,216,Red Storm,1.0,,34.44,28.0,11.56
-10780938,football,2025,Panini,Revolution,Riley Leonard,237,Red Storm,0.99,,34.39,28.0,11.54
-10774475,football,2025,Panini,Revolution,Jaylen Warren,66,Blue Storm,0.0,,0,0,0
-10773554,football,2025,Panini,Revolution,Will Anderson Jr.,36,Blue Storm,0.0,,0,0,0
-10774362,football,2025,Panini,Revolution,Jerry Jeudy,56,Green Storm,0.0,,0,0,0
-10784655,football,2025,Panini,Revolution Star Gazing,Lamar Jackson,1,,1.3,,35.54,28.0,11.94
-10782847,football,2025,Panini,Revolution Gridiron Legacy,Kurt Warner,25,,1.49,,36.65,29.0,12.33
-10783219,football,2025,Panini,Revolution New Wave,Quinn Ewers,9,,1.21,,35.54,28.0,11.94
-10782674,football,2025,Panini,Revolution Futures,Omarion Hampton,24,,1.49,,34.39,28.0,11.54
 6180219,football,2023,Panini,Prizm,Antoine Winfield Jr.,275,,1.28,,0,0,0
 6180097,football,2023,Panini,Prizm,Austin Ekeler,153,,1.25,,0,0,0
 6179960,football,2023,Panini,Prizm,Lorenzo Carter,16,,1.31,,0,0,0
@@ -5250,405 +5202,6 @@ scp_id,sport,year,brand,set,name,number,parallel,price,condition,psa_10,cgc_10,p
 11740910,football,2025,Panini,Donruss Optic Uptown,Joe Burrow,12,,238.5,,1098.94,879.0,332.5
 11735748,football,2025,Panini,Donruss Optic Hash Marks,Roman Wilson,20,,6.0,,0,0,0
 11724451,football,2025,Panini,Donruss Optic,Terrell Owens,21,Fire,2.25,,40.42,32.0,13.57
-12527330,football,2025,Topps,Chrome,Aaron Jones Sr.,201,,1.29,,0,0,0
-12532146,football,2025,Topps,Chrome,Aaron Rodgers,255,,1.54,,37.37,30.0,12.48
-12534482,football,2025,Topps,Chrome,Abdul Carter,350,,1.44,,34.93,28.0,11.66
-12523827,football,2025,Topps,Chrome,Alec Pierce,125,,1.87,,38.94,31.0,13.01
-12523827,football,2025,Topps,Chrome,Alec Pierce,125,,1.87,,38.94,31.0,13.01
-12529004,football,2025,Topps,Chrome,Allen Lazard,236,,0.2,,0,0,0
-12529004,football,2025,Topps,Chrome,Allen Lazard,236,,0.2,,0,0,0
-12528080,football,2025,Topps,Chrome,Alvin Kamara,215,,35.0,,0,0,0
-12528080,football,2025,Topps,Chrome,Alvin Kamara,215,,35.0,,0,0,0
-12521555,football,2025,Topps,Chrome,Andrei Iosivas,60,,0.0,,0,0,0
-12534207,football,2025,Topps,Chrome,Billy Bowman Jr.,344,,1.99,,38.7,31.0,12.93
-12534207,football,2025,Topps,Chrome,Billy Bowman Jr.,344,,1.99,,38.7,31.0,12.93
-12522261,football,2025,Topps,Chrome,Bo Nix,88,,2.21,,41.2,33.0,13.77
-12522261,football,2025,Topps,Chrome,Bo Nix,88,,2.21,,41.2,33.0,13.77
-12520381,football,2025,Topps,Chrome,Bobby Brown III,46,,1.49,,0,0,0
-12531709,football,2025,Topps,Chrome,Bobby Wagner,299,,1.75,,38.37,31.0,12.82
-12532607,football,2025,Topps,Chrome,Brady Cook,319,,1.69,,37.23,30.0,12.43
-12524491,football,2025,Topps,Chrome,Brenton Strange,137,,1.99,,0,0,0
-12524491,football,2025,Topps,Chrome,Brenton Strange,137,,1.99,,0,0,0
-12527414,football,2025,Topps,Chrome,Brian O'Neill,196,,1.49,,35.93,29.0,12.0
-12531792,football,2025,Topps,Chrome,Brian Robinson Jr.,296,,0.85,,30.96,25.0,10.32
-12526293,football,2025,Topps,Chrome,Brock Bowers,178,,1.79,,38.57,31.0,12.88
-12526293,football,2025,Topps,Chrome,Brock Bowers,178,,1.79,,38.57,31.0,12.88
-12530942,football,2025,Topps,Chrome,Cade Otton,284,,0.0,,0,0,0
-12530942,football,2025,Topps,Chrome,Cade Otton,284,,0.0,,0,0,0
-12520707,football,2025,Topps,Chrome,Caleb Williams,52,,3.81,,39.09,31.0,13.06
-12532926,football,2025,Topps,Chrome,Cam Ward,314,,4.63,,39.52,32.0,13.21
-12528251,football,2025,Topps,Chrome,Cameron Jordan,221,,2.25,,0,0,0
-12521129,football,2025,Topps,Chrome,Cedric Tillman,67,,3.0,,37.18,30.0,12.42
-12521764,football,2025,Topps,Chrome,CeeDee Lamb,76,,1.42,,36.89,30.0,12.32
-12521764,football,2025,Topps,Chrome,CeeDee Lamb,76,,1.42,,36.89,30.0,12.32
-12523997,football,2025,Topps,Chrome,Charvarius Ward,129,,1.54,,37.12,30.0,12.4
-12531535,football,2025,Topps,Chrome,Chase McLaughlin,288,,2.31,,35.74,29.0,11.93
-12531535,football,2025,Topps,Chrome,Chase McLaughlin,288,,2.31,,35.74,29.0,11.93
-12531151,football,2025,Topps,Chrome,Chris Godwin,283,,1.74,,38.32,31.0,12.8
-12523275,football,2025,Topps,Chrome,Christian Watson,112,,1.99,,39.53,32.0,13.21
-12520192,football,2025,Topps,Chrome,Chuba Hubbard,42,,1.99,,38.76,31.0,12.95
-12520614,football,2025,Topps,Chrome,Cole Kmet,51,,2.0,,37.61,30.0,12.56
-12520614,football,2025,Topps,Chrome,Cole Kmet,51,,2.0,,37.61,30.0,12.56
-12530205,football,2025,Topps,Chrome,Cooper DeJean,252,,1.99,,39.48,32.0,13.19
-12519976,football,2025,Topps,Chrome,Dalton Kincaid,37,,0.99,,33.73,27.0,11.26
-12524293,football,2025,Topps,Chrome,Daniel Jones,132,,1.67,,37.99,30.0,12.69
-12548423,football,2025,Topps,Chrome,Darien Porter,367,,1.68,,38.04,30.0,12.71
-12548423,football,2025,Topps,Chrome,Darien Porter,367,,1.68,,38.04,30.0,12.71
-12548423,football,2025,Topps,Chrome,Darien Porter,367,,1.68,,38.04,30.0,12.71
-12523234,football,2025,Topps,Chrome,David Montgomery,103,,1.99,,39.53,32.0,13.21
-12521429,football,2025,Topps,Chrome,David Njoku,69,,2.15,,40.28,32.0,13.46
-12519771,football,2025,Topps,Chrome,Dawson Knox,33,,1.58,,37.56,30.0,12.55
-12526863,football,2025,Topps,Chrome,De'Von Achane,188,,1.0,,34.78,28.0,11.61
-12526863,football,2025,Topps,Chrome,De'Von Achane,188,,1.0,,34.78,28.0,11.61
-12519211,football,2025,Topps,Chrome,DeAndre Hopkins,20,,1.99,,37.76,30.0,12.61
-12524287,football,2025,Topps,Chrome,DeForest Buckner,133,,1.1,,0,0,0
-12521801,football,2025,Topps,Chrome,DeMarvion Overshown,78,,2.0,,38.91,31.0,13.0
-12521801,football,2025,Topps,Chrome,DeMarvion Overshown,78,,2.0,,38.91,31.0,13.0
-12529253,football,2025,Topps,Chrome,DeVonta Smith,244,,1.75,,38.32,31.0,12.8
-12531693,football,2025,Topps,Chrome,Deebo Samuel,294,,1.66,,37.47,30.0,12.51
-12521650,football,2025,Topps,Chrome,Denzel Ward,74,,2.37,,39.52,32.0,13.21
-12530822,football,2025,Topps,Chrome,Deommodore Lenoir,269,,0.0,,0,0,0
-12520478,football,2025,Topps,Chrome,Derrick Brown,47,,0.0,,0,0,0
-12534751,football,2025,Topps,Chrome,Derrick Harmon,361,,1.97,,39.43,32.0,13.17
-12534751,football,2025,Topps,Chrome,Derrick Harmon,361,,1.97,,39.43,32.0,13.17
-12534751,football,2025,Topps,Chrome,Derrick Harmon,361,,1.97,,39.43,32.0,13.17
-12519418,football,2025,Topps,Chrome,Derrick Henry,25,,8.99,,39.52,32.0,13.21
-12535950,football,2025,Topps,Chrome,Devin Neal,391,,1.87,,38.95,31.0,13.01
-12535950,football,2025,Topps,Chrome,Devin Neal,391,,1.87,,38.95,31.0,13.01
-12536371,football,2025,Topps,Chrome,Donovan Edwards,392,,1.49,,35.36,28.0,11.81
-12524416,football,2025,Topps,Chrome,Dyami Brown,136,,1.49,,37.57,30.0,12.55
-12524416,football,2025,Topps,Chrome,Dyami Brown,136,,1.49,,37.57,30.0,12.55
-12533931,football,2025,Topps,Chrome,Elic Ayomanor,336,,1.3,,0,0,0
-12532693,football,2025,Topps,Chrome,Emeka Egbuka,312,,2.99,,39.53,32.0,13.21
-12536138,football,2025,Topps,Chrome,Emery Jones Jr.,386,,1.99,,34.79,28.0,11.61
-12530512,football,2025,Topps,Chrome,Fred Warner,268,,1.29,,35.31,28.0,11.79
-12530512,football,2025,Topps,Chrome,Fred Warner,268,,1.29,,35.31,28.0,11.79
-12527848,football,2025,Topps,Chrome,Garrett Bradbury,212,,1.82,,38.71,31.0,12.93
-12525206,football,2025,Topps,Chrome,George Karlaftis,152,,1.99,,39.52,32.0,13.21
-12530071,football,2025,Topps,Chrome,George Kittle,267,,1.99,,38.62,31.0,12.9
-12532203,football,2025,Topps,Chrome,Gunnar Helm,305,,1.74,,38.32,31.0,12.8
-12533607,football,2025,Topps,Chrome,Harold Fannin Jr.,339,,1.99,,39.52,32.0,13.21
-12525047,football,2025,Topps,Chrome,Harrison Butker,151,,1.74,,38.33,31.0,12.8
-12524789,football,2025,Topps,Chrome,Hollywood Brown,146,,0.2,,0,0,0
-12533084,football,2025,Topps,Chrome,Isaac TeSlaa,320,,2.99,,41.92,34.0,14.01
-12533084,football,2025,Topps,Chrome,Isaac TeSlaa,320,,2.99,,41.92,34.0,14.01
-12524959,football,2025,Topps,Chrome,Isiah Pacheco,149,,1.0,,34.78,28.0,11.61
-12524959,football,2025,Topps,Chrome,Isiah Pacheco,149,,1.0,,34.78,28.0,11.61
-12527199,football,2025,Topps,Chrome,J.J. McCarthy,199,,1.72,,38.46,31.0,12.85
-12534830,football,2025,Topps,Chrome,JT Tuimoloau,356,,1.99,,39.53,32.0,13.21
-12520345,football,2025,Topps,Chrome,Ja'Tavion Sanders,45,,0.0,,0,0,0
-12536256,football,2025,Topps,Chrome,Jackson Hawes,397,,1.49,,37.13,30.0,12.4
-12536256,football,2025,Topps,Chrome,Jackson Hawes,397,,1.49,,37.13,30.0,12.4
-12528099,football,2025,Topps,Chrome,Jahlani Tavai,213,,1.26,,36.13,29.0,12.06
-12522579,football,2025,Topps,Chrome,Jahmyr Gibbs,101,,1.99,,39.51,32.0,13.21
-12522579,football,2025,Topps,Chrome,Jahmyr Gibbs,101,,1.99,,39.51,32.0,13.21
-12523101,football,2025,Topps,Chrome,Jake Bates,105,,1.99,,39.53,32.0,13.21
-12521702,football,2025,Topps,Chrome,Jake Ferguson,75,,1.6,,38.13,31.0,12.74
-12526210,football,2025,Topps,Chrome,Jakobi Meyers,176,,1.79,,39.57,32.0,13.22
-12522521,football,2025,Topps,Chrome,Jaleel McLaughlin,90,,2.0,,0,0,0
-12522521,football,2025,Topps,Chrome,Jaleel McLaughlin,90,,2.0,,0,0,0
-12529559,football,2025,Topps,Chrome,Jalen Hurts,247,,1.43,,38.22,31.0,12.77
-12533514,football,2025,Topps,Chrome,Jalen Royals,337,,1.77,,38.61,31.0,12.9
-12534699,football,2025,Topps,Chrome,Jalon Walker,354,,1.99,,39.52,32.0,13.21
-12522516,football,2025,Topps,Chrome,Jameson Williams,97,,1.77,,36.17,29.0,12.08
-12522516,football,2025,Topps,Chrome,Jameson Williams,97,,1.77,,36.17,29.0,12.08
-12526272,football,2025,Topps,Chrome,Jared Verse,173,,2.0,,39.57,32.0,13.22
-12530866,football,2025,Topps,Chrome,Jason Myers,280,,1.0,,37.17,30.0,12.42
-12530866,football,2025,Topps,Chrome,Jason Myers,280,,1.0,,37.17,30.0,12.42
-12527069,football,2025,Topps,Chrome,Jaylen Wright,190,,1.7,,38.13,31.0,12.74
-12527069,football,2025,Topps,Chrome,Jaylen Wright,190,,1.7,,38.13,31.0,12.74
-12520891,football,2025,Topps,Chrome,Jaylon Johnson,57,,1.67,,37.99,30.0,12.69
-12520891,football,2025,Topps,Chrome,Jaylon Johnson,57,,1.67,,37.99,30.0,12.69
-12526531,football,2025,Topps,Chrome,Jeremy Chinn,184,,1.27,,0,0,0
-12526531,football,2025,Topps,Chrome,Jeremy Chinn,184,,1.27,,0,0,0
-12525325,football,2025,Topps,Chrome,Joe Alt,157,,5.0,,45.55,36.0,15.24
-12525325,football,2025,Topps,Chrome,Joe Alt,157,,5.0,,45.55,36.0,15.24
-12522130,football,2025,Topps,Chrome,Joe Milton III,85,,1.99,,39.51,32.0,13.21
-12520574,football,2025,Topps,Chrome,Joe Thuney,50,,1.26,,34.97,28.0,11.68
-12519932,football,2025,Topps,Chrome,Joey Bosa,36,,1.79,,35.98,29.0,12.01
-12519932,football,2025,Topps,Chrome,Joey Bosa,36,,1.79,,35.98,29.0,12.01
-12527136,football,2025,Topps,Chrome,Jonathan Greenard,197,,1.75,,38.38,31.0,12.82
-12527136,football,2025,Topps,Chrome,Jonathan Greenard,197,,1.75,,38.38,31.0,12.82
-12529811,football,2025,Topps,Chrome,Jonnu Smith,257,,5.0,,39.53,32.0,13.21
-12529811,football,2025,Topps,Chrome,Jonnu Smith,257,,5.0,,39.53,32.0,13.21
-12529811,football,2025,Topps,Chrome,Jonnu Smith,257,,5.0,,39.53,32.0,13.21
-12529517,football,2025,Topps,Chrome,Jordan Davis,249,,1.99,,37.13,30.0,12.4
-12529517,football,2025,Topps,Chrome,Jordan Davis,249,,1.99,,37.13,30.0,12.4
-12524085,football,2025,Topps,Chrome,Josh Downs,127,,1.39,,36.65,29.0,12.24
-12523207,football,2025,Topps,Chrome,Josh Jacobs,110,,1.99,,44.2,35.0,14.78
-12518768,football,2025,Topps,Chrome,Josh Sweat,10,,0.0,,0,0,0
-12529266,football,2025,Topps,Chrome,Justin Fields,237,,2.12,,40.14,32.0,13.41
-12521987,football,2025,Topps,Chrome,KaVontae Turpin,84,,1.97,,39.42,32.0,13.17
-12532797,football,2025,Topps,Chrome,Kaleb Johnson,323,,1.92,,39.52,32.0,13.21
-12526131,football,2025,Topps,Chrome,Kamren Kinchens,174,,1.29,,0,0,0
-12525218,football,2025,Topps,Chrome,Keenan Allen,155,,1.5,,37.18,30.0,12.42
-12537334,football,2025,Topps,Chrome,Kelvin Banks Jr.,378,,1.62,,38.37,31.0,12.82
-12521671,football,2025,Topps,Chrome,Kenny Clark,73,,1.52,,37.27,30.0,12.45
-12525590,football,2025,Topps,Chrome,Khalil Mack,160,,0.85,,34.07,27.0,11.37
-12525590,football,2025,Topps,Chrome,Khalil Mack,160,,0.85,,34.07,27.0,11.37
-12518935,football,2025,Topps,Chrome,Kirk Cousins,13,,0.99,,0,0,0
-12518935,football,2025,Topps,Chrome,Kirk Cousins,13,,0.99,,0,0,0
-12518935,football,2025,Topps,Chrome,Kirk Cousins,13,,0.99,,0,0,0
-12526585,football,2025,Topps,Chrome,Kolton Miller,183,,2.0,,0,0,0
-12519612,football,2025,Topps,Chrome,Kyle Hamilton,29,,1.75,,38.37,31.0,12.82
-12519612,football,2025,Topps,Chrome,Kyle Hamilton,29,,1.75,,38.37,31.0,12.82
-12535949,football,2025,Topps,Chrome,Kyle Monangai,382,,1.82,,38.71,31.0,12.93
-12535949,football,2025,Topps,Chrome,Kyle Monangai,382,,1.82,,38.71,31.0,12.93
-12518541,football,2025,Topps,Chrome,Kyler Murray,5,,1.1,,35.26,28.0,11.77
-12525893,football,2025,Topps,Chrome,Kyren Williams,168,,0.0,,0,0,0
-12525408,football,2025,Topps,Chrome,Ladd McConkey,156,,1.4,,36.7,29.0,12.26
-12525408,football,2025,Topps,Chrome,Ladd McConkey,156,,1.4,,36.7,29.0,12.26
-12529356,football,2025,Topps,Chrome,Lane Johnson,246,,1.83,,0,0,0
-12536290,football,2025,Topps,Chrome,LeQuint Allen Jr.,384,,1.53,,35.26,28.0,11.77
-12536290,football,2025,Topps,Chrome,LeQuint Allen Jr.,384,,1.53,,35.26,28.0,11.77
-12528448,football,2025,Topps,Chrome,Malik Nabers,225,,3.17,,40.38,32.0,13.5
-12528448,football,2025,Topps,Chrome,Malik Nabers,225,,3.17,,40.38,32.0,13.5
-12532334,football,2025,Topps,Chrome,Mason Graham,302,,1.86,,38.9,31.0,13.0
-12536731,football,2025,Topps,Chrome,Mason Taylor,400,,1.0,,34.74,28.0,11.6
-12531897,football,2025,Topps,Chrome,Matt Gay,300,,1.68,,38.04,30.0,12.71
-12531897,football,2025,Topps,Chrome,Matt Gay,300,,1.68,,38.04,30.0,12.71
-12526103,football,2025,Topps,Chrome,Matthew Stafford,169,,15.58,,98.67,79.0,33.12
-12526372,football,2025,Topps,Chrome,Maxx Crosby,180,,1.48,,39.42,32.0,13.17
-12528840,football,2025,Topps,Chrome,Micah McFadden,232,,1.5,,0,0,0
-12521827,football,2025,Topps,Chrome,Micah Parsons,77,,1.49,,37.13,30.0,12.4
-12518972,football,2025,Topps,Chrome,Michael Penix Jr.,15,,1.25,,36.65,29.0,12.24
-12520845,football,2025,Topps,Chrome,Montez Sweat,56,,1.79,,39.53,32.0,13.21
-12520845,football,2025,Topps,Chrome,Montez Sweat,56,,1.79,,39.53,32.0,13.21
-12521405,football,2025,Topps,Chrome,Myles Garrett,70,,1.25,,35.98,29.0,12.01
-12521405,football,2025,Topps,Chrome,Myles Garrett,70,,1.25,,35.98,29.0,12.01
-12534322,football,2025,Topps,Chrome,Nic Scourton,353,,0.0,,0,0,0
-12534322,football,2025,Topps,Chrome,Nic Scourton,353,,0.0,,0,0,0
-12534322,football,2025,Topps,Chrome,Nic Scourton,353,,0.0,,0,0,0
-12534322,football,2025,Topps,Chrome,Nic Scourton,353,,0.0,,0,0,0
-12534697,football,2025,Topps,Chrome,Nick Emmanwori,348,,1.49,,37.18,30.0,12.42
-12523563,football,2025,Topps,Chrome,Nico Collins,115,,2.46,,0,0,0
-12531477,football,2025,Topps,Chrome,Noah Brown,293,,1.99,,39.52,32.0,13.21
-12530593,football,2025,Topps,Chrome,Noah Fant,274,,1.67,,37.99,30.0,12.69
-12530803,football,2025,Topps,Chrome,Olu Oluwatimi,273,,1.49,,37.13,30.0,12.4
-12518486,football,2025,Topps,Chrome,Paris Johnson Jr.,3,,0.99,,0,0,0
-12532365,football,2025,Topps,Chrome,Pat Bryant,313,,1.45,,38.61,31.0,12.9
-12530568,football,2025,Topps,Chrome,Patrick Queen,260,,1.32,,36.31,29.0,12.13
-12530568,football,2025,Topps,Chrome,Patrick Queen,260,,1.32,,36.31,29.0,12.13
-12522555,football,2025,Topps,Chrome,Penei Sewell,99,,1.97,,39.42,32.0,13.17
-12525403,football,2025,Topps,Chrome,Quentin Johnston,159,,1.29,,0,0,0
-12525403,football,2025,Topps,Chrome,Quentin Johnston,159,,1.29,,0,0,0
-12532901,football,2025,Topps,Chrome,Quinshon Judkins,325,,1.67,,36.56,29.0,12.21
-12533610,football,2025,Topps,Chrome,RJ Harvey,330,,1.44,,36.74,29.0,12.27
-12524890,football,2025,Topps,Chrome,Rashee Rice,147,,1.0,,34.79,28.0,11.61
-12529721,football,2025,Topps,Chrome,Reed Blankenship,251,,1.75,,35.36,28.0,11.8
-12527736,football,2025,Topps,Chrome,Rhamondre Stevenson,210,,0.0,,0,0,0
-12530806,football,2025,Topps,Chrome,Riq Woolen,278,,0.0,,0,0,0
-12520528,football,2025,Topps,Chrome,Rome Odunze,49,,0.99,,37.99,30.0,12.69
-12520528,football,2025,Topps,Chrome,Rome Odunze,49,,0.99,,37.99,30.0,12.69
-12519523,football,2025,Topps,Chrome,Roquan Smith,27,,1.99,,39.51,32.0,13.21
-12520801,football,2025,Topps,Chrome,Roschon Johnson,55,,0.99,,34.74,28.0,11.59
-12528528,football,2025,Topps,Chrome,Russell Wilson,229,,1.29,,34.78,28.0,11.61
-12530853,football,2025,Topps,Chrome,Sam Darnold,275,,1.99,,39.53,32.0,13.21
-12522777,football,2025,Topps,Chrome,Sam LaPorta,100,,1.87,,38.95,31.0,13.01
-12522777,football,2025,Topps,Chrome,Sam LaPorta,100,,1.87,,38.95,31.0,13.01
-12534085,football,2025,Topps,Chrome,Savion Williams,340,,1.99,,38.37,31.0,12.82
-12536079,football,2025,Topps,Chrome,Sebastian Castro,370,,1.97,,37.17,30.0,12.42
-12532178,football,2025,Topps,Chrome,Shavon Revel Jr.,301,,1.99,,38.8,31.0,12.96
-12532178,football,2025,Topps,Chrome,Shavon Revel Jr.,301,,1.99,,38.8,31.0,12.96
-12532190,football,2025,Topps,Chrome,Shemar Turner,303,,1.76,,39.43,32.0,13.18
-12527629,football,2025,Topps,Chrome,Stefon Diggs,205,,2.25,,38.03,30.0,12.71
-12527371,football,2025,Topps,Chrome,T.J. Hockenson,200,,1.0,,0,0,0
-12527371,football,2025,Topps,Chrome,T.J. Hockenson,200,,1.0,,0,0,0
-12535720,football,2025,Topps,Chrome,Tate Ratledge,383,,1.76,,35.93,29.0,12.0
-12521237,football,2025,Topps,Chrome,Tee Higgins,59,,1.99,,34.73,28.0,11.59
-12523285,football,2025,Topps,Chrome,Tim Patrick,96,,1.49,,0,0,0
-12520284,football,2025,Topps,Chrome,Tommy Tremble,44,,0.0,,0,0,0
-12531578,football,2025,Topps,Chrome,Tony Pollard,290,,1.29,,0,0,0
-12531578,football,2025,Topps,Chrome,Tony Pollard,290,,1.29,,0,0,0
-12526263,football,2025,Topps,Chrome,Tre Tucker,175,,2.0,,0,0,0
-12521973,football,2025,Topps,Chrome,Trevon Diggs,83,,1.5,,37.17,30.0,12.42
-12535182,football,2025,Topps,Chrome,Trey Amos,371,,2.0,,37.08,30.0,12.38
-12521155,football,2025,Topps,Chrome,Trey Hendrickson,65,,1.89,,39.05,31.0,13.05
-12530139,football,2025,Topps,Chrome,Troy Fautanu,256,,1.88,,39.0,31.0,13.03
-12530139,football,2025,Topps,Chrome,Troy Fautanu,256,,1.88,,39.0,31.0,13.03
-12525699,football,2025,Topps,Chrome,Tutu Atwell,167,,0.0,,0,0,0
-12535267,football,2025,Topps,Chrome,Tyleik Williams,364,,1.84,,38.81,31.0,12.96
-12536684,football,2025,Topps,Chrome,Tyler Shough,398,,3.3,,37.18,30.0,12.42
-12534489,football,2025,Topps,Chrome,Tyler Warren,346,,2.17,,39.53,32.0,13.21
-12534914,football,2025,Topps,Chrome,Walter Nolen,365,,1.44,,36.89,30.0,12.32
-12528498,football,2025,Topps,Chrome,Wan'Dale Robinson,227,,1.54,,0,0,0
-12532694,football,2025,Topps,Chrome,Will Howard,321,,1.55,,37.42,30.0,12.5
-12529260,football,2025,Topps,Chrome,Will McDonald IV,241,,2.47,,42.53,34.0,14.22
-12520021,football,2025,Topps,Chrome,Xavier Legette,38,,1.0,,35.41,28.0,11.82
-12523406,football,2025,Topps,Chrome,Xavier McKinney,113,,1.24,,35.93,29.0,12.0
-12523406,football,2025,Topps,Chrome,Xavier McKinney,113,,1.24,,35.93,29.0,12.0
-12531621,football,2025,Topps,Chrome,Zach Ertz,297,,2.14,,40.24,32.0,13.45
-12552688,football,2025,Topps,Chrome Urban Legends,Caleb Williams,UL-4,,296.43,,0,0,0
-12550491,football,2025,Topps,Chrome Fortune 15,JaTMarr Chase,F15-2,,0.0,,0,0,0
-12550928,football,2025,Topps,Chrome Fortune 15,Jordan Love,F15-17,,1.4,,36.7,29.0,12.26
-12550726,football,2025,Topps,Chrome Fortune 15,Josh Allen,F15-7,,5.0,,39.81,32.0,13.3
-12550845,football,2025,Topps,Chrome Fortune 15,Peyton Manning,F15-33,,2.47,,37.18,30.0,12.42
-12550738,football,2025,Topps,Chrome Fortune 15,Tyler Warren,F15-30,,1.77,,39.28,31.0,13.13
-12552232,football,2025,Topps,Chrome Power Players,Abdul Carter,PP-40,Refractor,3.0,,0,0,0
-12552330,football,2025,Topps,Chrome Power Players,Caleb Williams,PP-7,Refractor,2.58,,0,0,0
-12552322,football,2025,Topps,Chrome Power Players,George Kittle,PP-33,Refractor,9.99,,0,0,0
-12552067,football,2025,Topps,Chrome Power Players,Lamar Jackson,PP-1,Refractor,5.5,,0,0,0
-12551959,football,2025,Topps,Chrome Power Players,Tyler Warren,PP-35,Refractor,10.0,,0,0,0
-12551526,football,2025,Topps,Chrome Legends of the Gridiron,Art Monk,LOG-19,Refractor,1.82,,0,0,0
-12550139,football,2025,Topps,Chrome All Chrome Team,George Kittle,ACT-11,Refractor,2.89,,0,0,0
-12550032,football,2025,Topps,Chrome All Chrome Team,Josh Allen,ACT-2,Refractor,0.0,,0,0,0
-12550388,football,2025,Topps,Chrome All Chrome Team,Kerby Joseph,ACT-23,Refractor,3.49,,0,0,0
-12549971,football,2025,Topps,Chrome All Chrome Team,Lamar Jackson,ACT-1,Refractor,19.99,,0,0,0
-12550365,football,2025,Topps,Chrome All Chrome Team,Trey Hendrickson,ACT-16,Refractor,0.0,,0,0,0
-12529399,football,2025,Topps,Chrome,A.J. Brown,243,Leather Refractor,4.0,,50.63,41.0,16.95
-12529590,football,2025,Topps,Chrome,Cooper DeJean,252,Leather Refractor,5.99,,44.3,35.0,14.82
-12520507,football,2025,Topps,Chrome,DJ Moore,48,Leather Refractor,1.35,,0,0,0
-12519978,football,2025,Topps,Chrome,Dalton Kincaid,37,Leather Refractor,1.99,,39.53,32.0,13.21
-12534635,football,2025,Topps,Chrome,Jahdae Barron,359,Leather Refractor,1.74,,0,0,0
-12523024,football,2025,Topps,Chrome,Jayden Reed,107,Leather Refractor,2.75,,45.55,36.0,15.24
-12525418,football,2025,Topps,Chrome,Quentin Johnston,159,Leather Refractor,1.78,,38.52,31.0,12.87
-12520216,football,2025,Topps,Chrome,Chuba Hubbard,42,Red White Blue Refractor,0.0,,0,0,0
-12521903,football,2025,Topps,Chrome,Dak Prescott,79,Red White Blue Refractor,4.0,,51.86,41.0,17.36
-12534713,football,2025,Topps,Chrome,Jahdae Barron,359,Red White Blue Refractor,0.99,,39.57,32.0,13.22
-12535454,football,2025,Topps,Chrome,Jihaad Campbell,366,Red White Blue Refractor,2.99,,38.85,31.0,12.98
-12530688,football,2025,Topps,Chrome,Kenneth Walker III,276,Red White Blue Refractor,0.91,,34.97,28.0,11.68
-12530544,football,2025,Topps,Chrome,Kyle Juszczyk,270,Red White Blue Refractor,2.99,,44.31,35.0,14.82
-12525783,football,2025,Topps,Chrome,Matthew Stafford,169,Red White Blue Refractor,32.0,,179.95,144.0,60.5
-12528536,football,2025,Topps,Chrome,Wan'Dale Robinson,227,Red White Blue Refractor,2.74,,43.11,34.0,14.41
-12549712,football,2025,Topps,Chrome 1975,Dak Prescott,1975-10,,0.0,,0,0,0
-12549993,football,2025,Topps,Chrome 1975,J.J. McCarthy,1975-22,,2.65,,0,0,0
-12549736,football,2025,Topps,Chrome 1975,Justin Herbert,1975-18,,1.88,,0,0,0
-12549838,football,2025,Topps,Chrome 1975,Matthew Golden,1975-13,,3.0,,0,0,0
-12549838,football,2025,Topps,Chrome 1975,Matthew Golden,1975-13,,3.0,,0,0,0
-12550008,football,2025,Topps,Chrome 1975,Myles Garrett,1975-8,,0.0,,0,0,0
-12550063,football,2025,Topps,Chrome 1975,Baker Mayfield,1975-31,Refractor,0.0,,0,0,0
-12549877,football,2025,Topps,Chrome 1975,Chuba Hubbard,1975-5,Refractor,0.0,,0,0,0
-12549975,football,2025,Topps,Chrome 1975,Kenneth Walker III,1975-30,Refractor,0.0,,0,0,0
-12549732,football,2025,Topps,Chrome 1975,Michael Penix Jr.,1975-2,Refractor,4.99,,0,0,0
-12527425,football,2025,Topps,Chrome,Aaron Jones Sr.,201,Pulsar Refractor,2.49,,39.52,32.0,13.21
-12521578,football,2025,Topps,Chrome,Andrei Iosivas,60,Pulsar Refractor,0.0,,0,0,0
-12526114,football,2025,Topps,Chrome,Blake Corum,171,Pulsar Refractor,1.79,,41.33,33.0,13.82
-12530244,football,2025,Topps,Chrome,Brock Purdy,262,Pulsar Refractor,5.38,,47.31,38.0,15.83
-12523944,football,2025,Topps,Chrome,Cam Robinson,124,Pulsar Refractor,0.99,,39.33,31.0,13.14
-12528075,football,2025,Topps,Chrome,Chase Young,220,Pulsar Refractor,1.5,,37.17,30.0,12.42
-12527914,football,2025,Topps,Chrome,Chris Olave,216,Pulsar Refractor,1.0,,36.36,29.0,12.14
-12529979,football,2025,Topps,Chrome,Christian McCaffrey,263,Pulsar Refractor,2.17,,41.91,34.0,14.01
-12524701,football,2025,Topps,Chrome,Gabe Davis,142,Pulsar Refractor,3.62,,47.31,38.0,15.83
-12523571,football,2025,Topps,Chrome,Joe Mixon,120,Pulsar Refractor,1.71,,38.18,31.0,12.75
-12519665,football,2025,Topps,Chrome,Keon Coleman,30,Pulsar Refractor,1.32,,38.32,31.0,12.8
-12525488,football,2025,Topps,Chrome,Najee Harris,161,Pulsar Refractor,0.0,,0,0,0
-12518411,football,2025,Topps,Chrome,Paris Johnson Jr.,3,Pulsar Refractor,1.49,,0,0,0
-12532657,football,2025,Topps,Chrome,Phil Mafah,310,Pulsar Refractor,1.99,,39.52,32.0,13.21
-12534148,football,2025,Topps,Chrome,Savion Williams,340,Pulsar Refractor,2.99,,44.64,36.0,14.93
-12533528,football,2025,Topps,Chrome,Tetairoa McMillan,326,Pulsar Refractor,4.26,,57.5,46.0,19.26
-12534350,football,2025,Topps,Chrome,Tez Johnson,342,Pulsar Refractor,1.54,,37.08,30.0,12.38
-12525102,football,2025,Topps,Chrome,Trent McDuffie,154,Pulsar Refractor,1.79,,0,0,0
-12521190,football,2025,Topps,Chrome,Trey Hendrickson,65,Pulsar Refractor,1.0,,0,0,0
-12524447,football,2025,Topps,Chrome,Braden Smith,134,RayWave Refractor,1.99,,0,0,0
-12528917,football,2025,Topps,Chrome,Brian Burns,234,RayWave Refractor,1.25,,39.33,31.0,13.14
-12520641,football,2025,Topps,Chrome,Caleb Williams,52,RayWave Refractor,8.25,,66.06,53.0,22.15
-12523307,football,2025,Topps,Chrome,Christian Watson,112,RayWave Refractor,2.47,,41.82,33.0,13.98
-12524318,football,2025,Topps,Chrome,Daniel Jones,132,RayWave Refractor,0.94,,38.8,31.0,12.96
-12527893,football,2025,Topps,Chrome,Garrett Bradbury,212,RayWave Refractor,1.99,,0,0,0
-12531614,football,2025,Topps,Chrome,Jayden Daniels,295,RayWave Refractor,7.27,,58.73,47.0,19.67
-12535445,football,2025,Topps,Chrome,Jihaad Campbell,366,RayWave Refractor,2.5,,41.96,34.0,14.03
-12519760,football,2025,Topps,Chrome,Khalil Shakir,32,RayWave Refractor,3.06,,39.05,31.0,13.05
-12533370,football,2025,Topps,Chrome,Matthew Golden,333,RayWave Refractor,4.5,,53.8,43.0,18.01
-12533206,football,2025,Topps,Chrome,Riley Leonard,318,RayWave Refractor,2.79,,43.59,35.0,14.58
-12536457,football,2025,Topps,Chrome,Seth Henigan,399,RayWave Refractor,0.99,,0,0,0
-12533966,football,2025,Topps,Chrome,Tre Harris III,338,RayWave Refractor,3.99,,39.58,32.0,13.22
-12536894,football,2025,Topps,Chrome,Woody Marks,372,RayWave Refractor,2.51,,42.01,34.0,14.04
-12522880,football,2025,Topps,Chrome,Aidan Hutchinson,104,Refractor,3.5,,41.77,33.0,13.96
-12526083,football,2025,Topps,Chrome,Blake Corum,171,Refractor,1.47,,37.13,30.0,12.4
-12532613,football,2025,Topps,Chrome,Brady Cook,319,Refractor,1.99,,39.52,32.0,13.21
-12528092,football,2025,Topps,Chrome,Brandin Cooks,217,Refractor,4.0,,39.52,32.0,13.21
-12523572,football,2025,Topps,Chrome,Christian Kirk,117,Refractor,1.23,,37.71,30.0,12.59
-12521888,football,2025,Topps,Chrome,Dak Prescott,79,Refractor,3.37,,39.51,32.0,13.21
-12521441,football,2025,Topps,Chrome,David Njoku,69,Refractor,1.49,,37.13,30.0,12.4
-12530829,football,2025,Topps,Chrome,Deommodore Lenoir,269,Refractor,1.0,,34.78,28.0,11.61
-12534749,football,2025,Topps,Chrome,Derrick Harmon,361,Refractor,1.88,,38.99,31.0,13.03
-12528387,football,2025,Topps,Chrome,Erik McCoy,223,Refractor,0.99,,0,0,0
-12526447,football,2025,Topps,Chrome,Geno Smith,179,Refractor,1.99,,34.93,28.0,11.66
-12527450,football,2025,Topps,Chrome,Harrison Smith,204,Refractor,0.99,,38.75,31.0,12.95
-12527200,football,2025,Topps,Chrome,J.J. McCarthy,199,Refractor,3.9,,42.14,34.0,14.09
-12520069,football,2025,Topps,Chrome,Jalen Coker,39,Refractor,1.5,,39.52,32.0,13.21
-12534708,football,2025,Topps,Chrome,Jalon Walker,354,Refractor,1.42,,36.79,29.0,12.29
-12534708,football,2025,Topps,Chrome,Jalon Walker,354,Refractor,1.42,,36.79,29.0,12.29
-12534708,football,2025,Topps,Chrome,Jalon Walker,354,Refractor,1.42,,36.79,29.0,12.29
-12522909,football,2025,Topps,Chrome,Jared Goff,102,Refractor,1.7,,38.14,31.0,12.74
-12533841,football,2025,Topps,Chrome,Jayden Higgins,343,Refractor,4.45,,35.98,29.0,12.01
-12529337,football,2025,Topps,Chrome,Jeremy Ruckert,239,Refractor,2.49,,0,0,0
-12521588,football,2025,Topps,Chrome,Jerome Ford,71,Refractor,1.19,,35.69,29.0,11.92
-12535850,football,2025,Topps,Chrome,Jonah Savaiinaea,380,Refractor,1.29,,35.41,28.0,11.82
-12524119,football,2025,Topps,Chrome,Jonathan Taylor,130,Refractor,1.49,,37.13,30.0,12.4
-12535139,football,2025,Topps,Chrome,Kenneth Grant,362,Refractor,0.99,,37.9,30.0,12.66
-12519656,football,2025,Topps,Chrome,Keon Coleman,30,Refractor,0.99,,34.74,28.0,11.6
-12518936,football,2025,Topps,Chrome,Kirk Cousins,13,Refractor,2.0,,39.0,31.0,13.03
-12535955,football,2025,Topps,Chrome,Kyle Monangai,382,Refractor,3.5,,48.43,39.0,16.21
-12533701,football,2025,Topps,Chrome,Luther Burden III,334,Refractor,3.99,,49.77,40.0,16.66
-12526104,football,2025,Topps,Chrome,Matthew Stafford,169,Refractor,29.99,,173.48,139.0,58.32
-12518406,football,2025,Topps,Chrome,Michael Wilson,2,Refractor,1.44,,36.9,30.0,12.32
-12522558,football,2025,Topps,Chrome,Penei Sewell,99,Refractor,1.99,,37.12,30.0,12.4
-12531985,football,2025,Topps,Chrome,Rome Odunze,49,Refractor,2.25,,40.77,33.0,13.63
-12530856,football,2025,Topps,Chrome,Sam Darnold,275,Refractor,1.99,,39.05,31.0,13.05
-12536141,football,2025,Topps,Chrome,Sebastian Castro,370,Refractor,2.5,,41.96,34.0,14.03
-12523764,football,2025,Topps,Chrome,Tank Dell,123,Refractor,0.99,,34.73,28.0,11.59
-12526267,football,2025,Topps,Chrome,Tre Tucker,175,Refractor,0.99,,0,0,0
-12530049,football,2025,Topps,Chrome,Trent Williams,265,Refractor,1.78,,39.51,32.0,13.21
-12521975,football,2025,Topps,Chrome,Trevon Diggs,83,Refractor,2.37,,44.36,35.0,14.84
-12536853,football,2025,Topps,Chrome,Woody Marks,372,Refractor,1.37,,35.98,29.0,12.01
-12523409,football,2025,Topps,Chrome,Xavier McKinney,113,Refractor,1.3,,37.13,30.0,12.4
-12527171,football,2025,Topps,Chrome,Ashtyn Davis,194,Leather Green,0.0,,0,0,0
-12519324,football,2025,Topps,Chrome,Rashod Bateman,21,Leather Purple,0.0,,0,0,0
-12551630,football,2025,Topps,Chrome Legends of the Gridiron,Keyshawn Johnson,LOG-23,,1.99,,0,0,0
-12551597,football,2025,Topps,Chrome Legends of the Gridiron,Tim Brown,LOG-22,,4.99,,0,0,0
-12550995,football,2025,Topps,Chrome Future Stars,Brian Thomas Jr.,FS-4,,1.0,,0,0,0
-12551219,football,2025,Topps,Chrome Future Stars,Jalen Carter,FS-25,,1.5,,0,0,0
-12552327,football,2025,Topps,Chrome Power Players,Caleb Williams,PP-7,,1.89,,0,0,0
-12552348,football,2025,Topps,Chrome Power Players,Cam Ward,PP-8,,25.0,,0,0,0
-12552215,football,2025,Topps,Chrome Power Players,Nico Collins,PP-30,,3.49,,0,0,0
-12552233,football,2025,Topps,Chrome Power Players,Puka Nacua,PP-24,,4.99,,0,0,0
-12552174,football,2025,Topps,Chrome Power Players,T.J. Watt,PP-39,,2.92,,0,0,0
-12534015,football,2025,Topps,Chrome,Colston Loveland,345,X-Fractor Pink,13.0,,92.13,74.0,30.93
-12536533,football,2025,Topps,Chrome,Elijah Arroyo,396,X-Fractor Pink,0.01,,0,0,0
-12536060,football,2025,Topps,Chrome,Jack Bech,388,X-Fractor Pink,3.25,,0,0,0
-12532281,football,2025,Topps,Chrome,Kalel Mullings,309,X-Fractor Pink,0.0,,0,0,0
-12524233,football,2025,Topps,Chrome,Laiatu Latu,128,X-Fractor Pink,0.0,,0,0,0
-12519574,football,2025,Topps,Chrome,Nate Wiggins,28,X-Fractor Pink,3.39,,0,0,0
-12533092,football,2025,Topps,Chrome,Ollie Gordon II,327,X-Fractor Pink,3.49,,0,0,0
-12533408,football,2025,Topps,Chrome,Omarion Hampton,324,X-Fractor Pink,4.13,,0,0,0
-12528719,football,2025,Topps,Chrome,Tyrone Tracy Jr.,228,X-Fractor Pink,2.25,,0,0,0
-12524309,football,2025,Topps,Chrome,Daniel Jones,132,X-Fractor Green,5.0,,0,0,0
-12525058,football,2025,Topps,Chrome,George Karlaftis,152,X-Fractor Green,4.99,,0,0,0
-12526738,football,2025,Topps,Chrome,Tyreek Hill,185,X-Fractor Green,0.0,,0,0,0
-12531389,football,2025,Topps,Chrome,Bucky Irving,285,X-Fractor,2.0,,0,0,0
-12528733,football,2025,Topps,Chrome,Darius Slayton,226,X-Fractor,2.69,,0,0,0
-12518826,football,2025,Topps,Chrome,Darnell Mooney,11,X-Fractor,0.0,,0,0,0
-12526334,football,2025,Topps,Chrome,Jared Verse,173,X-Fractor,0.0,,0,0,0
-12522159,football,2025,Topps,Chrome,Joe Milton III,85,X-Fractor,0.0,,0,0,0
-12523322,football,2025,Topps,Chrome,Josh Jacobs,110,X-Fractor,0.0,,0,0,0
-12518782,football,2025,Topps,Chrome,Josh Sweat,10,X-Fractor,0.0,,0,0,0
-12521696,football,2025,Topps,Chrome,Kenny Clark,73,X-Fractor,3.5,,0,0,0
-12525644,football,2025,Topps,Chrome,Khalil Mack,160,X-Fractor,0.0,,0,0,0
-12527918,football,2025,Topps,Chrome,Kyle Dugger,211,X-Fractor,0.0,,0,0,0
-12521853,football,2025,Topps,Chrome,Micah Parsons,77,X-Fractor,2.97,,0,0,0
-12530658,football,2025,Topps,Chrome,Noah Fant,274,X-Fractor,0.99,,0,0,0
-12530887,football,2025,Topps,Chrome,Olu Oluwatimi,273,X-Fractor,0.0,,0,0,0
-12518419,football,2025,Topps,Chrome,Paris Johnson Jr.,3,X-Fractor,0.0,,0,0,0
-12530683,football,2025,Topps,Chrome,Patrick Queen,260,X-Fractor,24.99,,0,0,0
-12523458,football,2025,Topps,Chrome,Rashan Gary,111,X-Fractor,0.0,,0,0,0
-12527777,football,2025,Topps,Chrome,Rhamondre Stevenson,210,X-Fractor,0.0,,0,0,0
-12527274,football,2025,Topps,Chrome,Will Reichard,203,X-Fractor,0.0,,0,0,0
-12550431,football,2025,Topps,Chrome All Chrome Team,Chris Boswell,ACT-25,,0.0,,0,0,0
-12550368,football,2025,Topps,Chrome All Chrome Team,Chris Jones,ACT-17,,1.98,,0,0,0
-12550292,football,2025,Topps,Chrome All Chrome Team,Fred Warner,ACT-20,,3.99,,0,0,0
-12549967,football,2025,Topps,Chrome All Chrome Team,Lamar Jackson,ACT-1,,3.12,,0,0,0
-12550354,football,2025,Topps,Chrome All Chrome Team,Zack Baun,ACT-22,,0.0,,0,0,0
-12551043,football,2025,Topps,Chrome Future Stars,Marvin Harrison Jr.,FS-6,X-Fractor,0.0,,0,0,0
-12551525,football,2025,Topps,Chrome Legends Of The Gridiron,Art Monk,LOG-19,,0.0,,0,0,0
-12551732,football,2025,Topps,Chrome Legends Of The Gridiron,Devin Hester,LOG-37,,1.19,,0,0,0
-12551551,football,2025,Topps,Chrome Legends Of The Gridiron,Isaac Bruce,LOG-26,,0.0,,0,0,0
-12551575,football,2025,Topps,Chrome Legends Of The Gridiron,Jerry Rice,LOG-21,,0.0,,0,0,0
-12530632,football,2025,Topps,Chrome,Devon Witherspoon,277,Leather Gold,0.0,,0,0,0
-12550873,football,2025,Topps,Chrome Fortune 15,Jordan Love,F15-17,Refractor,2.71,,44.06,35.0,14.74
-12549309,football,2025,Topps,Chrome First Year Fabric,Abdul Carter,FYF-AC,,0.0,,0,0,0
-12551472,football,2025,Topps,Chrome Legends Of The Gridiron,Earl Campbell,LOG-12,X-Fractor,0.0,,0,0,0
-12551730,football,2025,Topps,Chrome Legends Of The Gridiron,Rob Gronkowski,LOG-29,X-Fractor,0.0,,0,0,0
 10727506,football,2025,Panini,Donruss,A.J. Brown,22,,0.67,,32.89,26.0,11.03
 10731357,football,2025,Panini,Donruss,Adam Thielen,257,,0.99,,34.25,27.0,11.52
 10727553,football,2025,Panini,Donruss,Adonai Mitchell,17,,0.06,,30.26,24.0,10.09
@@ -8155,3 +7708,557 @@ scp_id,sport,year,brand,set,name,number,parallel,price,condition,psa_10,cgc_10,p
 5600185,football,2023,Panini,Score,Tyson Bagent,312,Gold,2.52,,36.74,29.0,13.16
 5595804,football,2023,Panini,Score,Darnell Mooney,104,Lava,2.49,,0,0,0
 5599023,football,2023,Panini,Score,Kyler Murray,152,Stars,1.12,,0,0,0
+12527330,football,2025,Topps,Chrome,Aaron Jones Sr.,201,,1.29,,0,0,0
+12532146,football,2025,Topps,Chrome,Aaron Rodgers,255,,1.54,,37.37,30.0,12.48
+12534482,football,2025,Topps,Chrome,Abdul Carter,350,,1.44,,34.93,28.0,11.66
+12523827,football,2025,Topps,Chrome,Alec Pierce,125,,1.87,,38.94,31.0,13.01
+12523827,football,2025,Topps,Chrome,Alec Pierce,125,,1.87,,38.94,31.0,13.01
+12523827,football,2025,Topps,Chrome,Alec Pierce,125,,1.87,,38.94,31.0,13.01
+12529004,football,2025,Topps,Chrome,Allen Lazard,236,,0.2,,0,0,0
+12529004,football,2025,Topps,Chrome,Allen Lazard,236,,0.2,,0,0,0
+12528080,football,2025,Topps,Chrome,Alvin Kamara,215,,35.0,,0,0,0
+12528080,football,2025,Topps,Chrome,Alvin Kamara,215,,35.0,,0,0,0
+12521555,football,2025,Topps,Chrome,Andrei Iosivas,60,,0.0,,0,0,0
+12534207,football,2025,Topps,Chrome,Billy Bowman Jr.,344,,1.99,,38.7,31.0,12.93
+12534207,football,2025,Topps,Chrome,Billy Bowman Jr.,344,,1.99,,38.7,31.0,12.93
+12534207,football,2025,Topps,Chrome,Billy Bowman Jr.,344,,1.99,,38.7,31.0,12.93
+12522261,football,2025,Topps,Chrome,Bo Nix,88,,2.21,,41.2,33.0,13.77
+12522261,football,2025,Topps,Chrome,Bo Nix,88,,2.21,,41.2,33.0,13.77
+12520381,football,2025,Topps,Chrome,Bobby Brown III,46,,1.49,,0,0,0
+12531709,football,2025,Topps,Chrome,Bobby Wagner,299,,1.75,,38.37,31.0,12.82
+12532607,football,2025,Topps,Chrome,Brady Cook,319,,1.69,,37.23,30.0,12.43
+12524491,football,2025,Topps,Chrome,Brenton Strange,137,,1.99,,0,0,0
+12524491,football,2025,Topps,Chrome,Brenton Strange,137,,1.99,,0,0,0
+12524491,football,2025,Topps,Chrome,Brenton Strange,137,,1.99,,0,0,0
+12527414,football,2025,Topps,Chrome,Brian O'Neill,196,,1.49,,35.93,29.0,12.0
+12531792,football,2025,Topps,Chrome,Brian Robinson Jr.,296,,0.85,,30.96,25.0,10.32
+12526293,football,2025,Topps,Chrome,Brock Bowers,178,,1.79,,38.57,31.0,12.88
+12526293,football,2025,Topps,Chrome,Brock Bowers,178,,1.79,,38.57,31.0,12.88
+12518676,football,2025,Topps,Chrome,Budda Baker,8,,1.5,,34.78,28.0,11.61
+12530942,football,2025,Topps,Chrome,Cade Otton,284,,0.0,,0,0,0
+12530942,football,2025,Topps,Chrome,Cade Otton,284,,0.0,,0,0,0
+12520707,football,2025,Topps,Chrome,Caleb Williams,52,,3.81,,39.09,31.0,13.06
+12532926,football,2025,Topps,Chrome,Cam Ward,314,,4.63,,39.52,32.0,13.21
+12528251,football,2025,Topps,Chrome,Cameron Jordan,221,,2.25,,0,0,0
+12521129,football,2025,Topps,Chrome,Cedric Tillman,67,,3.0,,37.18,30.0,12.42
+12521764,football,2025,Topps,Chrome,CeeDee Lamb,76,,1.42,,36.89,30.0,12.32
+12521764,football,2025,Topps,Chrome,CeeDee Lamb,76,,1.42,,36.89,30.0,12.32
+12521764,football,2025,Topps,Chrome,CeeDee Lamb,76,,1.42,,36.89,30.0,12.32
+12523997,football,2025,Topps,Chrome,Charvarius Ward,129,,1.54,,37.12,30.0,12.4
+12531535,football,2025,Topps,Chrome,Chase McLaughlin,288,,2.31,,35.74,29.0,11.93
+12531535,football,2025,Topps,Chrome,Chase McLaughlin,288,,2.31,,35.74,29.0,11.93
+12531151,football,2025,Topps,Chrome,Chris Godwin,283,,1.74,,38.32,31.0,12.8
+12523275,football,2025,Topps,Chrome,Christian Watson,112,,1.99,,39.53,32.0,13.21
+12520192,football,2025,Topps,Chrome,Chuba Hubbard,42,,1.99,,38.76,31.0,12.95
+12520614,football,2025,Topps,Chrome,Cole Kmet,51,,2.0,,37.61,30.0,12.56
+12520614,football,2025,Topps,Chrome,Cole Kmet,51,,2.0,,37.61,30.0,12.56
+12530205,football,2025,Topps,Chrome,Cooper DeJean,252,,1.99,,39.48,32.0,13.19
+12530224,football,2025,Topps,Chrome,DK Metcalf,254,,1.29,,36.17,29.0,12.08
+12519976,football,2025,Topps,Chrome,Dalton Kincaid,37,,0.99,,33.73,27.0,11.26
+12524293,football,2025,Topps,Chrome,Daniel Jones,132,,1.67,,37.99,30.0,12.69
+12548423,football,2025,Topps,Chrome,Darien Porter,367,,1.68,,38.04,30.0,12.71
+12548423,football,2025,Topps,Chrome,Darien Porter,367,,1.68,,38.04,30.0,12.71
+12548423,football,2025,Topps,Chrome,Darien Porter,367,,1.68,,38.04,30.0,12.71
+12523234,football,2025,Topps,Chrome,David Montgomery,103,,1.99,,39.53,32.0,13.21
+12521429,football,2025,Topps,Chrome,David Njoku,69,,2.15,,40.28,32.0,13.46
+12519771,football,2025,Topps,Chrome,Dawson Knox,33,,1.58,,37.56,30.0,12.55
+12526863,football,2025,Topps,Chrome,De'Von Achane,188,,1.0,,34.78,28.0,11.61
+12526863,football,2025,Topps,Chrome,De'Von Achane,188,,1.0,,34.78,28.0,11.61
+12519211,football,2025,Topps,Chrome,DeAndre Hopkins,20,,1.99,,37.76,30.0,12.61
+12524287,football,2025,Topps,Chrome,DeForest Buckner,133,,1.1,,0,0,0
+12521801,football,2025,Topps,Chrome,DeMarvion Overshown,78,,2.0,,38.91,31.0,13.0
+12521801,football,2025,Topps,Chrome,DeMarvion Overshown,78,,2.0,,38.91,31.0,13.0
+12529253,football,2025,Topps,Chrome,DeVonta Smith,244,,1.75,,38.32,31.0,12.8
+12531693,football,2025,Topps,Chrome,Deebo Samuel,294,,1.66,,37.47,30.0,12.51
+12521650,football,2025,Topps,Chrome,Denzel Ward,74,,2.37,,39.52,32.0,13.21
+12530822,football,2025,Topps,Chrome,Deommodore Lenoir,269,,0.0,,0,0,0
+12520478,football,2025,Topps,Chrome,Derrick Brown,47,,0.0,,0,0,0
+12534751,football,2025,Topps,Chrome,Derrick Harmon,361,,1.97,,39.43,32.0,13.17
+12534751,football,2025,Topps,Chrome,Derrick Harmon,361,,1.97,,39.43,32.0,13.17
+12534751,football,2025,Topps,Chrome,Derrick Harmon,361,,1.97,,39.43,32.0,13.17
+12519418,football,2025,Topps,Chrome,Derrick Henry,25,,8.99,,39.52,32.0,13.21
+12535950,football,2025,Topps,Chrome,Devin Neal,391,,1.87,,38.95,31.0,13.01
+12535950,football,2025,Topps,Chrome,Devin Neal,391,,1.87,,38.95,31.0,13.01
+12536371,football,2025,Topps,Chrome,Donovan Edwards,392,,1.49,,35.36,28.0,11.81
+12524416,football,2025,Topps,Chrome,Dyami Brown,136,,1.49,,37.57,30.0,12.55
+12524416,football,2025,Topps,Chrome,Dyami Brown,136,,1.49,,37.57,30.0,12.55
+12533931,football,2025,Topps,Chrome,Elic Ayomanor,336,,1.3,,0,0,0
+12533931,football,2025,Topps,Chrome,Elic Ayomanor,336,,1.3,,0,0,0
+12532693,football,2025,Topps,Chrome,Emeka Egbuka,312,,2.99,,39.53,32.0,13.21
+12536138,football,2025,Topps,Chrome,Emery Jones Jr.,386,,1.99,,34.79,28.0,11.61
+12530512,football,2025,Topps,Chrome,Fred Warner,268,,1.29,,35.31,28.0,11.79
+12530512,football,2025,Topps,Chrome,Fred Warner,268,,1.29,,35.31,28.0,11.79
+12527848,football,2025,Topps,Chrome,Garrett Bradbury,212,,1.82,,38.71,31.0,12.93
+12525206,football,2025,Topps,Chrome,George Karlaftis,152,,1.99,,39.52,32.0,13.21
+12530071,football,2025,Topps,Chrome,George Kittle,267,,1.99,,38.62,31.0,12.9
+12532203,football,2025,Topps,Chrome,Gunnar Helm,305,,1.74,,38.32,31.0,12.8
+12533607,football,2025,Topps,Chrome,Harold Fannin Jr.,339,,1.99,,39.52,32.0,13.21
+12525047,football,2025,Topps,Chrome,Harrison Butker,151,,1.74,,38.33,31.0,12.8
+12524789,football,2025,Topps,Chrome,Hollywood Brown,146,,0.2,,0,0,0
+12533084,football,2025,Topps,Chrome,Isaac TeSlaa,320,,2.99,,41.92,34.0,14.01
+12533084,football,2025,Topps,Chrome,Isaac TeSlaa,320,,2.99,,41.92,34.0,14.01
+12524959,football,2025,Topps,Chrome,Isiah Pacheco,149,,1.0,,34.78,28.0,11.61
+12524959,football,2025,Topps,Chrome,Isiah Pacheco,149,,1.0,,34.78,28.0,11.61
+12527199,football,2025,Topps,Chrome,J.J. McCarthy,199,,1.72,,38.46,31.0,12.85
+12534830,football,2025,Topps,Chrome,JT Tuimoloau,356,,1.99,,39.53,32.0,13.21
+12534830,football,2025,Topps,Chrome,JT Tuimoloau,356,,1.99,,39.53,32.0,13.21
+12520345,football,2025,Topps,Chrome,Ja'Tavion Sanders,45,,0.0,,0,0,0
+12536014,football,2025,Topps,Chrome,Jack Bech,388,,1.5,,37.18,30.0,12.42
+12536256,football,2025,Topps,Chrome,Jackson Hawes,397,,1.49,,37.13,30.0,12.4
+12536256,football,2025,Topps,Chrome,Jackson Hawes,397,,1.49,,37.13,30.0,12.4
+12528099,football,2025,Topps,Chrome,Jahlani Tavai,213,,1.26,,36.13,29.0,12.06
+12522579,football,2025,Topps,Chrome,Jahmyr Gibbs,101,,1.99,,39.51,32.0,13.21
+12522579,football,2025,Topps,Chrome,Jahmyr Gibbs,101,,1.99,,39.51,32.0,13.21
+12523101,football,2025,Topps,Chrome,Jake Bates,105,,1.99,,39.53,32.0,13.21
+12521702,football,2025,Topps,Chrome,Jake Ferguson,75,,1.6,,38.13,31.0,12.74
+12526210,football,2025,Topps,Chrome,Jakobi Meyers,176,,1.79,,39.57,32.0,13.22
+12526210,football,2025,Topps,Chrome,Jakobi Meyers,176,,1.79,,39.57,32.0,13.22
+12522521,football,2025,Topps,Chrome,Jaleel McLaughlin,90,,2.0,,0,0,0
+12522521,football,2025,Topps,Chrome,Jaleel McLaughlin,90,,2.0,,0,0,0
+12529559,football,2025,Topps,Chrome,Jalen Hurts,247,,1.43,,38.22,31.0,12.77
+12533514,football,2025,Topps,Chrome,Jalen Royals,337,,1.77,,38.61,31.0,12.9
+12534699,football,2025,Topps,Chrome,Jalon Walker,354,,1.99,,39.52,32.0,13.21
+12522516,football,2025,Topps,Chrome,Jameson Williams,97,,1.77,,36.17,29.0,12.08
+12522516,football,2025,Topps,Chrome,Jameson Williams,97,,1.77,,36.17,29.0,12.08
+12526272,football,2025,Topps,Chrome,Jared Verse,173,,2.0,,39.57,32.0,13.22
+12530866,football,2025,Topps,Chrome,Jason Myers,280,,1.0,,37.17,30.0,12.42
+12530866,football,2025,Topps,Chrome,Jason Myers,280,,1.0,,37.17,30.0,12.42
+12527069,football,2025,Topps,Chrome,Jaylen Wright,190,,1.7,,38.13,31.0,12.74
+12527069,football,2025,Topps,Chrome,Jaylen Wright,190,,1.7,,38.13,31.0,12.74
+12520891,football,2025,Topps,Chrome,Jaylon Johnson,57,,1.67,,37.99,30.0,12.69
+12520891,football,2025,Topps,Chrome,Jaylon Johnson,57,,1.67,,37.99,30.0,12.69
+12526531,football,2025,Topps,Chrome,Jeremy Chinn,184,,1.27,,0,0,0
+12526531,football,2025,Topps,Chrome,Jeremy Chinn,184,,1.27,,0,0,0
+12521581,football,2025,Topps,Chrome,Jerome Ford,71,,1.25,,37.76,30.0,12.61
+12525325,football,2025,Topps,Chrome,Joe Alt,157,,5.0,,45.55,36.0,15.24
+12525325,football,2025,Topps,Chrome,Joe Alt,157,,5.0,,45.55,36.0,15.24
+12522130,football,2025,Topps,Chrome,Joe Milton III,85,,1.99,,39.51,32.0,13.21
+12520574,football,2025,Topps,Chrome,Joe Thuney,50,,1.26,,34.97,28.0,11.68
+12519932,football,2025,Topps,Chrome,Joey Bosa,36,,1.79,,35.98,29.0,12.01
+12519932,football,2025,Topps,Chrome,Joey Bosa,36,,1.79,,35.98,29.0,12.01
+12527136,football,2025,Topps,Chrome,Jonathan Greenard,197,,1.75,,38.38,31.0,12.82
+12527136,football,2025,Topps,Chrome,Jonathan Greenard,197,,1.75,,38.38,31.0,12.82
+12527136,football,2025,Topps,Chrome,Jonathan Greenard,197,,1.75,,38.38,31.0,12.82
+12529811,football,2025,Topps,Chrome,Jonnu Smith,257,,5.0,,39.53,32.0,13.21
+12529811,football,2025,Topps,Chrome,Jonnu Smith,257,,5.0,,39.53,32.0,13.21
+12529811,football,2025,Topps,Chrome,Jonnu Smith,257,,5.0,,39.53,32.0,13.21
+12529517,football,2025,Topps,Chrome,Jordan Davis,249,,1.99,,37.13,30.0,12.4
+12529517,football,2025,Topps,Chrome,Jordan Davis,249,,1.99,,37.13,30.0,12.4
+12524085,football,2025,Topps,Chrome,Josh Downs,127,,1.39,,36.65,29.0,12.24
+12524085,football,2025,Topps,Chrome,Josh Downs,127,,1.39,,36.65,29.0,12.24
+12523207,football,2025,Topps,Chrome,Josh Jacobs,110,,1.99,,44.2,35.0,14.78
+12518768,football,2025,Topps,Chrome,Josh Sweat,10,,0.0,,0,0,0
+12529266,football,2025,Topps,Chrome,Justin Fields,237,,2.12,,40.14,32.0,13.41
+12521987,football,2025,Topps,Chrome,KaVontae Turpin,84,,1.97,,39.42,32.0,13.17
+12532797,football,2025,Topps,Chrome,Kaleb Johnson,323,,1.92,,39.52,32.0,13.21
+12526131,football,2025,Topps,Chrome,Kamren Kinchens,174,,1.29,,0,0,0
+12525218,football,2025,Topps,Chrome,Keenan Allen,155,,1.5,,37.18,30.0,12.42
+12537334,football,2025,Topps,Chrome,Kelvin Banks Jr.,378,,1.62,,38.37,31.0,12.82
+12530620,football,2025,Topps,Chrome,Kenneth Walker III,276,,1.88,,38.99,31.0,13.03
+12521671,football,2025,Topps,Chrome,Kenny Clark,73,,1.52,,37.27,30.0,12.45
+12525590,football,2025,Topps,Chrome,Khalil Mack,160,,0.85,,34.07,27.0,11.37
+12525590,football,2025,Topps,Chrome,Khalil Mack,160,,0.85,,34.07,27.0,11.37
+12518935,football,2025,Topps,Chrome,Kirk Cousins,13,,0.99,,0,0,0
+12518935,football,2025,Topps,Chrome,Kirk Cousins,13,,0.99,,0,0,0
+12518935,football,2025,Topps,Chrome,Kirk Cousins,13,,0.99,,0,0,0
+12518935,football,2025,Topps,Chrome,Kirk Cousins,13,,0.99,,0,0,0
+12526585,football,2025,Topps,Chrome,Kolton Miller,183,,2.0,,0,0,0
+12519612,football,2025,Topps,Chrome,Kyle Hamilton,29,,1.75,,38.37,31.0,12.82
+12519612,football,2025,Topps,Chrome,Kyle Hamilton,29,,1.75,,38.37,31.0,12.82
+12535949,football,2025,Topps,Chrome,Kyle Monangai,382,,1.82,,38.71,31.0,12.93
+12535949,football,2025,Topps,Chrome,Kyle Monangai,382,,1.82,,38.71,31.0,12.93
+12518541,football,2025,Topps,Chrome,Kyler Murray,5,,1.1,,35.26,28.0,11.77
+12525893,football,2025,Topps,Chrome,Kyren Williams,168,,0.0,,0,0,0
+12525408,football,2025,Topps,Chrome,Ladd McConkey,156,,1.4,,36.7,29.0,12.26
+12525408,football,2025,Topps,Chrome,Ladd McConkey,156,,1.4,,36.7,29.0,12.26
+12534978,football,2025,Topps,Chrome,Landon Jackson,358,,1.25,,36.22,29.0,12.09
+12529356,football,2025,Topps,Chrome,Lane Johnson,246,,1.83,,0,0,0
+12536290,football,2025,Topps,Chrome,LeQuint Allen Jr.,384,,1.53,,35.26,28.0,11.77
+12536290,football,2025,Topps,Chrome,LeQuint Allen Jr.,384,,1.53,,35.26,28.0,11.77
+12528448,football,2025,Topps,Chrome,Malik Nabers,225,,3.17,,40.38,32.0,13.5
+12528448,football,2025,Topps,Chrome,Malik Nabers,225,,3.17,,40.38,32.0,13.5
+12528448,football,2025,Topps,Chrome,Malik Nabers,225,,3.17,,40.38,32.0,13.5
+12532334,football,2025,Topps,Chrome,Mason Graham,302,,1.86,,38.9,31.0,13.0
+12536731,football,2025,Topps,Chrome,Mason Taylor,400,,1.0,,34.74,28.0,11.6
+12531897,football,2025,Topps,Chrome,Matt Gay,300,,1.68,,38.04,30.0,12.71
+12531897,football,2025,Topps,Chrome,Matt Gay,300,,1.68,,38.04,30.0,12.71
+12526103,football,2025,Topps,Chrome,Matthew Stafford,169,,15.58,,98.67,79.0,33.12
+12526372,football,2025,Topps,Chrome,Maxx Crosby,180,,1.48,,39.42,32.0,13.17
+12528840,football,2025,Topps,Chrome,Micah McFadden,232,,1.5,,0,0,0
+12521827,football,2025,Topps,Chrome,Micah Parsons,77,,1.49,,37.13,30.0,12.4
+12518972,football,2025,Topps,Chrome,Michael Penix Jr.,15,,1.25,,36.65,29.0,12.24
+12520845,football,2025,Topps,Chrome,Montez Sweat,56,,1.79,,39.53,32.0,13.21
+12520845,football,2025,Topps,Chrome,Montez Sweat,56,,1.79,,39.53,32.0,13.21
+12521405,football,2025,Topps,Chrome,Myles Garrett,70,,1.25,,35.98,29.0,12.01
+12521405,football,2025,Topps,Chrome,Myles Garrett,70,,1.25,,35.98,29.0,12.01
+12534322,football,2025,Topps,Chrome,Nic Scourton,353,,0.0,,0,0,0
+12534322,football,2025,Topps,Chrome,Nic Scourton,353,,0.0,,0,0,0
+12534322,football,2025,Topps,Chrome,Nic Scourton,353,,0.0,,0,0,0
+12534322,football,2025,Topps,Chrome,Nic Scourton,353,,0.0,,0,0,0
+12534697,football,2025,Topps,Chrome,Nick Emmanwori,348,,1.49,,37.18,30.0,12.42
+12523563,football,2025,Topps,Chrome,Nico Collins,115,,2.46,,0,0,0
+12531477,football,2025,Topps,Chrome,Noah Brown,293,,1.99,,39.52,32.0,13.21
+12530593,football,2025,Topps,Chrome,Noah Fant,274,,1.67,,37.99,30.0,12.69
+12530803,football,2025,Topps,Chrome,Olu Oluwatimi,273,,1.49,,37.13,30.0,12.4
+12518486,football,2025,Topps,Chrome,Paris Johnson Jr.,3,,0.99,,0,0,0
+12532365,football,2025,Topps,Chrome,Pat Bryant,313,,1.45,,38.61,31.0,12.9
+12530568,football,2025,Topps,Chrome,Patrick Queen,260,,1.32,,36.31,29.0,12.13
+12530568,football,2025,Topps,Chrome,Patrick Queen,260,,1.32,,36.31,29.0,12.13
+12522555,football,2025,Topps,Chrome,Penei Sewell,99,,1.97,,39.42,32.0,13.17
+12525403,football,2025,Topps,Chrome,Quentin Johnston,159,,1.29,,0,0,0
+12525403,football,2025,Topps,Chrome,Quentin Johnston,159,,1.29,,0,0,0
+12525403,football,2025,Topps,Chrome,Quentin Johnston,159,,1.29,,0,0,0
+12535077,football,2025,Topps,Chrome,Quincy Riley,369,,1.25,,35.41,28.0,11.82
+12532901,football,2025,Topps,Chrome,Quinshon Judkins,325,,1.67,,36.56,29.0,12.21
+12533610,football,2025,Topps,Chrome,RJ Harvey,330,,1.44,,36.74,29.0,12.27
+12524890,football,2025,Topps,Chrome,Rashee Rice,147,,1.0,,34.79,28.0,11.61
+12529721,football,2025,Topps,Chrome,Reed Blankenship,251,,1.75,,35.36,28.0,11.8
+12527736,football,2025,Topps,Chrome,Rhamondre Stevenson,210,,0.0,,0,0,0
+12530806,football,2025,Topps,Chrome,Riq Woolen,278,,0.0,,0,0,0
+12520528,football,2025,Topps,Chrome,Rome Odunze,49,,0.99,,37.99,30.0,12.69
+12520528,football,2025,Topps,Chrome,Rome Odunze,49,,0.99,,37.99,30.0,12.69
+12519523,football,2025,Topps,Chrome,Roquan Smith,27,,1.99,,39.51,32.0,13.21
+12519523,football,2025,Topps,Chrome,Roquan Smith,27,,1.99,,39.51,32.0,13.21
+12520801,football,2025,Topps,Chrome,Roschon Johnson,55,,0.99,,34.74,28.0,11.59
+12528528,football,2025,Topps,Chrome,Russell Wilson,229,,1.29,,34.78,28.0,11.61
+12530853,football,2025,Topps,Chrome,Sam Darnold,275,,1.99,,39.53,32.0,13.21
+12522777,football,2025,Topps,Chrome,Sam LaPorta,100,,1.87,,38.95,31.0,13.01
+12522777,football,2025,Topps,Chrome,Sam LaPorta,100,,1.87,,38.95,31.0,13.01
+12534085,football,2025,Topps,Chrome,Savion Williams,340,,1.99,,38.37,31.0,12.82
+12536079,football,2025,Topps,Chrome,Sebastian Castro,370,,1.97,,37.17,30.0,12.42
+12536079,football,2025,Topps,Chrome,Sebastian Castro,370,,1.97,,37.17,30.0,12.42
+12532178,football,2025,Topps,Chrome,Shavon Revel Jr.,301,,1.99,,38.8,31.0,12.96
+12532178,football,2025,Topps,Chrome,Shavon Revel Jr.,301,,1.99,,38.8,31.0,12.96
+12532190,football,2025,Topps,Chrome,Shemar Turner,303,,1.76,,39.43,32.0,13.18
+12527629,football,2025,Topps,Chrome,Stefon Diggs,205,,2.25,,38.03,30.0,12.71
+12527371,football,2025,Topps,Chrome,T.J. Hockenson,200,,1.0,,0,0,0
+12527371,football,2025,Topps,Chrome,T.J. Hockenson,200,,1.0,,0,0,0
+12535720,football,2025,Topps,Chrome,Tate Ratledge,383,,1.76,,35.93,29.0,12.0
+12521237,football,2025,Topps,Chrome,Tee Higgins,59,,1.99,,34.73,28.0,11.59
+12521237,football,2025,Topps,Chrome,Tee Higgins,59,,1.99,,34.73,28.0,11.59
+12527758,football,2025,Topps,Chrome,Terry McLaurin,208,,1.79,,38.66,31.0,12.92
+12534274,football,2025,Topps,Chrome,Tez Johnson,342,,1.1,,36.46,29.0,12.17
+12523285,football,2025,Topps,Chrome,Tim Patrick,96,,1.49,,0,0,0
+12520284,football,2025,Topps,Chrome,Tommy Tremble,44,,0.0,,0,0,0
+12531578,football,2025,Topps,Chrome,Tony Pollard,290,,1.29,,0,0,0
+12531578,football,2025,Topps,Chrome,Tony Pollard,290,,1.29,,0,0,0
+12526263,football,2025,Topps,Chrome,Tre Tucker,175,,2.0,,0,0,0
+12525339,football,2025,Topps,Chrome,Trent McDuffie,154,,5.41,,38.65,31.0,12.92
+12521973,football,2025,Topps,Chrome,Trevon Diggs,83,,1.5,,37.17,30.0,12.42
+12535182,football,2025,Topps,Chrome,Trey Amos,371,,2.0,,37.08,30.0,12.38
+12521155,football,2025,Topps,Chrome,Trey Hendrickson,65,,1.89,,39.05,31.0,13.05
+12530139,football,2025,Topps,Chrome,Troy Fautanu,256,,1.88,,39.0,31.0,13.03
+12530139,football,2025,Topps,Chrome,Troy Fautanu,256,,1.88,,39.0,31.0,13.03
+12523051,football,2025,Topps,Chrome,Tucker Kraft,108,,1.79,,39.53,32.0,13.21
+12525699,football,2025,Topps,Chrome,Tutu Atwell,167,,0.0,,0,0,0
+12535267,football,2025,Topps,Chrome,Tyleik Williams,364,,1.84,,38.81,31.0,12.96
+12536684,football,2025,Topps,Chrome,Tyler Shough,398,,3.3,,37.18,30.0,12.42
+12534489,football,2025,Topps,Chrome,Tyler Warren,346,,2.17,,39.53,32.0,13.21
+12520754,football,2025,Topps,Chrome,Tyson Bagent,54,,1.78,,38.51,31.0,12.87
+12534914,football,2025,Topps,Chrome,Walter Nolen,365,,1.44,,36.89,30.0,12.32
+12528498,football,2025,Topps,Chrome,Wan'Dale Robinson,227,,1.54,,0,0,0
+12528498,football,2025,Topps,Chrome,Wan'Dale Robinson,227,,1.54,,0,0,0
+12535517,football,2025,Topps,Chrome,Will Campbell,379,,1.98,,39.52,32.0,13.21
+12532694,football,2025,Topps,Chrome,Will Howard,321,,1.55,,37.42,30.0,12.5
+12532694,football,2025,Topps,Chrome,Will Howard,321,,1.55,,37.42,30.0,12.5
+12529260,football,2025,Topps,Chrome,Will McDonald IV,241,,2.47,,42.53,34.0,14.22
+12520021,football,2025,Topps,Chrome,Xavier Legette,38,,1.0,,35.41,28.0,11.82
+12523406,football,2025,Topps,Chrome,Xavier McKinney,113,,1.24,,35.93,29.0,12.0
+12523406,football,2025,Topps,Chrome,Xavier McKinney,113,,1.24,,35.93,29.0,12.0
+12523406,football,2025,Topps,Chrome,Xavier McKinney,113,,1.24,,35.93,29.0,12.0
+12531621,football,2025,Topps,Chrome,Zach Ertz,297,,2.14,,40.24,32.0,13.45
+12531621,football,2025,Topps,Chrome,Zach Ertz,297,,2.14,,40.24,32.0,13.45
+12552688,football,2025,Topps,Chrome Urban Legends,Caleb Williams,UL-4,,296.43,,0,0,0
+12550491,football,2025,Topps,Chrome Fortune 15,JaTMarr Chase,F15-2,,0.0,,0,0,0
+12550928,football,2025,Topps,Chrome Fortune 15,Jordan Love,F15-17,,1.4,,36.7,29.0,12.26
+12550726,football,2025,Topps,Chrome Fortune 15,Josh Allen,F15-7,,5.0,,39.81,32.0,13.3
+12550845,football,2025,Topps,Chrome Fortune 15,Peyton Manning,F15-33,,2.47,,37.18,30.0,12.42
+12550738,football,2025,Topps,Chrome Fortune 15,Tyler Warren,F15-30,,1.77,,39.28,31.0,13.13
+12552232,football,2025,Topps,Chrome Power Players,Abdul Carter,PP-40,Refractor,3.0,,0,0,0
+12552330,football,2025,Topps,Chrome Power Players,Caleb Williams,PP-7,Refractor,2.58,,0,0,0
+12552322,football,2025,Topps,Chrome Power Players,George Kittle,PP-33,Refractor,9.99,,0,0,0
+12552067,football,2025,Topps,Chrome Power Players,Lamar Jackson,PP-1,Refractor,5.5,,0,0,0
+12551959,football,2025,Topps,Chrome Power Players,Tyler Warren,PP-35,Refractor,10.0,,0,0,0
+12551526,football,2025,Topps,Chrome Legends of the Gridiron,Art Monk,LOG-19,Refractor,1.82,,0,0,0
+12550139,football,2025,Topps,Chrome All Chrome Team,George Kittle,ACT-11,Refractor,2.89,,0,0,0
+12550185,football,2025,Topps,Chrome All Chrome Team,Jordan Mailata,ACT-12,Refractor,7.99,,0,0,0
+12550032,football,2025,Topps,Chrome All Chrome Team,Josh Allen,ACT-2,Refractor,0.0,,0,0,0
+12550388,football,2025,Topps,Chrome All Chrome Team,Kerby Joseph,ACT-23,Refractor,3.49,,0,0,0
+12549971,football,2025,Topps,Chrome All Chrome Team,Lamar Jackson,ACT-1,Refractor,19.99,,0,0,0
+12550365,football,2025,Topps,Chrome All Chrome Team,Trey Hendrickson,ACT-16,Refractor,0.0,,0,0,0
+12529399,football,2025,Topps,Chrome,A.J. Brown,243,Leather Refractor,4.0,,50.63,41.0,16.95
+12529590,football,2025,Topps,Chrome,Cooper DeJean,252,Leather Refractor,5.99,,44.3,35.0,14.82
+12520507,football,2025,Topps,Chrome,DJ Moore,48,Leather Refractor,1.35,,0,0,0
+12519978,football,2025,Topps,Chrome,Dalton Kincaid,37,Leather Refractor,1.99,,39.53,32.0,13.21
+12534635,football,2025,Topps,Chrome,Jahdae Barron,359,Leather Refractor,1.74,,0,0,0
+12523024,football,2025,Topps,Chrome,Jayden Reed,107,Leather Refractor,2.75,,45.55,36.0,15.24
+12525418,football,2025,Topps,Chrome,Quentin Johnston,159,Leather Refractor,1.78,,38.52,31.0,12.87
+12520216,football,2025,Topps,Chrome,Chuba Hubbard,42,Red White Blue Refractor,0.0,,0,0,0
+12521903,football,2025,Topps,Chrome,Dak Prescott,79,Red White Blue Refractor,4.0,,51.86,41.0,17.36
+12534713,football,2025,Topps,Chrome,Jahdae Barron,359,Red White Blue Refractor,0.99,,39.57,32.0,13.22
+12535454,football,2025,Topps,Chrome,Jihaad Campbell,366,Red White Blue Refractor,2.99,,38.85,31.0,12.98
+12530688,football,2025,Topps,Chrome,Kenneth Walker III,276,Red White Blue Refractor,0.91,,34.97,28.0,11.68
+12530544,football,2025,Topps,Chrome,Kyle Juszczyk,270,Red White Blue Refractor,2.99,,44.31,35.0,14.82
+12525783,football,2025,Topps,Chrome,Matthew Stafford,169,Red White Blue Refractor,32.0,,179.95,144.0,60.5
+12528536,football,2025,Topps,Chrome,Wan'Dale Robinson,227,Red White Blue Refractor,2.74,,43.11,34.0,14.41
+12549712,football,2025,Topps,Chrome 1975,Dak Prescott,1975-10,,0.0,,0,0,0
+12549993,football,2025,Topps,Chrome 1975,J.J. McCarthy,1975-22,,2.65,,0,0,0
+12549736,football,2025,Topps,Chrome 1975,Justin Herbert,1975-18,,1.88,,0,0,0
+12549838,football,2025,Topps,Chrome 1975,Matthew Golden,1975-13,,3.0,,0,0,0
+12549838,football,2025,Topps,Chrome 1975,Matthew Golden,1975-13,,3.0,,0,0,0
+12550008,football,2025,Topps,Chrome 1975,Myles Garrett,1975-8,,0.0,,0,0,0
+12549837,football,2025,Topps,Chrome 1975,Terry McLaurin,1975-35,,0.0,,0,0,0
+12550063,football,2025,Topps,Chrome 1975,Baker Mayfield,1975-31,Refractor,0.0,,0,0,0
+12549877,football,2025,Topps,Chrome 1975,Chuba Hubbard,1975-5,Refractor,0.0,,0,0,0
+12549975,football,2025,Topps,Chrome 1975,Kenneth Walker III,1975-30,Refractor,0.0,,0,0,0
+12549732,football,2025,Topps,Chrome 1975,Michael Penix Jr.,1975-2,Refractor,4.99,,0,0,0
+12527425,football,2025,Topps,Chrome,Aaron Jones Sr.,201,Pulsar Refractor,2.49,,39.52,32.0,13.21
+12521578,football,2025,Topps,Chrome,Andrei Iosivas,60,Pulsar Refractor,0.0,,0,0,0
+12526114,football,2025,Topps,Chrome,Blake Corum,171,Pulsar Refractor,1.79,,41.33,33.0,13.82
+12530244,football,2025,Topps,Chrome,Brock Purdy,262,Pulsar Refractor,5.38,,47.31,38.0,15.83
+12523944,football,2025,Topps,Chrome,Cam Robinson,124,Pulsar Refractor,0.99,,39.33,31.0,13.14
+12528075,football,2025,Topps,Chrome,Chase Young,220,Pulsar Refractor,1.5,,37.17,30.0,12.42
+12527914,football,2025,Topps,Chrome,Chris Olave,216,Pulsar Refractor,1.0,,36.36,29.0,12.14
+12529979,football,2025,Topps,Chrome,Christian McCaffrey,263,Pulsar Refractor,2.17,,41.91,34.0,14.01
+12524701,football,2025,Topps,Chrome,Gabe Davis,142,Pulsar Refractor,3.62,,47.31,38.0,15.83
+12523571,football,2025,Topps,Chrome,Joe Mixon,120,Pulsar Refractor,1.71,,38.18,31.0,12.75
+12519665,football,2025,Topps,Chrome,Keon Coleman,30,Pulsar Refractor,1.32,,38.32,31.0,12.8
+12519457,football,2025,Topps,Chrome,Lamar Jackson,24,Pulsar Refractor,2.13,,39.57,32.0,13.22
+12525488,football,2025,Topps,Chrome,Najee Harris,161,Pulsar Refractor,0.0,,0,0,0
+12518411,football,2025,Topps,Chrome,Paris Johnson Jr.,3,Pulsar Refractor,1.49,,0,0,0
+12532657,football,2025,Topps,Chrome,Phil Mafah,310,Pulsar Refractor,1.99,,39.52,32.0,13.21
+12534148,football,2025,Topps,Chrome,Savion Williams,340,Pulsar Refractor,2.99,,44.64,36.0,14.93
+12534964,football,2025,Topps,Chrome,Shemar Stewart,363,Pulsar Refractor,1.85,,39.52,32.0,13.21
+12533528,football,2025,Topps,Chrome,Tetairoa McMillan,326,Pulsar Refractor,4.26,,57.5,46.0,19.26
+12534350,football,2025,Topps,Chrome,Tez Johnson,342,Pulsar Refractor,1.54,,37.08,30.0,12.38
+12525102,football,2025,Topps,Chrome,Trent McDuffie,154,Pulsar Refractor,1.79,,0,0,0
+12521190,football,2025,Topps,Chrome,Trey Hendrickson,65,Pulsar Refractor,1.0,,0,0,0
+12528530,football,2025,Topps,Chrome,Wan'Dale Robinson,227,Pulsar Refractor,3.0,,0,0,0
+12524447,football,2025,Topps,Chrome,Braden Smith,134,RayWave Refractor,1.99,,0,0,0
+12528917,football,2025,Topps,Chrome,Brian Burns,234,RayWave Refractor,1.25,,39.33,31.0,13.14
+12520641,football,2025,Topps,Chrome,Caleb Williams,52,RayWave Refractor,8.25,,66.06,53.0,22.15
+12523307,football,2025,Topps,Chrome,Christian Watson,112,RayWave Refractor,2.47,,41.82,33.0,13.98
+12524318,football,2025,Topps,Chrome,Daniel Jones,132,RayWave Refractor,0.94,,38.8,31.0,12.96
+12527893,football,2025,Topps,Chrome,Garrett Bradbury,212,RayWave Refractor,1.99,,0,0,0
+12531614,football,2025,Topps,Chrome,Jayden Daniels,295,RayWave Refractor,7.27,,58.73,47.0,19.67
+12535445,football,2025,Topps,Chrome,Jihaad Campbell,366,RayWave Refractor,2.5,,41.96,34.0,14.03
+12519760,football,2025,Topps,Chrome,Khalil Shakir,32,RayWave Refractor,3.06,,39.05,31.0,13.05
+12533370,football,2025,Topps,Chrome,Matthew Golden,333,RayWave Refractor,4.5,,53.8,43.0,18.01
+12533206,football,2025,Topps,Chrome,Riley Leonard,318,RayWave Refractor,2.79,,43.59,35.0,14.58
+12536457,football,2025,Topps,Chrome,Seth Henigan,399,RayWave Refractor,0.99,,0,0,0
+12533966,football,2025,Topps,Chrome,Tre Harris III,338,RayWave Refractor,3.99,,39.58,32.0,13.22
+12536894,football,2025,Topps,Chrome,Woody Marks,372,RayWave Refractor,2.51,,42.01,34.0,14.04
+12522880,football,2025,Topps,Chrome,Aidan Hutchinson,104,Refractor,3.5,,41.77,33.0,13.96
+12526083,football,2025,Topps,Chrome,Blake Corum,171,Refractor,1.47,,37.13,30.0,12.4
+12532613,football,2025,Topps,Chrome,Brady Cook,319,Refractor,1.99,,39.52,32.0,13.21
+12528092,football,2025,Topps,Chrome,Brandin Cooks,217,Refractor,4.0,,39.52,32.0,13.21
+12523572,football,2025,Topps,Chrome,Christian Kirk,117,Refractor,1.23,,37.71,30.0,12.59
+12521888,football,2025,Topps,Chrome,Dak Prescott,79,Refractor,3.37,,39.51,32.0,13.21
+12521441,football,2025,Topps,Chrome,David Njoku,69,Refractor,1.49,,37.13,30.0,12.4
+12530829,football,2025,Topps,Chrome,Deommodore Lenoir,269,Refractor,1.0,,34.78,28.0,11.61
+12534749,football,2025,Topps,Chrome,Derrick Harmon,361,Refractor,1.88,,38.99,31.0,13.03
+12528745,football,2025,Topps,Chrome,Dexter Lawrence II,230,Refractor,1.47,,37.03,30.0,12.37
+12528387,football,2025,Topps,Chrome,Erik McCoy,223,Refractor,0.99,,0,0,0
+12526447,football,2025,Topps,Chrome,Geno Smith,179,Refractor,1.99,,34.93,28.0,11.66
+12527450,football,2025,Topps,Chrome,Harrison Smith,204,Refractor,0.99,,38.75,31.0,12.95
+12524794,football,2025,Topps,Chrome,Hollywood Brown,146,Refractor,0.99,,34.74,28.0,11.6
+12527200,football,2025,Topps,Chrome,J.J. McCarthy,199,Refractor,3.9,,42.14,34.0,14.09
+12534618,football,2025,Topps,Chrome,Jahdae Barron,359,Refractor,1.75,,39.52,32.0,13.21
+12520069,football,2025,Topps,Chrome,Jalen Coker,39,Refractor,1.5,,39.52,32.0,13.21
+12534708,football,2025,Topps,Chrome,Jalon Walker,354,Refractor,1.42,,36.79,29.0,12.29
+12534708,football,2025,Topps,Chrome,Jalon Walker,354,Refractor,1.42,,36.79,29.0,12.29
+12534708,football,2025,Topps,Chrome,Jalon Walker,354,Refractor,1.42,,36.79,29.0,12.29
+12522909,football,2025,Topps,Chrome,Jared Goff,102,Refractor,1.7,,38.14,31.0,12.74
+12533841,football,2025,Topps,Chrome,Jayden Higgins,343,Refractor,4.45,,35.98,29.0,12.01
+12529337,football,2025,Topps,Chrome,Jeremy Ruckert,239,Refractor,2.49,,0,0,0
+12521588,football,2025,Topps,Chrome,Jerome Ford,71,Refractor,1.19,,35.69,29.0,11.92
+12535850,football,2025,Topps,Chrome,Jonah Savaiinaea,380,Refractor,1.29,,35.41,28.0,11.82
+12524119,football,2025,Topps,Chrome,Jonathan Taylor,130,Refractor,1.49,,37.13,30.0,12.4
+12524119,football,2025,Topps,Chrome,Jonathan Taylor,130,Refractor,1.49,,37.13,30.0,12.4
+12535139,football,2025,Topps,Chrome,Kenneth Grant,362,Refractor,0.99,,37.9,30.0,12.66
+12519656,football,2025,Topps,Chrome,Keon Coleman,30,Refractor,0.99,,34.74,28.0,11.6
+12518936,football,2025,Topps,Chrome,Kirk Cousins,13,Refractor,2.0,,39.0,31.0,13.03
+12535955,football,2025,Topps,Chrome,Kyle Monangai,382,Refractor,3.5,,48.43,39.0,16.21
+12533701,football,2025,Topps,Chrome,Luther Burden III,334,Refractor,3.99,,49.77,40.0,16.66
+12526104,football,2025,Topps,Chrome,Matthew Stafford,169,Refractor,29.99,,173.48,139.0,58.32
+12518406,football,2025,Topps,Chrome,Michael Wilson,2,Refractor,1.44,,36.9,30.0,12.32
+12522558,football,2025,Topps,Chrome,Penei Sewell,99,Refractor,1.99,,37.12,30.0,12.4
+12531985,football,2025,Topps,Chrome,Rome Odunze,49,Refractor,2.25,,40.77,33.0,13.63
+12530856,football,2025,Topps,Chrome,Sam Darnold,275,Refractor,1.99,,39.05,31.0,13.05
+12536141,football,2025,Topps,Chrome,Sebastian Castro,370,Refractor,2.5,,41.96,34.0,14.03
+12523764,football,2025,Topps,Chrome,Tank Dell,123,Refractor,0.99,,34.73,28.0,11.59
+12534300,football,2025,Topps,Chrome,Tez Johnson,342,Refractor,1.1,,36.32,29.0,12.13
+12526267,football,2025,Topps,Chrome,Tre Tucker,175,Refractor,0.99,,0,0,0
+12530049,football,2025,Topps,Chrome,Trent Williams,265,Refractor,1.78,,39.51,32.0,13.21
+12521975,football,2025,Topps,Chrome,Trevon Diggs,83,Refractor,2.37,,44.36,35.0,14.84
+12536853,football,2025,Topps,Chrome,Woody Marks,372,Refractor,1.37,,35.98,29.0,12.01
+12523409,football,2025,Topps,Chrome,Xavier McKinney,113,Refractor,1.3,,37.13,30.0,12.4
+12527171,football,2025,Topps,Chrome,Ashtyn Davis,194,Leather Green,0.0,,0,0,0
+12519324,football,2025,Topps,Chrome,Rashod Bateman,21,Leather Purple,0.0,,0,0,0
+12551630,football,2025,Topps,Chrome Legends of the Gridiron,Keyshawn Johnson,LOG-23,,1.99,,0,0,0
+12551597,football,2025,Topps,Chrome Legends of the Gridiron,Tim Brown,LOG-22,,4.99,,0,0,0
+12550995,football,2025,Topps,Chrome Future Stars,Brian Thomas Jr.,FS-4,,1.0,,0,0,0
+12551219,football,2025,Topps,Chrome Future Stars,Jalen Carter,FS-25,,1.5,,0,0,0
+12552327,football,2025,Topps,Chrome Power Players,Caleb Williams,PP-7,,1.89,,0,0,0
+12552348,football,2025,Topps,Chrome Power Players,Cam Ward,PP-8,,25.0,,0,0,0
+12552066,football,2025,Topps,Chrome Power Players,Ja'Marr Chase,PP-21,,0.0,,0,0,0
+12552215,football,2025,Topps,Chrome Power Players,Nico Collins,PP-30,,3.49,,0,0,0
+12552233,football,2025,Topps,Chrome Power Players,Puka Nacua,PP-24,,4.99,,0,0,0
+12552174,football,2025,Topps,Chrome Power Players,T.J. Watt,PP-39,,2.92,,0,0,0
+12552351,football,2025,Topps,Chrome Power Players,Travis Kelce,PP-34,,2.24,,0,0,0
+12534015,football,2025,Topps,Chrome,Colston Loveland,345,X-Fractor Pink,13.0,,92.13,74.0,30.93
+12528760,football,2025,Topps,Chrome,Dexter Lawrence II,230,X-Fractor Pink,1.75,,0,0,0
+12536533,football,2025,Topps,Chrome,Elijah Arroyo,396,X-Fractor Pink,0.01,,0,0,0
+12536060,football,2025,Topps,Chrome,Jack Bech,388,X-Fractor Pink,3.25,,0,0,0
+12524130,football,2025,Topps,Chrome,Jonathan Taylor,130,X-Fractor Pink,5.23,,55.01,44.0,18.42
+12532281,football,2025,Topps,Chrome,Kalel Mullings,309,X-Fractor Pink,0.0,,0,0,0
+12519660,football,2025,Topps,Chrome,Keon Coleman,30,X-Fractor Pink,0.0,,0,0,0
+12524233,football,2025,Topps,Chrome,Laiatu Latu,128,X-Fractor Pink,0.0,,0,0,0
+12519574,football,2025,Topps,Chrome,Nate Wiggins,28,X-Fractor Pink,3.39,,0,0,0
+12533092,football,2025,Topps,Chrome,Ollie Gordon II,327,X-Fractor Pink,3.49,,0,0,0
+12533408,football,2025,Topps,Chrome,Omarion Hampton,324,X-Fractor Pink,4.13,,0,0,0
+12528719,football,2025,Topps,Chrome,Tyrone Tracy Jr.,228,X-Fractor Pink,2.25,,0,0,0
+12528108,football,2025,Topps,Chrome,Alvin Kamara,215,X-Fractor Green,6.99,,0,0,0
+12524309,football,2025,Topps,Chrome,Daniel Jones,132,X-Fractor Green,5.0,,0,0,0
+12525058,football,2025,Topps,Chrome,George Karlaftis,152,X-Fractor Green,4.99,,0,0,0
+12526738,football,2025,Topps,Chrome,Tyreek Hill,185,X-Fractor Green,0.0,,0,0,0
+12531389,football,2025,Topps,Chrome,Bucky Irving,285,X-Fractor,2.0,,0,0,0
+12528733,football,2025,Topps,Chrome,Darius Slayton,226,X-Fractor,2.69,,0,0,0
+12518826,football,2025,Topps,Chrome,Darnell Mooney,11,X-Fractor,0.0,,0,0,0
+12535200,football,2025,Topps,Chrome,Deone Walker,360,X-Fractor,0.0,,0,0,0
+12533695,football,2025,Topps,Chrome,Harold Fannin Jr.,339,X-Fractor,2.99,,55.05,44.0,18.44
+12526334,football,2025,Topps,Chrome,Jared Verse,173,X-Fractor,0.0,,0,0,0
+12522159,football,2025,Topps,Chrome,Joe Milton III,85,X-Fractor,0.0,,0,0,0
+12523322,football,2025,Topps,Chrome,Josh Jacobs,110,X-Fractor,0.0,,0,0,0
+12518782,football,2025,Topps,Chrome,Josh Sweat,10,X-Fractor,0.0,,0,0,0
+12521696,football,2025,Topps,Chrome,Kenny Clark,73,X-Fractor,3.5,,0,0,0
+12525644,football,2025,Topps,Chrome,Khalil Mack,160,X-Fractor,0.0,,0,0,0
+12527918,football,2025,Topps,Chrome,Kyle Dugger,211,X-Fractor,0.0,,0,0,0
+12532404,football,2025,Topps,Chrome,Mason Graham,302,X-Fractor,3.0,,0,0,0
+12521853,football,2025,Topps,Chrome,Micah Parsons,77,X-Fractor,2.97,,0,0,0
+12530658,football,2025,Topps,Chrome,Noah Fant,274,X-Fractor,0.99,,0,0,0
+12530887,football,2025,Topps,Chrome,Olu Oluwatimi,273,X-Fractor,0.0,,0,0,0
+12518419,football,2025,Topps,Chrome,Paris Johnson Jr.,3,X-Fractor,0.0,,0,0,0
+12532501,football,2025,Topps,Chrome,Pat Bryant,313,X-Fractor,2.25,,0,0,0
+12530683,football,2025,Topps,Chrome,Patrick Queen,260,X-Fractor,24.99,,0,0,0
+12533002,football,2025,Topps,Chrome,Quinshon Judkins,325,X-Fractor,4.25,,56.46,45.0,18.91
+12533778,football,2025,Topps,Chrome,RJ Harvey,330,X-Fractor,0.0,,0,0,0
+12523458,football,2025,Topps,Chrome,Rashan Gary,111,X-Fractor,0.0,,0,0,0
+12527777,football,2025,Topps,Chrome,Rhamondre Stevenson,210,X-Fractor,0.0,,0,0,0
+12527274,football,2025,Topps,Chrome,Will Reichard,203,X-Fractor,0.0,,0,0,0
+12550258,football,2025,Topps,Chrome All Chrome Team,Amon-Ra St. Brown,ACT-7,,3.25,,0,0,0
+12550431,football,2025,Topps,Chrome All Chrome Team,Chris Boswell,ACT-25,,0.0,,0,0,0
+12550368,football,2025,Topps,Chrome All Chrome Team,Chris Jones,ACT-17,,1.98,,0,0,0
+12550292,football,2025,Topps,Chrome All Chrome Team,Fred Warner,ACT-20,,3.99,,0,0,0
+12550133,football,2025,Topps,Chrome All Chrome Team,George Kittle,ACT-11,,5.0,,0,0,0
+12549967,football,2025,Topps,Chrome All Chrome Team,Lamar Jackson,ACT-1,,3.12,,0,0,0
+12550354,football,2025,Topps,Chrome All Chrome Team,Zack Baun,ACT-22,,0.0,,0,0,0
+12551043,football,2025,Topps,Chrome Future Stars,Marvin Harrison Jr.,FS-6,X-Fractor,0.0,,0,0,0
+12551525,football,2025,Topps,Chrome Legends Of The Gridiron,Art Monk,LOG-19,,0.0,,0,0,0
+12551732,football,2025,Topps,Chrome Legends Of The Gridiron,Devin Hester,LOG-37,,1.19,,0,0,0
+12551551,football,2025,Topps,Chrome Legends Of The Gridiron,Isaac Bruce,LOG-26,,0.0,,0,0,0
+12551575,football,2025,Topps,Chrome Legends Of The Gridiron,Jerry Rice,LOG-21,,0.0,,0,0,0
+12530632,football,2025,Topps,Chrome,Devon Witherspoon,277,Leather Gold,0.0,,0,0,0
+12550764,football,2025,Topps,Chrome Fortune 15,Brock Bowers,F15-8,Refractor,1.67,,40.15,32.0,13.42
+12550873,football,2025,Topps,Chrome Fortune 15,Jordan Love,F15-17,Refractor,2.71,,44.06,35.0,14.74
+12549309,football,2025,Topps,Chrome First Year Fabric,Abdul Carter,FYF-AC,,0.0,,0,0,0
+12551472,football,2025,Topps,Chrome Legends Of The Gridiron,Earl Campbell,LOG-12,X-Fractor,0.0,,0,0,0
+12551730,football,2025,Topps,Chrome Legends Of The Gridiron,Rob Gronkowski,LOG-29,X-Fractor,0.0,,0,0,0
+12551907,football,2025,Topps,Chrome Power Players,Drake Maye,PP-10,X-Fractor,0.0,,0,0,0
+12549621,football,2025,Topps,Chrome Rookie Relic,Quinshon Judkins,RR-QJ,,0.0,,0,0,0
+10773873,football,2025,Panini,Revolution,Aaron Rodgers,45,,1.4,,36.47,29.0,12.27
+10778563,football,2025,Panini,Revolution,Amon-Ra St. Brown,180,,1.43,,36.65,29.0,12.33
+10774860,football,2025,Panini,Revolution,Anthony Richardson,65,,2.3,,40.19,32.0,13.58
+10776197,football,2025,Panini,Revolution,Brian Branch,109,,1.67,,37.43,30.0,12.6
+10779124,football,2025,Panini,Revolution,Bucky Irving,196,,1.42,,37.79,30.0,12.73
+10779539,football,2025,Panini,Revolution,Cam Ward,205,,1.4,,66.0,53.0,19.0
+10777965,football,2025,Panini,Revolution,Christian Gonzalez,155,,1.62,,37.22,30.0,12.53
+10772308,football,2025,Panini,Revolution,Christian McCaffrey,2,,1.38,,34.43,28.0,11.56
+10779638,football,2025,Panini,Revolution,Colston Loveland,206,,1.68,,35.63,29.0,11.97
+10776711,football,2025,Panini,Revolution,Corey Dillon,124,,0.99,,36.17,29.0,12.16
+10781371,football,2025,Panini,Revolution,Daniel Carlson,102,,1.25,,35.56,28.0,11.95
+10781410,football,2025,Panini,Revolution,Demario Davis,139,,2.45,,40.87,33.0,13.81
+10776078,football,2025,Panini,Revolution,Derek Stingley Jr.,110,,0.86,,37.11,30.0,12.49
+10776329,football,2025,Panini,Revolution,Derius Davis,115,,1.5,,36.65,29.0,12.33
+10775831,football,2025,Panini,Revolution,Derrick Henry,100,,1.65,,37.31,30.0,12.57
+10780133,football,2025,Panini,Revolution,Dillon Gabriel,222,,1.0,,34.4,28.0,11.54
+10779814,football,2025,Panini,Revolution,Elic Ayomanor,209,,0.92,,34.4,28.0,11.54
+10779777,football,2025,Panini,Revolution,Emeka Egbuka,211,,1.08,,68.0,54.0,9.5
+10779402,football,2025,Panini,Revolution,Emmitt Smith,200,,1.49,,36.6,29.0,12.32
+10773655,football,2025,Panini,Revolution,Garrett Wilson,39,,1.0,,36.07,29.0,12.13
+10777811,football,2025,Panini,Revolution,Geno Smith,152,,1.34,,35.96,29.0,12.09
+10777982,football,2025,Panini,Revolution,George Kittle,161,,1.52,,36.6,29.0,12.32
+10777458,football,2025,Panini,Revolution,J.J. McCarthy,138,,1.52,,35.28,28.0,11.85
+10776921,football,2025,Panini,Revolution,Ja'Marr Chase,128,,1.49,,34.4,28.0,11.54
+10774857,football,2025,Panini,Revolution,Jamal Lewis,71,,1.15,,35.1,28.0,11.79
+10779887,football,2025,Panini,Revolution,James Pearce Jr.,218,,0.94,,34.43,28.0,11.56
+10777064,football,2025,Panini,Revolution,Jamien Sherwood,134,,1.68,,37.45,30.0,12.61
+10780752,football,2025,Panini,Revolution,Jaydon Blue,214,,0.0,,0,0,0
+10774879,football,2025,Panini,Revolution,Jaylon Johnson,75,,1.69,,37.49,30.0,12.63
+10778312,football,2025,Panini,Revolution,Jerome Ford,169,,1.29,,35.72,29.0,12.01
+10774324,football,2025,Panini,Revolution,Jerry Jeudy,56,,1.65,,36.62,29.0,12.32
+10775833,football,2025,Panini,Revolution,Jessie Bates III,104,,0.15,,0,0,0
+10777855,football,2025,Panini,Revolution,Jim Kelly,154,,1.57,,36.99,30.0,12.45
+10775837,football,2025,Panini,Revolution,Joe Mixon,98,,1.69,,37.5,30.0,12.63
+10772929,football,2025,Panini,Revolution,Jordan Addison,19,,2.0,,38.89,31.0,13.11
+10775709,football,2025,Panini,Revolution,Jordan Love,99,,1.57,,36.97,30.0,12.44
+10774862,football,2025,Panini,Revolution,Jordyn Brooks,73,,1.64,,37.41,30.0,12.6
+10776291,football,2025,Panini,Revolution,Kareem Hunt,106,,1.0,,36.67,29.0,12.34
+10772455,football,2025,Panini,Revolution,Khalil Shakir,6,,1.76,,37.82,30.0,12.74
+10774674,football,2025,Panini,Revolution,Ladd McConkey,62,,0.99,,34.38,28.0,11.54
+10773003,football,2025,Panini,Revolution,Leonard Fournette,21,,1.29,,0,0,0
+10773619,football,2025,Panini,Revolution,Matthew Stafford,38,,1.5,,35.59,28.0,11.96
+10776528,football,2025,Panini,Revolution,Michael Irvin,117,,1.58,,37.78,30.0,12.73
+10776659,football,2025,Panini,Revolution,Michael Pittman Jr.,121,,1.0,,34.45,28.0,11.56
+10772527,football,2025,Panini,Revolution,Patrick Mahomes II,8,,2.09,,38.86,31.0,13.11
+10773150,football,2025,Panini,Revolution,Puka Nacua,25,,1.35,,37.48,30.0,12.63
+10780589,football,2025,Panini,Revolution,Quinn Ewers,235,,1.18,,36.03,29.0,12.12
+10780382,football,2025,Panini,Revolution,RJ Harvey,232,,1.0,,35.54,28.0,11.94
+10773257,football,2025,Panini,Revolution,Raghib Rocket Ismail,28,,1.8,,37.99,30.0,12.8
+10772784,football,2025,Panini,Revolution,Richard Sherman,15,,1.38,,36.11,29.0,12.15
+10776445,football,2025,Panini,Revolution,Sam Darnold,116,,1.37,,34.83,28.0,11.7
+10772382,football,2025,Panini,Revolution,Saquon Barkley,4,,1.6,,36.65,29.0,12.33
+10772598,football,2025,Panini,Revolution,Steve Young,10,,1.69,,37.5,30.0,12.63
+10780434,football,2025,Panini,Revolution,Tai Felton,234,,0.99,,35.5,28.0,11.93
+10780669,football,2025,Panini,Revolution,Terrance Ferguson,245,,0.99,,34.16,27.0,11.46
+10781284,football,2025,Panini,Revolution,Tetairoa McMillan,241,,1.63,,44.99,22.0,12.22
+10774978,football,2025,Panini,Revolution,Theo Johnson,63,,1.49,,0,0,0
+10781185,football,2025,Panini,Revolution,Tua Tagovailoa,195,,1.57,,37.19,30.0,12.52
+10773076,football,2025,Panini,Revolution,Victor Cruz,23,,1.85,,0,0,0
+10781148,football,2025,Panini,Revolution,Will Reichard,194,,1.68,,37.44,30.0,12.61
+10778656,football,2025,Panini,Revolution,A.J. Brown,181,Red Storm,0.0,,0,0,0
+10779287,football,2025,Panini,Revolution,Abdul Carter,201,Red Storm,1.25,,35.55,28.0,11.95
+10778899,football,2025,Panini,Revolution,Andre Johnson,188,Red Storm,1.5,,0,0,0
+10779427,football,2025,Panini,Revolution,Ashton Jeanty,202,Red Storm,1.66,,37.33,30.0,12.57
+10779555,football,2025,Panini,Revolution,Cam Ward,205,Red Storm,1.5,,37.48,30.0,12.63
+10776348,football,2025,Panini,Revolution,Derius Davis,115,Red Storm,0.0,,0,0,0
+10779691,football,2025,Panini,Revolution,Elijah Arroyo,210,Red Storm,0.99,,0,0,0
+10779422,football,2025,Panini,Revolution,Emmitt Smith,200,Red Storm,1.77,,0,0,0
+10780384,football,2025,Panini,Revolution,Isaac TeSlaa,212,Red Storm,1.09,,35.28,28.0,11.85
+10780618,football,2025,Panini,Revolution,Jack Bech,213,Red Storm,1.14,,0,0,0
+10779772,football,2025,Panini,Revolution,Jalen Milroe,215,Red Storm,0.99,,34.41,28.0,11.54
+10779868,football,2025,Panini,Revolution,Jalen Royals,216,Red Storm,1.0,,34.44,28.0,11.56
+10780356,football,2025,Panini,Revolution,Mason Graham,227,Red Storm,1.88,,37.78,30.0,12.73
+10780217,football,2025,Panini,Revolution,Mykel Williams,231,Red Storm,0.0,,0,0,0
+10780607,football,2025,Panini,Revolution,Omarion Hampton,233,Red Storm,2.12,,0,0,0
+10780938,football,2025,Panini,Revolution,Riley Leonard,237,Red Storm,0.99,,34.39,28.0,11.54
+10781071,football,2025,Panini,Revolution,Savion Williams,238,Red Storm,1.75,,0,0,0
+10780452,football,2025,Panini,Revolution,Tai Felton,234,Red Storm,0.0,,0,0,0
+10780698,football,2025,Panini,Revolution,Terrance Ferguson,245,Red Storm,1.0,,34.43,28.0,11.55
+10781252,football,2025,Panini,Revolution,Tez Johnson,240,Red Storm,0.0,,0,0,0
+10781027,football,2025,Panini,Revolution,Tre Harris,243,Red Storm,0.0,,0,0,0
+10780781,football,2025,Panini,Revolution,Trevor Etienne,250,Red Storm,1.0,,0,0,0
+10774475,football,2025,Panini,Revolution,Jaylen Warren,66,Blue Storm,0.0,,0,0,0
+10778217,football,2025,Panini,Revolution,Josh Jacobs,171,Blue Storm,0.0,,0,0,0
+10773554,football,2025,Panini,Revolution,Will Anderson Jr.,36,Blue Storm,0.0,,0,0,0
+10774362,football,2025,Panini,Revolution,Jerry Jeudy,56,Green Storm,0.0,,0,0,0
+10773196,football,2025,Panini,Revolution,Michael Vick,26,Green Storm,0.0,,0,0,0
+10784861,football,2025,Panini,Revolution Star Gazing,Christian McCaffrey,11,,1.49,,35.42,28.0,11.9
+10784655,football,2025,Panini,Revolution Star Gazing,Lamar Jackson,1,,1.3,,35.54,28.0,11.94
+10782697,football,2025,Panini,Revolution Gridiron Legacy,Jason Sehorn,7,,1.25,,35.55,28.0,11.95
+10782847,football,2025,Panini,Revolution Gridiron Legacy,Kurt Warner,25,,1.49,,36.65,29.0,12.33
+10783465,football,2025,Panini,Revolution New Wave,Jaxon Smith-Njigba,23,,1.58,,37.0,30.0,12.46
+10783219,football,2025,Panini,Revolution New Wave,Quinn Ewers,9,,1.21,,35.54,28.0,11.94
+10782674,football,2025,Panini,Revolution Futures,Omarion Hampton,24,,1.49,,34.39,28.0,11.54
+10782440,football,2025,Panini,Revolution Futures,Shedeur Sanders,19,,1.96,,38.5,31.0,12.98
+11580564,football,2025,Panini,Revolution,Deebo Samuel,69,Teal Storm,0.0,,0,0,0
